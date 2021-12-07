@@ -1,9 +1,9 @@
 ---
 layout: default
-title: feign을 통해 @SpringQueryMap 사용
+title: Feign을 통해 @SpringQueryMap 사용
 parent: Feign
 grand_parent: Msa
-nav_order: 1
+nav_exclude: true
 ---
 
 # feign을 통해 @SpringQueryMap 사용
@@ -93,6 +93,6 @@ doc을 보면, POJO, Map 모두 지원한다고 되어있지만, 테스트해보
 
 1. Param.Expander를 사용하는 방법 —> 받는 쪽이 array, map이 아니면 이것도 안됨
 
-[Feign Client does not resolve Query parameter | Newbedev](https://newbedev.com/feign-client-does-not-resolve-query-parameter)
+[Feign Client does not resolve Query parameter](https://newbedev.com/feign-client-does-not-resolve-query-parameter)
 
-1. API 스펙을 변경하는 방법....
+2. API 스펙을 변경하는 방법....

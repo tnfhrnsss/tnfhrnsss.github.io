@@ -218,8 +218,8 @@
     "doc": "Elastic Search",
     "title": "Elastic Search",
     "content": " ",
-    "url": "http://localhost:4000/docs/msa/elasticsearch/",
-    "relUrl": "/docs/msa/elasticsearch/"
+    "url": "http://localhost:4000/docs/msa/elastic-search/elasticsearch/",
+    "relUrl": "/docs/msa/elastic-search/elasticsearch/"
   },"37": {
     "doc": "Errors",
     "title": "Errors",
@@ -233,185 +233,185 @@
     "url": "http://localhost:4000/docs/msa/feign/feign/",
     "relUrl": "/docs/msa/feign/feign/"
   },"39": {
-    "doc": "feign을 통해 @SpringQueryMap 사용",
-    "title": "feign을 통해 @SpringQueryMap 사용",
-    "content": ". ::요구사항 . 고객의 과거 상담 이력을 조회해서 다른 서비스로 전달하는 로직 . :: History API . @RestController @RequestMapping(\"histories\") public class HistoryQueryResource { private final HistoryQueryService historyQueryService; @GetMapping public HistoryList findAll( @SpringQueryMap HistoryQuery historyQuery ) { return historyQueryService.findAll(historyQuery); } } . ::Thirdparty . @FeignClient( contextId = \"HistoryQueryClient\", name = \"api\", configuration = {FeignConfiguration.class, FeignLoggerLevelConfiguration.class}, primary = false ) public interface HistoryQueryClient{ @GetMapping(\"histories\") HistoryList findAll(@SpringQueryMap HistoryQuery historyQuery); } . :: 문제 . | 컨트롤러가 Mapping파라미터로 선언한 HistoryQuery에 ArrayList, Map타입이 아니면 맵핑이 되지 않는 오류발생 | . @Builder @NoArgsConstructor(access = AccessLevel.PRIVATE) @AllArgsConstructor @Getter @ToString public class HistoryQuery implements JsonSerializable { @Builder.Default private int offset = 0; // --&gt; API서버로 맵핑되지 않음 @Builder.Default private int limit = 1; // --&gt; API서버로 맵핑되지 않음 @Builder.Default private IdList channelIds = IdList.empty(); // --&gt; 맵핑ok @Builder.Default private IdList status = IdList.empty(); // --&gt; 맵핑ok @Builder.Default private String customerId = StringUtils.EMPTY; // --&gt; API서버로 맵핑되지 않음 } . :: 문제 . | 호출 URL에는 문제가 없지만, History API 서버에는 offset, limit, customerId가 찍히지 않음 . -&gt; GET http://api/histories?offset=0&amp;status=closed&amp;limit=1 &amp;customerId=tester&amp;channelIds=kakao . | feign doc . | . Spring Cloud OpenFeign . doc을 보면, POJO, Map 모두 지원한다고 되어있지만, 테스트해보니 리스트나 맵이 아니면 안됨 . :: 문제해결 . | Param.Expander를 사용하는 방법 —&gt; 받는 쪽이 array, map이 아니면 이것도 안됨 | . | [Feign Client does not resolve Query parameter | Newbedev](https://newbedev.com/feign-client-does-not-resolve-query-parameter) | . | API 스펙을 변경하는 방법…. | . ",
-    "url": "http://localhost:4000/docs/msa/feign/feign%EC%9D%84%20%ED%86%B5%ED%95%B4%20@SpringQueryMap%20%EC%82%AC%EC%9A%A9/",
-    "relUrl": "/docs/msa/feign/feign%EC%9D%84%20%ED%86%B5%ED%95%B4%20@SpringQueryMap%20%EC%82%AC%EC%9A%A9/"
-  },"40": {
     "doc": "Markdown kitchen sink",
     "title": "Header 1",
     "content": "This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere. ",
     "url": "http://localhost:4000/docs/index-test/#header-1",
     "relUrl": "/docs/index-test/#header-1"
-  },"41": {
+  },"40": {
     "doc": "Markdown kitchen sink",
     "title": "Header 2",
     "content": "This is a blockquote following a header. When something is important enough, you do it even if the odds are not in your favor. Header 3 . // Javascript code with syntax highlighting. var fun = function lang(l) { dateformat.i18n = require('./lang/' + l) return true; } . # Ruby code with syntax highlighting GitHubPages::Dependencies.gems.each do |gem, version| s.add_dependency(gem, \"= #{version}\") end . Header 4 with code not transformed . | This is an unordered list following a header. | This is an unordered list following a header. | This is an unordered list following a header. | . Header 5 . | This is an ordered list following a header. | This is an ordered list following a header. | This is an ordered list following a header. | . Header 6 . | head1 | head two | three | . | ok | good swedish fish | nice | . | out of stock | good and plenty | nice | . | ok | good oreos | hmm | . | ok | good zoute drop | yumm | . There’s a horizontal rule below this. Here is an unordered list: . | Item foo | Item bar | Item baz | Item zip | . And an ordered list: . | Item one | Item two | Item three | Item four | . And a nested list: . | level 1 item . | level 2 item | level 2 item . | level 3 item | level 3 item | . | . | level 1 item . | level 2 item | level 2 item | level 2 item | . | level 1 item . | level 2 item | level 2 item | . | level 1 item | . Nesting an ol in ul in an ol . | level 1 item (ul) . | level 2 item (ol) | level 2 item (ol) . | level 3 item (ul) | level 3 item (ul) | . | . | level 1 item (ul) . | level 2 item (ol) | level 2 item (ol) . | level 3 item (ul) | level 3 item (ul) | . | level 4 item (ol) | level 4 item (ol) . | level 3 item (ul) | level 3 item (ul) | . | . | level 1 item (ul) | . And a task list . | Hello, this is a TODO item | Hello, this is another TODO item | Goodbye, this item is done | . Small image . Large image . Definition lists can be used with HTML syntax. Name Godzilla Born 1952 Birthplace Japan Color Green Multiple description terms and values . Term Brief description of Term Longer Term Longer description of Term, possibly more than one line Term First description of Term, possibly more than one line Second description of Term, possibly more than one line . Term1 Term2 Single description of Term1 and Term2, possibly more than one line Term1 Term2 First description of Term1 and Term2, possibly more than one line Second description of Term1 and Term2, possibly more than one line . More code . Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this. The final element. ",
     "url": "http://localhost:4000/docs/index-test/#header-2",
     "relUrl": "/docs/index-test/#header-2"
-  },"42": {
+  },"41": {
     "doc": "Markdown kitchen sink",
     "title": "Markdown kitchen sink",
     "content": "Text can be bold, italic, or strikethrough. Link to another page. There should be whitespace between paragraphs. There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project. ",
     "url": "http://localhost:4000/docs/index-test/",
     "relUrl": "/docs/index-test/"
-  },"43": {
+  },"42": {
     "doc": "Home",
     "title": "Focus on writing good documentation",
     "content": "Just the Docs gives your documentation a jumpstart with a responsive Jekyll theme that is easily customizable and hosted on GitHub Pages. Get started now View it on GitHub . ",
     "url": "http://localhost:4000/#focus-on-writing-good-documentation",
     "relUrl": "/#focus-on-writing-good-documentation"
-  },"44": {
+  },"43": {
     "doc": "Home",
     "title": "Getting started",
     "content": "Dependencies . Just the Docs is built for Jekyll, a static site generator. View the quick start guide for more information. Just the Docs requires no special plugins and can run on GitHub Pages’ standard Jekyll compiler. The Jekyll SEO Tag plugin is included by default (no need to run any special installation) to inject SEO and open graph metadata on docs pages. For information on how to configure SEO and open graph metadata visit the Jekyll SEO Tag usage guide. Quick start: Use as a GitHub Pages remote theme . | Add Just the Docs to your Jekyll site’s _config.yml as a remote theme remote_theme: pmarsceill/just-the-docs . You must have GitHub Pages enabled on your repo, one or more Markdown files, and a _config.yml file. See an example repository . | . Local installation: Use the gem-based theme . | Install the Ruby Gem $ gem install just-the-docs . # .. or add it to your your Jekyll site’s Gemfile gem \"just-the-docs\" . | Add Just the Docs to your Jekyll site’s _config.yml theme: \"just-the-docs\" . | Optional: Initialize search data (creates search-data.json) $ bundle exec just-the-docs rake search:init . | Run you local Jekyll server $ jekyll serve . # .. or if you're using a Gemfile (bundler) $ bundle exec jekyll serve . | Point your web browser to http://localhost:4000 | . If you’re hosting your site on GitHub Pages, set up GitHub Pages and Jekyll locally so that you can more easily work in your development environment. Configure Just the Docs . | See configuration options | . ",
     "url": "http://localhost:4000/#getting-started",
     "relUrl": "/#getting-started"
-  },"45": {
+  },"44": {
     "doc": "Home",
     "title": "About the project",
     "content": "Just the Docs is © 2017-2021 by Patrick Marsceill. License . Just the Docs is distributed by an MIT license. Contributing . When contributing to this repository, please first discuss the change you wish to make via issue, email, or any other method with the owners of this repository before making a change. Read more about becoming a contributor in our GitHub repo. Thank you to the contributors of Just the Docs! . Code of Conduct . Just the Docs is committed to fostering a welcoming community. View our Code of Conduct on our GitHub repository. ",
     "url": "http://localhost:4000/#about-the-project",
     "relUrl": "/#about-the-project"
-  },"46": {
+  },"45": {
     "doc": "Home",
     "title": "Home",
     "content": " ",
     "url": "http://localhost:4000/",
     "relUrl": "/"
-  },"47": {
+  },"46": {
     "doc": "jpa 프로그래밍",
     "title": "영속성 관리",
     "content": "@DynamicUpdate . 컬럼이 30개 이상이 되면, @DynamicUpdate를 사용한 동적 수정 쿼리가 정적 수정 쿼리보다 빠르다. 하지만 한 테이블에 컬럼이 30개 이상 된다는 것은 테이블 설계상 분리가 적절하게 되지 않았을 가능성이 높다. @SequenceGenerator . SequenceGenterator.allocationSize의 기본값은 50이다. 이는 최적화 때문인데, 만약 하나씩 증가해야한다면 1로 설정하면 된다. @SeqyebceGeberator는 @GeneratedValue 옆에 사용해도 된다. ",
     "url": "http://localhost:4000/docs/clipping/jpa/jpa%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/#%EC%98%81%EC%86%8D%EC%84%B1-%EA%B4%80%EB%A6%AC",
     "relUrl": "/docs/clipping/jpa/jpa%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/#영속성-관리"
-  },"48": {
+  },"47": {
     "doc": "jpa 프로그래밍",
     "title": "jpa 프로그래밍",
     "content": " ",
     "url": "http://localhost:4000/docs/clipping/jpa/jpa%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/",
     "relUrl": "/docs/clipping/jpa/jpa%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/"
-  },"49": {
+  },"48": {
     "doc": "Jpa",
     "title": "Clipping",
     "content": "jpa 프로그래밍 . ",
     "url": "http://localhost:4000/docs/clipping/jpa/jpa/#clipping",
     "relUrl": "/docs/clipping/jpa/jpa/#clipping"
-  },"50": {
+  },"49": {
     "doc": "Jpa",
     "title": "Jpa",
     "content": " ",
     "url": "http://localhost:4000/docs/clipping/jpa/jpa/",
     "relUrl": "/docs/clipping/jpa/jpa/"
-  },"51": {
+  },"50": {
     "doc": "Labels",
     "title": "Labels",
     "content": "Use labels as a way to add an additional mark to a section of your docs. Labels come in a few colors. By default, labels will be blue. Default label . Blue label . Stable . New release . Coming soon . Deprecated . Default label {: .label } Blue label {: .label .label-blue } Stable {: .label .label-green } New release {: .label .label-purple } Coming soon {: .label .label-yellow } Deprecated {: .label .label-red } . ",
     "url": "http://localhost:4000/docs/ui-components/labels/",
     "relUrl": "/docs/ui-components/labels/"
-  },"52": {
+  },"51": {
     "doc": "Layout",
     "title": "Layout Utilities",
     "content": " ",
     "url": "http://localhost:4000/docs/utilities/layout/#layout-utilities",
     "relUrl": "/docs/utilities/layout/#layout-utilities"
-  },"53": {
+  },"52": {
     "doc": "Layout",
     "title": "Table of contents",
     "content": ". | Spacing | Horizontal Alignment | Vertical Alignment | Display | . ",
     "url": "http://localhost:4000/docs/utilities/layout/#table-of-contents",
     "relUrl": "/docs/utilities/layout/#table-of-contents"
-  },"54": {
+  },"53": {
     "doc": "Layout",
     "title": "Spacing",
     "content": "These spacers are available to use for margins and padding with responsive utility classes. Combine these prefixes with a screen size and spacing scale to use them responsively. | Classname prefix | What it does | . | .m- | margin | . | .mx- | margin-left, margin-right | . | .my- | margin top, margin bottom | . | .mt- | margin-top | . | .mr- | margin-right | . | .mb- | margin-bottom | . | .ml- | margin-left | . | Classname prefix | What it does | . | .p- | padding | . | .px- | padding-left, padding-right | . | .py- | padding top, padding bottom | . | .pt- | padding-top | . | .pr- | padding-right | . | .pb- | padding-bottom | . | .pl- | padding-left | . Spacing values are based on a 1rem = 16px spacing scale, broken down into these units: . | Spacer/suffix | Size in rems | Rem converted to px | . | 1 | 0.25rem | 4px | . | 2 | 0.5rem | 8px | . | 3 | 0.75rem | 12px | . | 4 | 1rem | 16px | . | 5 | 1.5rem | 24px | . | 6 | 2rem | 32px | . | 7 | 2.5rem | 40px | . | 8 | 3rem | 48px | . | auto | auto | auto | . Use mx-auto to horizontally center elements. Examples . In Markdown, use the {: } wrapper to apply custom classes: . This paragraph will have a margin bottom of 1rem/16px at large screens. {: .mb-lg-4 } This paragraph will have 2rem/32px of padding on the right and left at all screen sizes. {: .px-6 } . ",
     "url": "http://localhost:4000/docs/utilities/layout/#spacing",
     "relUrl": "/docs/utilities/layout/#spacing"
-  },"55": {
+  },"54": {
     "doc": "Layout",
     "title": "Horizontal Alignment",
     "content": "| Classname | What it does | . | .float-left | float: left | . | .float-right | float: right | . | .flex-justify-start | justify-content: flex-start | . | .flex-justify-end | justify-content: flex-end | . | .flex-justify-between | justify-content: space-between | . | .flex-justify-around | justify-content: space-around | . Note: any of the flex- classes must be used on a parent element that has d-flex applied to it. ",
     "url": "http://localhost:4000/docs/utilities/layout/#horizontal-alignment",
     "relUrl": "/docs/utilities/layout/#horizontal-alignment"
-  },"56": {
+  },"55": {
     "doc": "Layout",
     "title": "Vertical Alignment",
     "content": "| Classname | What it does | . | .v-align-baseline | vertical-align: baseline | . | .v-align-bottom | vertical-align: bottom | . | .v-align-middle | vertical-align: middle | . | .v-align-text-bottom | vertical-align: text-bottom | . | .v-align-text-top | vertical-align: text-top | . | .v-align-top | vertical-align: top | . ",
     "url": "http://localhost:4000/docs/utilities/layout/#vertical-alignment",
     "relUrl": "/docs/utilities/layout/#vertical-alignment"
-  },"57": {
+  },"56": {
     "doc": "Layout",
     "title": "Display",
     "content": "Display classes aid in adapting the layout of the elements on a page: . | Class |   | . | .d-block | display: block | . | .d-flex | display: flex | . | .d-inline | display: inline | . | .d-inline-block | display: inline-block | . | .d-none | display: none | . Use these classes in conjunction with the responsive modifiers. Examples . In Markdown, use the {: } wrapper to apply custom classes: . This button will be hidden until medium screen sizes: [ A button ](#url) {: .d-none .d-md-inline-block } These headings will be `inline-block`: ### heading 3 {: .d-inline-block } ### heading 3 {: .d-inline-block } . ",
     "url": "http://localhost:4000/docs/utilities/layout/#display",
     "relUrl": "/docs/utilities/layout/#display"
-  },"58": {
+  },"57": {
     "doc": "Layout",
     "title": "Layout",
     "content": " ",
     "url": "http://localhost:4000/docs/utilities/layout/",
     "relUrl": "/docs/utilities/layout/"
-  },"59": {
+  },"58": {
     "doc": "Code with line numbers",
     "title": "Code snippets with line numbers",
     "content": "The default settings for HTML compression are incompatible with the HTML produced by Jekyll (4.1.1 or earlier) for line numbers from highlighted code – both when using Kramdown code fences and when using Liquid highlight tags. To avoid non-conforming HTML and unsatisfactory layout, HTML compression can be turned off by using the following configuration option: . compress_html: ignore: envs: all . When using Kramdown code fences, line numbers are turned on globally by the following configuration option: . kramdown: syntax_highlighter_opts: block: line_numbers: true . Line numbers can then be suppressed locally using Liquid tags (without the linenos option) instead of fences: . {% highlight some_language %} Some code {% endhighlight %} . ",
     "url": "http://localhost:4000/docs/ui-components/code/line-numbers/#code-snippets-with-line-numbers",
     "relUrl": "/docs/ui-components/code/line-numbers/#code-snippets-with-line-numbers"
-  },"60": {
+  },"59": {
     "doc": "Code with line numbers",
     "title": "Workarounds",
     "content": "To use HTML compression together with line numbers, all highlighted code needs to be wrapped using one of the following workarounds. (The variable name some_var can be changed to avoid clashes; it can also be replaced by code – but note that code=code cannot be removed). Code fences (three backticks) . {% capture some_var %} ```some_language Some code ``` {% endcapture %} {% assign some_var = some_var | markdownify %} {% include fix_linenos.html code=some_var %} . Liquid highlighting . {% capture some_var %} {% highlight some_language linenos %} Some code {% endhighlight %} {% endcapture %} {% include fix_linenos.html code=some_var %} . Credit: The original version of the above workaround was suggested by Dmitry Hrabrov at https://github.com/penibelst/jekyll-compress-html/issues/71#issuecomment-188144901. ",
     "url": "http://localhost:4000/docs/ui-components/code/line-numbers/#workarounds",
     "relUrl": "/docs/ui-components/code/line-numbers/#workarounds"
-  },"61": {
+  },"60": {
     "doc": "Code with line numbers",
     "title": "Examples",
     "content": "✅ Using code fences + workaround (will only show line numbers if enabled globally in _config.yml): . // Javascript code with syntax highlighting in fences var fun = function lang(l) { dateformat.i18n = require('./lang/' + l) return true; } . ✅ Using liquid highlighting + workaround: . | 1 2 3 4 . | # Ruby code with syntax highlighting and fixed line numbers using Liquid GitHubPages::Dependencies.gems.each do |gem, version| s.add_dependency(gem, \"= #{version}\") end . | . ❌ With the default configuration options, the following example illustrates the incorrect formatting arising from the incompatibility of HTML compression and the non-conforming HTML produced by Jekyll for line numbers: . | 1 2 3 4 . | # Ruby code with syntax highlighting and unfixed line numbers using Liquid GitHubPages::Dependencies.gems.each do |gem, version| s.add_dependency(gem, \"= #{version}\") end . | . ",
     "url": "http://localhost:4000/docs/ui-components/code/line-numbers/#examples",
     "relUrl": "/docs/ui-components/code/line-numbers/#examples"
-  },"62": {
+  },"61": {
     "doc": "Code with line numbers",
     "title": "Code with line numbers",
     "content": " ",
     "url": "http://localhost:4000/docs/ui-components/code/line-numbers/",
     "relUrl": "/docs/ui-components/code/line-numbers/"
-  },"63": {
+  },"62": {
     "doc": "Lists",
     "title": "Lists",
     "content": " ",
     "url": "http://localhost:4000/docs/ui-components/lists/",
     "relUrl": "/docs/ui-components/lists/"
-  },"64": {
+  },"63": {
     "doc": "Lists",
     "title": "Table of contents",
     "content": ". | Unordered list | Ordered list | Task list | Definition list | . Most lists can be rendered with pure Markdown. ",
     "url": "http://localhost:4000/docs/ui-components/lists/#table-of-contents",
     "relUrl": "/docs/ui-components/lists/#table-of-contents"
-  },"65": {
+  },"64": {
     "doc": "Lists",
     "title": "Unordered list",
     "content": ". | Item 1 | Item 2 | Item 3 | . or . | Item 1 | Item 2 | Item 3 | . - Item 1 - Item 2 - Item 3 _or_ * Item 1 * Item 2 * Item 3 . ",
     "url": "http://localhost:4000/docs/ui-components/lists/#unordered-list",
     "relUrl": "/docs/ui-components/lists/#unordered-list"
-  },"66": {
+  },"65": {
     "doc": "Lists",
     "title": "Ordered list",
     "content": ". | Item 1 | Item 2 | Item 3 | . 1. Item 1 1. Item 2 1. Item 3 . ",
     "url": "http://localhost:4000/docs/ui-components/lists/#ordered-list",
     "relUrl": "/docs/ui-components/lists/#ordered-list"
-  },"67": {
+  },"66": {
     "doc": "Lists",
     "title": "Task list",
     "content": ". | hello, this is a todo item | hello, this is another todo item | goodbye, this item is done | . - [ ] hello, this is a todo item - [ ] hello, this is another todo item - [x] goodbye, this item is done . ",
     "url": "http://localhost:4000/docs/ui-components/lists/#task-list",
     "relUrl": "/docs/ui-components/lists/#task-list"
-  },"68": {
+  },"67": {
     "doc": "Lists",
     "title": "Definition list",
     "content": "Definition lists require HTML syntax and aren’t supported with the GitHub Flavored Markdown compiler. Name Godzilla Born 1952 Birthplace Japan Color Green &lt;dl&gt; &lt;dt&gt;Name&lt;/dt&gt; &lt;dd&gt;Godzilla&lt;/dd&gt; &lt;dt&gt;Born&lt;/dt&gt; &lt;dd&gt;1952&lt;/dd&gt; &lt;dt&gt;Birthplace&lt;/dt&gt; &lt;dd&gt;Japan&lt;/dd&gt; &lt;dt&gt;Color&lt;/dt&gt; &lt;dd&gt;Green&lt;/dd&gt; &lt;/dl&gt; . ",
     "url": "http://localhost:4000/docs/ui-components/lists/#definition-list",
     "relUrl": "/docs/ui-components/lists/#definition-list"
+  },"68": {
+    "doc": "Mooc",
+    "title": "Mooc",
+    "content": " ",
+    "url": "http://localhost:4000/docs/mooc",
+    "relUrl": "/docs/mooc"
   },"69": {
     "doc": "Msa",
     "title": "Msa",
@@ -461,162 +461,192 @@
     "url": "http://localhost:4000/docs/navigation-structure/#in-page-navigation-with-table-of-contents",
     "relUrl": "/docs/navigation-structure/#in-page-navigation-with-table-of-contents"
   },"77": {
+    "doc": "Patterns",
+    "title": "Patterns",
+    "content": " ",
+    "url": "http://localhost:4000/docs/patterns",
+    "relUrl": "/docs/patterns"
+  },"78": {
     "doc": "Responsive Modifiers",
     "title": "Responsive modifiers",
     "content": "Just the Docs spacing works in conjunction with a variety of modifiers that allow you to target specific screen sizes responsively. Use these in conjunction with spacing and display prefix and suffix classes. | Modifier | Screen size | . | (none) | All screens until the next modifier | . | xs | 320px (20rem) and up | . | sm | 500px (31.25rem) and up | . | md | 740px (46.25rem) and up | . | lg | 1120px (70rem) and up | . | xl | 1400px (87.5rem) and up | . ",
     "url": "http://localhost:4000/docs/utilities/responsive-modifiers/#responsive-modifiers",
     "relUrl": "/docs/utilities/responsive-modifiers/#responsive-modifiers"
-  },"78": {
+  },"79": {
     "doc": "Responsive Modifiers",
     "title": "Responsive Modifiers",
     "content": " ",
     "url": "http://localhost:4000/docs/utilities/responsive-modifiers/",
     "relUrl": "/docs/utilities/responsive-modifiers/"
-  },"79": {
+  },"80": {
+    "doc": "Feign Retry",
+    "title": "feign retry",
+    "content": " ",
+    "url": "http://localhost:4000/docs/msa/feign/retry/#feign-retry",
+    "relUrl": "/docs/msa/feign/retry/#feign-retry"
+  },"81": {
+    "doc": "Feign Retry",
+    "title": "Feign Retry",
+    "content": " ",
+    "url": "http://localhost:4000/docs/msa/feign/retry/",
+    "relUrl": "/docs/msa/feign/retry/"
+  },"82": {
     "doc": "Search",
     "title": "Search",
     "content": " ",
     "url": "http://localhost:4000/docs/search/",
     "relUrl": "/docs/search/"
-  },"80": {
+  },"83": {
     "doc": "Search",
     "title": "Table of contents",
     "content": ". | Enable search in configuration . | Search granularity | Search previews | Search tokenizer | Display URL in search results | Display search button | . | Hiding pages from search | Generate search index when used as a gem | . Just the Docs uses lunr.js to add a client-side search interface powered by a JSON index that Jekyll generates. All search results are shown in an auto-complete style interface (there is no search results page). By default, all generated HTML pages are indexed using the following data points: . | Page title | Page content | Page URL | . ",
     "url": "http://localhost:4000/docs/search/#table-of-contents",
     "relUrl": "/docs/search/#table-of-contents"
-  },"81": {
+  },"84": {
     "doc": "Search",
     "title": "Enable search in configuration",
     "content": "In your site’s _config.yml, enable search: . # Enable or disable the site search # Supports true (default) or false search_enabled: true . Search granularity . Pages are split into sections that can be searched individually. The sections are defined by the headings on the page. Each section is displayed in a separate search result. # Split pages into sections that can be searched individually # Supports 1 - 6, default: 2 search.heading_level: 2 . Search previews . A search result can contain previews that show where the search words are found in the specific section. # Maximum amount of previews per search result # Default: 3 search.previews: 3 # Maximum amount of words to display before a matched word in the preview # Default: 5 search.preview_words_before: 5 # Maximum amount of words to display after a matched word in the preview # Default: 10 search.preview_words_after: 10 . Search tokenizer . The default is for hyphens to separate tokens in search terms: gem-based is equivalent to gem based, matching either word. To allow search for hyphenated words: . # Set the search token separator # Default: /[\\s\\-/]+/ # Example: enable support for hyphenated search words search.tokenizer_separator: /[\\s/]+/ . Display URL in search results . # Display the relative url in search results # Supports true (default) or false search.rel_url: false . Display search button . The search button displays in the bottom right corner of the screen and triggers the search input when clicked. # Enable or disable the search button that appears in the bottom right corner of every page # Supports true or false (default) search.button: true . ",
     "url": "http://localhost:4000/docs/search/#enable-search-in-configuration",
     "relUrl": "/docs/search/#enable-search-in-configuration"
-  },"82": {
+  },"85": {
     "doc": "Search",
     "title": "Hiding pages from search",
     "content": "Sometimes you might have a page that you don’t want to be indexed for the search nor to show up in search results, e.g, a 404 page. To exclude a page from search, add the search_exclude: true parameter to the page’s YAML front matter: . Example . --- layout: default title: Page not found nav_exclude: true search_exclude: true --- . ",
     "url": "http://localhost:4000/docs/search/#hiding-pages-from-search",
     "relUrl": "/docs/search/#hiding-pages-from-search"
-  },"83": {
+  },"86": {
     "doc": "Search",
     "title": "Generate search index when used as a gem",
     "content": "If you use Just the Docs as a remote theme, you do not need the following steps. If you use the theme as a gem, you must initialize the search by running this rake command that comes with just-the-docs: . $ bundle exec just-the-docs rake search:init . This command creates the assets/js/zzzz-search-data.json file that Jekyll uses to create your search index. Alternatively, you can create the file manually with this content. ",
     "url": "http://localhost:4000/docs/search/#generate-search-index-when-used-as-a-gem",
     "relUrl": "/docs/search/#generate-search-index-when-used-as-a-gem"
-  },"84": {
+  },"87": {
+    "doc": "Feign을 통해 @SpringQueryMap 사용",
+    "title": "feign을 통해 @SpringQueryMap 사용",
+    "content": ". ::요구사항 . 고객의 과거 상담 이력을 조회해서 다른 서비스로 전달하는 로직 . :: History API . @RestController @RequestMapping(\"histories\") public class HistoryQueryResource { private final HistoryQueryService historyQueryService; @GetMapping public HistoryList findAll( @SpringQueryMap HistoryQuery historyQuery ) { return historyQueryService.findAll(historyQuery); } } . ::Thirdparty . @FeignClient( contextId = \"HistoryQueryClient\", name = \"api\", configuration = {FeignConfiguration.class, FeignLoggerLevelConfiguration.class}, primary = false ) public interface HistoryQueryClient{ @GetMapping(\"histories\") HistoryList findAll(@SpringQueryMap HistoryQuery historyQuery); } . :: 문제 . | 컨트롤러가 Mapping파라미터로 선언한 HistoryQuery에 ArrayList, Map타입이 아니면 맵핑이 되지 않는 오류발생 | . @Builder @NoArgsConstructor(access = AccessLevel.PRIVATE) @AllArgsConstructor @Getter @ToString public class HistoryQuery implements JsonSerializable { @Builder.Default private int offset = 0; // --&gt; API서버로 맵핑되지 않음 @Builder.Default private int limit = 1; // --&gt; API서버로 맵핑되지 않음 @Builder.Default private IdList channelIds = IdList.empty(); // --&gt; 맵핑ok @Builder.Default private IdList status = IdList.empty(); // --&gt; 맵핑ok @Builder.Default private String customerId = StringUtils.EMPTY; // --&gt; API서버로 맵핑되지 않음 } . :: 문제 . | 호출 URL에는 문제가 없지만, History API 서버에는 offset, limit, customerId가 찍히지 않음 . -&gt; GET http://api/histories?offset=0&amp;status=closed&amp;limit=1 &amp;customerId=tester&amp;channelIds=kakao . | feign doc . | . Spring Cloud OpenFeign . doc을 보면, POJO, Map 모두 지원한다고 되어있지만, 테스트해보니 리스트나 맵이 아니면 안됨 . :: 문제해결 . | Param.Expander를 사용하는 방법 —&gt; 받는 쪽이 array, map이 아니면 이것도 안됨 | . Feign Client does not resolve Query parameter . | API 스펙을 변경하는 방법…. | . ",
+    "url": "http://localhost:4000/docs/msa/feign/springQueryMap/#feign%EC%9D%84-%ED%86%B5%ED%95%B4-springquerymap-%EC%82%AC%EC%9A%A9",
+    "relUrl": "/docs/msa/feign/springQueryMap/#feign을-통해-springquerymap-사용"
+  },"88": {
+    "doc": "Feign을 통해 @SpringQueryMap 사용",
+    "title": "Feign을 통해 @SpringQueryMap 사용",
+    "content": " ",
+    "url": "http://localhost:4000/docs/msa/feign/springQueryMap/",
+    "relUrl": "/docs/msa/feign/springQueryMap/"
+  },"89": {
     "doc": "Tables",
     "title": "Tables",
     "content": "Tables are responsive by default, allowing wide tables to have a horizontal scroll to access columns outside of the normal viewport. | head1 | head two | three | . | ok | good swedish fish | nice | . | out of stock | good and plenty | nice | . | ok | good oreos | hmm | . | ok | good zoute drop | yumm | . | head1 | head two | three |:-------------|:------------------|:------| ok | good swedish fish | nice | out of stock | good and plenty | nice | ok | good `oreos` | hmm | ok | good `zoute` drop | yumm | . ",
     "url": "http://localhost:4000/docs/ui-components/tables/",
     "relUrl": "/docs/ui-components/tables/"
-  },"85": {
-    "doc": "Typography",
-    "title": "Typography",
-    "content": " ",
-    "url": "http://localhost:4000/docs/ui-components/typography/",
-    "relUrl": "/docs/ui-components/typography/"
-  },"86": {
-    "doc": "Typography",
-    "title": "Table of contents",
-    "content": ". | Font stack | Responsive type scale | Headings | Body text | Inline elements | Typographic Utilities | . ",
-    "url": "http://localhost:4000/docs/ui-components/typography/#table-of-contents",
-    "relUrl": "/docs/ui-components/typography/#table-of-contents"
-  },"87": {
-    "doc": "Typography",
-    "title": "Font stack",
-    "content": "By default, Just the Docs uses a native system font stack for sans-serif fonts: . system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif . ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz . For monospace type, like code snippets or the &lt;pre&gt; element, Just the Docs uses a native system font stack for monospace fonts: . \"SFMono-Regular\", Menlo, Consolas, Monospace . ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz . ",
-    "url": "http://localhost:4000/docs/ui-components/typography/#font-stack",
-    "relUrl": "/docs/ui-components/typography/#font-stack"
-  },"88": {
-    "doc": "Typography",
-    "title": "Responsive type scale",
-    "content": "Just the Docs uses a responsive type scale that shifts depending on the viewport size. | Selector | Small screen size font-size | Large screen size font-size | . | h1, .text-alpha | 32px | 36px | . | h2, .text-beta | 18px | 24px | . | h3, .text-gamma | 16px | 18px | . | h4, .text-delta | 14px | 16px | . | h5, .text-epsilon | 16px | 18px | . | h6, .text-zeta | 18px | 24px | . | body | 14px | 16px | . ",
-    "url": "http://localhost:4000/docs/ui-components/typography/#responsive-type-scale",
-    "relUrl": "/docs/ui-components/typography/#responsive-type-scale"
-  },"89": {
-    "doc": "Typography",
-    "title": "Headings",
-    "content": "Headings are rendered like this: . ",
-    "url": "http://localhost:4000/docs/ui-components/typography/#headings",
-    "relUrl": "/docs/ui-components/typography/#headings"
   },"90": {
     "doc": "Typography",
-    "title": "Heading 1",
+    "title": "Typography",
     "content": " ",
     "url": "http://localhost:4000/docs/ui-components/typography/",
     "relUrl": "/docs/ui-components/typography/"
   },"91": {
     "doc": "Typography",
+    "title": "Table of contents",
+    "content": ". | Font stack | Responsive type scale | Headings | Body text | Inline elements | Typographic Utilities | . ",
+    "url": "http://localhost:4000/docs/ui-components/typography/#table-of-contents",
+    "relUrl": "/docs/ui-components/typography/#table-of-contents"
+  },"92": {
+    "doc": "Typography",
+    "title": "Font stack",
+    "content": "By default, Just the Docs uses a native system font stack for sans-serif fonts: . system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif . ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz . For monospace type, like code snippets or the &lt;pre&gt; element, Just the Docs uses a native system font stack for monospace fonts: . \"SFMono-Regular\", Menlo, Consolas, Monospace . ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz . ",
+    "url": "http://localhost:4000/docs/ui-components/typography/#font-stack",
+    "relUrl": "/docs/ui-components/typography/#font-stack"
+  },"93": {
+    "doc": "Typography",
+    "title": "Responsive type scale",
+    "content": "Just the Docs uses a responsive type scale that shifts depending on the viewport size. | Selector | Small screen size font-size | Large screen size font-size | . | h1, .text-alpha | 32px | 36px | . | h2, .text-beta | 18px | 24px | . | h3, .text-gamma | 16px | 18px | . | h4, .text-delta | 14px | 16px | . | h5, .text-epsilon | 16px | 18px | . | h6, .text-zeta | 18px | 24px | . | body | 14px | 16px | . ",
+    "url": "http://localhost:4000/docs/ui-components/typography/#responsive-type-scale",
+    "relUrl": "/docs/ui-components/typography/#responsive-type-scale"
+  },"94": {
+    "doc": "Typography",
+    "title": "Headings",
+    "content": "Headings are rendered like this: . ",
+    "url": "http://localhost:4000/docs/ui-components/typography/#headings",
+    "relUrl": "/docs/ui-components/typography/#headings"
+  },"95": {
+    "doc": "Typography",
+    "title": "Heading 1",
+    "content": " ",
+    "url": "http://localhost:4000/docs/ui-components/typography/",
+    "relUrl": "/docs/ui-components/typography/"
+  },"96": {
+    "doc": "Typography",
     "title": "Heading 2",
     "content": "Heading 3 . Heading 4 . Heading 5 . Heading 6 . # Heading 1 ## Heading 2 ### Heading 3 #### Heading 4 ##### Heading 5 ###### Heading 6 . ",
     "url": "http://localhost:4000/docs/ui-components/typography/",
     "relUrl": "/docs/ui-components/typography/"
-  },"92": {
+  },"97": {
     "doc": "Typography",
     "title": "Body text",
     "content": "Default body text is rendered like this: . Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. ",
     "url": "http://localhost:4000/docs/ui-components/typography/#body-text",
     "relUrl": "/docs/ui-components/typography/#body-text"
-  },"93": {
+  },"98": {
     "doc": "Typography",
     "title": "Inline elements",
     "content": "Text can be bold, italic, or strikethrough. Link to another page. Text can be **bold**, _italic_, or ~~strikethrough~~. [Link to another page](another-page). ",
     "url": "http://localhost:4000/docs/ui-components/typography/#inline-elements",
     "relUrl": "/docs/ui-components/typography/#inline-elements"
-  },"94": {
+  },"99": {
     "doc": "Typography",
     "title": "Typographic Utilities",
     "content": "There are a number of specific typographic CSS classes that allow you to override default styling for font size, font weight, line height, and capitalization. View typography utilities . ",
     "url": "http://localhost:4000/docs/ui-components/typography/#typographic-utilities",
     "relUrl": "/docs/ui-components/typography/#typographic-utilities"
-  },"95": {
+  },"100": {
     "doc": "Typography",
     "title": "Typography Utilities",
     "content": " ",
     "url": "http://localhost:4000/docs/utilities/typography/#typography-utilities",
     "relUrl": "/docs/utilities/typography/#typography-utilities"
-  },"96": {
+  },"101": {
     "doc": "Typography",
     "title": "Table of contents",
     "content": ". | Font size | Font weight | Line height | Text justification | . ",
     "url": "http://localhost:4000/docs/utilities/typography/#table-of-contents",
     "relUrl": "/docs/utilities/typography/#table-of-contents"
-  },"97": {
+  },"102": {
     "doc": "Typography",
     "title": "Font size",
     "content": "Use the .fs-1 - .fs-10 to set an explicit font-size. | Class | Small screen size font-size | Large screen size font-size | . | .fs-1 | 9px | 10px | . | .fs-2 | 11px | 12px | . | .fs-3 | 12px | 14px | . | .fs-4 | 14px | 16px | . | .fs-5 | 16px | 18px | . | .fs-6 | 18px | 24px | . | .fs-7 | 24px | 32px | . | .fs-8 | 32px | 38px | . | .fs-9 | 38px | 42px | . | .fs-10 | 42px | 48px | . Font size 1 . Font size 2 . Font size 3 . Font size 4 . Font size 5 . Font size 6 . Font size 7 . Font size 8 . Font size 9 . Font size 10 . In Markdown, use the `{: }` wrapper to apply custom classes: Font size 1 {: .fs-1 } Font size 2 {: .fs-2 } Font size 3 {: .fs-3 } Font size 4 {: .fs-4 } Font size 5 {: .fs-5 } Font size 6 {: .fs-6 } Font size 7 {: .fs-7 } Font size 8 {: .fs-8 } Font size 9 {: .fs-9 } Font size 10 {: .fs-10 } . ",
     "url": "http://localhost:4000/docs/utilities/typography/#font-size",
     "relUrl": "/docs/utilities/typography/#font-size"
-  },"98": {
+  },"103": {
     "doc": "Typography",
     "title": "Font weight",
     "content": "Use the .fw-300 - .fw-700 to set an explicit font-size. Font weight 300 . Font weight 400 . Font weight 500 . Font weight 700 . In Markdown, use the `{: }` wrapper to apply custom classes: Font weight 300 {: .fw-300 } Font weight 400 {: .fw-400 } Font weight 500 {: .fw-500 } Font weight 700 {: .fw-700 } . ",
     "url": "http://localhost:4000/docs/utilities/typography/#font-weight",
     "relUrl": "/docs/utilities/typography/#font-weight"
-  },"99": {
+  },"104": {
     "doc": "Typography",
     "title": "Line height",
     "content": "Use the lh- classes to explicitly apply line height to text. | Class | line-height value | Notes | . | .lh-0 | 0 |   | . | .lh-tight | 1.1 | Default for headings | . | .lh-default | 1.4 | Default for body (paragraphs) | . No Line height No Line height . Tight line height Tight line height . Default line height Default line height . In Markdown, use the `{: }` wrapper to apply custom classes: No Line height No Line height {: .lh-0 } Tight line height Tight line height {: .lh-tight } Default line height Default line height {: .fh-default } . ",
     "url": "http://localhost:4000/docs/utilities/typography/#line-height",
     "relUrl": "/docs/utilities/typography/#line-height"
-  },"100": {
+  },"105": {
     "doc": "Typography",
     "title": "Text justification",
     "content": "By default text is justified left. Use these text- classes to override settings: . | Class | What it does | . | .text-left | text-align: left | . | .text-right | text-align: right | . | .text-center | text-align: center | . ",
     "url": "http://localhost:4000/docs/utilities/typography/#text-justification",
     "relUrl": "/docs/utilities/typography/#text-justification"
-  },"101": {
+  },"106": {
     "doc": "Typography",
     "title": "Typography",
     "content": " ",
     "url": "http://localhost:4000/docs/utilities/typography/",
     "relUrl": "/docs/utilities/typography/"
-  },"102": {
+  },"107": {
     "doc": "UI Components",
     "title": "UI Components",
     "content": "To make it as easy as possible to write documentation in plain Markdown, most UI components are styled using default Markdown elements with few additional CSS classes needed. ",
     "url": "http://localhost:4000/docs/ui-components",
     "relUrl": "/docs/ui-components"
-  },"103": {
+  },"108": {
     "doc": "Utilities",
     "title": "Utilities",
     "content": "CSS utility classes come in handy when you to want to override default styles to create additional whitespace (margins/padding), correct unexpected shifts in font size or weight, add color, or hide (or show) something at a specific screen size. ",

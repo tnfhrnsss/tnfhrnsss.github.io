@@ -1,6 +1,6 @@
-I"�<h1 id="feign을-통해-springquerymap-사용">feign을 통해 @SpringQueryMap 사용</h1>
+I"�<h1 id="feign을-통해-springquerymap-사용">feign을 통해 @SpringQueryMap 사용</h1>
 
-<p><img src="/assets/imgages/msa/feign.png" alt="Untitled" /></p>
+<p><img src="/assets/images/msa/feign.png" alt="Untitled" /></p>
 
 <h3 id="요구사항">::요구사항</h3>
 
@@ -90,14 +90,7 @@
   <li>Param.Expander를 사용하는 방법 —&gt; 받는 쪽이 array, map이 아니면 이것도 안됨</li>
 </ol>
 
-<table>
-  <tbody>
-    <tr>
-      <td>[Feign Client does not resolve Query parameter</td>
-      <td>Newbedev](https://newbedev.com/feign-client-does-not-resolve-query-parameter)</td>
-    </tr>
-  </tbody>
-</table>
+<p><a href="https://newbedev.com/feign-client-does-not-resolve-query-parameter">Feign Client does not resolve Query parameter</a></p>
 
 <ol>
   <li>API 스펙을 변경하는 방법….</li>
