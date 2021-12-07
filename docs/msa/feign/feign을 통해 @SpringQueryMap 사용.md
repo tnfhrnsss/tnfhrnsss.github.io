@@ -8,7 +8,7 @@ nav_order: 1
 
 # feign을 통해 @SpringQueryMap 사용
 
-![Untitled](feign%E1%84%8B%E1%85%B3%E1%86%AF%20%E1%84%90%E1%85%A9%E1%86%BC%E1%84%92%E1%85%A2%20@SpringQueryMap%20%E1%84%89%E1%85%A1%E1%84%8B%E1%85%AD%E1%86%BC%203e4842cf8b744ef299e18bd2619e03b0/Untitled.png)
+![Untitled](/assets/images/msa/feign.png)
 
 ### ::요구사항
 
