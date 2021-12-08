@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Configuration
-nav_order: 2
+nav_exclude: true
 ---
 
 # Configuration
@@ -137,7 +137,7 @@ jtd.addEvent(toggleDarkMode, 'click', function(){
 });
 </script>
 
-See [Customization]({{ site.baseurl }}{% link docs/customization.md %}) for more information.
+See [Customization]({{ site.baseurl }}{% link docs/bookmark.md %}) for more information.
 
 ## Google Analytics
 

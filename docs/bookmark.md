@@ -1,8 +1,12 @@
 ---
 layout: default
-title: Customization
-nav_order: 6
+title: ★bookmark
+nav_order: 8
 ---
+
+[https://baek.dev/](https://baek.dev/post/28/)
+
+[https://greensock.com/](https://greensock.com/)
 
 # Customization
 {: .no_toc }
