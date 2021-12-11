@@ -1,4 +1,4 @@
-I"‘<h1 class="fs-9" id="focus-on-writing-good-documentation">Focus on writing good documentation</h1>
+I"y<h1 class="fs-9" id="focus-on-writing-good-documentation">Focus on writing good documentation</h1>
 
 <p class="fs-6 fw-300">Just the Docs gives your documentation a jumpstart with a responsive Jekyll theme that is easily customizable and hosted on GitHub Pages.</p>
 
@@ -6,9 +6,9 @@
 
 <hr />
 
-<h2 id="getting-started">Getting started</h2>
+<h2 id="in-progress">In Progress</h2>
 
-<h3 id="dependencies">Dependencies</h3>
+<h3 id="blog">Blog</h3>
 
 <p>Just the Docs is built for <a href="https://jekyllrb.com">Jekyll</a>, a static site generator. View the <a href="https://jekyllrb.com/docs/">quick start guide</a> for more information. Just the Docs requires no special plugins and can run on GitHub Pagesâ€™ standard Jekyll compiler. The <a href="https://github.com/jekyll/jekyll-seo-tag">Jekyll SEO Tag plugin</a> is included by default (no need to run any special installation) to inject SEO and open graph metadata on docs pages. For information on how to configure SEO and open graph metadata visit the <a href="https://jekyll.github.io/jekyll-seo-tag/usage/">Jekyll SEO Tag usage guide</a>.</p>
 
