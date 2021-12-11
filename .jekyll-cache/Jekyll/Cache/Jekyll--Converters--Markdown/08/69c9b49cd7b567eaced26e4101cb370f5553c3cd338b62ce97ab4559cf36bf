@@ -1,10 +1,10 @@
-I"6Z<h1 id="elasticsearch-필드-추가2">elasticsearch 필드 추가(2)</h1>
+I"�U<h1 id="elasticsearch-필드-추가2">elasticsearch 필드 추가(2)</h1>
 
 <p>[공통]</p>
 
 <p>기존 데이터 백업을 진행합니다.</p>
 
-<p>스냅샷 백업 방식은 <a href="elasticsearch%20%E1%84%89%E1%85%B3%E1%84%82%E1%85%A2%E1%86%B8%E1%84%89%E1%85%A3%E1%86%BA%20%E1%84%89%E1%85%A2%E1%86%BC%E1%84%89%E1%85%A5%E1%86%BC%20%E1%84%87%E1%85%A9%E1%86%A8%E1%84%8B%E1%85%AF%E1%86%AB%20%E1%84%89%E1%85%A1%E1%86%A8%E1%84%8C%E1%85%A6%20ab7073fe4fe247b19f91220552094a42.md">“여기”</a> 참고하세요.</p>
+<p>스냅샷 백업 방식은 <a href="../elasticsearchsnapshot.md">“여기”</a> 참고하세요.</p>
 
 <h1 id="alias를-활용하는-방식">[Alias를 활용하는 방식]</h1>
 
@@ -144,7 +144,7 @@
 </span><span class="err">GET</span><span class="w"> </span><span class="err">attic_ticket_new/_count</span><span class="w">
 </span></code></pre></div></div>
 
-<p><img src="elasticsearch%20%E1%84%91%E1%85%B5%E1%86%AF%E1%84%83%E1%85%B3%20%E1%84%8E%E1%85%AE%E1%84%80%E1%85%A1(2)%20097db9eacdb549b2b7506615699dc670/Untitled%203.png" alt="elasticsearch%20%E1%84%91%E1%85%B5%E1%86%AF%E1%84%83%E1%85%B3%20%E1%84%8E%E1%85%AE%E1%84%80%E1%85%A1(2)%20097db9eacdb549b2b7506615699dc670/Untitled%203.png" /></p>
+<p><img src="../img/els3-3.png" alt="../img/els3-3.png" /></p>
 
 <h2 id="6-새로-추가한-인덱스에-기존-인덱스의-alias로-교체해야한다">6. 새로 추가한 인덱스에 기존 인덱스의 alias로 교체해야한다.</h2>
 
@@ -187,7 +187,7 @@
 <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">GET</span><span class="w"> </span><span class="err">/_alias</span><span class="w">
 </span></code></pre></div></div>
 
-<p><img src="elasticsearch%20%E1%84%91%E1%85%B5%E1%86%AF%E1%84%83%E1%85%B3%20%E1%84%8E%E1%85%AE%E1%84%80%E1%85%A1(2)%20097db9eacdb549b2b7506615699dc670/Untitled%204.png" alt="elasticsearch%20%E1%84%91%E1%85%B5%E1%86%AF%E1%84%83%E1%85%B3%20%E1%84%8E%E1%85%AE%E1%84%80%E1%85%A1(2)%20097db9eacdb549b2b7506615699dc670/Untitled%204.png" /></p>
+<p><img src="../img/els3-4.png" alt="../img/els3-4.png" /></p>
 
 <h2 id="7-검증">7. 검증</h2>
 
@@ -209,16 +209,13 @@
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div></div>
 
-<p><img src="elasticsearch%20%E1%84%91%E1%85%B5%E1%86%AF%E1%84%83%E1%85%B3%20%E1%84%8E%E1%85%AE%E1%84%80%E1%85%A1(2)%20097db9eacdb549b2b7506615699dc670/Untitled%205.png" alt="elasticsearch%20%E1%84%91%E1%85%B5%E1%86%AF%E1%84%83%E1%85%B3%20%E1%84%8E%E1%85%AE%E1%84%80%E1%85%A1(2)%20097db9eacdb549b2b7506615699dc670/Untitled%205.png" /></p>
+<p><img src="../img/els3-5.png" alt="../img/els3-5.png" /></p>
 
 <ul>
   <li>검색 결과의 _index가 새로 생성한 인덱스명인지 확인</li>
 </ul>
 
-<blockquote>
-  <p>참고</p>
-
-</blockquote>
+<h2 id="참고">참고</h2>
 
 <p><a href="https://www.elastic.co/kr/blog/changing-mapping-with-zero-downtime">https://www.elastic.co/kr/blog/changing-mapping-with-zero-downtime</a></p>
 :ET
