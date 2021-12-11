@@ -1,0 +1,88 @@
+I"<h1 id="lets-encrypt-with-window-springboot">let’s encrypt with (window, springboot)</h1>
+
+<p>로컬(윈도우)에서 springboot 어플리케이션에 ssl을 추가해서 테스트해볼 일이 생겼다.</p>
+
+<p>무료 ssl로 let’s encrypt를 활용하기로 하고 설치 및 적용해봄</p>
+
+<ol>
+  <li>let’s encrypt는 certbot을 이용해서 설치하면 된다.</li>
+  <li>아래 페이지로 이동해서 certbot install파일을 내려받는다. (<a href="https://dl.eff.org/certbot-beta-installer-win32.exe">다운로드</a>)</li>
+</ol>
+
+<p><a href="https://certbot.eff.org/instructions?ws=other&amp;os=windows">Certbot Instructions</a></p>
+
+<ol>
+  <li>관리자 권한으로 cmd창을 열고 아래 명령어를 쳐서 잘 설치된건지 확인한다.</li>
+</ol>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>C:<span class="se">\W</span>INDOWS<span class="se">\s</span>ystem32&gt; certbot <span class="nt">--help</span>
+</code></pre></div></div>
+
+<ol>
+  <li>dns 등록</li>
+</ol>
+
+<p>freenom 이용함 (무료 dns)</p>
+
+<ol>
+  <li>dns까지 준비되었다면, ssl을 생성한다. (dns가 없다면, 중간에 실패난다.)</li>
+</ol>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>C:<span class="se">\W</span>INDOWS<span class="se">\s</span>ystem32&gt;certbot certonly <span class="nt">--standalone</span>
+Saving debug log to C:<span class="se">\C</span>ertbot<span class="se">\l</span>og<span class="se">\l</span>etsencrypt.log
+Please enter the domain name<span class="o">(</span>s<span class="o">)</span> you would like on your certificate <span class="o">(</span>comma and/or
+space separated<span class="o">)</span> <span class="o">(</span>Enter <span class="s1">'c'</span> to cancel<span class="o">)</span>: ~~~~~.~~~~ <span class="o">(</span>dns주소 입력<span class="o">)</span>
+Requesting a certificate <span class="k">for</span> ~~~~~.~~~~
+
+Successfully received certificate.
+Certificate is saved at: C:<span class="se">\C</span>ertbot<span class="se">\l</span>ive<span class="se">\~</span>~~~~.~~~~fullchain.pem
+Key is saved at:         C:<span class="se">\C</span>ertbot<span class="se">\l</span>ive<span class="se">\~</span>~~~~.~~~~<span class="se">\p</span>rivkey.pem
+This certificate expires on 2022-02-17.
+These files will be updated when the certificate renews.
+Certbot has <span class="nb">set </span>up a scheduled task to automatically renew this certificate <span class="k">in </span>the background.
+</code></pre></div></div>
+
+<p>참조) 자세한 내용은 아래 블로그 참고</p>
+
+<p><a href="https://galid1.tistory.com/612">SpringBoot - Let’s Encrypt로 무료 SSL인증서를 발급받아 SpringBoot에 적용하기(Https)</a></p>
+
+<ol>
+  <li>생성한 ssl을 윈도우 폴더에 위치시키고 yml파일을 수정한다.</li>
+</ol>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">server</span><span class="pi">:</span>
+  <span class="na">port</span><span class="pi">:</span> <span class="m">19010</span>
+  <span class="na">ssl</span><span class="pi">:</span>
+        <span class="na">enabled</span><span class="pi">:</span> <span class="no">true</span>
+        <span class="na">key-store</span><span class="pi">:</span> <span class="s">~~~.jks</span>
+        <span class="na">key-store-type</span><span class="pi">:</span> <span class="s2">"</span><span class="s">JKS"</span> <span class="s">또는 "PKCS12" 지정</span> 
+        <span class="na">key-store-password</span><span class="pi">:</span> <span class="s">~~~~~~~~ 인증서 암호</span>
+        <span class="na">key-alias</span><span class="pi">:</span> <span class="s">선택항목으로 alias또는 CN명</span>
+        <span class="na">trust-store</span><span class="pi">:</span> <span class="s">선택항목</span>
+        <span class="na">trust-store-password</span><span class="pi">:</span> <span class="s">선택항목</span>
+</code></pre></div></div>
+
+<ol>
+  <li>
+    <p>그리고 @SpringBootApplication파일을 run시킨다.</p>
+  </li>
+  <li>
+    <p>내부망에 있다보니, lte로 테스트했을때, 유효한 인증서로 보였는데, line developers의 webhook url로 등록하고 verify하니까 아래 에러가 발생했다.</p>
+  </li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>An SSL connection error occurred. 
+Confirm that your webhook URL uses HTTPS and has an SSL/TLS certificate issued by 
+a root certification authority that's widely trusted by most browsers
+</code></pre></div></div>
+
+<p>뭔가 유효하지 않은 느낌이다.</p>
+
+<ol>
+  <li>
+    <p>인증서 유효성 체크사이트(<a href="https://www.digicert.com/help/">https://www.digicert.com/help/</a>) 에서 체크해본다. —&gt; 유효하지 않다고 나옴.</p>
+  </li>
+  <li>브라우저에서 ip로 호출해보니 “ERR_CERT_COMMON_NAME_INVALID”라고 나온다. —&gt; 발급대상과 일치하지 않다는 에러라고 한다.</li>
+  <li>포트를 19010에서 443으로 변경하고 다시 digicert에서 검사돌려보니 “TLS Certificate is not trusted” 라고 나온다. —&gt; 인증서 체인을 잘못 건것으로 keytool -list -v -keystore keystore.jks실행시켜서 인증서 개수가 3개 인지 확인한다.</li>
+</ol>
+:ET
