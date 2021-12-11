@@ -1,0 +1,21 @@
+I"�<h1 id="keycloak-적용-검토">Keycloak 적용 검토</h1>
+
+<p>검토 기간 : 2020.03 ~ 2020.05</p>
+
+<p>검토 내용</p>
+
+<ol>
+  <li>keycloak 사용 및 분석</li>
+  <li>keycloak 적용시 장단점</li>
+  <li>기타 제약사항</li>
+  <li>결과적으로 자체 개발할 것인지 keycloak을 적용할 것인지</li>
+</ol>
+
+<p>검토 결과</p>
+
+<ul>
+  <li>검토 결과 보고서 참고</li>
+</ul>
+
+<p><a href="Keycloak%20%E1%84%8C%E1%85%A5%E1%86%A8%E1%84%8B%E1%85%AD%E1%86%BC%20%E1%84%80%E1%85%A5%E1%86%B7%E1%84%90%E1%85%A9%2017d649f5fb444927aa43bf99e0417df3/Keycloak_poc%E1%84%80%E1%85%A7%E1%86%AF%E1%84%80%E1%85%AA%E1%84%87%E1%85%A9%E1%84%80%E1%85%A9%E1%84%89%E1%85%A5.zip">Keycloak_poc결과보고서.zip</a></p>
+:ET

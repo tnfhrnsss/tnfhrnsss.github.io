@@ -629,564 +629,588 @@
     "url": "http://localhost:4000/docs/sub-projects/kakao_vision_api_test/",
     "relUrl": "/docs/sub-projects/kakao_vision_api_test/"
   },"105": {
+    "doc": "Keycloak",
+    "title": "Keycloak 적용 검토",
+    "content": "검토 기간 : 2020.03 ~ 2020.05 . 검토 내용 . | keycloak 사용 및 분석 | keycloak 적용시 장단점 | 기타 제약사항 | 결과적으로 자체 개발할 것인지 keycloak을 적용할 것인지 | . 검토 결과 . | 검토 결과 보고서 참고 | . Keycloak_poc결과보고서.zip . ",
+    "url": "http://localhost:4000/docs/sub-projects/keyclock/#keycloak-%EC%A0%81%EC%9A%A9-%EA%B2%80%ED%86%A0",
+    "relUrl": "/docs/sub-projects/keyclock/#keycloak-적용-검토"
+  },"106": {
+    "doc": "Keycloak",
+    "title": "Keycloak",
+    "content": " ",
+    "url": "http://localhost:4000/docs/sub-projects/keyclock/",
+    "relUrl": "/docs/sub-projects/keyclock/"
+  },"107": {
     "doc": "Labels",
     "title": "Labels",
     "content": "Use labels as a way to add an additional mark to a section of your docs. Labels come in a few colors. By default, labels will be blue. Default label . Blue label . Stable . New release . Coming soon . Deprecated . Default label {: .label } Blue label {: .label .label-blue } Stable {: .label .label-green } New release {: .label .label-purple } Coming soon {: .label .label-yellow } Deprecated {: .label .label-red } . ",
     "url": "http://localhost:4000/docs/ui-components/labels/",
     "relUrl": "/docs/ui-components/labels/"
-  },"106": {
+  },"108": {
     "doc": "Layout",
     "title": "Layout Utilities",
     "content": " ",
     "url": "http://localhost:4000/docs/utilities/layout/#layout-utilities",
     "relUrl": "/docs/utilities/layout/#layout-utilities"
-  },"107": {
+  },"109": {
     "doc": "Layout",
     "title": "Table of contents",
     "content": ". | Spacing | Horizontal Alignment | Vertical Alignment | Display | . ",
     "url": "http://localhost:4000/docs/utilities/layout/#table-of-contents",
     "relUrl": "/docs/utilities/layout/#table-of-contents"
-  },"108": {
+  },"110": {
     "doc": "Layout",
     "title": "Spacing",
     "content": "These spacers are available to use for margins and padding with responsive utility classes. Combine these prefixes with a screen size and spacing scale to use them responsively. | Classname prefix | What it does | . | .m- | margin | . | .mx- | margin-left, margin-right | . | .my- | margin top, margin bottom | . | .mt- | margin-top | . | .mr- | margin-right | . | .mb- | margin-bottom | . | .ml- | margin-left | . | Classname prefix | What it does | . | .p- | padding | . | .px- | padding-left, padding-right | . | .py- | padding top, padding bottom | . | .pt- | padding-top | . | .pr- | padding-right | . | .pb- | padding-bottom | . | .pl- | padding-left | . Spacing values are based on a 1rem = 16px spacing scale, broken down into these units: . | Spacer/suffix | Size in rems | Rem converted to px | . | 1 | 0.25rem | 4px | . | 2 | 0.5rem | 8px | . | 3 | 0.75rem | 12px | . | 4 | 1rem | 16px | . | 5 | 1.5rem | 24px | . | 6 | 2rem | 32px | . | 7 | 2.5rem | 40px | . | 8 | 3rem | 48px | . | auto | auto | auto | . Use mx-auto to horizontally center elements. Examples . In Markdown, use the {: } wrapper to apply custom classes: . This paragraph will have a margin bottom of 1rem/16px at large screens. {: .mb-lg-4 } This paragraph will have 2rem/32px of padding on the right and left at all screen sizes. {: .px-6 } . ",
     "url": "http://localhost:4000/docs/utilities/layout/#spacing",
     "relUrl": "/docs/utilities/layout/#spacing"
-  },"109": {
+  },"111": {
     "doc": "Layout",
     "title": "Horizontal Alignment",
     "content": "| Classname | What it does | . | .float-left | float: left | . | .float-right | float: right | . | .flex-justify-start | justify-content: flex-start | . | .flex-justify-end | justify-content: flex-end | . | .flex-justify-between | justify-content: space-between | . | .flex-justify-around | justify-content: space-around | . Note: any of the flex- classes must be used on a parent element that has d-flex applied to it. ",
     "url": "http://localhost:4000/docs/utilities/layout/#horizontal-alignment",
     "relUrl": "/docs/utilities/layout/#horizontal-alignment"
-  },"110": {
+  },"112": {
     "doc": "Layout",
     "title": "Vertical Alignment",
     "content": "| Classname | What it does | . | .v-align-baseline | vertical-align: baseline | . | .v-align-bottom | vertical-align: bottom | . | .v-align-middle | vertical-align: middle | . | .v-align-text-bottom | vertical-align: text-bottom | . | .v-align-text-top | vertical-align: text-top | . | .v-align-top | vertical-align: top | . ",
     "url": "http://localhost:4000/docs/utilities/layout/#vertical-alignment",
     "relUrl": "/docs/utilities/layout/#vertical-alignment"
-  },"111": {
+  },"113": {
     "doc": "Layout",
     "title": "Display",
     "content": "Display classes aid in adapting the layout of the elements on a page: . | Class |   | . | .d-block | display: block | . | .d-flex | display: flex | . | .d-inline | display: inline | . | .d-inline-block | display: inline-block | . | .d-none | display: none | . Use these classes in conjunction with the responsive modifiers. Examples . In Markdown, use the {: } wrapper to apply custom classes: . This button will be hidden until medium screen sizes: [ A button ](#url) {: .d-none .d-md-inline-block } These headings will be `inline-block`: ### heading 3 {: .d-inline-block } ### heading 3 {: .d-inline-block } . ",
     "url": "http://localhost:4000/docs/utilities/layout/#display",
     "relUrl": "/docs/utilities/layout/#display"
-  },"112": {
+  },"114": {
     "doc": "Layout",
     "title": "Layout",
     "content": " ",
     "url": "http://localhost:4000/docs/utilities/layout/",
     "relUrl": "/docs/utilities/layout/"
-  },"113": {
+  },"115": {
     "doc": "let's encrypt ssl",
     "title": "let’s encrypt with (window, springboot)",
     "content": "로컬(윈도우)에서 springboot 어플리케이션에 ssl을 추가해서 테스트해볼 일이 생겼다. 무료 ssl로 let’s encrypt를 활용하기로 하고 설치 및 적용해봄 . | let’s encrypt는 certbot을 이용해서 설치하면 된다. | 아래 페이지로 이동해서 certbot install파일을 내려받는다. (다운로드) | . Certbot Instructions . | 관리자 권한으로 cmd창을 열고 아래 명령어를 쳐서 잘 설치된건지 확인한다. | . C:\\WINDOWS\\system32&gt; certbot --help . | dns 등록 | . freenom 이용함 (무료 dns) . | dns까지 준비되었다면, ssl을 생성한다. (dns가 없다면, 중간에 실패난다.) | . C:\\WINDOWS\\system32&gt;certbot certonly --standalone Saving debug log to C:\\Certbot\\log\\letsencrypt.log Please enter the domain name(s) you would like on your certificate (comma and/or space separated) (Enter 'c' to cancel): ~~~~~.~~~~ (dns주소 입력) Requesting a certificate for ~~~~~.~~~~ Successfully received certificate. Certificate is saved at: C:\\Certbot\\live\\~~~~~.~~~~fullchain.pem Key is saved at: C:\\Certbot\\live\\~~~~~.~~~~\\privkey.pem This certificate expires on 2022-02-17. These files will be updated when the certificate renews. Certbot has set up a scheduled task to automatically renew this certificate in the background. 참조) 자세한 내용은 아래 블로그 참고 . SpringBoot - Let’s Encrypt로 무료 SSL인증서를 발급받아 SpringBoot에 적용하기(Https) . | 생성한 ssl을 윈도우 폴더에 위치시키고 yml파일을 수정한다. | . server: port: 19010 ssl: enabled: true key-store: ~~~.jks key-store-type: \"JKS\" 또는 \"PKCS12\" 지정 key-store-password: ~~~~~~~~ 인증서 암호 key-alias: 선택항목으로 alias또는 CN명 trust-store: 선택항목 trust-store-password: 선택항목 . | 그리고 @SpringBootApplication파일을 run시킨다. | 내부망에 있다보니, lte로 테스트했을때, 유효한 인증서로 보였는데, line developers의 webhook url로 등록하고 verify하니까 아래 에러가 발생했다. | . An SSL connection error occurred. Confirm that your webhook URL uses HTTPS and has an SSL/TLS certificate issued by a root certification authority that's widely trusted by most browsers . 뭔가 유효하지 않은 느낌이다. | 인증서 유효성 체크사이트(https://www.digicert.com/help/) 에서 체크해본다. —&gt; 유효하지 않다고 나옴. | 브라우저에서 ip로 호출해보니 “ERR_CERT_COMMON_NAME_INVALID”라고 나온다. —&gt; 발급대상과 일치하지 않다는 에러라고 한다. | 포트를 19010에서 443으로 변경하고 다시 digicert에서 검사돌려보니 “TLS Certificate is not trusted” 라고 나온다. —&gt; 인증서 체인을 잘못 건것으로 keytool -list -v -keystore keystore.jks실행시켜서 인증서 개수가 3개 인지 확인한다. | . ",
     "url": "http://localhost:4000/docs/sub-projects/lets_encrypt_ssl/#lets-encrypt-with-window-springboot",
     "relUrl": "/docs/sub-projects/lets_encrypt_ssl/#lets-encrypt-with-window-springboot"
-  },"114": {
+  },"116": {
     "doc": "let's encrypt ssl",
     "title": "let's encrypt ssl",
     "content": " ",
     "url": "http://localhost:4000/docs/sub-projects/lets_encrypt_ssl/",
     "relUrl": "/docs/sub-projects/lets_encrypt_ssl/"
-  },"115": {
+  },"117": {
     "doc": "Code with line numbers",
     "title": "Code snippets with line numbers",
     "content": "The default settings for HTML compression are incompatible with the HTML produced by Jekyll (4.1.1 or earlier) for line numbers from highlighted code – both when using Kramdown code fences and when using Liquid highlight tags. To avoid non-conforming HTML and unsatisfactory layout, HTML compression can be turned off by using the following configuration option: . compress_html: ignore: envs: all . When using Kramdown code fences, line numbers are turned on globally by the following configuration option: . kramdown: syntax_highlighter_opts: block: line_numbers: true . Line numbers can then be suppressed locally using Liquid tags (without the linenos option) instead of fences: . {% highlight some_language %} Some code {% endhighlight %} . ",
     "url": "http://localhost:4000/docs/ui-components/code/line-numbers/#code-snippets-with-line-numbers",
     "relUrl": "/docs/ui-components/code/line-numbers/#code-snippets-with-line-numbers"
-  },"116": {
+  },"118": {
     "doc": "Code with line numbers",
     "title": "Workarounds",
     "content": "To use HTML compression together with line numbers, all highlighted code needs to be wrapped using one of the following workarounds. (The variable name some_var can be changed to avoid clashes; it can also be replaced by code – but note that code=code cannot be removed). Code fences (three backticks) . {% capture some_var %} ```some_language Some code ``` {% endcapture %} {% assign some_var = some_var | markdownify %} {% include fix_linenos.html code=some_var %} . Liquid highlighting . {% capture some_var %} {% highlight some_language linenos %} Some code {% endhighlight %} {% endcapture %} {% include fix_linenos.html code=some_var %} . Credit: The original version of the above workaround was suggested by Dmitry Hrabrov at https://github.com/penibelst/jekyll-compress-html/issues/71#issuecomment-188144901. ",
     "url": "http://localhost:4000/docs/ui-components/code/line-numbers/#workarounds",
     "relUrl": "/docs/ui-components/code/line-numbers/#workarounds"
-  },"117": {
+  },"119": {
     "doc": "Code with line numbers",
     "title": "Examples",
     "content": "✅ Using code fences + workaround (will only show line numbers if enabled globally in _config.yml): . // Javascript code with syntax highlighting in fences var fun = function lang(l) { dateformat.i18n = require('./lang/' + l) return true; } . ✅ Using liquid highlighting + workaround: . | 1 2 3 4 . | # Ruby code with syntax highlighting and fixed line numbers using Liquid GitHubPages::Dependencies.gems.each do |gem, version| s.add_dependency(gem, \"= #{version}\") end . | . ❌ With the default configuration options, the following example illustrates the incorrect formatting arising from the incompatibility of HTML compression and the non-conforming HTML produced by Jekyll for line numbers: . | 1 2 3 4 . | # Ruby code with syntax highlighting and unfixed line numbers using Liquid GitHubPages::Dependencies.gems.each do |gem, version| s.add_dependency(gem, \"= #{version}\") end . | . ",
     "url": "http://localhost:4000/docs/ui-components/code/line-numbers/#examples",
     "relUrl": "/docs/ui-components/code/line-numbers/#examples"
-  },"118": {
+  },"120": {
     "doc": "Code with line numbers",
     "title": "Code with line numbers",
     "content": " ",
     "url": "http://localhost:4000/docs/ui-components/code/line-numbers/",
     "relUrl": "/docs/ui-components/code/line-numbers/"
-  },"119": {
+  },"121": {
+    "doc": "Line messaging API 적용 노트",
+    "title": "Line messaging API 적용 노트",
+    "content": ". | webhook 설정 - ssl설정 . | controller작성 . | . 기존 프로젝트에 line 메시징 API만 적용해야하는 환경이라, 라인sdk에서 적용한 스프링버전보다 높은 상황 . 자바는 컴파일은 1.8, . 런타임은 12로 되는 상황 . 간단한 컨트롤러 작성 . @Slf4j @RestController @LineMessageHandler public class LineMessageController { @EventMapping public void handleTextMessageEvent(MessageEvent&lt;TextMessageContent&gt; event) { log.info(\"event: \" + event); final String originalMessageText = event.getMessage().getText(); //return new TextMessage(originalMessageText); } @EventMapping public void handleDefaultMessageEvent(Event event) { System.out.println(\"event: \" + event); } } . 에러1) . 14:34:33.586 010-exec-6 ERROR ineMessageHandlerSupport:217 dispatch Unsupported event type. MessageEvent(replyToken=3406d4539061400ca6d199bc2bad16e6, source=UserSource(userId=Uec5b4b45de71961100290f7a7ff61d0a), message=TextMessageContent(id=15206625437201, text=123, emojis=null, mention=null), timestamp=2021-12-07T05:34:32.441Z, mode=ACTIVE) java.lang.UnsupportedOperationException: Unsupported event type. MessageEvent(replyToken=3406d4539061400ca6d199bc2bad16e6, source=UserSource(userId=Uec5b4b45de71961100290f7a7ff61d0a), message=TextMessageContent(id=15206625437201, text=123, emojis=null, mention=null), timestamp=2021-12-07T05:34:32.441Z, mode=ACTIVE) at com.linecorp.bot.spring.boot.support.LineMessageHandlerSupport.lambda$dispatchInternal$6(LineMessageHandlerSupport.java:226) at java.util.Optional.orElseThrow(Optional.java:290) at com.linecorp.bot.spring.boot.support.LineMessageHandlerSupport.dispatchInternal(LineMessageHandlerSupport.java:226) at com.linecorp.bot.spring.boot.support.LineMessageHandlerSupport.dispatch(LineMessageHandlerSupport.java:213) at com.linecorp.bot.spring.boot.support.LineMessageHandlerSupport.lambda$callback$4(LineMessageHandlerSupport.java:206) at java.util.ArrayList.forEach(ArrayList.java:1259) at com.linecorp.bot.spring.boot.support.LineMessageHandlerSupport.callback(LineMessageHandlerSupport.java:205) at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) at java.lang.reflect.Method.invoke(Method.java:498) at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105) at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878) at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792) at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) at javax.servlet.http.HttpServlet.service(HttpServlet.java:665) at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) at javax.servlet.http.HttpServlet.service(HttpServlet.java:750) at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) at brave.servlet.TracingFilter.doFilter(TracingFilter.java:68) at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) at brave.servlet.TracingFilter.doFilter(TracingFilter.java:87) at org.springframework.cloud.sleuth.instrument.web.LazyTracingFilter.doFilter(TraceWebServletAutoConfiguration.java:141) at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:97) at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707) at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) at java.lang.Thread.run(Thread.java:748) . 분석1) springboot로 띄울때, 디버깅해보면, LineMessageHandler를 선언한 클래스는 스프링에 등록되어 있지만, ‘@EventMapping을 선언한 메소드는 찾지 못하는 문제 발생 . 시도1) @SpringBootApplication(scanBasePackages = “~~~~”)가 기존 프로젝트에 추가된 상황이였는데, scan대상이 잘못되고 있는 것인가 해서, scanBasePackages를 제거하고 올리면 성공 . 하지만 scanBasePackages 설정은 다른 컨테이너와의 상속문제로 반드시 필요한 설정이라 뺄 수가 없음 . 시도2) 라인sdk의 echo를 다시 유심히 봤다. 차이는 @RestController뿐. @RestController를 제거해보니 성공 . 정리는 간단했지만, spring 버전차이를 중심으로 디버깅하다보니 삽질이 길었다. 문제는 @RestController 중복선언으로 보인다. LineMessageHandlerSupport.java내용을 보면 거기에도 @RestController를 자체적으로 선언하고 있다. @Slf4j @RestController @Import(ReplyByReturnValueConsumer.Factory.class) @ConditionalOnProperty(name = \"line.bot.handler.enabled\", havingValue = \"true\", matchIfMissing = true) public class LineMessageHandlerSupport { . 해당 파일의 주석으로도 되어있다. class에는 @LineMessageHandler를 method에는 @EventMappinig을 선언하라고… . ",
+    "url": "http://localhost:4000/docs/sub-projects/line_messaging/",
+    "relUrl": "/docs/sub-projects/line_messaging/"
+  },"122": {
+    "doc": "Liquibase",
+    "title": "Liquibase",
+    "content": "검토 배경 . | 사이트 마이그레이션을 용이하게 하려면? | 수동으로 쿼리를 작성하게 되면, 누락되는 항목도 생기고, 버그도 발생 | . liquibase 주요 기능 . | change log | tracking work | . 검토 결과 . Q1. data diff가 가능한가? . | json data가 저장된 컬럼 비교가 가능한가? | . A1. | 자동으로 비교할 수 없고, liquibase db table에 변경이력을 쌓아야만 이력추적을 통해 가능 | 그 외에 다른 database object들에 대한 diff는 이력으로 쌓지 않아도 모두 가능 | ./liquibase --outputFile=mydiff.txt --driver=com.mysql.jdbc.Driver --classpath=lib/mysql-connector-java-8.0.25.jar --url=\"jdbc:mysql://localhost:3306/db1?serverTimezone=Asia/Seoul&amp;characterEncoding=UTF-8\" --username=root --password=password --referenceUrl=\"jdbc:mysql://localhost:3306/db2?serverTimezone=Asia/Seoul&amp;characterEncoding=UTF-8\" --referenceUsername=root --referencePassword=password -diffTypes=data diff . [mydiff.txt] Reference Database: root@localhost @ jdbc:mysql://localhost:3306/db2?serverTimezone=Asia/Seoul&amp;characterEncoding=UTF-8 (Default Schema: db2) Comparison Database: root@localhost @ jdbc:mysql://localhost:3306/db1?serverTimezone=Asia/Seoul&amp;characterEncoding=UTF-8 (Default Schema: db1) Compared Schemas: db2 -&gt; db1 Product Name: EQUAL Product Version: EQUAL Missing Catalog(s): NONE Unexpected Catalog(s): NONE Changed Catalog(s): NONE Missing Column(s): db2.mocha_survey_questionnaire.C_ACTIVE db2.mocha_survey.C_MESSAGE Unexpected Column(s): db1.mocha_knowledge.C_ACCESS_TYPE db1.mocha_removed_team.C_ALIAS Changed Column(s): db2.mocha_survey_response.C_CREATED_AT order changed from '5' to '4' db2.mocha_survey.C_ENABLED nullable changed from 'false' to 'true' order changed from '6' to '8' Missing Foreign Key(s): NONE Unexpected Foreign Key(s): NONE Changed Foreign Key(s): NONE Missing Index(s): NONE Unexpected Index(s): NONE Changed Index(s): NONE Missing Primary Key(s): NONE Unexpected Primary Key(s): NONE Changed Primary Key(s): NONE Missing Sequence(s): NONE Unexpected Sequence(s): NONE Changed Sequence(s): NONE Missing Table(s): mocha_survey_questionnaire mocha_survey_restrict Unexpected Table(s): crema_active_kakao Changed Table(s): NONE Missing Unique Constraint(s): NONE Unexpected Unique Constraint(s): NONE Changed Unique Constraint(s): NONE Missing View(s): NONE Unexpected View(s): NONE Changed View(s): NONE . 활용 방법 . | 제품의 버전별 DB이력관리가 필요하다면, git log를 변경이력으로 등록하게 해서 활용하는 방법을 생각해볼 수 있다. | . ",
+    "url": "http://localhost:4000/docs/sub-projects/liquibase/",
+    "relUrl": "/docs/sub-projects/liquibase/"
+  },"123": {
     "doc": "Lists",
     "title": "Lists",
     "content": " ",
     "url": "http://localhost:4000/docs/ui-components/lists/",
     "relUrl": "/docs/ui-components/lists/"
-  },"120": {
+  },"124": {
     "doc": "Lists",
     "title": "Table of contents",
     "content": ". | Unordered list | Ordered list | Task list | Definition list | . Most lists can be rendered with pure Markdown. ",
     "url": "http://localhost:4000/docs/ui-components/lists/#table-of-contents",
     "relUrl": "/docs/ui-components/lists/#table-of-contents"
-  },"121": {
+  },"125": {
     "doc": "Lists",
     "title": "Unordered list",
     "content": ". | Item 1 | Item 2 | Item 3 | . or . | Item 1 | Item 2 | Item 3 | . - Item 1 - Item 2 - Item 3 _or_ * Item 1 * Item 2 * Item 3 . ",
     "url": "http://localhost:4000/docs/ui-components/lists/#unordered-list",
     "relUrl": "/docs/ui-components/lists/#unordered-list"
-  },"122": {
+  },"126": {
     "doc": "Lists",
     "title": "Ordered list",
     "content": ". | Item 1 | Item 2 | Item 3 | . 1. Item 1 1. Item 2 1. Item 3 . ",
     "url": "http://localhost:4000/docs/ui-components/lists/#ordered-list",
     "relUrl": "/docs/ui-components/lists/#ordered-list"
-  },"123": {
+  },"127": {
     "doc": "Lists",
     "title": "Task list",
     "content": ". | hello, this is a todo item | hello, this is another todo item | goodbye, this item is done | . - [ ] hello, this is a todo item - [ ] hello, this is another todo item - [x] goodbye, this item is done . ",
     "url": "http://localhost:4000/docs/ui-components/lists/#task-list",
     "relUrl": "/docs/ui-components/lists/#task-list"
-  },"124": {
+  },"128": {
     "doc": "Lists",
     "title": "Definition list",
     "content": "Definition lists require HTML syntax and aren’t supported with the GitHub Flavored Markdown compiler. Name Godzilla Born 1952 Birthplace Japan Color Green &lt;dl&gt; &lt;dt&gt;Name&lt;/dt&gt; &lt;dd&gt;Godzilla&lt;/dd&gt; &lt;dt&gt;Born&lt;/dt&gt; &lt;dd&gt;1952&lt;/dd&gt; &lt;dt&gt;Birthplace&lt;/dt&gt; &lt;dd&gt;Japan&lt;/dd&gt; &lt;dt&gt;Color&lt;/dt&gt; &lt;dd&gt;Green&lt;/dd&gt; &lt;/dl&gt; . ",
     "url": "http://localhost:4000/docs/ui-components/lists/#definition-list",
     "relUrl": "/docs/ui-components/lists/#definition-list"
-  },"125": {
+  },"129": {
     "doc": "Mooc",
     "title": "Mooc",
     "content": " ",
     "url": "http://localhost:4000/docs/mooc",
     "relUrl": "/docs/mooc"
-  },"126": {
+  },"130": {
     "doc": "Msa",
     "title": "Msa",
     "content": " ",
     "url": "http://localhost:4000/docs/msa",
     "relUrl": "/docs/msa"
-  },"127": {
+  },"131": {
     "doc": "Navigation Structure",
     "title": "Navigation Structure",
     "content": ". | Main navigation | Ordering pages | Excluding pages | Pages with children . | Child pages | Auto-generating Table of Contents | Children with children | . | Auxiliary Links | In-page navigation with Table of Contents . | Collapsible Table of Contents | . | . ",
     "url": "http://localhost:4000/docs/navigation-structure/",
     "relUrl": "/docs/navigation-structure/"
-  },"128": {
+  },"132": {
     "doc": "Navigation Structure",
     "title": "Main navigation",
     "content": "The main navigation for your Just the Docs site is on the left side of the page at large screens and on the top (behind a tap) on small screens. The main navigation can be structured to accommodate a multi-level menu system (pages with children and grandchildren). By default, all pages will appear as top level pages in the main nav unless a parent page is defined (see Pages with Children). ",
     "url": "http://localhost:4000/docs/navigation-structure/#main-navigation",
     "relUrl": "/docs/navigation-structure/#main-navigation"
-  },"129": {
+  },"133": {
     "doc": "Navigation Structure",
     "title": "Ordering pages",
     "content": "To specify a page order, you can use the nav_order parameter in your pages’ YAML front matter. Example . --- layout: default title: Customization nav_order: 4 --- . The parameter values determine the order of the top-level pages, and of child pages with the same parent. You can reuse the same parameter values (e.g., integers starting from 1) for the child pages of different parents. The parameter values can be numbers (integers, floats) and/or strings. When you omit nav_order parameters, they default to the titles of the pages, which are ordered alphabetically. Pages with numerical nav_order parameters always come before those with strings or default nav_order parameters. If you want to make the page order independent of the page titles, you can set explicit nav_order parameters on all pages. By default, all Capital letters come before all lowercase letters; you can add nav_sort: case_insensitive in the configuration file to ignore the case. Enclosing strings in quotation marks is optional. Note for users of previous versions: nav_sort: case_insensitive previously affected the ordering of numerical nav_order parameters: e.g., 10 came before 2. Also, all pages with explicit nav_order parameters previously came before all pages with default parameters. Both were potentially confusing, and they have now been eliminated. ",
     "url": "http://localhost:4000/docs/navigation-structure/#ordering-pages",
     "relUrl": "/docs/navigation-structure/#ordering-pages"
-  },"130": {
+  },"134": {
     "doc": "Navigation Structure",
     "title": "Excluding pages",
     "content": "For specific pages that you do not wish to include in the main navigation, e.g. a 404 page or a landing page, use the nav_exclude: true parameter in the YAML front matter for that page. Example . --- layout: default title: 404 nav_exclude: true --- . The nav_exclude parameter does not affect the auto-generating list of child pages, which you can use to access pages excluded from the main navigation. Pages with no title are automatically excluded from the navigation. ",
     "url": "http://localhost:4000/docs/navigation-structure/#excluding-pages",
     "relUrl": "/docs/navigation-structure/#excluding-pages"
-  },"131": {
+  },"135": {
     "doc": "Navigation Structure",
     "title": "Pages with children",
     "content": "Sometimes you will want to create a page with many children (a section). First, it is recommended that you keep pages that are related in a directory together… For example, in these docs, we keep all of the written documentation in the ./docs directory and each of the sections in subdirectories like ./docs/ui-components and ./docs/utilities. This gives us an organization like: . +-- .. |-- (Jekyll files) |-- docs |-- ui-components | |-- index.md (parent page) | |-- buttons.md | |-- code.md | |-- labels.md | |-- tables.md | +-- typography.md | |-- utilities | |-- index.md (parent page) | |-- color.md | |-- layout.md | |-- responsive-modifiers.md | +-- typography.md | |-- (other md files, pages with no children) | +-- .. |-- (Jekyll files) +-- .. On the parent pages, add this YAML front matter parameter: . | has_children: true (tells us that this is a parent page) | . Example . --- layout: default title: UI Components nav_order: 2 has_children: true --- . Here we’re setting up the UI Components landing page that is available at /docs/ui-components, which has children and is ordered second in the main nav. Child pages . On child pages, simply set the parent: YAML front matter to whatever the parent’s page title is and set a nav order (this number is now scoped within the section). Example . --- layout: default title: Buttons parent: UI Components nav_order: 2 --- . The Buttons page appears as a child of UI Components and appears second in the UI Components section. Auto-generating Table of Contents . By default, all pages with children will automatically append a Table of Contents which lists the child pages after the parent page’s content. To disable this auto Table of Contents, set has_toc: false in the parent page’s YAML front matter. Example . --- layout: default title: UI Components nav_order: 2 has_children: true has_toc: false --- . Children with children . Child pages can also have children (grandchildren). This is achieved by using a similar pattern on the child and grandchild pages. | Add the has_children attribute to the child | Add the parent and grand_parent attribute to the grandchild | . Example . --- layout: default title: Buttons parent: UI Components nav_order: 2 has_children: true --- . --- layout: default title: Buttons Child Page parent: Buttons grand_parent: UI Components nav_order: 1 --- . This would create the following navigation structure: . +-- .. |-- UI Components |-- .. | |-- Buttons | |-- Button Child Page | |-- .. | +-- .. ",
     "url": "http://localhost:4000/docs/navigation-structure/#pages-with-children",
     "relUrl": "/docs/navigation-structure/#pages-with-children"
-  },"132": {
+  },"136": {
     "doc": "Navigation Structure",
     "title": "Auxiliary Links",
     "content": "To add auxiliary links to your site (in the upper right on all pages), add it to the aux_links configuration option in your site’s _config.yml file. Example . # Aux links for the upper right navigation aux_links: \"Just the Docs on GitHub\": - \"//github.com/pmarsceill/just-the-docs\" . ",
     "url": "http://localhost:4000/docs/navigation-structure/#auxiliary-links",
     "relUrl": "/docs/navigation-structure/#auxiliary-links"
-  },"133": {
+  },"137": {
     "doc": "Navigation Structure",
     "title": "In-page navigation with Table of Contents",
     "content": "To generate a Table of Contents on your docs pages, you can use the {:toc} method from Kramdown, immediately after an &lt;ol&gt; in Markdown. This will automatically generate an ordered list of anchor links to various sections of the page based on headings and heading levels. There may be occasions where you’re using a heading and you don’t want it to show up in the TOC, so to skip a particular heading use the {: .no_toc } CSS class. Example . # Navigation Structure {: .no_toc } ## {: .no_toc .text-delta } 1. TOC {:toc} . This example skips the page name heading (#) from the TOC, as well as the heading for the Table of Contents itself (##) because it is redundant, followed by the table of contents itself. To get an unordered list, replace 1. TOC above by - TOC. Collapsible Table of Contents . The Table of Contents can be made collapsible using the &lt;details&gt; and &lt;summary&gt; elements , as in the following example. The attribute open (expands the Table of Contents by default) and the styling with {: .text-delta } are optional. &lt;details open markdown=\"block\"&gt; &lt;summary&gt; &lt;/summary&gt; {: .text-delta } 1. TOC {:toc} &lt;/details&gt; . The result is shown at the top of this page ({:toc} can be used only once on each page). ",
     "url": "http://localhost:4000/docs/navigation-structure/#in-page-navigation-with-table-of-contents",
     "relUrl": "/docs/navigation-structure/#in-page-navigation-with-table-of-contents"
-  },"134": {
+  },"138": {
     "doc": "기타",
     "title": "오버로딩 vs 가변 인수",
     "content": ". | java9의 컬렉션 API 중 List 인터페이스에서 List.of의 오버로드 메소드들이 존재하는 이유 | . → 오버로드 말고 static List of(E... elements) 라고 선언할 수 있었음에도 사용하지 않은 이유 . → 내부적으로 가변 인수는 추가배열을 할당해서 리스트로 감싼다. → 이렇게 되면, 가변인수로 받은 배열을 할당 → 초기화 → gc까지 실행해야하는 비용이 필요하게 된다. 비슷한 예로 Set.of, Map.of 도 마찬가지 . ",
     "url": "http://localhost:4000/docs/clipping/java/oop_1/#%EC%98%A4%EB%B2%84%EB%A1%9C%EB%94%A9-vs-%EA%B0%80%EB%B3%80-%EC%9D%B8%EC%88%98",
     "relUrl": "/docs/clipping/java/oop_1/#오버로딩-vs-가변-인수"
-  },"135": {
+  },"139": {
     "doc": "기타",
     "title": "객체지향",
     "content": " ",
     "url": "http://localhost:4000/docs/clipping/java/oop_1/#%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5",
     "relUrl": "/docs/clipping/java/oop_1/#객체지향"
-  },"136": {
+  },"140": {
     "doc": "기타",
     "title": ":: 디미터의 법칙 (Law of Demeter)",
     "content": "디미터 법칙은 객체 O의 메소드 m은 다음의 객체들의 타입의 메소드만 호출해야 한다는 법칙이다. | O 객체 자신의 메소드들. (O itself) . | m의 파라미터로 넘어온 객체들의 메소드들.(M’s parameters) . | m 안에서 생성 되거나 초기화된 객체의 메소드들.(Any objects created/instantiated within M) . | O객체의 직접 소유하는 객체의 메소드들.(O’s direct component objects) . | . 5.O객체의 m에서 접근이 가능한 전역변수의 메소드들.(A global variable, accessible by O, in the scope of M) . class Demeter { private A a; private int func() { return 0; } public void example(B b) { C c = new C(); int f = func(); // 1번의 경우 b.invert(); // 2번의 경우 a = new A(); a.setActive(); // 3번의 경우 c.print(); // 4번의 경우 // Static으로 설정된 Setting 변수가 있다고 가정할때. string UserID = GlobalValues.Setting.getUserID(); //5의 경우 } } . 위의 종류에 해당하는 객체의 메소드들만 호출을 해야한다. 그렇지 않으면 유지보수 측면에서 문제점들이 발생한다. 아래의 예를 보면, . objectA.getObjectB().doSomething(); . objectA.getObjectB().getObjectC().doSomething(); . 출처: . https://hongjinhyeon.tistory.com/138 . ",
     "url": "http://localhost:4000/docs/clipping/java/oop_1/#-%EB%94%94%EB%AF%B8%ED%84%B0%EC%9D%98-%EB%B2%95%EC%B9%99-law-of-demeter",
     "relUrl": "/docs/clipping/java/oop_1/#-디미터의-법칙-law-of-demeter"
-  },"137": {
+  },"141": {
     "doc": "기타",
     "title": "기타",
     "content": " ",
     "url": "http://localhost:4000/docs/clipping/java/oop_1/",
     "relUrl": "/docs/clipping/java/oop_1/"
-  },"138": {
+  },"142": {
     "doc": "객체지향의 사실과 오해 정리",
     "title": "[객체지향의 사실과 오해] 정리",
     "content": ". | 협력하는 객체들의 공동체 . | 객체지향의 핵심은 클래스가 아니다. 클래스는 협력에 참여하는 객체를 만드는 데 필요한 구현 매커니즘일 뿐이다. | 클래스의 구조와 메서드가 아니라 객체의 역할, 책임, 협력에 집중하라. 객체지향은 객체를 지향하는 것이지 클래스를 지향하는 것이 아니다. | . | 이상한 나라의 객체 . | 객체는 상태를 캡슐 안에 감춰둔 채 외부로 노출하지 않는다. 객체가 외부에 노출하는 것은 행동뿐이며, 외부에서 객체에 접근할 수 있는 유일한 방법 역시 행동뿐이다. 2. | . | . ",
     "url": "http://localhost:4000/docs/clipping/java/oop_fact_c/#%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%9D%98-%EC%82%AC%EC%8B%A4%EA%B3%BC-%EC%98%A4%ED%95%B4-%EC%A0%95%EB%A6%AC",
     "relUrl": "/docs/clipping/java/oop_fact_c/#객체지향의-사실과-오해-정리"
-  },"139": {
+  },"143": {
     "doc": "객체지향의 사실과 오해 정리",
     "title": "객체지향의 사실과 오해 정리",
     "content": " ",
     "url": "http://localhost:4000/docs/clipping/java/oop_fact_c/",
     "relUrl": "/docs/clipping/java/oop_fact_c/"
-  },"140": {
+  },"144": {
     "doc": "Optional 정리",
     "title": "Optional 정리",
     "content": "참조 블로그 : . effective java에서도 말하고 있지만, optional은 API 클라이언트에게 리턴값이 없음을 알려주는 기능에 초점을 맞춰야한다. 검사예외와 비슷한 취지의 쓰임으로 이해하면 된다. 참조 블로그 본문 내용 중 . ",
     "url": "http://localhost:4000/docs/clipping/java/optional/",
     "relUrl": "/docs/clipping/java/optional/"
-  },"141": {
+  },"145": {
     "doc": "Optional 정리",
     "title": ":: orElse(new …) 대신 orElseGet(() → new …)",
     "content": "orElse(new …) 대신 orElseGet(() → new …) 를 사용하도록 설명하는 부분이 있다. 이유는 orElse에 있는 값의 존재유무를 불문하고 무조건 실행되기 때문인데. 아래의 경우는 예외이다. @Slf4j @RequiredArgsConstructor @Service public class KakaoMessageAdapterService { private final List&lt;KakaoMessageAdapterHandler&gt; kakaoMessageAdapterHandlers; private ThirdPartyMessage getThirdPartyMessage(KakaoMessage kakaoMessage) { KakaoMessageAdapterHandler kakaoMessageAdapterHandler = kakaoMessageAdapterHandlers.stream() .filter(handler -&gt; handler.filter(kakaoMessage.getType().getThirdPartyMessageType())) .findFirst() .orElse(kakaoEtcMessageService); return kakaoMessageAdapterHandler.send(kakaoMessage); } } . | flow . | thirdparty messsage type별로 KakaoMessageAdapterHandler를 상속받아서 구현체가 존재한다. | 만약에 특정 type에 구현체가 존재하지 않는다면, kakaoEtcMessageService가 kakaoMessageAdapterHandler의 구현체가 된다. | . | 위의 경우 , filter로 선 체크 후 → findFirst하고 있는데 이미 구현체들을 filter로 통과시키기 때문에 무의미하게 kakaoEtcMessageService를 호출하고 있지 않다. | . ",
     "url": "http://localhost:4000/docs/clipping/java/optional/#-orelsenew--%EB%8C%80%EC%8B%A0-orelseget--new-",
     "relUrl": "/docs/clipping/java/optional/#-orelsenew--대신-orelseget--new-"
-  },"142": {
+  },"146": {
     "doc": "Optional 정리",
     "title": ":: 단지 값을 얻을 목적이라면 Optinal 대신 null 비교",
     "content": "optinal api가 생겼다고, 무조건 wrapping을 한다든지 남용하면 안된다. optional은 비용이 발생하므로 단순 null체크는 null로 하자. ",
     "url": "http://localhost:4000/docs/clipping/java/optional/#-%EB%8B%A8%EC%A7%80-%EA%B0%92%EC%9D%84-%EC%96%BB%EC%9D%84-%EB%AA%A9%EC%A0%81%EC%9D%B4%EB%9D%BC%EB%A9%B4-optinal-%EB%8C%80%EC%8B%A0-null-%EB%B9%84%EA%B5%90",
     "relUrl": "/docs/clipping/java/optional/#-단지-값을-얻을-목적이라면-optinal-대신-null-비교"
-  },"143": {
+  },"147": {
     "doc": "오케스트레이션 vs 코레오그래피",
     "title": "오케스트레이션 vs 코레오그래피",
     "content": "https://happy-coding-day.tistory.com/102?category=896687 . ",
     "url": "http://localhost:4000/docs/patterns/orchestration_vs_%20choreography/",
     "relUrl": "/docs/patterns/orchestration_vs_%20choreography/"
-  },"144": {
+  },"148": {
     "doc": "Patterns",
     "title": "Patterns",
     "content": " ",
     "url": "http://localhost:4000/docs/patterns",
     "relUrl": "/docs/patterns"
-  },"145": {
+  },"149": {
     "doc": "Programming Foundations with Python 후기",
     "title": "Programming Foundations with Python 후기",
     "content": " ",
     "url": "http://localhost:4000/docs/mooc/udacity/python/",
     "relUrl": "/docs/mooc/udacity/python/"
-  },"146": {
+  },"150": {
     "doc": "Programming Foundations with Python 후기",
     "title": "학습후기",
     "content": "파이썬 무식자도 기초를 잡아주는 비기너 강좌입니다. 총 7개의 주제로 이뤄져 있구요. 유다시티의 특징인 퀴즈가 많습니다. 누군가에게 설명하고 캡쳐해서 올리라는 퀴즈도 있습니다… 하지만 꼭 안그래도 됩니다. 저 말고도 많은 이들이 가르칠 사람 없어서, 혼자 학습한 내용을 캡쳐해서 올리기도 합니다. 아니면 블로그에 올리고 그것을 캡쳐해도 괜찮습니다. 어렵지 않게 초심자도 배울수 있는 커리큘럼입니다. 선수학습은 필요없구요. 자바나  OOP에 대한 개념이 있다면 더 빠르게 이해할 수 있을 듯 합니다. ",
     "url": "http://localhost:4000/docs/mooc/udacity/python/#%ED%95%99%EC%8A%B5%ED%9B%84%EA%B8%B0",
     "relUrl": "/docs/mooc/udacity/python/#학습후기"
-  },"147": {
+  },"151": {
     "doc": "Programming Foundations with Python 후기",
     "title": "강의내용 정리",
     "content": "12강. fetch vs axios . ",
     "url": "http://localhost:4000/docs/mooc/udacity/python/#%EA%B0%95%EC%9D%98%EB%82%B4%EC%9A%A9-%EC%A0%95%EB%A6%AC",
     "relUrl": "/docs/mooc/udacity/python/#강의내용-정리"
-  },"148": {
+  },"152": {
     "doc": "Responsive Modifiers",
     "title": "Responsive modifiers",
     "content": "Just the Docs spacing works in conjunction with a variety of modifiers that allow you to target specific screen sizes responsively. Use these in conjunction with spacing and display prefix and suffix classes. | Modifier | Screen size | . | (none) | All screens until the next modifier | . | xs | 320px (20rem) and up | . | sm | 500px (31.25rem) and up | . | md | 740px (46.25rem) and up | . | lg | 1120px (70rem) and up | . | xl | 1400px (87.5rem) and up | . ",
     "url": "http://localhost:4000/docs/utilities/responsive-modifiers/#responsive-modifiers",
     "relUrl": "/docs/utilities/responsive-modifiers/#responsive-modifiers"
-  },"149": {
+  },"153": {
     "doc": "Responsive Modifiers",
     "title": "Responsive Modifiers",
     "content": " ",
     "url": "http://localhost:4000/docs/utilities/responsive-modifiers/",
     "relUrl": "/docs/utilities/responsive-modifiers/"
-  },"150": {
+  },"154": {
     "doc": "Feign Retry",
     "title": "feign retry",
     "content": ". | 전역의 ribbon설정을 안쓰고자 함 | docker의 depends on도 방법 | . healthcheck: test: [“CMD”, “curl”, “-f”, “http://localhost:8040/actuator/health”] interval: 10s timeout: 5s retries: 10 . | feignclient 내부 configuration으로 Retryer를 Bean으로 등록해서 backoff제어한다. | . 참고) . 우아한 feign 적용기 - 우아한형제들 기술 블로그 . ",
     "url": "http://localhost:4000/docs/msa/feign/retry/#feign-retry",
     "relUrl": "/docs/msa/feign/retry/#feign-retry"
-  },"151": {
+  },"155": {
     "doc": "Feign Retry",
     "title": "Feign Retry",
     "content": " ",
     "url": "http://localhost:4000/docs/msa/feign/retry/",
     "relUrl": "/docs/msa/feign/retry/"
-  },"152": {
+  },"156": {
     "doc": "Search",
     "title": "Search",
     "content": " ",
     "url": "http://localhost:4000/docs/search/",
     "relUrl": "/docs/search/"
-  },"153": {
+  },"157": {
     "doc": "Search",
     "title": "Table of contents",
     "content": ". | Enable search in configuration . | Search granularity | Search previews | Search tokenizer | Display URL in search results | Display search button | . | Hiding pages from search | Generate search index when used as a gem | . Just the Docs uses lunr.js to add a client-side search interface powered by a JSON index that Jekyll generates. All search results are shown in an auto-complete style interface (there is no search results page). By default, all generated HTML pages are indexed using the following data points: . | Page title | Page content | Page URL | . ",
     "url": "http://localhost:4000/docs/search/#table-of-contents",
     "relUrl": "/docs/search/#table-of-contents"
-  },"154": {
+  },"158": {
     "doc": "Search",
     "title": "Enable search in configuration",
     "content": "In your site’s _config.yml, enable search: . # Enable or disable the site search # Supports true (default) or false search_enabled: true . Search granularity . Pages are split into sections that can be searched individually. The sections are defined by the headings on the page. Each section is displayed in a separate search result. # Split pages into sections that can be searched individually # Supports 1 - 6, default: 2 search.heading_level: 2 . Search previews . A search result can contain previews that show where the search words are found in the specific section. # Maximum amount of previews per search result # Default: 3 search.previews: 3 # Maximum amount of words to display before a matched word in the preview # Default: 5 search.preview_words_before: 5 # Maximum amount of words to display after a matched word in the preview # Default: 10 search.preview_words_after: 10 . Search tokenizer . The default is for hyphens to separate tokens in search terms: gem-based is equivalent to gem based, matching either word. To allow search for hyphenated words: . # Set the search token separator # Default: /[\\s\\-/]+/ # Example: enable support for hyphenated search words search.tokenizer_separator: /[\\s/]+/ . Display URL in search results . # Display the relative url in search results # Supports true (default) or false search.rel_url: false . Display search button . The search button displays in the bottom right corner of the screen and triggers the search input when clicked. # Enable or disable the search button that appears in the bottom right corner of every page # Supports true or false (default) search.button: true . ",
     "url": "http://localhost:4000/docs/search/#enable-search-in-configuration",
     "relUrl": "/docs/search/#enable-search-in-configuration"
-  },"155": {
+  },"159": {
     "doc": "Search",
     "title": "Hiding pages from search",
     "content": "Sometimes you might have a page that you don’t want to be indexed for the search nor to show up in search results, e.g, a 404 page. To exclude a page from search, add the search_exclude: true parameter to the page’s YAML front matter: . Example . --- layout: default title: Page not found nav_exclude: true search_exclude: true --- . ",
     "url": "http://localhost:4000/docs/search/#hiding-pages-from-search",
     "relUrl": "/docs/search/#hiding-pages-from-search"
-  },"156": {
+  },"160": {
     "doc": "Search",
     "title": "Generate search index when used as a gem",
     "content": "If you use Just the Docs as a remote theme, you do not need the following steps. If you use the theme as a gem, you must initialize the search by running this rake command that comes with just-the-docs: . $ bundle exec just-the-docs rake search:init . This command creates the assets/js/zzzz-search-data.json file that Jekyll uses to create your search index. Alternatively, you can create the file manually with this content. ",
     "url": "http://localhost:4000/docs/search/#generate-search-index-when-used-as-a-gem",
     "relUrl": "/docs/search/#generate-search-index-when-used-as-a-gem"
-  },"157": {
+  },"161": {
     "doc": "Feign을 통해 @SpringQueryMap 사용",
     "title": "feign을 통해 @SpringQueryMap 사용",
     "content": ". ::요구사항 . 고객의 과거 상담 이력을 조회해서 다른 서비스로 전달하는 로직 . :: History API . @RestController @RequestMapping(\"histories\") public class HistoryQueryResource { private final HistoryQueryService historyQueryService; @GetMapping public HistoryList findAll( @SpringQueryMap HistoryQuery historyQuery ) { return historyQueryService.findAll(historyQuery); } } . ::Thirdparty . @FeignClient( contextId = \"HistoryQueryClient\", name = \"api\", configuration = {FeignConfiguration.class, FeignLoggerLevelConfiguration.class}, primary = false ) public interface HistoryQueryClient{ @GetMapping(\"histories\") HistoryList findAll(@SpringQueryMap HistoryQuery historyQuery); } . :: 문제 . | 컨트롤러가 Mapping파라미터로 선언한 HistoryQuery에 ArrayList, Map타입이 아니면 맵핑이 되지 않는 오류발생 | . @Builder @NoArgsConstructor(access = AccessLevel.PRIVATE) @AllArgsConstructor @Getter @ToString public class HistoryQuery implements JsonSerializable { @Builder.Default private int offset = 0; // --&gt; API서버로 맵핑되지 않음 @Builder.Default private int limit = 1; // --&gt; API서버로 맵핑되지 않음 @Builder.Default private IdList channelIds = IdList.empty(); // --&gt; 맵핑ok @Builder.Default private IdList status = IdList.empty(); // --&gt; 맵핑ok @Builder.Default private String customerId = StringUtils.EMPTY; // --&gt; API서버로 맵핑되지 않음 } . :: 문제 . | 호출 URL에는 문제가 없지만, History API 서버에는 offset, limit, customerId가 찍히지 않음 . -&gt; GET http://api/histories?offset=0&amp;status=closed&amp;limit=1 &amp;customerId=tester&amp;channelIds=kakao . | feign doc . | . Spring Cloud OpenFeign . doc을 보면, POJO, Map 모두 지원한다고 되어있지만, 테스트해보니 리스트나 맵이 아니면 안됨 . :: 문제해결 . | Param.Expander를 사용하는 방법 —&gt; 받는 쪽이 array, map이 아니면 이것도 안됨 | . Feign Client does not resolve Query parameter . | API 스펙을 변경하는 방법…. | . ",
     "url": "http://localhost:4000/docs/msa/feign/springQueryMap/#feign%EC%9D%84-%ED%86%B5%ED%95%B4-springquerymap-%EC%82%AC%EC%9A%A9",
     "relUrl": "/docs/msa/feign/springQueryMap/#feign을-통해-springquerymap-사용"
-  },"158": {
+  },"162": {
     "doc": "Feign을 통해 @SpringQueryMap 사용",
     "title": "Feign을 통해 @SpringQueryMap 사용",
     "content": " ",
     "url": "http://localhost:4000/docs/msa/feign/springQueryMap/",
     "relUrl": "/docs/msa/feign/springQueryMap/"
-  },"159": {
+  },"163": {
     "doc": "Sub Projects",
     "title": "Sub Projects",
     "content": " ",
     "url": "http://localhost:4000/docs/sub-projects",
     "relUrl": "/docs/sub-projects"
-  },"160": {
+  },"164": {
     "doc": "Tables",
     "title": "Tables",
     "content": "Tables are responsive by default, allowing wide tables to have a horizontal scroll to access columns outside of the normal viewport. | head1 | head two | three | . | ok | good swedish fish | nice | . | out of stock | good and plenty | nice | . | ok | good oreos | hmm | . | ok | good zoute drop | yumm | . | head1 | head two | three |:-------------|:------------------|:------| ok | good swedish fish | nice | out of stock | good and plenty | nice | ok | good `oreos` | hmm | ok | good `zoute` drop | yumm | . ",
     "url": "http://localhost:4000/docs/ui-components/tables/",
     "relUrl": "/docs/ui-components/tables/"
-  },"161": {
+  },"165": {
     "doc": "점층적 생성자 패턴",
     "title": "점층적 생성자 패턴",
     "content": " ",
     "url": "http://localhost:4000/docs/patterns/telescoping_constructor_pattern/",
     "relUrl": "/docs/patterns/telescoping_constructor_pattern/"
-  },"162": {
+  },"166": {
     "doc": "Tesseract Ocr Study",
     "title": "tesseract ocr 공부",
     "content": "기술조사 ) Tesseract-ocr을 사용 . 순서1) 라이브러리설치에 앞서서, 맥으로 해야하기 때문에 홈브루 설치(https://whitepaek.tistory.com/3) . 순서2) tesseract, tesseract-lang설치 . brew install tesseract . brew install tesseract-lang . 순서3) sudo pip3 install pytesseract . sudo pip3 intall Image . 순서4) 실행한다. peter:~ peter$ tesseract /Users/peter/Downloads/IMG_5814.JPG /Users/peter/Downloads/aaa.txt -l kor . 순서4-1) 또는 파이썬으로 실행한다. import pytessearct . import PIL import Image . print(pytesseract.image_to_string(Image.open('/Users/peter/Downloads/IMG_5814.JPG'), lang='kor')) . 결과1) 별로 좋지 않은 결과 . 이 도 아이티 들으 그도 밸아차 가 소경더 [준공 023 자구 가바바 다자이 이누 그두자구 1611 11\\ 1000 너(|'0&gt;030)40) 이 지 성 지음 . 시도2) 이미지를 rotate시켜본다. &gt;&gt;&gt; im = Image.open('/Users/peter/Downloads/IMG_5814.JPG') &gt;&gt;&gt; img3 = im.rotate(90) &gt;&gt;&gt; print(pytesseract.image_to_string(img3, lang='kor')) . 결과2) 더 안좋음 ㅠㅜ . 몽|? 을 |? |0 도스 사기브 사고 ~ 요일 -………애 : 다 00000 0 디넌낸트이나 조는 [1 ~ 야 오어 1오 \" 0 . 시도3) tesseract의 train된 lang을 추가해본다. https://github.com/tesseract-ocr/tessdata/blob/master/kor.traineddata 에서 다운로드받고, . 받은 데이터파일을 아래에 추가. mac으로 terracert 를 설치한 경우, 추가할 위치는 /usr/local/share/tessdata 이다. 결과3) 첫번째에 비해 달라진걸 모르겠다 ㅠㅜ . 人 還 計生 lane Austen ()%+()&amp;1) 點 『 | 1 도 ~) 人 全 一 人 生 人 加 人 크 ” &gt; 재한 0 블 세 랐 도 기 ||” :( 총 니 . 내 - 올 를 SKIN 7! 올블 이 入 성 지음 . 시도4) 문제를 알았다… 폰트같은 글자 모양이나 길이에 대한 학습이 필요하다는 것을… . 시도5) 이미지를 box파일을 만든담에 https://hello-gg.tistory.com/5 에서처럼 하나씩 불러서 인식을 잡아준다. 그리고 학습 후 기존 학습파일에 add해준다. https://diyworld.tistory.com/114 . ",
     "url": "http://localhost:4000/docs/sub-projects/tesseract_ocr_study/#tesseract-ocr-%EA%B3%B5%EB%B6%80",
     "relUrl": "/docs/sub-projects/tesseract_ocr_study/#tesseract-ocr-공부"
-  },"163": {
+  },"167": {
     "doc": "Tesseract Ocr Study",
     "title": "Tesseract Ocr Study",
     "content": " ",
     "url": "http://localhost:4000/docs/sub-projects/tesseract_ocr_study/",
     "relUrl": "/docs/sub-projects/tesseract_ocr_study/"
-  },"164": {
+  },"168": {
     "doc": "Tolerant reader pattern",
     "title": "tolerant reader pattern",
     "content": " ",
     "url": "http://localhost:4000/docs/patterns/tolerant_reader_pattern/#tolerant-reader-pattern",
     "relUrl": "/docs/patterns/tolerant_reader_pattern/#tolerant-reader-pattern"
-  },"165": {
+  },"169": {
     "doc": "Tolerant reader pattern",
     "title": "Tolerant reader pattern",
     "content": " ",
     "url": "http://localhost:4000/docs/patterns/tolerant_reader_pattern/",
     "relUrl": "/docs/patterns/tolerant_reader_pattern/"
-  },"166": {
+  },"170": {
     "doc": "Type safe heterogeneous container pattern",
     "title": "타입 안전 이종 컨테이너 패턴",
     "content": "type safe heterogeneous container pattern . public class Favorites { public &lt;T&gt; void putFavorite(Class&lt;T&gt; type, T instance); public &lt;T&gt; T getFavorite(Class&lt;T&gt; type); } public static void main(String[] args) { Favorites f = new Favorites(); f.putFavorite(String.class, \"Java\"); f.putFavorite(Integer.class, 0xcafebabe); String favoritesString = f.getFavorite(String.class); } . | Favorites인스턴스는 String이 요청되면 Integer를 반환하는 일이 없기 때문에 타입안전하다고 볼 수 있다. | 일반 적인 맵과 달리 여러가지 타입의 원소를 담을 수 있어서, 타입안전이종 컨테이너라고 한다. | ex) DatabaseRow타입의 Column | . public class Favorites { private Map&lt;Class&lt;?&gt;, Object&gt; favorites = new HashMap&lt;&gt;(); public &lt;T&gt; void putFavorites(Class&lt;T&gt; type, T instance) { favorites.put(Objects.requireNonNull(type), type.cass(instance)); } } . | 타입을 한정시키고 싶다면? . | ex) annotation api | . public &lt;T extends Annotation&gt; T getAnnotation(Class&lt;T&gt; annotationType); static Annotation getAnnotation(AnnotatedElement element, String annotationTypeName) { Class&lt;?&gt; annotationType = null; // 비한정적 타입 토큰 try { annotationType = Class.forName(annotationTypeName); } catch (Exception ex) { throw new IllegalArgumentException(ex); } return element.getAnnotation(annotationType.asSubclass(Annotation.class)); } . | annotationType인수는 한정적 타입 토큰 | . | . ",
     "url": "http://localhost:4000/docs/patterns/typesafe_heterogeneous_container_pattern/#%ED%83%80%EC%9E%85-%EC%95%88%EC%A0%84-%EC%9D%B4%EC%A2%85-%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88-%ED%8C%A8%ED%84%B4",
     "relUrl": "/docs/patterns/typesafe_heterogeneous_container_pattern/#타입-안전-이종-컨테이너-패턴"
-  },"167": {
+  },"171": {
     "doc": "Type safe heterogeneous container pattern",
     "title": "Type safe heterogeneous container pattern",
     "content": " ",
     "url": "http://localhost:4000/docs/patterns/typesafe_heterogeneous_container_pattern/",
     "relUrl": "/docs/patterns/typesafe_heterogeneous_container_pattern/"
-  },"168": {
-    "doc": "Typography",
-    "title": "Typography",
-    "content": " ",
-    "url": "http://localhost:4000/docs/ui-components/typography/",
-    "relUrl": "/docs/ui-components/typography/"
-  },"169": {
-    "doc": "Typography",
-    "title": "Table of contents",
-    "content": ". | Font stack | Responsive type scale | Headings | Body text | Inline elements | Typographic Utilities | . ",
-    "url": "http://localhost:4000/docs/ui-components/typography/#table-of-contents",
-    "relUrl": "/docs/ui-components/typography/#table-of-contents"
-  },"170": {
-    "doc": "Typography",
-    "title": "Font stack",
-    "content": "By default, Just the Docs uses a native system font stack for sans-serif fonts: . system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif . ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz . For monospace type, like code snippets or the &lt;pre&gt; element, Just the Docs uses a native system font stack for monospace fonts: . \"SFMono-Regular\", Menlo, Consolas, Monospace . ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz . ",
-    "url": "http://localhost:4000/docs/ui-components/typography/#font-stack",
-    "relUrl": "/docs/ui-components/typography/#font-stack"
-  },"171": {
-    "doc": "Typography",
-    "title": "Responsive type scale",
-    "content": "Just the Docs uses a responsive type scale that shifts depending on the viewport size. | Selector | Small screen size font-size | Large screen size font-size | . | h1, .text-alpha | 32px | 36px | . | h2, .text-beta | 18px | 24px | . | h3, .text-gamma | 16px | 18px | . | h4, .text-delta | 14px | 16px | . | h5, .text-epsilon | 16px | 18px | . | h6, .text-zeta | 18px | 24px | . | body | 14px | 16px | . ",
-    "url": "http://localhost:4000/docs/ui-components/typography/#responsive-type-scale",
-    "relUrl": "/docs/ui-components/typography/#responsive-type-scale"
   },"172": {
-    "doc": "Typography",
-    "title": "Headings",
-    "content": "Headings are rendered like this: . ",
-    "url": "http://localhost:4000/docs/ui-components/typography/#headings",
-    "relUrl": "/docs/ui-components/typography/#headings"
-  },"173": {
-    "doc": "Typography",
-    "title": "Heading 1",
-    "content": " ",
-    "url": "http://localhost:4000/docs/ui-components/typography/",
-    "relUrl": "/docs/ui-components/typography/"
-  },"174": {
-    "doc": "Typography",
-    "title": "Heading 2",
-    "content": "Heading 3 . Heading 4 . Heading 5 . Heading 6 . # Heading 1 ## Heading 2 ### Heading 3 #### Heading 4 ##### Heading 5 ###### Heading 6 . ",
-    "url": "http://localhost:4000/docs/ui-components/typography/",
-    "relUrl": "/docs/ui-components/typography/"
-  },"175": {
-    "doc": "Typography",
-    "title": "Body text",
-    "content": "Default body text is rendered like this: . Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. ",
-    "url": "http://localhost:4000/docs/ui-components/typography/#body-text",
-    "relUrl": "/docs/ui-components/typography/#body-text"
-  },"176": {
-    "doc": "Typography",
-    "title": "Inline elements",
-    "content": "Text can be bold, italic, or strikethrough. Link to another page. Text can be **bold**, _italic_, or ~~strikethrough~~. [Link to another page](another-page). ",
-    "url": "http://localhost:4000/docs/ui-components/typography/#inline-elements",
-    "relUrl": "/docs/ui-components/typography/#inline-elements"
-  },"177": {
-    "doc": "Typography",
-    "title": "Typographic Utilities",
-    "content": "There are a number of specific typographic CSS classes that allow you to override default styling for font size, font weight, line height, and capitalization. View typography utilities . ",
-    "url": "http://localhost:4000/docs/ui-components/typography/#typographic-utilities",
-    "relUrl": "/docs/ui-components/typography/#typographic-utilities"
-  },"178": {
     "doc": "Typography",
     "title": "Typography Utilities",
     "content": " ",
     "url": "http://localhost:4000/docs/utilities/typography/#typography-utilities",
     "relUrl": "/docs/utilities/typography/#typography-utilities"
-  },"179": {
+  },"173": {
     "doc": "Typography",
     "title": "Table of contents",
     "content": ". | Font size | Font weight | Line height | Text justification | . ",
     "url": "http://localhost:4000/docs/utilities/typography/#table-of-contents",
     "relUrl": "/docs/utilities/typography/#table-of-contents"
-  },"180": {
+  },"174": {
     "doc": "Typography",
     "title": "Font size",
     "content": "Use the .fs-1 - .fs-10 to set an explicit font-size. | Class | Small screen size font-size | Large screen size font-size | . | .fs-1 | 9px | 10px | . | .fs-2 | 11px | 12px | . | .fs-3 | 12px | 14px | . | .fs-4 | 14px | 16px | . | .fs-5 | 16px | 18px | . | .fs-6 | 18px | 24px | . | .fs-7 | 24px | 32px | . | .fs-8 | 32px | 38px | . | .fs-9 | 38px | 42px | . | .fs-10 | 42px | 48px | . Font size 1 . Font size 2 . Font size 3 . Font size 4 . Font size 5 . Font size 6 . Font size 7 . Font size 8 . Font size 9 . Font size 10 . In Markdown, use the `{: }` wrapper to apply custom classes: Font size 1 {: .fs-1 } Font size 2 {: .fs-2 } Font size 3 {: .fs-3 } Font size 4 {: .fs-4 } Font size 5 {: .fs-5 } Font size 6 {: .fs-6 } Font size 7 {: .fs-7 } Font size 8 {: .fs-8 } Font size 9 {: .fs-9 } Font size 10 {: .fs-10 } . ",
     "url": "http://localhost:4000/docs/utilities/typography/#font-size",
     "relUrl": "/docs/utilities/typography/#font-size"
-  },"181": {
+  },"175": {
     "doc": "Typography",
     "title": "Font weight",
     "content": "Use the .fw-300 - .fw-700 to set an explicit font-size. Font weight 300 . Font weight 400 . Font weight 500 . Font weight 700 . In Markdown, use the `{: }` wrapper to apply custom classes: Font weight 300 {: .fw-300 } Font weight 400 {: .fw-400 } Font weight 500 {: .fw-500 } Font weight 700 {: .fw-700 } . ",
     "url": "http://localhost:4000/docs/utilities/typography/#font-weight",
     "relUrl": "/docs/utilities/typography/#font-weight"
-  },"182": {
+  },"176": {
     "doc": "Typography",
     "title": "Line height",
     "content": "Use the lh- classes to explicitly apply line height to text. | Class | line-height value | Notes | . | .lh-0 | 0 |   | . | .lh-tight | 1.1 | Default for headings | . | .lh-default | 1.4 | Default for body (paragraphs) | . No Line height No Line height . Tight line height Tight line height . Default line height Default line height . In Markdown, use the `{: }` wrapper to apply custom classes: No Line height No Line height {: .lh-0 } Tight line height Tight line height {: .lh-tight } Default line height Default line height {: .fh-default } . ",
     "url": "http://localhost:4000/docs/utilities/typography/#line-height",
     "relUrl": "/docs/utilities/typography/#line-height"
-  },"183": {
+  },"177": {
     "doc": "Typography",
     "title": "Text justification",
     "content": "By default text is justified left. Use these text- classes to override settings: . | Class | What it does | . | .text-left | text-align: left | . | .text-right | text-align: right | . | .text-center | text-align: center | . ",
     "url": "http://localhost:4000/docs/utilities/typography/#text-justification",
     "relUrl": "/docs/utilities/typography/#text-justification"
-  },"184": {
+  },"178": {
     "doc": "Typography",
     "title": "Typography",
     "content": " ",
     "url": "http://localhost:4000/docs/utilities/typography/",
     "relUrl": "/docs/utilities/typography/"
+  },"179": {
+    "doc": "Typography",
+    "title": "Typography",
+    "content": " ",
+    "url": "http://localhost:4000/docs/ui-components/typography/",
+    "relUrl": "/docs/ui-components/typography/"
+  },"180": {
+    "doc": "Typography",
+    "title": "Table of contents",
+    "content": ". | Font stack | Responsive type scale | Headings | Body text | Inline elements | Typographic Utilities | . ",
+    "url": "http://localhost:4000/docs/ui-components/typography/#table-of-contents",
+    "relUrl": "/docs/ui-components/typography/#table-of-contents"
+  },"181": {
+    "doc": "Typography",
+    "title": "Font stack",
+    "content": "By default, Just the Docs uses a native system font stack for sans-serif fonts: . system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif . ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz . For monospace type, like code snippets or the &lt;pre&gt; element, Just the Docs uses a native system font stack for monospace fonts: . \"SFMono-Regular\", Menlo, Consolas, Monospace . ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz . ",
+    "url": "http://localhost:4000/docs/ui-components/typography/#font-stack",
+    "relUrl": "/docs/ui-components/typography/#font-stack"
+  },"182": {
+    "doc": "Typography",
+    "title": "Responsive type scale",
+    "content": "Just the Docs uses a responsive type scale that shifts depending on the viewport size. | Selector | Small screen size font-size | Large screen size font-size | . | h1, .text-alpha | 32px | 36px | . | h2, .text-beta | 18px | 24px | . | h3, .text-gamma | 16px | 18px | . | h4, .text-delta | 14px | 16px | . | h5, .text-epsilon | 16px | 18px | . | h6, .text-zeta | 18px | 24px | . | body | 14px | 16px | . ",
+    "url": "http://localhost:4000/docs/ui-components/typography/#responsive-type-scale",
+    "relUrl": "/docs/ui-components/typography/#responsive-type-scale"
+  },"183": {
+    "doc": "Typography",
+    "title": "Headings",
+    "content": "Headings are rendered like this: . ",
+    "url": "http://localhost:4000/docs/ui-components/typography/#headings",
+    "relUrl": "/docs/ui-components/typography/#headings"
+  },"184": {
+    "doc": "Typography",
+    "title": "Heading 1",
+    "content": " ",
+    "url": "http://localhost:4000/docs/ui-components/typography/",
+    "relUrl": "/docs/ui-components/typography/"
   },"185": {
+    "doc": "Typography",
+    "title": "Heading 2",
+    "content": "Heading 3 . Heading 4 . Heading 5 . Heading 6 . # Heading 1 ## Heading 2 ### Heading 3 #### Heading 4 ##### Heading 5 ###### Heading 6 . ",
+    "url": "http://localhost:4000/docs/ui-components/typography/",
+    "relUrl": "/docs/ui-components/typography/"
+  },"186": {
+    "doc": "Typography",
+    "title": "Body text",
+    "content": "Default body text is rendered like this: . Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. ",
+    "url": "http://localhost:4000/docs/ui-components/typography/#body-text",
+    "relUrl": "/docs/ui-components/typography/#body-text"
+  },"187": {
+    "doc": "Typography",
+    "title": "Inline elements",
+    "content": "Text can be bold, italic, or strikethrough. Link to another page. Text can be **bold**, _italic_, or ~~strikethrough~~. [Link to another page](another-page). ",
+    "url": "http://localhost:4000/docs/ui-components/typography/#inline-elements",
+    "relUrl": "/docs/ui-components/typography/#inline-elements"
+  },"188": {
+    "doc": "Typography",
+    "title": "Typographic Utilities",
+    "content": "There are a number of specific typographic CSS classes that allow you to override default styling for font size, font weight, line height, and capitalization. View typography utilities . ",
+    "url": "http://localhost:4000/docs/ui-components/typography/#typographic-utilities",
+    "relUrl": "/docs/ui-components/typography/#typographic-utilities"
+  },"189": {
     "doc": "Udacity",
     "title": "Udacity",
     "content": " ",
     "url": "http://localhost:4000/docs/mooc/udacity/udacity/",
     "relUrl": "/docs/mooc/udacity/udacity/"
-  },"186": {
+  },"190": {
     "doc": "Udemy",
     "title": "Udemy",
     "content": " ",
     "url": "http://localhost:4000/docs/mooc/udemy/udemy/",
     "relUrl": "/docs/mooc/udemy/udemy/"
-  },"187": {
+  },"191": {
     "doc": "UI Components",
     "title": "UI Components",
     "content": "To make it as easy as possible to write documentation in plain Markdown, most UI components are styled using default Markdown elements with few additional CSS classes needed. ",
     "url": "http://localhost:4000/docs/ui-components",
     "relUrl": "/docs/ui-components"
-  },"188": {
+  },"192": {
     "doc": "Utilities",
     "title": "Utilities",
     "content": "CSS utility classes come in handy when you to want to override default styles to create additional whitespace (margins/padding), correct unexpected shifts in font size or weight, add color, or hide (or show) something at a specific screen size. ",
     "url": "http://localhost:4000/docs/utilities",
     "relUrl": "/docs/utilities"
-  },"189": {
+  },"193": {
     "doc": "vuejs-2-the-complete-guide 후기",
     "title": "[Udemy] vuejs-2-the-complete-guide 후기",
     "content": " ",
     "url": "http://localhost:4000/docs/mooc/udemy/vuejs/#udemy-vuejs-2-the-complete-guide-%ED%9B%84%EA%B8%B0",
     "relUrl": "/docs/mooc/udemy/vuejs/#udemy-vuejs-2-the-complete-guide-후기"
-  },"190": {
+  },"194": {
     "doc": "vuejs-2-the-complete-guide 후기",
     "title": "강의 URL",
     "content": "https://www.udemy.com/course/vuejs-2-the-complete-guide/ . ",
     "url": "http://localhost:4000/docs/mooc/udemy/vuejs/#%EA%B0%95%EC%9D%98-url",
     "relUrl": "/docs/mooc/udemy/vuejs/#강의-url"
-  },"191": {
+  },"195": {
     "doc": "vuejs-2-the-complete-guide 후기",
     "title": "학습 툴",
     "content": ". | visual studio code | . ",
     "url": "http://localhost:4000/docs/mooc/udemy/vuejs/#%ED%95%99%EC%8A%B5-%ED%88%B4",
     "relUrl": "/docs/mooc/udemy/vuejs/#학습-툴"
-  },"192": {
+  },"196": {
     "doc": "vuejs-2-the-complete-guide 후기",
     "title": "강의 구성",
     "content": ". | 총 670강의로 49시간 정도 소요. | vuejs버전이 올라갔을 때 강의가 업데이트 된다. | 강의 하나당 최소 1분에서 최대 15분 안팍으로 짧게 나눠져 있어서 수강하기 수월 | 강좌마다 기본 프로젝트가 첨부되어 있고, 강의 내용 들으면서 해당 프로젝트에 코딩을 하면 된다. | 과제 : 건너뛰기가 가능하지만, 과제를 통해서 복습이 가능. | . 세션 1 ~ 세션 5 : Vuejs의 기본 . 세션 6 ~ 세션 9 : 컴포넌트 학습 . 세션 10 : 이제까지 배운 것으로 미니프로젝트 구성학습 . 세션 11 : 폼 학습 . 세션 12 : Http Request호출 . 세션 13 : 라우팅 학습 . 세션 14 : Animations &amp; Transitions . 세션 15 : Vuex 학습 . 세션 16 : Web app 프로젝트 구성 학습 . 세션 17 ~ 세션 44 : 기타 프로젝트에 필요한 학습 . ",
     "url": "http://localhost:4000/docs/mooc/udemy/vuejs/#%EA%B0%95%EC%9D%98-%EA%B5%AC%EC%84%B1",
     "relUrl": "/docs/mooc/udemy/vuejs/#강의-구성"
-  },"193": {
+  },"197": {
     "doc": "vuejs-2-the-complete-guide 후기",
     "title": "선수 학습 조건",
     "content": ". | 기본 javascript 지식 필요 | ES6도 알아야하지만 필수는 아님. —&gt; 학습에 지장없음. | 기본 Html 및 CSS에 대해서 설명하지 않기때문에, 기본적인 것은 알고 있어야 한다. | . ",
     "url": "http://localhost:4000/docs/mooc/udemy/vuejs/#%EC%84%A0%EC%88%98-%ED%95%99%EC%8A%B5-%EC%A1%B0%EA%B1%B4",
     "relUrl": "/docs/mooc/udemy/vuejs/#선수-학습-조건"
-  },"194": {
+  },"198": {
     "doc": "vuejs-2-the-complete-guide 후기",
     "title": "언어 지원",
     "content": "영어로 진행되는 수업으로 한글 자막은 없고 영어 및 유럽권 자막이 있다. 강사님 말투가 빠른 편이 아니여서, 충분히 이해하고 따라가기에 어렵지 않음. ",
     "url": "http://localhost:4000/docs/mooc/udemy/vuejs/#%EC%96%B8%EC%96%B4-%EC%A7%80%EC%9B%90",
     "relUrl": "/docs/mooc/udemy/vuejs/#언어-지원"
-  },"195": {
+  },"199": {
     "doc": "vuejs-2-the-complete-guide 후기",
     "title": "학습 후기",
     "content": ". | 평일에는 1~2강의 정도 수강하고 있어서, 아직 세션10 ㅎ | 기초부터 실전까지 활용가능한 내용으로 잘 구성되어있는 것 같다. | 강의 속도도 빠르지 않고, Vuejs를 처음 접한 사람에게는 좋은 강의!! | 강의를 다 듣고 프로젝트에 바로 투입도 가능해보인다! | . ",
     "url": "http://localhost:4000/docs/mooc/udemy/vuejs/#%ED%95%99%EC%8A%B5-%ED%9B%84%EA%B8%B0",
     "relUrl": "/docs/mooc/udemy/vuejs/#학습-후기"
-  },"196": {
+  },"200": {
     "doc": "vuejs-2-the-complete-guide 후기",
     "title": "학습 요약",
     "content": "1.75x 정주행 요약 . ",
     "url": "http://localhost:4000/docs/mooc/udemy/vuejs/#%ED%95%99%EC%8A%B5-%EC%9A%94%EC%95%BD",
     "relUrl": "/docs/mooc/udemy/vuejs/#학습-요약"
-  },"197": {
+  },"201": {
     "doc": "vuejs-2-the-complete-guide 후기",
     "title": "vuejs-2-the-complete-guide 후기",
     "content": " ",
     "url": "http://localhost:4000/docs/mooc/udemy/vuejs/",
     "relUrl": "/docs/mooc/udemy/vuejs/"
-  },"198": {
+  },"202": {
     "doc": "1.75x 정주행 요약",
     "title": "1.75x 정주행 요약",
     "content": " ",
