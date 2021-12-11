@@ -1,0 +1,52 @@
+I"m<h1 id="객체지향">객체지향</h1>
+
+<h2 id="-디미터의-법칙-law-of-demeter">:: 디미터의 법칙 (Law of Demeter)</h2>
+
+<p>디미터 법칙은 객체 O의 메소드 m은 다음의 객체들의 타입의 메소드만 호출해야 한다는 법칙이다.</p>
+
+<ol>
+  <li>
+    <p>O 객체 자신의 메소드들. (O itself)</p>
+  </li>
+  <li>
+    <p>m의 파라미터로 넘어온 객체들의 메소드들.(M’s parameters)</p>
+  </li>
+  <li>
+    <p>m 안에서 생성 되거나 초기화된 객체의 메소드들.(Any objects created/instantiated within M)</p>
+  </li>
+  <li>
+    <p>O객체의 직접 소유하는 객체의 메소드들.(O’s direct component objects)</p>
+  </li>
+</ol>
+
+<p>5.O객체의 m에서 접근이 가능한 전역변수의 메소드들.(A global variable, accessible by O, in the scope of M)</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">Demeter</span> <span class="o">{</span>
+    <span class="kd">private</span> <span class="no">A</span> <span class="n">a</span><span class="o">;</span>
+
+    <span class="kd">private</span> <span class="kt">int</span> <span class="nf">func</span><span class="o">()</span> <span class="o">{</span> <span class="k">return</span> <span class="mi">0</span><span class="o">;</span> <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">example</span><span class="o">(</span><span class="no">B</span> <span class="n">b</span><span class="o">)</span> <span class="o">{</span>
+        <span class="no">C</span> <span class="n">c</span> <span class="o">=</span> <span class="k">new</span> <span class="no">C</span><span class="o">();</span>
+       <span class="kt">int</span> <span class="n">f</span> <span class="o">=</span> <span class="n">func</span><span class="o">();</span> <span class="c1">// 1번의 경우</span>
+        <span class="n">b</span><span class="o">.</span><span class="na">invert</span><span class="o">();</span> <span class="c1">// 2번의 경우</span>
+       <span class="n">a</span> <span class="o">=</span> <span class="k">new</span> <span class="no">A</span><span class="o">();</span>
+        <span class="n">a</span><span class="o">.</span><span class="na">setActive</span><span class="o">();</span> <span class="c1">// 3번의 경우</span>
+       <span class="n">c</span><span class="o">.</span><span class="na">print</span><span class="o">();</span> <span class="c1">// 4번의 경우</span>
+ 
+       <span class="c1">// Static으로 설정된 Setting 변수가 있다고 가정할때.</span>
+        <span class="n">string</span> <span class="nc">UserID</span> <span class="o">=</span> <span class="nc">GlobalValues</span><span class="o">.</span><span class="na">Setting</span><span class="o">.</span><span class="na">getUserID</span><span class="o">();</span> <span class="c1">//5의 경우</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>위의 종류에 해당하는 객체의 메소드들만 호출을 해야한다. 그렇지 않으면 유지보수 측면에서 문제점들이 발생한다. 아래의 예를 보면,</p>
+
+<p>objectA.getObjectB().doSomething();</p>
+
+<p>objectA.getObjectB().getObjectC().doSomething();</p>
+
+<p>출처:</p>
+
+<p><a href="https://hongjinhyeon.tistory.com/138">https://hongjinhyeon.tistory.com/138</a></p>
+:ET

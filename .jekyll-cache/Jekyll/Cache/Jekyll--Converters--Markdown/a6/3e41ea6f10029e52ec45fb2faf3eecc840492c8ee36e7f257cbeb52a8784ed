@@ -1,0 +1,51 @@
+I"<h1 id="optional-정리">Optional 정리</h1>
+
+<p>참조 블로그 :</p>
+
+<p><a href="https://homoefficio.github.io/2019/10/03/Java-Optional-%EB%B0%94%EB%A5%B4%EA%B2%8C-%EC%93%B0%EA%B8%B0/"></a></p>
+
+<p>effective java에서도 말하고 있지만, optional은 API 클라이언트에게 리턴값이 없음을 알려주는 기능에 초점을 맞춰야한다. 검사예외와 비슷한 취지의 쓰임으로 이해하면 된다.</p>
+
+<p>참조 블로그 본문 내용 중</p>
+
+<h2 id="-orelsenew--대신-orelseget--new-">:: orElse(new …) 대신 orElseGet(() → new …)</h2>
+
+<p>orElse(new …) 대신 orElseGet(() → new …) 를 사용하도록 설명하는 부분이 있다.</p>
+
+<p>이유는 orElse에 있는 값의 존재유무를 불문하고 무조건 실행되기 때문인데.</p>
+
+<p>아래의 경우는 예외이다.</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">@Slf4j</span>
+<span class="nd">@RequiredArgsConstructor</span>
+<span class="nd">@Service</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">KakaoMessageAdapterService</span> <span class="o">{</span>
+		<span class="kd">private</span> <span class="kd">final</span> <span class="nc">List</span><span class="o">&lt;</span><span class="nc">KakaoMessageAdapterHandler</span><span class="o">&gt;</span> <span class="n">kakaoMessageAdapterHandlers</span><span class="o">;</span>
+
+		<span class="kd">private</span> <span class="nc">ThirdPartyMessage</span> <span class="nf">getThirdPartyMessage</span><span class="o">(</span><span class="nc">KakaoMessage</span> <span class="n">kakaoMessage</span><span class="o">)</span> <span class="o">{</span>
+        <span class="nc">KakaoMessageAdapterHandler</span> <span class="n">kakaoMessageAdapterHandler</span> <span class="o">=</span> <span class="n">kakaoMessageAdapterHandlers</span><span class="o">.</span><span class="na">stream</span><span class="o">()</span>
+            <span class="o">.</span><span class="na">filter</span><span class="o">(</span><span class="n">handler</span> <span class="o">-&gt;</span> <span class="n">handler</span><span class="o">.</span><span class="na">filter</span><span class="o">(</span><span class="n">kakaoMessage</span><span class="o">.</span><span class="na">getType</span><span class="o">().</span><span class="na">getThirdPartyMessageType</span><span class="o">()))</span>
+            <span class="o">.</span><span class="na">findFirst</span><span class="o">()</span>
+            <span class="o">.</span><span class="na">orElse</span><span class="o">(</span><span class="n">kakaoEtcMessageService</span><span class="o">);</span>
+
+        <span class="k">return</span> <span class="n">kakaoMessageAdapterHandler</span><span class="o">.</span><span class="na">send</span><span class="o">(</span><span class="n">kakaoMessage</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<ul>
+  <li>flow
+    <ul>
+      <li>thirdparty messsage type별로 KakaoMessageAdapterHandler를 상속받아서 구현체가 존재한다.</li>
+      <li>만약에 특정 type에 구현체가 존재하지 않는다면, kakaoEtcMessageService가 kakaoMessageAdapterHandler의 구현체가 된다.</li>
+    </ul>
+  </li>
+  <li>위의 경우 , filter로 선 체크 후 → findFirst하고 있는데 이미 구현체들을 filter로 통과시키기 때문에 무의미하게 kakaoEtcMessageService를 호출하고 있지 않다.</li>
+</ul>
+
+<h2 id="-단지-값을-얻을-목적이라면-optinal-대신-null-비교">:: 단지 값을 얻을 목적이라면 Optinal 대신 null 비교</h2>
+
+<p>optinal api가 생겼다고, 무조건 wrapping을 한다든지 남용하면 안된다.</p>
+
+<p>optional은 비용이 발생하므로 단순 null체크는 null로 하자.</p>
+:ET
