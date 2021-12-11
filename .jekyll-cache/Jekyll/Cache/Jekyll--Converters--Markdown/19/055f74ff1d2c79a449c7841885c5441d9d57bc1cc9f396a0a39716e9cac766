@@ -1,0 +1,92 @@
+I"<h1 id="chain-of-responsibility">Chain of Responsibility</h1>
+
+<p>역학 사슬 패턴</p>
+
+<ul>
+  <li>체인에 묶인 객체들끼리 순서대로 책임을 넘기는 구조</li>
+</ul>
+
+<h2 id="as-is">AS-IS.</h2>
+
+<ul>
+  <li>하나의 서비스에서 접수 처리와 메시지 전송 기능이 혼재</li>
+</ul>
+
+<h2 id="to-be">TO-BE.</h2>
+
+<p><img src="../img/cor.png" alt="Untitled" /></p>
+
+<ul>
+  <li>접수 처리 프로세스와 메시지 전송 프로세스를 별개로 분리</li>
+  <li>프로세스 순서를 체인으로 강제 ( 접수 프로세스 진행 후 → 메시지 전송 프로세스 진행)</li>
+</ul>
+
+<h3 id="-client">:: Client</h3>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// 우선순위 btalkMessageProcessor -&gt; btalkReceptionProcessor</span>
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">message</span><span class="o">(</span><span class="nc">ConversationMessage</span> <span class="n">conversationMessage</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">btalkMessageProcessor</span><span class="o">.</span><span class="na">setNext</span><span class="o">(</span><span class="n">btalkReceptionProcessor</span><span class="o">);</span>
+        <span class="n">btalkMessageProcessor</span><span class="o">.</span><span class="na">support</span><span class="o">(</span><span class="n">conversationMessage</span><span class="o">);</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<h3 id="-handler-processor">:: Handler Processor</h3>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">@Slf4j</span>
+<span class="kd">public</span> <span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">BtalkProcessor</span> <span class="o">{</span>
+    <span class="kd">private</span> <span class="nc">BtalkProcessor</span> <span class="n">next</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="nc">BtalkProcessor</span> <span class="nf">setNext</span><span class="o">(</span><span class="nc">BtalkProcessor</span> <span class="n">next</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">next</span> <span class="o">=</span> <span class="n">next</span><span class="o">;</span>
+        <span class="k">return</span> <span class="n">next</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kd">final</span> <span class="kt">void</span> <span class="nf">support</span><span class="o">(</span><span class="nc">ConversationMessage</span> <span class="n">conversationMessage</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">process</span><span class="o">(</span><span class="n">conversationMessage</span><span class="o">))</span> <span class="o">{</span>
+            <span class="n">action</span><span class="o">(</span><span class="n">conversationMessage</span><span class="o">);</span>
+        <span class="o">}</span> <span class="k">else</span> <span class="k">if</span> <span class="o">(</span><span class="n">next</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">next</span><span class="o">.</span><span class="na">support</span><span class="o">(</span><span class="n">conversationMessage</span><span class="o">);</span>
+        <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+            <span class="n">log</span><span class="o">.</span><span class="na">error</span><span class="o">(</span><span class="s">"There is no next process of btalk."</span><span class="o">);</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kd">abstract</span> <span class="kt">boolean</span> <span class="nf">process</span><span class="o">(</span><span class="nc">ConversationMessage</span> <span class="n">conversationMessage</span><span class="o">);</span>
+
+    <span class="kd">public</span> <span class="kd">abstract</span> <span class="kt">void</span> <span class="nf">action</span><span class="o">(</span><span class="nc">ConversationMessage</span> <span class="n">conversationMessage</span><span class="o">);</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<h3 id="-sub-processor">:: Sub Processor</h3>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span><span class="n">btalkMessageProcessor</span><span class="o">]</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">BtalkMessageProcessor</span> <span class="kd">extends</span> <span class="nc">BtalkProcessor</span> <span class="o">{</span>
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">process</span><span class="o">(</span><span class="nc">ConversationMessage</span> <span class="n">conversationMessage</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="nf">isPresent</span><span class="o">(</span><span class="n">conversationMessage</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">action</span><span class="o">(</span><span class="nc">ConversationMessage</span> <span class="n">conversationMessage</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">sendMessage</span><span class="o">(</span><span class="n">conversationMessage</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="o">[</span><span class="n">btalkReceptionProcessor</span><span class="o">]</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">BtalkReceptionProcessor</span> <span class="kd">extends</span> <span class="nc">BtalkProcessor</span> <span class="o">{</span>
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">process</span><span class="o">(</span><span class="nc">ConversationMessage</span> <span class="n">conversationMessage</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="o">!</span><span class="n">isPresent</span><span class="o">(</span><span class="n">conversationMessage</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">action</span><span class="o">(</span><span class="nc">ConversationMessage</span> <span class="n">conversationMessage</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">reception</span><span class="o">(</span><span class="n">conversationMessage</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<h3 id="참고">참고.</h3>
+
+<p><a href="https://lktprogrammer.tistory.com/45">https://lktprogrammer.tistory.com/45</a></p>
+:ET

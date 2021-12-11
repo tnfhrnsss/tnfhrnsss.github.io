@@ -1,0 +1,39 @@
+I"<h1 id="전락-열거-타입-패턴">전락 열거 타입 패턴</h1>
+
+<ul>
+  <li>열거형 클래스에 새로운 값을 열거타입에 추가하려면 그 값을 처리하는 case문을 쌍으로 넣어줘야하는 문제가 있다.</li>
+  <li>새로운 상수를 추가할 때마다 ‘전략’을 선택하도록 하면 switch문이나 상수별 메서드 구현이 필요없게 된다.</li>
+</ul>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">enum</span> <span class="nc">PayrollDay</span> <span class="o">{</span>
+	<span class="no">MONDAY</span><span class="o">(</span><span class="no">WEEKDAY</span><span class="o">),</span> <span class="no">SUNDAY</span><span class="o">(</span><span class="no">WEEKEND</span><span class="o">);</span>
+
+	<span class="kd">private</span> <span class="kd">final</span> <span class="nc">PayType</span> <span class="n">payType</span><span class="o">;</span>
+
+	<span class="nc">PayrollDay</span><span class="o">(</span><span class="nc">PayType</span> <span class="n">payType</span><span class="o">)</span> <span class="o">{</span> <span class="k">this</span><span class="o">.</span><span class="na">payType</span> <span class="o">=</span> <span class="n">payType</span><span class="o">;</span> <span class="o">}</span>
+
+	<span class="kt">int</span> <span class="nf">pay</span><span class="o">(</span><span class="kt">int</span> <span class="n">minutesWorked</span><span class="o">,</span> <span class="kt">int</span> <span class="n">payRate</span><span class="o">)</span> <span class="o">{</span>
+		<span class="k">return</span> <span class="n">payType</span><span class="o">.</span><span class="na">pay</span><span class="o">(</span><span class="n">minutesWorked</span><span class="o">,</span> <span class="n">payRate</span><span class="o">);</span>
+	<span class="o">}</span>
+
+	<span class="kd">enum</span> <span class="nc">PayType</span> <span class="o">{</span>
+		<span class="no">WEEKDAY</span> <span class="o">{</span>
+			<span class="kt">int</span> <span class="nf">overtimePay</span><span class="o">(</span><span class="kt">int</span> <span class="n">minsWorked</span><span class="o">,</span> <span class="kt">int</span> <span class="n">payRate</span><span class="o">)</span> <span class="o">{</span>
+				<span class="k">return</span> <span class="n">minsWorked</span> <span class="o">&lt;=</span> <span class="no">MIN_PER_SHIFT</span> <span class="o">?</span> <span class="mi">0</span> <span class="o">:</span> <span class="o">(</span><span class="n">minsWorked</span> <span class="o">-</span> <span class="no">MINS_PER_SHIFT</span><span class="o">)</span> <span class="o">*</span> <span class="n">payRate</span> <span class="o">/</span> <span class="mi">2</span><span class="o">;</span>
+			<span class="o">}</span>
+		<span class="o">},</span>
+		<span class="no">WEEKEND</span> <span class="o">{</span>
+
+		<span class="o">};</span>
+
+		<span class="kd">abstract</span> <span class="kt">int</span> <span class="nf">overtimePay</span><span class="o">(</span><span class="kt">int</span> <span class="n">mins</span><span class="o">,</span> <span class="kt">int</span> <span class="n">payRate</span><span class="o">);</span>
+		<span class="kd">private</span> <span class="kd">static</span> <span class="kd">final</span> <span class="kt">int</span> <span class="no">MINS_PER_SHIFT</span> <span class="o">=</span> <span class="mi">8</span> <span class="o">*</span> <span class="mi">60</span><span class="o">;</span>
+
+		<span class="kt">int</span> <span class="nf">pay</span><span class="o">(</span><span class="kt">int</span> <span class="n">minsWorked</span><span class="o">,</span> <span class="kt">int</span> <span class="n">payRate</span><span class="o">)</span> <span class="o">{</span>
+			<span class="kt">int</span> <span class="n">basePay</span> <span class="o">=</span> <span class="n">minsWorked</span> <span class="o">*</span> <span class="n">payRate</span><span class="o">;</span>
+			<span class="k">return</span> <span class="n">basePay</span> <span class="o">+</span> <span class="n">overtimePay</span><span class="o">(</span><span class="n">minsWorked</span><span class="o">,</span> <span class="n">payRate</span><span class="o">);</span>
+		<span class="o">}</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+:ET

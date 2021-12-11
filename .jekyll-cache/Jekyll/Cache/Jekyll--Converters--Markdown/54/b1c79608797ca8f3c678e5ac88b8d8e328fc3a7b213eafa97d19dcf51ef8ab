@@ -1,0 +1,65 @@
+I"(<h1 id="intercepting-filter-pattern">Intercepting Filter Pattern</h1>
+
+<p>Interception Filter Pattern</p>
+
+<ul>
+  <li>체인으로 묶인 필터를 통과하면서 최종적으로 Target 클래스에 도달하도록 한다.</li>
+  <li>전처리/후처리를 수행하려고 하는 경우 사용</li>
+</ul>
+
+<h2 id="entity">Entity.</h2>
+
+<h3 id="filter">Filter::</h3>
+
+<p>실제로 필터작업을 구현하고, 실행</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">AppChannelFilter</span> <span class="kd">implements</span> <span class="nc">BusinessMessageFilter</span> <span class="o">{</span>  <span class="c1">// 특정 App채널만 유효하도록 필터링</span>
+    <span class="kd">private</span> <span class="kd">final</span> <span class="nc">AppChannelTypeValidator</span> <span class="n">appChannelTypeValidator</span><span class="o">;</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">execute</span><span class="o">(</span><span class="nc">ConversationMessage</span> <span class="n">conversationMessage</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">appChannelTypeValidator</span><span class="o">.</span><span class="na">validate</span><span class="o">();</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<h3 id="filter-chain">Filter Chain::</h3>
+
+<p>여러 필터들을 순서대로 실행하기 위해 체인으로 묶음</p>
+
+<h3 id="target">Target::</h3>
+
+<p>모든 필터가 통과되면 최종적으로 실행될 엔티티</p>
+
+<h3 id="filter-manager">Filter Manager::</h3>
+
+<p>여러 필터들과 필터 체인을 연결</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">BusinessMessageFilterManager</span> <span class="o">{</span>
+    <span class="kd">private</span> <span class="kd">final</span> <span class="nc">List</span><span class="o">&lt;</span><span class="nc">BusinessMessageFilter</span><span class="o">&gt;</span> <span class="n">businessMessageFilters</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">execute</span><span class="o">(</span><span class="nc">ConversationMessage</span> <span class="n">conversationMessage</span><span class="o">){</span>
+        <span class="k">for</span> <span class="o">(</span><span class="nc">BusinessMessageFilter</span> <span class="n">businessMessageFilter</span> <span class="o">:</span> <span class="n">businessMessageFilters</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">businessMessageFilter</span><span class="o">.</span><span class="na">execute</span><span class="o">(</span><span class="n">conversationMessage</span><span class="o">);</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<h3 id="client">Client::</h3>
+
+<p>필터요청하는 엔티티</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">BtalkMessageFilterExecutor</span> <span class="o">{</span>
+    <span class="kd">private</span> <span class="kd">final</span> <span class="nc">BusinessMessageFilterManager</span> <span class="n">businessMessageFilterManager</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">filter</span><span class="o">(</span><span class="nc">ConversationMessage</span> <span class="n">conversationMessage</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">businessMessageFilterManager</span><span class="o">.</span><span class="na">execute</span><span class="o">(</span><span class="n">conversationMessage</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<h3 id="참고">참고.</h3>
+
+<p><a href="https://www.tutorialspoint.com/design_pattern/intercepting_filter_pattern.htm">https://www.tutorialspoint.com/design_pattern/intercepting_filter_pattern.htm</a></p>
+:ET
