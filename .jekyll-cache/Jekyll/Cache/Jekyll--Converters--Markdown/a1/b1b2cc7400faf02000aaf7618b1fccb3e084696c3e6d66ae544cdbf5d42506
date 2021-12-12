@@ -1,0 +1,20 @@
+I"�<h1 id="source-files-should-not-have-any-duplicated-blocks">Source files should not have any duplicated blocks</h1>
+
+<h2 id="1-duplicated-blocks-of-code-must-be-removed"><strong>1 duplicated blocks of code must be removed.</strong></h2>
+
+<p><strong>[원인]</strong></p>
+
+<p>block자체가 중복되는 코드들이 존재할 때 발생</p>
+
+<p><img src="../img/img.png" alt="img.png" /></p>
+
+<p>의존성이 없는 컴포넌트였지만, 한개의 서비스안에 위치했기 때문에 발생</p>
+
+<p><strong>[해결]</strong></p>
+
+<p>중복되는 파일 중 한개를 열어서 왼쪽 회색 부분에 마우스 오버하면 duplicated된 block을 확인할 수 있다.</p>
+
+<p><img src="../img/img1.png" alt="Source%20files%20should%20not%20have%20any%20duplicated%20blocks%2085c9d7bd0df848f891333ba3cc465605/Untitled%201.png" /></p>
+
+<p>해결 방법은 여러가지가 되겠지만, 중복적인 코드가 필요한 이유 파악하고 제거 또는 대체를 하면 된다.</p>
+:ET

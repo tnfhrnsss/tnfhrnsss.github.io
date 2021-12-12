@@ -1,0 +1,65 @@
+I"Y<h1 id="add-a-private-constructor-to-hide-the-implicit-public-one">Add a private constructor to hide the implicit public one.</h1>
+
+<p>Utility classes should not have public constructors</p>
+
+<p>유틸리티 클래스는 public 생성자를 갖고 있으면 안된다.</p>
+
+<p>Utility classes, which are collections of static members, are not meant to be instantiated. Even abstract utility classes, which can be extended, should not have public constructors.</p>
+
+<p>static 멤버만 갖고 있는 클래스를 유틸리티 클래스로 보고,  (추상화된 클래스더라도) public 생성자를 갖고 있으면 안된다.</p>
+
+<p>Java adds an implicit public constructor to every class which does not define at least one explicitly. Hence, at least one non-public constructor should be defined.</p>
+
+<p>자바는 모든 클래스에 public 생성자를 갖고 있다. (선언하지 않아도)</p>
+
+<p>그러므로 적어도 public하지 않은 생성자를 한개는 정의해야함.</p>
+
+<p>[잘못된 코드]</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="kd">class</span> <span class="nc">StringUtils</span> <span class="o">{</span> <span class="c1">// Noncompliant</span>
+	<span class="kd">public</span> <span class="kd">static</span> <span class="nc">String</span> <span class="nf">concatenate</span><span class="o">(</span><span class="nc">String</span> <span class="n">s1</span><span class="o">,</span> <span class="nc">String</span> <span class="n">s2</span><span class="o">)</span> <span class="o">{</span>
+		<span class="k">return</span> <span class="n">s1</span> <span class="o">+</span> <span class="n">s2</span><span class="o">;</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>[옳은 코드]</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="kd">class</span> <span class="nc">StringUtils</span> <span class="o">{</span> <span class="c1">// Compliant</span>
+	<span class="kd">private</span> <span class="nf">StringUtils</span><span class="o">()</span> <span class="o">{</span>
+		<span class="k">throw</span> <span class="k">new</span> <span class="nf">IllegalStateException</span><span class="o">(</span><span class="s">"Utility class"</span><span class="o">);</span>
+	<span class="o">}</span>
+
+	<span class="kd">public</span> <span class="kd">static</span> <span class="nc">String</span> <span class="nf">concatenate</span><span class="o">(</span><span class="nc">String</span> <span class="n">s1</span><span class="o">,</span> <span class="nc">String</span> <span class="n">s2</span><span class="o">)</span> <span class="o">{</span>
+		<span class="k">return</span> <span class="n">s1</span> <span class="o">+</span> <span class="n">s2</span><span class="o">;</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>[이 rule의 예외]</p>
+
+<ul>
+  <li>클래스에 main 메소드가 포함되어있으면 유틸리티 클래스라고 보지 않고, 이 규칙 적용에 제외됨.</li>
+</ul>
+
+<hr />
+
+<p>문제가 되었던 코드에는 static 메소드 한개만 존재했음</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">JsonParseUtil</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="nf">getJson</span><span class="o">()</span> <span class="o">{</span>
+		<span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>—&gt; 수정.</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	<span class="nd">@NoArgsConstructor</span><span class="o">(</span><span class="n">access</span> <span class="o">=</span> <span class="nc">AccessLevel</span><span class="o">.</span><span class="na">PRIVATE</span><span class="o">)</span>   <span class="c1">// 파라미터없는 기본생성자를 생성</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">JsonParseUtil</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="nf">getJson</span><span class="o">()</span> <span class="o">{</span>
+		<span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+:ET

@@ -1,0 +1,37 @@
+I"�<h1 id="convert-the-abstract-class-templatecontenthandler-into-an-interface">Convert the abstract class “TemplateContentHandler” into an interface.</h1>
+
+<p>Abstract classes without fields should be converted to interfaces.</p>
+
+<p>필드가 없는 추상화 클래스는 인터페이스로 되어야한다.</p>
+
+<p>With Java 8’s “default method” feature, any abstract class without direct or inherited field should be converted into an interface. However, this change may not be appropriate in libraries or other applications where the class is intended to be used as an API.</p>
+
+<p>java8에서 제공하는 “default method” 기능으로, 어떤 추상화 클래스든 인터페이스로 바뀔수 있다.</p>
+
+<p>그러나 이렇게 변경하는게 API로 제공된 어플리케이션이나 라이브러리인 경우는 맞지 않을 수 있다. (반드시 적용하는 룰은 아님)</p>
+
+<p>Note that this rule is automatically disabled when the project’s sonar.java.source is lower than 8.</p>
+
+<p>‘sonar.java.source’가 8보다 낮으면, 이 규칙은 자동적으로 disable상태</p>
+
+<p>[잘못된 코드]</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">Car</span> <span class="o">{</span>
+	<span class="kd">public</span> <span class="kd">abstract</span> <span class="kt">void</span> <span class="nf">start</span><span class="o">(</span><span class="nc">Environment</span> <span class="n">c</span><span class="o">);</span>
+	<span class="kd">public</span> <span class="kt">void</span> <span class="nf">stop</span><span class="o">(</span><span class="nc">Environment</span> <span class="n">c</span><span class="o">)</span> <span class="o">{</span>
+		<span class="n">c</span><span class="o">.</span><span class="na">freeze</span><span class="o">(</span><span class="k">this</span><span class="o">);</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>[맞는 코드]</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">interface</span> <span class="nc">Car</span> <span class="o">{</span>
+	<span class="kd">public</span> <span class="kt">void</span> <span class="nf">start</span><span class="o">(</span><span class="nc">Environment</span> <span class="n">c</span><span class="o">);</span>
+	
+	<span class="kd">public</span> <span class="k">default</span> <span class="kt">void</span> <span class="nf">stop</span><span class="o">(</span><span class="nc">Environment</span> <span class="n">c</span><span class="o">)</span> <span class="o">{</span>
+		<span class="n">c</span><span class="o">.</span><span class="na">freeze</span><span class="o">(</span><span class="k">this</span><span class="o">);</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+:ET

@@ -1,0 +1,45 @@
+I"'<h1 id="refactor-this-method-to-reduce-its-cognitive-complexity-from-20-to-the-15-allowed">Refactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.</h1>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">try</span> <span class="o">{</span>
+        <span class="nc">String</span> <span class="n">conversationId</span> <span class="o">=</span> <span class="n">kakaoMessageFlowService</span><span class="o">.</span><span class="na">open</span><span class="o">(</span><span class="n">kakaoMessage</span><span class="o">.</span><span class="na">getKakaoUser</span><span class="o">().</span><span class="na">getSenderKey</span><span class="o">());</span>
+        <span class="k">if</span> <span class="o">(</span><span class="nc">StringUtils</span><span class="o">.</span><span class="na">isNotEmpty</span><span class="o">(</span><span class="n">conversationId</span><span class="o">))</span> <span class="o">{</span>
+            <span class="n">activeKakaoFlowService</span><span class="o">.</span><span class="na">register</span><span class="o">(</span><span class="n">activeKakaoKey</span><span class="o">,</span> <span class="n">kakaoMessage</span><span class="o">.</span><span class="na">toConversationDomain</span><span class="o">(</span><span class="n">conversationId</span><span class="o">));</span>
+        <span class="o">}</span>
+    <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="nc">Exception</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">e</span> <span class="k">instanceof</span> <span class="nc">DataIntegrityViolationException</span>
+            <span class="o">||</span> <span class="n">e</span> <span class="k">instanceof</span> <span class="nc">ResourceAlreadyExistsException</span><span class="o">)</span> <span class="o">{</span>
+            <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+                <span class="n">log</span><span class="o">.</span><span class="na">warn</span><span class="o">(</span><span class="s">"ActiveKakao DuplicateKeyException occurred. - retrying.."</span> <span class="o">+</span> <span class="n">activeKakaoKey</span><span class="o">);</span>
+                <span class="nc">Optional</span><span class="o">&lt;</span><span class="nc">KakaoRdo</span><span class="o">&gt;</span> <span class="n">kakaoRdo</span> <span class="o">=</span> <span class="n">findAllByUserStatus</span><span class="o">(</span><span class="n">kakaoMessage</span><span class="o">.</span><span class="na">getKakaoUser</span><span class="o">());</span>
+                <span class="k">if</span> <span class="o">(</span><span class="n">kakaoRdo</span><span class="o">.</span><span class="na">isPresent</span><span class="o">())</span> <span class="o">{</span>
+                    <span class="k">break</span><span class="o">;</span>
+                <span class="o">}</span>
+                <span class="k">try</span> <span class="o">{</span>
+                    <span class="nc">Thread</span><span class="o">.</span><span class="na">sleep</span><span class="o">(</span><span class="mi">500L</span><span class="o">);</span>
+                <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="nc">Exception</span> <span class="n">ex</span><span class="o">)</span> <span class="o">{</span>
+                    <span class="n">log</span><span class="o">.</span><span class="na">error</span><span class="o">(</span><span class="nc">ExceptionUtils</span><span class="o">.</span><span class="na">getStackTrace</span><span class="o">(</span><span class="n">e</span><span class="o">));</span>
+                <span class="o">}</span>
+            <span class="o">}</span>
+        <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+            <span class="k">try</span> <span class="o">{</span>
+                <span class="n">activeKakaoFlowService</span><span class="o">.</span><span class="na">remove</span><span class="o">(</span><span class="n">activeKakaoKey</span><span class="o">);</span>
+            <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="nc">Exception</span> <span class="n">ex</span><span class="o">)</span> <span class="o">{</span>
+                <span class="n">log</span><span class="o">.</span><span class="na">warn</span><span class="o">(</span><span class="n">e</span><span class="o">.</span><span class="na">getMessage</span><span class="o">());</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+  <span class="o">}</span>
+</code></pre></div></div>
+
+<p>문제 : 인지 복잡도가 높아서 문제 (빨간색 block된 부분) - 총 20개의 복잡도 발생한 코드</p>
+
+<p>해결: instanceof로 익셉션 구분한 부분을 catch로 올림</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="nc">DataIntegrityViolationException</span>
+            <span class="o">|</span> <span class="nc">ResourceAlreadyExistsException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+            
+
+<span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="nc">Exception</span> <span class="n">ex</span><span class="o">)</span> <span class="o">{</span>
+
+<span class="o">}</span>
+</code></pre></div></div>
+:ET

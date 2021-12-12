@@ -1,7 +1,7 @@
 ---
 layout: default
 title: ★bookmark
-nav_order: 10
+nav_order: 11
 ---
 
 [https://baek.dev/](https://baek.dev/post/28/)

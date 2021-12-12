@@ -1,0 +1,74 @@
+---
+layout: default
+title: Add a private constructor to hide the implicit public one
+parent: SonarQube
+grand_parent: Quality Practice
+nav_exclude: true
+---
+
+# Add a private constructor to hide the implicit public one.
+
+Utility classes should not have public constructors
+
+유틸리티 클래스는 public 생성자를 갖고 있으면 안된다.
+
+Utility classes, which are collections of static members, are not meant to be instantiated. Even abstract utility classes, which can be extended, should not have public constructors.
+
+static 멤버만 갖고 있는 클래스를 유틸리티 클래스로 보고,  (추상화된 클래스더라도) public 생성자를 갖고 있으면 안된다.
+
+Java adds an implicit public constructor to every class which does not define at least one explicitly. Hence, at least one non-public constructor should be defined.
+
+자바는 모든 클래스에 public 생성자를 갖고 있다. (선언하지 않아도) 
+
+그러므로 적어도 public하지 않은 생성자를 한개는 정의해야함. 
+
+[잘못된 코드]
+
+```java
+
+class StringUtils { // Noncompliant
+	public static String concatenate(String s1, String s2) {
+		return s1 + s2;
+	}
+}
+```
+
+[옳은 코드]
+
+```java
+
+class StringUtils { // Compliant
+	private StringUtils() {
+		throw new IllegalStateException("Utility class");
+	}
+
+	public static String concatenate(String s1, String s2) {
+		return s1 + s2;
+	}
+}
+```
+
+[이 rule의 예외]
+
+- 클래스에 main 메소드가 포함되어있으면 유틸리티 클래스라고 보지 않고, 이 규칙 적용에 제외됨.
+
+---
+
+문제가 되었던 코드에는 static 메소드 한개만 존재했음
+
+```java
+public class JsonParseUtil {
+    public static getJson() {
+		}
+}
+```
+
+—> 수정. 
+
+```java
+	@NoArgsConstructor(access = AccessLevel.PRIVATE)   // 파라미터없는 기본생성자를 생성
+public class JsonParseUtil {
+    public static getJson() {
+		}
+}
+```

@@ -1,0 +1,54 @@
+---
+layout: default
+title: Refactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed
+parent: SonarQube
+grand_parent: Quality Practice
+nav_exclude: true
+---
+
+# Refactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.
+
+```java
+try {
+        String conversationId = kakaoMessageFlowService.open(kakaoMessage.getKakaoUser().getSenderKey());
+        if (StringUtils.isNotEmpty(conversationId)) {
+            activeKakaoFlowService.register(activeKakaoKey, kakaoMessage.toConversationDomain(conversationId));
+        }
+    } catch (Exception e) {
+        if (e instanceof DataIntegrityViolationException
+            || e instanceof ResourceAlreadyExistsException) {
+            for (int i = 0; i < 3; i++) {
+                log.warn("ActiveKakao DuplicateKeyException occurred. - retrying.." + activeKakaoKey);
+                Optional<KakaoRdo> kakaoRdo = findAllByUserStatus(kakaoMessage.getKakaoUser());
+                if (kakaoRdo.isPresent()) {
+                    break;
+                }
+                try {
+                    Thread.sleep(500L);
+                } catch (Exception ex) {
+                    log.error(ExceptionUtils.getStackTrace(e));
+                }
+            }
+        } else {
+            try {
+                activeKakaoFlowService.remove(activeKakaoKey);
+            } catch (Exception ex) {
+                log.warn(e.getMessage());
+            }
+        }
+  }
+```
+
+문제 : 인지 복잡도가 높아서 문제 (빨간색 block된 부분) - 총 20개의 복잡도 발생한 코드
+
+해결: instanceof로 익셉션 구분한 부분을 catch로 올림
+
+```java
+} catch (DataIntegrityViolationException
+            | ResourceAlreadyExistsException e) {
+            
+
+} catch (Exception ex) {
+
+}
+```

@@ -1,0 +1,46 @@
+---
+layout: default
+title: Convert the abstract class "TemplateContentHandler" into an interface
+parent: SonarQube
+grand_parent: Quality Practice
+nav_exclude: true
+---
+
+# Convert the abstract class "TemplateContentHandler" into an interface.
+
+Abstract classes without fields should be converted to interfaces.
+
+필드가 없는 추상화 클래스는 인터페이스로 되어야한다.
+
+With Java 8's "default method" feature, any abstract class without direct or inherited field should be converted into an interface. However, this change may not be appropriate in libraries or other applications where the class is intended to be used as an API.
+
+java8에서 제공하는 "default method" 기능으로, 어떤 추상화 클래스든 인터페이스로 바뀔수 있다.
+
+그러나 이렇게 변경하는게 API로 제공된 어플리케이션이나 라이브러리인 경우는 맞지 않을 수 있다. (반드시 적용하는 룰은 아님)
+
+Note that this rule is automatically disabled when the project's sonar.java.source is lower than 8.
+
+'sonar.java.source'가 8보다 낮으면, 이 규칙은 자동적으로 disable상태
+
+[잘못된 코드]
+
+```java
+public abstract class Car {
+	public abstract void start(Environment c);
+	public void stop(Environment c) {
+		c.freeze(this);
+	}
+}
+```
+
+[맞는 코드]
+
+```java
+public interface Car {
+	public void start(Environment c);
+	
+	public default void stop(Environment c) {
+		c.freeze(this);
+	}
+}
+```
