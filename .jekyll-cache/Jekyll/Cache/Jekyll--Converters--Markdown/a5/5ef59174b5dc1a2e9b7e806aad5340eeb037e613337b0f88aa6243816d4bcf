@@ -1,0 +1,8 @@
+I"}<h1 id="header-contains-multiple-values---but-only-one-is-allowed">header contains multiple values ‘*, *’, but only one is allowed</h1>
+
+<p>header contains multiple values ‘*, *’, but only one is allowed</p>
+
+<p>라고 크롬콘솔에 찍힐때</p>
+
+<p>response.addheader를 똑같은 값으로 두번한건 아닌지 체크필요. 중복선언시 저런 에러난다.</p>
+:ET
