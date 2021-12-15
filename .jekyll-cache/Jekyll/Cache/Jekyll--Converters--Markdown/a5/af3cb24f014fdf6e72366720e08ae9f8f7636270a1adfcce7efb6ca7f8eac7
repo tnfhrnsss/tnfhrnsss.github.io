@@ -1,4 +1,4 @@
-I"y<h1 class="fs-9" id="focus-on-writing-good-documentation">Focus on writing good documentation</h1>
+I"E<h1 class="fs-9" id="focus-on-writing-good-documentation">Focus on writing good documentation</h1>
 
 <p class="fs-6 fw-300">Just the Docs gives your documentation a jumpstart with a responsive Jekyll theme that is easily customizable and hosted on GitHub Pages.</p>
 
@@ -6,7 +6,48 @@
 
 <hr />
 
+<h2 id="to-do-list">To Do List</h2>
+
+<ol>
+  <li>extract text from picture
+    <ul>
+      <li>clova ocr테스트</li>
+      <li>piccell?</li>
+    </ul>
+  </li>
+  <li>about blog
+    <ul>
+      <li>support localization</li>
+      <li>google adsense</li>
+    </ul>
+  </li>
+  <li>etc.,
+    <ul>
+      <li>linedevday 보기 <a href="https://linedevday.linecorp.com/jp/2019/sessions">https://linedevday.linecorp.com/jp/2019/sessions</a></li>
+      <li></li>
+    </ul>
+  </li>
+</ol>
+
+<hr />
+
 <h2 id="in-progress">In Progress</h2>
+
+<ol>
+  <li>clipping
+    <ul>
+      <li>jpa 책정리</li>
+      <li>객체지향의 사실과 오해 정리</li>
+    </ul>
+  </li>
+</ol>
+
+<hr />
+
+<h2 id="done">Done</h2>
+<ul>
+  <li><del>move to gitblog from notion</del></li>
+</ul>
 
 <h3 id="blog">Blog</h3>
 

@@ -3,7 +3,6 @@ layout: default
 title: BrowserMatch
 parent: Errors
 has_children: false
-nav_order: 2
 nav_exclude: true
 ---
 

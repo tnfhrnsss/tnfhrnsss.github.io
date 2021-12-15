@@ -1,10 +1,10 @@
-I"�U<h1 id="elasticsearch-필드-추가2">elasticsearch 필드 추가(2)</h1>
+I"�U<h1 id="elasticsearch-필드-추가2">elasticsearch 필드 추가(2)</h1>
 
 <p>[공통]</p>
 
 <p>기존 데이터 백업을 진행합니다.</p>
 
-<p>스냅샷 백업 방식은 <a href="../elasticsearch_backup/">“여기”</a> 참고하세요.</p>
+<p>스냅샷 백업 방식은 <a href="/docs/msa/elastic-search/elasticsearch_backup/">여기</a> 참고하세요.</p>
 
 <h1 id="alias를-활용하는-방식">[Alias를 활용하는 방식]</h1>
 

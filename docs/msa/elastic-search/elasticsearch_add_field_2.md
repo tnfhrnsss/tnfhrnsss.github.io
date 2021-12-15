@@ -12,7 +12,7 @@ nav_exclude: true
 
 기존 데이터 백업을 진행합니다.
 
-스냅샷 백업 방식은 ["여기"](../elasticsearch_backup/) 참고하세요.
+스냅샷 백업 방식은 [여기]({{ site.baseurl }}{% link docs/msa/elastic-search/elasticsearch_backup.md %}) 참고하세요.
 
 # [Alias를 활용하는 방식]
 

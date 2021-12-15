@@ -1,0 +1,66 @@
+I"`<h1 class="fs-9" id="now-on">Now on…</h1>
+
+<hr />
+
+<h2 id="to-do-list">To Do List</h2>
+
+<ol>
+  <li>extract text from picture
+    <ul>
+      <li>clova ocr테스트</li>
+      <li>piccell?</li>
+    </ul>
+  </li>
+  <li>about blog
+    <ul>
+      <li>support localization</li>
+      <li>google adsense</li>
+    </ul>
+  </li>
+  <li>etc.,
+    <ul>
+      <li>linedevday 보기 <a href="https://linedevday.linecorp.com/jp/2019/sessions">https://linedevday.linecorp.com/jp/2019/sessions</a></li>
+      <li>유실에 대한 설계  design for self healing</li>
+    </ul>
+    <ul>
+      <li>kafka를 활용할 것인지</li>
+      <li>실패 모델에 대해 설계</li>
+      <li>rabbitmq기반 delay queue구현
+        <ul>
+          <li>job스케쥴 정보를 프로세스 메모리 외부에 저장</li>
+          <li>delay queue : message에 ttl설정후 queue에 넣으면, 설정한 ttl이 지난 후 dlx로 이동한다</li>
+        </ul>
+      </li>
+      <li>line decaton 학습 (<a href="https://engineering.linecorp.com/ko/blog/decaton-case-studies/">https://engineering.linecorp.com/ko/blog/decaton-case-studies/</a>)
+        <ul>
+          <li>모델 : 지연이벤트에 대한 처리 및 재시도 모델
+            <ul>
+              <li>feign with nginx</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ol>
+
+<hr />
+
+<h2 id="in-progress">In Progress</h2>
+
+<ol>
+  <li>clipping
+    <ul>
+      <li>jpa 책정리</li>
+      <li>객체지향의 사실과 오해 정리</li>
+    </ul>
+  </li>
+</ol>
+
+<hr />
+
+<h2 id="done">Done</h2>
+<ul>
+  <li><del>move to gitblog from notion</del></li>
+</ul>
+:ET
