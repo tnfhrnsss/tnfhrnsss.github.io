@@ -19,6 +19,7 @@ permalink: /
 2. about blog
 - support localization
 - add google adsense
+- github secure setting
 
 3. etc.,
 - linedevday 보기 [https://linedevday.linecorp.com/jp/2019/sessions](https://linedevday.linecorp.com/jp/2019/sessions)
@@ -32,13 +33,20 @@ permalink: /
         - 모델 : 지연이벤트에 대한 처리 및 재시도 모델
 - feign with nginx
 
+4. mook
+- 데브원영강좌 올리기
+
 ---
 
 ## In Progress
 
 1. clipping
 - jpa 책정리
-- 객체지향의 사실과 오해 정리
+- 객체지향의 사실과 오해 정리(p64)
+
+2. sub-projects
+- kakao-addon 작업
+
 
 ---
 
