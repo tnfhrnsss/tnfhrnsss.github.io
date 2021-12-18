@@ -1,8 +1,4 @@
-I"�<h1 class="fs-9" id="welcome">Welcome</h1>
-
-<p class="fs-6 fw-300">Just the Docs gives your documentation a jumpstart with a responsive Jekyll theme that is easily customizable and hosted on GitHub Pages.</p>
-
-<p><a href="#getting-started" class="btn btn-primary fs-5 mb-4 mb-md-0 mr-2"></a> <a href="https://github.com/pmarsceill/just-the-docs" class="btn fs-5 mb-4 mb-md-0">View it on GitHub</a></p>
+I"@<h1 class="fs-9 text-purple-100" id="now-on">Now on…</h1>
 
 <hr />
 
@@ -18,7 +14,8 @@
   <li>about blog
     <ul>
       <li>support localization</li>
-      <li>google adsense</li>
+      <li>add google adsense</li>
+      <li>github secure setting</li>
     </ul>
   </li>
   <li>etc.,
@@ -46,6 +43,11 @@
       </li>
     </ul>
   </li>
+  <li>mook
+    <ul>
+      <li>데브원영강좌 올리기</li>
+    </ul>
+  </li>
 </ol>
 
 <hr />
@@ -56,7 +58,12 @@
   <li>clipping
     <ul>
       <li>jpa 책정리</li>
-      <li>객체지향의 사실과 오해 정리</li>
+      <li>객체지향의 사실과 오해 정리(p64)</li>
+    </ul>
+  </li>
+  <li>sub-projects
+    <ul>
+      <li>kakao-addon 작업</li>
     </ul>
   </li>
 </ol>

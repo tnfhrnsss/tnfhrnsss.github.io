@@ -709,13 +709,13 @@
   },"118": {
     "doc": "Home",
     "title": "To Do List",
-    "content": ". | extract text from picture . | clova ocr테스트 | piccell? | . | about blog . | support localization | add google adsense | . | etc., . | linedevday 보기 https://linedevday.linecorp.com/jp/2019/sessions | 유실에 대한 설계 design for self healing | . | kafka를 활용할 것인지 | 실패 모델에 대해 설계 | rabbitmq기반 delay queue구현 . | job스케쥴 정보를 프로세스 메모리 외부에 저장 | delay queue : message에 ttl설정후 queue에 넣으면, 설정한 ttl이 지난 후 dlx로 이동한다 | . | line decaton 학습 (https://engineering.linecorp.com/ko/blog/decaton-case-studies/) . | 모델 : 지연이벤트에 대한 처리 및 재시도 모델 . | feign with nginx | . | . | . | . ",
+    "content": ". | extract text from picture . | clova ocr테스트 | piccell? | . | about blog . | support localization | add google adsense | github secure setting | . | etc., . | linedevday 보기 https://linedevday.linecorp.com/jp/2019/sessions | 유실에 대한 설계 design for self healing | . | kafka를 활용할 것인지 | 실패 모델에 대해 설계 | rabbitmq기반 delay queue구현 . | job스케쥴 정보를 프로세스 메모리 외부에 저장 | delay queue : message에 ttl설정후 queue에 넣으면, 설정한 ttl이 지난 후 dlx로 이동한다 | . | line decaton 학습 (https://engineering.linecorp.com/ko/blog/decaton-case-studies/) . | 모델 : 지연이벤트에 대한 처리 및 재시도 모델 . | feign with nginx | . | . | . | mook . | 데브원영강좌 올리기 | . | . ",
     "url": "http://localhost:4000/#to-do-list",
     "relUrl": "/#to-do-list"
   },"119": {
     "doc": "Home",
     "title": "In Progress",
-    "content": ". | clipping . | jpa 책정리 | 객체지향의 사실과 오해 정리 | . | . ",
+    "content": ". | clipping . | jpa 책정리 | 객체지향의 사실과 오해 정리(p64) | . | sub-projects . | kakao-addon 작업 | . | . ",
     "url": "http://localhost:4000/#in-progress",
     "relUrl": "/#in-progress"
   },"120": {
