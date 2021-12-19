@@ -1,0 +1,21 @@
+I"�<h1 id="feign-retry">feign retry</h1>
+
+<ol>
+  <li>전역의 ribbon설정을 안쓰고자 함</li>
+  <li>docker의 depends on도 방법</li>
+</ol>
+
+<p>healthcheck:
+test: [“CMD”, “curl”, “-f”, “<a href="http://localhost:8040/actuator/health">http://localhost:8040/actuator/health</a>”]
+interval: 10s
+timeout: 5s
+retries: 10</p>
+
+<ol>
+  <li>feignclient 내부 configuration으로 Retryer를 Bean으로 등록해서 backoff제어한다.</li>
+</ol>
+
+<p>참고)</p>
+
+<p><a href="https://woowabros.github.io/experience/2019/05/29/feign.html#%EC%A2%80%EB%8D%94-%EB%82%98%EC%95%84%EA%B0%80%EA%B8%B0">우아한 feign 적용기 - 우아한형제들 기술 블로그</a></p>
+:ET
