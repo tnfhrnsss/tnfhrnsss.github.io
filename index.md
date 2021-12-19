@@ -5,7 +5,7 @@ nav_order: 1
 permalink: /
 ---
 
-# Now on...
+# Now on...(Update 12/19/21)
 {: .fs-9 .text-purple-100 }
 
 ---
@@ -20,6 +20,8 @@ permalink: /
 - support localization
 - add google adsense
 - github secure setting
+- add google sitemap
+- rearrange post
 
 3. etc.,
 - linedevday 보기 [https://linedevday.linecorp.com/jp/2019/sessions](https://linedevday.linecorp.com/jp/2019/sessions)

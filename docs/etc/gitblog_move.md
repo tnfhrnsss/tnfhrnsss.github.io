@@ -142,6 +142,10 @@ gitblog를 생성하면, username으로 기본 주소가 되기 때문에 도메
 
 [도메인 무료로 SSL/TLS(HTTPS) 얻는 법 | Freenom & GitHub Pages](https://m.blog.naver.com/desbey7/222092439777)
 
+## :: 구글 검색엔진에 노출시키기
+
+[step-9-구글-검색-가능하게-하기](https://honbabzone.com/jekyll/start-gitHubBlog/#step-9-%EA%B5%AC%EA%B8%80-%EA%B2%80%EC%83%89-%EA%B0%80%EB%8A%A5%ED%95%98%EA%B2%8C-%ED%95%98%EA%B8%B0)
+
 ## :: 파비콘 적용
 
 저는 니아 언더 세븐의 니아 이미지를 추출해서 적용했습니다.

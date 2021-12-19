@@ -1,0 +1,61 @@
+I"<h1 id="타입-안전-이종-컨테이너-패턴">타입 안전 이종 컨테이너 패턴</h1>
+
+<p>type safe heterogeneous container pattern</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Favorites</span> <span class="o">{</span>
+	<span class="kd">public</span> <span class="o">&lt;</span><span class="no">T</span><span class="o">&gt;</span> <span class="kt">void</span> <span class="nf">putFavorite</span><span class="o">(</span><span class="nc">Class</span><span class="o">&lt;</span><span class="no">T</span><span class="o">&gt;</span> <span class="n">type</span><span class="o">,</span> <span class="no">T</span> <span class="n">instance</span><span class="o">);</span>
+	<span class="kd">public</span> <span class="o">&lt;</span><span class="no">T</span><span class="o">&gt;</span> <span class="no">T</span> <span class="nf">getFavorite</span><span class="o">(</span><span class="nc">Class</span><span class="o">&lt;</span><span class="no">T</span><span class="o">&gt;</span> <span class="n">type</span><span class="o">);</span>
+<span class="o">}</span>
+
+<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+	<span class="nc">Favorites</span> <span class="n">f</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Favorites</span><span class="o">();</span>
+
+	<span class="n">f</span><span class="o">.</span><span class="na">putFavorite</span><span class="o">(</span><span class="nc">String</span><span class="o">.</span><span class="na">class</span><span class="o">,</span> <span class="s">"Java"</span><span class="o">);</span>
+	<span class="n">f</span><span class="o">.</span><span class="na">putFavorite</span><span class="o">(</span><span class="nc">Integer</span><span class="o">.</span><span class="na">class</span><span class="o">,</span> <span class="mh">0xcafebabe</span><span class="o">);</span>
+
+	<span class="nc">String</span> <span class="n">favoritesString</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="na">getFavorite</span><span class="o">(</span><span class="nc">String</span><span class="o">.</span><span class="na">class</span><span class="o">);</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<ul>
+  <li>Favorites인스턴스는 String이 요청되면 Integer를 반환하는 일이 없기 때문에 타입안전하다고 볼 수 있다.</li>
+  <li>일반 적인 맵과 달리 여러가지 타입의 원소를 담을 수 있어서, 타입안전이종 컨테이너라고 한다.</li>
+  <li>ex) DatabaseRow타입의 Column<T></T></li>
+</ul>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Favorites</span> <span class="o">{</span>
+	<span class="kd">private</span> <span class="nc">Map</span><span class="o">&lt;</span><span class="nc">Class</span><span class="o">&lt;?&gt;,</span> <span class="nc">Object</span><span class="o">&gt;</span> <span class="n">favorites</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">HashMap</span><span class="o">&lt;&gt;();</span>
+
+	<span class="kd">public</span> <span class="o">&lt;</span><span class="no">T</span><span class="o">&gt;</span> <span class="kt">void</span> <span class="nf">putFavorites</span><span class="o">(</span><span class="nc">Class</span><span class="o">&lt;</span><span class="no">T</span><span class="o">&gt;</span> <span class="n">type</span><span class="o">,</span> <span class="no">T</span> <span class="n">instance</span><span class="o">)</span> <span class="o">{</span>
+		<span class="n">favorites</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="nc">Objects</span><span class="o">.</span><span class="na">requireNonNull</span><span class="o">(</span><span class="n">type</span><span class="o">),</span> <span class="n">type</span><span class="o">.</span><span class="na">cass</span><span class="o">(</span><span class="n">instance</span><span class="o">));</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<ul>
+  <li>타입을 한정시키고 싶다면?
+    <ul>
+      <li>ex) annotation api</li>
+    </ul>
+
+    <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="kd">public</span> <span class="o">&lt;</span><span class="no">T</span> <span class="kd">extends</span> <span class="nc">Annotation</span><span class="o">&gt;</span>
+  		<span class="no">T</span> <span class="nf">getAnnotation</span><span class="o">(</span><span class="nc">Class</span><span class="o">&lt;</span><span class="no">T</span><span class="o">&gt;</span> <span class="n">annotationType</span><span class="o">);</span>
+    
+  <span class="kd">static</span> <span class="nc">Annotation</span> <span class="nf">getAnnotation</span><span class="o">(</span><span class="nc">AnnotatedElement</span> <span class="n">element</span><span class="o">,</span> <span class="nc">String</span> <span class="n">annotationTypeName</span><span class="o">)</span> <span class="o">{</span>
+  	<span class="nc">Class</span><span class="o">&lt;?&gt;</span> <span class="n">annotationType</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span> <span class="c1">// 비한정적 타입 토큰</span>
+  	<span class="k">try</span> <span class="o">{</span>
+  		<span class="n">annotationType</span> <span class="o">=</span> <span class="nc">Class</span><span class="o">.</span><span class="na">forName</span><span class="o">(</span><span class="n">annotationTypeName</span><span class="o">);</span>
+  	<span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="nc">Exception</span> <span class="n">ex</span><span class="o">)</span> <span class="o">{</span>
+  		<span class="k">throw</span> <span class="k">new</span> <span class="nf">IllegalArgumentException</span><span class="o">(</span><span class="n">ex</span><span class="o">);</span>
+  	<span class="o">}</span>
+  	<span class="k">return</span> <span class="n">element</span><span class="o">.</span><span class="na">getAnnotation</span><span class="o">(</span><span class="n">annotationType</span><span class="o">.</span><span class="na">asSubclass</span><span class="o">(</span><span class="nc">Annotation</span><span class="o">.</span><span class="na">class</span><span class="o">));</span>
+  <span class="o">}</span>
+    
+</code></pre></div>    </div>
+
+    <ul>
+      <li>annotationType인수는 한정적 타입 토큰</li>
+    </ul>
+  </li>
+</ul>
+:ET
