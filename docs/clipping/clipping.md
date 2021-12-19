@@ -4,6 +4,9 @@ title: Clipping
 nav_order: 6
 has_children: true
 permalink: /docs/clipping
+sitemap:
+    changefreq: daily
+    priority: 1.0
 ---
 
 # Clipping
