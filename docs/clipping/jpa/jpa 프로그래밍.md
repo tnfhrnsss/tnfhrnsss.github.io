@@ -19,6 +19,24 @@ grand_parent: Clipping
 SequenceGenterator.allocationSize의 기본값은 50이다. 이는 최적화 때문인데, 만약 하나씩 증가해야한다면 1로 설정하면 된다.
 @SeqyebceGeberator는 @GeneratedValue 옆에 사용해도 된다.
 
+## 엔티티 맵핑
 
+### @Column 생략
+
+~~~
+int data1;  // @Column생략, 자바 기본타입으로 not null로 생성된다.
+
+Integer data2;  // @Column 생략하면 nullable속성으로 생성된다.
+~~~
+
+따라서 자바 기본타입에 @Column을 사용하면 nullable = false로 지정하는 것이 안전하다.
+
+## 연관관계 매핑 기초
+
+### 양방향 맵핑
+양방향 맵핑시에는 무한 루프에 빠지지 않게 조심해야한다. 
+예를 들어 Member.toString()에서 getTeam()을 호출하고 
+Team.toString()에서 getMember()를 호출하면 무한 루프에 빠질 수 있다. 
+이런 문제는 엔티티를 JSON으로 변환할 때 자주 발생한다.
 
 
