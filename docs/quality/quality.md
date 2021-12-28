@@ -6,3 +6,7 @@ has_children: true
 permalink: /docs/quality
 ---
 
+# Quality Practice
+
+
+{: .fs-6 .fw-300 }
