@@ -1,4 +1,4 @@
-I"�<h1 class="fs-9 text-purple-100" id="now-onupdate-121921">Now on…(Update 12/19/21)</h1>
+I"�<h1 class="fs-9 text-purple-100" id="now-onupdate-1122">Now on…(Update 1/1/22)</h1>
 
 <hr />
 
@@ -59,7 +59,6 @@
 <ol>
   <li>clipping
     <ul>
-      <li>jpa 책정리</li>
       <li>객체지향의 사실과 오해 정리(p64)</li>
     </ul>
   </li>
@@ -75,5 +74,6 @@
 <h2 id="done">Done</h2>
 <ul>
   <li><del>move to gitblog from notion</del></li>
+  <li><del>jpa 책정리</del></li>
 </ul>
 :ET

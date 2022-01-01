@@ -5,7 +5,7 @@ nav_order: 1
 permalink: /
 ---
 
-# Now on...(Update 12/19/21)
+# Now on...(Update 1/1/22)
 {: .fs-9 .text-purple-100 }
 
 ---
@@ -43,7 +43,6 @@ permalink: /
 ## In Progress
 
 1. clipping
-- jpa 책정리
 - 객체지향의 사실과 오해 정리(p64)
 
 2. sub-projects
@@ -54,3 +53,4 @@ permalink: /
 
 ## Done
 - ~~move to gitblog from notion~~
+- ~~jpa 책정리~~

@@ -1,0 +1,100 @@
+I"�<p><img src="../img/jpa.png" alt="jpa.png" /></p>
+
+<h2 id="3-영속성-관리">3. 영속성 관리</h2>
+
+<h4 id="dynamicupdate">@DynamicUpdate</h4>
+
+<p>컬럼이 30개 이상이 되면, @DynamicUpdate를 사용한 동적 수정 쿼리가 정적 수정 쿼리보다 빠르다. 
+하지만 한 테이블에 컬럼이 30개 이상 된다는 것은 테이블 설계상 분리가 적절하게 되지 않았을 가능성이 높다.</p>
+
+<h3 id="sequencegenerator">@SequenceGenerator</h3>
+
+<p>SequenceGenterator.allocationSize의 기본값은 50이다. 이는 최적화 때문인데, 만약 하나씩 증가해야한다면 1로 설정하면 된다.
+@SeqyebceGeberator는 @GeneratedValue 옆에 사용해도 된다.</p>
+
+<h2 id="4-엔티티-맵핑">4. 엔티티 맵핑</h2>
+
+<h3 id="column-생략">@Column 생략</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>int data1;  // @Column생략, 자바 기본타입으로 not null로 생성된다.
+
+Integer data2;  // @Column 생략하면 nullable속성으로 생성된다.
+</code></pre></div></div>
+
+<p>따라서 자바 기본타입에 @Column을 사용하면 nullable = false로 지정하는 것이 안전하다.</p>
+
+<h2 id="5-연관관계-매핑-기초">5. 연관관계 매핑 기초</h2>
+
+<h3 id="양방향-매핑">양방향 매핑</h3>
+<p>양방향 매핑시에는 무한 루프에 빠지지 않게 조심해야한다. 
+예를 들어 Member.toString()에서 getTeam()을 호출하고 
+Team.toString()에서 getMember()를 호출하면 무한 루프에 빠질 수 있다. 
+이런 문제는 엔티티를 JSON으로 변환할 때 자주 발생한다.</p>
+
+<h2 id="6-다양한-연관관계-매핑">6. 다양한 연관관계 매핑</h2>
+
+<h3 id="일대다">일대다</h3>
+<ul>
+  <li>일대다 단방향 매핑보다는 <ins>다대일 양방향</ins> 매핑을 사용하자.</li>
+  <li>관계형 데이터베이스 특성상 외래키는 항상 다 쪽에 있다. 그러므로 양방향 매핑에서 @OneToMany는 연관관계의 주인이 될 수 없다. 이런 이유로 @ManyToOne에는 mappedBy속성이 없다.</li>
+</ul>
+
+<h2 id="7-고급-매핑">7. 고급 매핑</h2>
+
+<h3 id="복합키와-식별-관계-매핑">복합키와 식별 관계 매핑</h3>
+<ul>
+  <li>복합 키에는 @GenerateValue를 사용할 수 없다. 복합 키를 구성하는 여러 컬럼 중 하나에도 사용할 수 없다.</li>
+</ul>
+
+<h2 id="9-값-타입">9. 값 타입</h2>
+
+<h3 id="임베디드-타입복합-값-타입">임베디드 타입(복합 값 타입)</h3>
+<ul>
+  <li>임베디드 타입은 기본  생성자가 필수다.</li>
+  <li>임베디드 타입을  포함한  모든  값 타입은 엔티티의  생명주기에  의존하므로  엔티티와  임베디드  타입의  관계를  UML로 표현하면 컴포지션 관계가 된다</li>
+  <li>하이버네이트는 임베디드 타입을 <ins>컴포넌트</ins>라고 한다.</li>
+</ul>
+
+<h2 id="스프링-데데이이터-jpa">스프링 데데이이터 JPA</h2>
+
+<h3 id="쿼리-메소드-기능">쿼리 메소드 기능</h3>
+<ul>
+  <li><a href="https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#jpa.query-methods.query-creation">스프링 데이터 JPA 쿼리 생성 기능</a></li>
+</ul>
+
+<h2 id="14-컬렉션과-부가--기능">14. 컬렉션과 부가  기능</h2>
+
+<h3 id="리스너">리스너</h3>
+<ul>
+  <li>엔티티의 생명주기에 따른 이벤트를 처리할 수 있다.</li>
+  <li>방법
+    <ul>
+      <li>엔티티에 직접  이벤트를  적용하는  방법(@PostPersist, @PostLoad…)</li>
+      <li>별도의 리스너 등록
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  @EntityListener(DuckListener.class)
+  Public class Duck {
+      ...
+  }
+
+  public class DuckListener {
+      @PrePersist
+      private void prePersist(Object obj) {
+
+      }
+
+      @PostPersist
+      private void postPersist(Object obj) {
+
+      }
+  }
+</code></pre></div>        </div>
+      </li>
+      <li>기본 리스너 사용
+        <ul>
+          <li>모든 엔티티에 적용하는 경우라면 기본 리스너로 등록하면 된다.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+:ET
