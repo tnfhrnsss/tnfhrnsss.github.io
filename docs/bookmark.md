@@ -4,8 +4,10 @@ title: ★bookmark
 nav_order: 11
 ---
 
-# Keep looking
-{: .no_toc }
+# ★bookmark
+
+Keep looking.
+{: .fs-6 .fw-300 }
 
 [https://baek.dev/](https://baek.dev/post/28/)
 
