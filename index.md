@@ -5,7 +5,7 @@ nav_order: 1
 permalink: /
 ---
 
-# Now on...(Update 1/1/22)
+# Now on...(Update 1/15/22)
 {: .fs-9 .text-purple-100 }
 
 ---
@@ -44,9 +44,11 @@ permalink: /
 
 1. clipping
 - 객체지향의 사실과 오해 정리(p64)
+- 웹API디자인
 
 2. sub-projects
-- kakao-addon 작업
+- kakao-addon 포스트 작성단계
+- ios hybrid 앱 작업
 
 
 ---

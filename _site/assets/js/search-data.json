@@ -684,10 +684,10 @@
     "relUrl": "/docs/index-test/"
   },"114": {
     "doc": "Home",
-    "title": "Now on…(Update 1/1/22)",
+    "title": "Now on…(Update 1/15/22)",
     "content": ". ",
-    "url": "http://localhost:4000/#now-onupdate-1122",
-    "relUrl": "/#now-onupdate-1122"
+    "url": "http://localhost:4000/#now-onupdate-11522",
+    "relUrl": "/#now-onupdate-11522"
   },"115": {
     "doc": "Home",
     "title": "To Do List",
@@ -1175,306 +1175,318 @@
     "url": "http://localhost:4000/docs/msa/feign/retry/",
     "relUrl": "/docs/msa/feign/retry/"
   },"196": {
+    "doc": "Synchronized classes Vector, Hashtable, Stack and StringBuffer should not be used",
+    "title": "Synchronized classes Vector, Hashtable, Stack and StringBuffer should not be used.",
+    "content": "[원인] . java:s1149 룰에 대한 것으로 . 여기에 위반되는 이유는 static 메소드나 클래스에 StringBuilder가 아닌 StringBuffer등 멀티쓰레드에 적합한 API를 사용했기 떄문이다. [해결] . 나 같은 경우는 StringBuilder로 변경. [참고] . https://stackoverflow.com/questions/16672730/which-class-to-use-for-this-static-method-stringbuffer-or-stringbuilder . ",
+    "url": "http://localhost:4000/docs/quality/sonarqube/s1149/#synchronized-classes-vector-hashtable-stack-and-stringbuffer-should-not-be-used",
+    "relUrl": "/docs/quality/sonarqube/s1149/#synchronized-classes-vector-hashtable-stack-and-stringbuffer-should-not-be-used"
+  },"197": {
+    "doc": "Synchronized classes Vector, Hashtable, Stack and StringBuffer should not be used",
+    "title": "Synchronized classes Vector, Hashtable, Stack and StringBuffer should not be used",
+    "content": " ",
+    "url": "http://localhost:4000/docs/quality/sonarqube/s1149/",
+    "relUrl": "/docs/quality/sonarqube/s1149/"
+  },"198": {
     "doc": "Search",
     "title": "Search",
     "content": " ",
     "url": "http://localhost:4000/docs/search/",
     "relUrl": "/docs/search/"
-  },"197": {
+  },"199": {
     "doc": "Search",
     "title": "Table of contents",
     "content": ". | Enable search in configuration . | Search granularity | Search previews | Search tokenizer | Display URL in search results | Display search button | . | Hiding pages from search | Generate search index when used as a gem | . Just the Docs uses lunr.js to add a client-side search interface powered by a JSON index that Jekyll generates. All search results are shown in an auto-complete style interface (there is no search results page). By default, all generated HTML pages are indexed using the following data points: . | Page title | Page content | Page URL | . ",
     "url": "http://localhost:4000/docs/search/#table-of-contents",
     "relUrl": "/docs/search/#table-of-contents"
-  },"198": {
+  },"200": {
     "doc": "Search",
     "title": "Enable search in configuration",
     "content": "In your site’s _config.yml, enable search: . # Enable or disable the site search # Supports true (default) or false search_enabled: true . Search granularity . Pages are split into sections that can be searched individually. The sections are defined by the headings on the page. Each section is displayed in a separate search result. # Split pages into sections that can be searched individually # Supports 1 - 6, default: 2 search.heading_level: 2 . Search previews . A search result can contain previews that show where the search words are found in the specific section. # Maximum amount of previews per search result # Default: 3 search.previews: 3 # Maximum amount of words to display before a matched word in the preview # Default: 5 search.preview_words_before: 5 # Maximum amount of words to display after a matched word in the preview # Default: 10 search.preview_words_after: 10 . Search tokenizer . The default is for hyphens to separate tokens in search terms: gem-based is equivalent to gem based, matching either word. To allow search for hyphenated words: . # Set the search token separator # Default: /[\\s\\-/]+/ # Example: enable support for hyphenated search words search.tokenizer_separator: /[\\s/]+/ . Display URL in search results . # Display the relative url in search results # Supports true (default) or false search.rel_url: false . Display search button . The search button displays in the bottom right corner of the screen and triggers the search input when clicked. # Enable or disable the search button that appears in the bottom right corner of every page # Supports true or false (default) search.button: true . ",
     "url": "http://localhost:4000/docs/search/#enable-search-in-configuration",
     "relUrl": "/docs/search/#enable-search-in-configuration"
-  },"199": {
+  },"201": {
     "doc": "Search",
     "title": "Hiding pages from search",
     "content": "Sometimes you might have a page that you don’t want to be indexed for the search nor to show up in search results, e.g, a 404 page. To exclude a page from search, add the search_exclude: true parameter to the page’s YAML front matter: . Example . --- layout: default title: Page not found nav_exclude: true search_exclude: true --- . ",
     "url": "http://localhost:4000/docs/search/#hiding-pages-from-search",
     "relUrl": "/docs/search/#hiding-pages-from-search"
-  },"200": {
+  },"202": {
     "doc": "Search",
     "title": "Generate search index when used as a gem",
     "content": "If you use Just the Docs as a remote theme, you do not need the following steps. If you use the theme as a gem, you must initialize the search by running this rake command that comes with just-the-docs: . $ bundle exec just-the-docs rake search:init . This command creates the assets/js/zzzz-search-data.json file that Jekyll uses to create your search index. Alternatively, you can create the file manually with this content. ",
     "url": "http://localhost:4000/docs/search/#generate-search-index-when-used-as-a-gem",
     "relUrl": "/docs/search/#generate-search-index-when-used-as-a-gem"
-  },"201": {
+  },"203": {
     "doc": "SonarQube",
     "title": "SonarQube",
     "content": " ",
     "url": "http://localhost:4000/docs/quality/sonarqube/sonarqube/",
     "relUrl": "/docs/quality/sonarqube/sonarqube/"
-  },"202": {
+  },"204": {
     "doc": "Feign을 통해 @SpringQueryMap 사용",
     "title": "feign을 통해 @SpringQueryMap 사용",
     "content": ". ::요구사항 . 고객의 과거 상담 이력을 조회해서 다른 서비스로 전달하는 로직 . :: History API . @RestController @RequestMapping(\"histories\") public class HistoryQueryResource { private final HistoryQueryService historyQueryService; @GetMapping public HistoryList findAll( @SpringQueryMap HistoryQuery historyQuery ) { return historyQueryService.findAll(historyQuery); } } . ::Thirdparty . @FeignClient( contextId = \"HistoryQueryClient\", name = \"api\", configuration = {FeignConfiguration.class, FeignLoggerLevelConfiguration.class}, primary = false ) public interface HistoryQueryClient{ @GetMapping(\"histories\") HistoryList findAll(@SpringQueryMap HistoryQuery historyQuery); } . :: 문제 . | 컨트롤러가 Mapping파라미터로 선언한 HistoryQuery에 ArrayList, Map타입이 아니면 맵핑이 되지 않는 오류발생 | . @Builder @NoArgsConstructor(access = AccessLevel.PRIVATE) @AllArgsConstructor @Getter @ToString public class HistoryQuery implements JsonSerializable { @Builder.Default private int offset = 0; // --&gt; API서버로 맵핑되지 않음 @Builder.Default private int limit = 1; // --&gt; API서버로 맵핑되지 않음 @Builder.Default private IdList channelIds = IdList.empty(); // --&gt; 맵핑ok @Builder.Default private IdList status = IdList.empty(); // --&gt; 맵핑ok @Builder.Default private String customerId = StringUtils.EMPTY; // --&gt; API서버로 맵핑되지 않음 } . :: 문제 . | 호출 URL에는 문제가 없지만, History API 서버에는 offset, limit, customerId가 찍히지 않음 . -&gt; GET http://api/histories?offset=0&amp;status=closed&amp;limit=1 &amp;customerId=tester&amp;channelIds=kakao . | feign doc . | . Spring Cloud OpenFeign . doc을 보면, POJO, Map 모두 지원한다고 되어있지만, 테스트해보니 리스트나 맵이 아니면 안됨 . :: 문제해결 . | Param.Expander를 사용하는 방법 —&gt; 받는 쪽이 array, map이 아니면 이것도 안됨 | . Feign Client does not resolve Query parameter . | API 스펙을 변경하는 방법…. | . ",
     "url": "http://localhost:4000/docs/msa/feign/springQueryMap/#feign%EC%9D%84-%ED%86%B5%ED%95%B4-springquerymap-%EC%82%AC%EC%9A%A9",
     "relUrl": "/docs/msa/feign/springQueryMap/#feign을-통해-springquerymap-사용"
-  },"203": {
+  },"205": {
     "doc": "Feign을 통해 @SpringQueryMap 사용",
     "title": "Feign을 통해 @SpringQueryMap 사용",
     "content": " ",
     "url": "http://localhost:4000/docs/msa/feign/springQueryMap/",
     "relUrl": "/docs/msa/feign/springQueryMap/"
-  },"204": {
+  },"206": {
     "doc": "ssl 셋팅 후 갖가지 에러",
     "title": "ssl 셋팅 후 갖가지 에러",
     "content": "1. XMLHttpRequest cannot load https://aaa.ma.com:7443/. Response . to preflight request doesn’t pass access control check: No ‘Access-Control-Allow-Origin’ . header is present on the requested resource. Origin . ‘http://127.0.0.1:8080’ is therefore not allowed access. | . | 접근한 aaa.ma.com 주소는 헤더가 다른 http://127.0.0.1:8080을 ajax로 호출할 수 없다. cors 때문에 | . | . | 공인인증서라면 인증서 설치에 문제겠지만 사설인증서인라면 인터넷브라우저의 인증서관리 화면에서 신뢰할수 잇는 루트기관으로 등록해준다 | . | - 사설 인증서 브라우저에서 저장하려면 | . (1) 인터넷옵션 &gt; 내용 &gt; 인증서 선택 . (2) 신뢰할 수 있는 루트인증기관 탭 선택 &gt; 가져오기 . (3) 루트CA의 crt파일을 선택한다. (4) 브라우저 재시작 . | 제우스에 ssl셋팅하고 재시작했는데..아래처럼 truststore가 없다고 나오면..키파일 위치를 잘못잡았거나, 키스토어가 이상하거나 ㅠㅜ | . jeus.servlet.deployment.StartingException: File Not Found: D:\\TmaxSoft\\jeus6\\config\\testdomain\\truststore . 3. ERR_SSL_WEAK_SERVER_EPHEMERAL_DH_KEY . | 크롬 버전 : 45.0.2454.99에서 나오는 에러로 ssl셋팅했을 때 보안설정이 낮아서 그런것으로.. | 크롬으로 url쳐서 개발자모드 보면 콘솔에 아래처럼 찍히는데.. 먼가 이제까지 브라우저에서 커버된게 deprecated된건가.. 모르겠지만 | . /deep/ combinator is deprecated. See https://www.chromestatus.com/features/6750456638341120 for more details. | 해결은 ssl인증서거는 설정에 ciper설정을 추가하면 된다. | 만약 톰캣이라면 아래처럼 connector설정 | . 4. err_ssl_fallback_beyond_minimum_version . | 이것도 크롬에서만 나타난다 | 블로그) http://ondemand.tistory.com/214 | . 1) 크롬은 여전히 v45 에서 TLS v1.0 을 지원하고 있으니 TLS 버전 이슈는 아님, 2) 다만 크롬이 접속하려는 서버가 TLS Handshake 하는 과정에 이슈가 있을 경우, 기존에는 크롬이 Workaround 해주었지만, 3) v45 부터는 더이상 해당 Workaround 를 지원하지 않아서 발생하는 문제다 정도입니다. 구체적으로 어떤 웹 서버의 특정 버전이 이슈가 있는 것인지는 명확하게 정리된 내용을 찾지 못했습니다만 조치를 위해서는 서버측의 TLS Handshake 에 대한 보완이 필요한 것으로 추정 . ",
     "url": "http://localhost:4000/docs/errors/ssl%20%EC%85%8B%ED%8C%85%20%ED%9B%84%20%EA%B0%96%EA%B0%80%EC%A7%80%20%EC%97%90%EB%9F%AC/",
     "relUrl": "/docs/errors/ssl%20%EC%85%8B%ED%8C%85%20%ED%9B%84%20%EA%B0%96%EA%B0%80%EC%A7%80%20%EC%97%90%EB%9F%AC/"
-  },"205": {
+  },"207": {
     "doc": "store-jpa 모듈을 만들고 나니 Not a managed type 에러 날때",
     "title": "store-jpa 모듈을 만들고 나니 Not a managed type 에러 날때",
     "content": "에러 )11:30:46.596 main       WARN  stractApplicationContext:557 refresh         Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name ‘aaaService’ defined in file []: Unsatisfied dependency expressed through constructor parameter 0; nested exception is     at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:769)    at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:218)    at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1341)    at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1187)    at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)    at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)    at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)    at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)    at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)    at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)    at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:845)    at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)    at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)    at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)    at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:742)    at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:389)    at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)    at org.springframework.boot.SpringApplication.run(SpringApplication.java:1213)    at org.springframework.boot.SpringApplication.run(SpringApplication.java:1202)        at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:769)    at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:218)    at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1341)    at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1187)    at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)    at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)    at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)    at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)    at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)    at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)    at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)    at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1251)    at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1171)    at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857)    at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760)    … 19 common frames omittedCaused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name ‘internalGatewayRepository’: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class AAAJpo    at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778)    at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)    at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)    at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)    at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)    at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)    at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)    at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)    at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1251)    at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1171)    at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857)    at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760)    … 33 common frames omittedCaused by: java.lang.IllegalArgumentException: Not a managed type: class AAAGatewayJpo    at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:552)    at org.springframework.data.jpa.repository.support.JpaMetamodelEntityInformation.(JpaMetamodelEntityInformation.java:74)    at org.springframework.data.jpa.repository.support.JpaEntityInformationSupport.getEntityInformation(JpaEntityInformationSupport.java:66)    at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getEntityInformation(JpaRepositoryFactory.java:201)    at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:151)    at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:134)    at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:65)    at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:305)    at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:297)    at org.springframework.data.util.Lazy.getNullable(Lazy.java:211)    at org.springframework.data.util.Lazy.get(Lazy.java:94)    at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:300)    at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:121)    at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)    at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)    ... 44 common frames omittedProcess finished with exit code 1 . [원인] . SpringApplication으로 서비스 올릴 때, scan하는 패키지는 test.www인데 springboot로 올리는 application 파일은 test.www.aaa.boot아래에 있었다 . 이걸 test.www.aaa 하위로 옮기고 나니 해결됨 . ",
     "url": "http://localhost:4000/docs/errors/store-jpa%20%EB%AA%A8%EB%93%88%EC%9D%84%20%EB%A7%8C%EB%93%A4%EA%B3%A0%20%EB%82%98%EB%8B%88%20Not%20a%20managed%20typ/",
     "relUrl": "/docs/errors/store-jpa%20%EB%AA%A8%EB%93%88%EC%9D%84%20%EB%A7%8C%EB%93%A4%EA%B3%A0%20%EB%82%98%EB%8B%88%20Not%20a%20managed%20typ/"
-  },"206": {
+  },"208": {
     "doc": "Sub Projects",
     "title": "Sub Projects",
     "content": "Projects that I work on personally. ",
     "url": "http://localhost:4000/docs/sub-projects",
     "relUrl": "/docs/sub-projects"
-  },"207": {
+  },"209": {
     "doc": "Tables",
     "title": "Tables",
     "content": "Tables are responsive by default, allowing wide tables to have a horizontal scroll to access columns outside of the normal viewport. | head1 | head two | three | . | ok | good swedish fish | nice | . | out of stock | good and plenty | nice | . | ok | good oreos | hmm | . | ok | good zoute drop | yumm | . | head1 | head two | three |:-------------|:------------------|:------| ok | good swedish fish | nice | out of stock | good and plenty | nice | ok | good `oreos` | hmm | ok | good `zoute` drop | yumm | . ",
     "url": "http://localhost:4000/docs/ui-components/tables/",
     "relUrl": "/docs/ui-components/tables/"
-  },"208": {
+  },"210": {
     "doc": "점층적 생성자 패턴",
     "title": "점층적 생성자 패턴",
     "content": " ",
     "url": "http://localhost:4000/docs/patterns/telescoping_constructor_pattern/",
     "relUrl": "/docs/patterns/telescoping_constructor_pattern/"
-  },"209": {
+  },"211": {
     "doc": "Tesseract Ocr Study",
     "title": "tesseract ocr 공부",
     "content": "기술조사 ) Tesseract-ocr을 사용 . 순서1) 라이브러리설치에 앞서서, 맥으로 해야하기 때문에 홈브루 설치(https://whitepaek.tistory.com/3) . 순서2) tesseract, tesseract-lang설치 . brew install tesseract . brew install tesseract-lang . 순서3) sudo pip3 install pytesseract . sudo pip3 intall Image . 순서4) 실행한다. peter:~ peter$ tesseract /Users/peter/Downloads/IMG_5814.JPG /Users/peter/Downloads/aaa.txt -l kor . 순서4-1) 또는 파이썬으로 실행한다. import pytessearct . import PIL import Image . print(pytesseract.image_to_string(Image.open('/Users/peter/Downloads/IMG_5814.JPG'), lang='kor')) . 결과1) 별로 좋지 않은 결과 . 이 도 아이티 들으 그도 밸아차 가 소경더 [준공 023 자구 가바바 다자이 이누 그두자구 1611 11\\ 1000 너(|'0&gt;030)40) 이 지 성 지음 . 시도2) 이미지를 rotate시켜본다. &gt;&gt;&gt; im = Image.open('/Users/peter/Downloads/IMG_5814.JPG') &gt;&gt;&gt; img3 = im.rotate(90) &gt;&gt;&gt; print(pytesseract.image_to_string(img3, lang='kor')) . 결과2) 더 안좋음 ㅠㅜ . 몽|? 을 |? |0 도스 사기브 사고 ~ 요일 -………애 : 다 00000 0 디넌낸트이나 조는 [1 ~ 야 오어 1오 \" 0 . 시도3) tesseract의 train된 lang을 추가해본다. https://github.com/tesseract-ocr/tessdata/blob/master/kor.traineddata 에서 다운로드받고, . 받은 데이터파일을 아래에 추가. mac으로 terracert 를 설치한 경우, 추가할 위치는 /usr/local/share/tessdata 이다. 결과3) 첫번째에 비해 달라진걸 모르겠다 ㅠㅜ . 人 還 計生 lane Austen ()%+()&amp;1) 點 『 | 1 도 ~) 人 全 一 人 生 人 加 人 크 ” &gt; 재한 0 블 세 랐 도 기 ||” :( 총 니 . 내 - 올 를 SKIN 7! 올블 이 入 성 지음 . 시도4) 문제를 알았다… 폰트같은 글자 모양이나 길이에 대한 학습이 필요하다는 것을… . 시도5) 이미지를 box파일을 만든담에 https://hello-gg.tistory.com/5 에서처럼 하나씩 불러서 인식을 잡아준다. 그리고 학습 후 기존 학습파일에 add해준다. https://diyworld.tistory.com/114 . ",
     "url": "http://localhost:4000/docs/sub-projects/tesseract_ocr_study/#tesseract-ocr-%EA%B3%B5%EB%B6%80",
     "relUrl": "/docs/sub-projects/tesseract_ocr_study/#tesseract-ocr-공부"
-  },"210": {
+  },"212": {
     "doc": "Tesseract Ocr Study",
     "title": "Tesseract Ocr Study",
     "content": " ",
     "url": "http://localhost:4000/docs/sub-projects/tesseract_ocr_study/",
     "relUrl": "/docs/sub-projects/tesseract_ocr_study/"
-  },"211": {
+  },"213": {
     "doc": "Tolerant reader pattern",
     "title": "tolerant reader pattern",
     "content": " ",
     "url": "http://localhost:4000/docs/patterns/tolerant_reader_pattern/#tolerant-reader-pattern",
     "relUrl": "/docs/patterns/tolerant_reader_pattern/#tolerant-reader-pattern"
-  },"212": {
+  },"214": {
     "doc": "Tolerant reader pattern",
     "title": "Tolerant reader pattern",
     "content": " ",
     "url": "http://localhost:4000/docs/patterns/tolerant_reader_pattern/",
     "relUrl": "/docs/patterns/tolerant_reader_pattern/"
-  },"213": {
+  },"215": {
     "doc": "Type safe heterogeneous container pattern",
     "title": "타입 안전 이종 컨테이너 패턴",
     "content": "type safe heterogeneous container pattern . public class Favorites { public &lt;T&gt; void putFavorite(Class&lt;T&gt; type, T instance); public &lt;T&gt; T getFavorite(Class&lt;T&gt; type); } public static void main(String[] args) { Favorites f = new Favorites(); f.putFavorite(String.class, \"Java\"); f.putFavorite(Integer.class, 0xcafebabe); String favoritesString = f.getFavorite(String.class); } . | Favorites인스턴스는 String이 요청되면 Integer를 반환하는 일이 없기 때문에 타입안전하다고 볼 수 있다. | 일반 적인 맵과 달리 여러가지 타입의 원소를 담을 수 있어서, 타입안전이종 컨테이너라고 한다. | ex) DatabaseRow타입의 Column | . public class Favorites { private Map&lt;Class&lt;?&gt;, Object&gt; favorites = new HashMap&lt;&gt;(); public &lt;T&gt; void putFavorites(Class&lt;T&gt; type, T instance) { favorites.put(Objects.requireNonNull(type), type.cass(instance)); } } . | 타입을 한정시키고 싶다면? . | ex) annotation api | . public &lt;T extends Annotation&gt; T getAnnotation(Class&lt;T&gt; annotationType); static Annotation getAnnotation(AnnotatedElement element, String annotationTypeName) { Class&lt;?&gt; annotationType = null; // 비한정적 타입 토큰 try { annotationType = Class.forName(annotationTypeName); } catch (Exception ex) { throw new IllegalArgumentException(ex); } return element.getAnnotation(annotationType.asSubclass(Annotation.class)); } . | annotationType인수는 한정적 타입 토큰 | . | . ",
     "url": "http://localhost:4000/docs/patterns/typesafe_heterogeneous_container_pattern/#%ED%83%80%EC%9E%85-%EC%95%88%EC%A0%84-%EC%9D%B4%EC%A2%85-%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88-%ED%8C%A8%ED%84%B4",
     "relUrl": "/docs/patterns/typesafe_heterogeneous_container_pattern/#타입-안전-이종-컨테이너-패턴"
-  },"214": {
+  },"216": {
     "doc": "Type safe heterogeneous container pattern",
     "title": "Type safe heterogeneous container pattern",
     "content": " ",
     "url": "http://localhost:4000/docs/patterns/typesafe_heterogeneous_container_pattern/",
     "relUrl": "/docs/patterns/typesafe_heterogeneous_container_pattern/"
-  },"215": {
+  },"217": {
     "doc": "Typography",
     "title": "Typography",
     "content": " ",
     "url": "http://localhost:4000/docs/ui-components/typography/",
     "relUrl": "/docs/ui-components/typography/"
-  },"216": {
+  },"218": {
     "doc": "Typography",
     "title": "Table of contents",
     "content": ". | Font stack | Responsive type scale | Headings | Body text | Inline elements | Typographic Utilities | . ",
     "url": "http://localhost:4000/docs/ui-components/typography/#table-of-contents",
     "relUrl": "/docs/ui-components/typography/#table-of-contents"
-  },"217": {
+  },"219": {
     "doc": "Typography",
     "title": "Font stack",
     "content": "By default, Just the Docs uses a native system font stack for sans-serif fonts: . system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif . ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz . For monospace type, like code snippets or the &lt;pre&gt; element, Just the Docs uses a native system font stack for monospace fonts: . \"SFMono-Regular\", Menlo, Consolas, Monospace . ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz . ",
     "url": "http://localhost:4000/docs/ui-components/typography/#font-stack",
     "relUrl": "/docs/ui-components/typography/#font-stack"
-  },"218": {
+  },"220": {
     "doc": "Typography",
     "title": "Responsive type scale",
     "content": "Just the Docs uses a responsive type scale that shifts depending on the viewport size. | Selector | Small screen size font-size | Large screen size font-size | . | h1, .text-alpha | 32px | 36px | . | h2, .text-beta | 18px | 24px | . | h3, .text-gamma | 16px | 18px | . | h4, .text-delta | 14px | 16px | . | h5, .text-epsilon | 16px | 18px | . | h6, .text-zeta | 18px | 24px | . | body | 14px | 16px | . ",
     "url": "http://localhost:4000/docs/ui-components/typography/#responsive-type-scale",
     "relUrl": "/docs/ui-components/typography/#responsive-type-scale"
-  },"219": {
+  },"221": {
     "doc": "Typography",
     "title": "Headings",
     "content": "Headings are rendered like this: . ",
     "url": "http://localhost:4000/docs/ui-components/typography/#headings",
     "relUrl": "/docs/ui-components/typography/#headings"
-  },"220": {
+  },"222": {
     "doc": "Typography",
     "title": "Heading 1",
     "content": " ",
     "url": "http://localhost:4000/docs/ui-components/typography/",
     "relUrl": "/docs/ui-components/typography/"
-  },"221": {
+  },"223": {
     "doc": "Typography",
     "title": "Heading 2",
     "content": "Heading 3 . Heading 4 . Heading 5 . Heading 6 . # Heading 1 ## Heading 2 ### Heading 3 #### Heading 4 ##### Heading 5 ###### Heading 6 . ",
     "url": "http://localhost:4000/docs/ui-components/typography/",
     "relUrl": "/docs/ui-components/typography/"
-  },"222": {
+  },"224": {
     "doc": "Typography",
     "title": "Body text",
     "content": "Default body text is rendered like this: . Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. ",
     "url": "http://localhost:4000/docs/ui-components/typography/#body-text",
     "relUrl": "/docs/ui-components/typography/#body-text"
-  },"223": {
+  },"225": {
     "doc": "Typography",
     "title": "Inline elements",
     "content": "Text can be bold, italic, or strikethrough. Link to another page. Text can be **bold**, _italic_, or ~~strikethrough~~. [Link to another page](another-page). ",
     "url": "http://localhost:4000/docs/ui-components/typography/#inline-elements",
     "relUrl": "/docs/ui-components/typography/#inline-elements"
-  },"224": {
+  },"226": {
     "doc": "Typography",
     "title": "Typographic Utilities",
     "content": "There are a number of specific typographic CSS classes that allow you to override default styling for font size, font weight, line height, and capitalization. View typography utilities . ",
     "url": "http://localhost:4000/docs/ui-components/typography/#typographic-utilities",
     "relUrl": "/docs/ui-components/typography/#typographic-utilities"
-  },"225": {
+  },"227": {
     "doc": "Typography",
     "title": "Typography Utilities",
     "content": " ",
     "url": "http://localhost:4000/docs/utilities/typography/#typography-utilities",
     "relUrl": "/docs/utilities/typography/#typography-utilities"
-  },"226": {
+  },"228": {
     "doc": "Typography",
     "title": "Table of contents",
     "content": ". | Font size | Font weight | Line height | Text justification | . ",
     "url": "http://localhost:4000/docs/utilities/typography/#table-of-contents",
     "relUrl": "/docs/utilities/typography/#table-of-contents"
-  },"227": {
+  },"229": {
     "doc": "Typography",
     "title": "Font size",
     "content": "Use the .fs-1 - .fs-10 to set an explicit font-size. | Class | Small screen size font-size | Large screen size font-size | . | .fs-1 | 9px | 10px | . | .fs-2 | 11px | 12px | . | .fs-3 | 12px | 14px | . | .fs-4 | 14px | 16px | . | .fs-5 | 16px | 18px | . | .fs-6 | 18px | 24px | . | .fs-7 | 24px | 32px | . | .fs-8 | 32px | 38px | . | .fs-9 | 38px | 42px | . | .fs-10 | 42px | 48px | . Font size 1 . Font size 2 . Font size 3 . Font size 4 . Font size 5 . Font size 6 . Font size 7 . Font size 8 . Font size 9 . Font size 10 . In Markdown, use the `{: }` wrapper to apply custom classes: Font size 1 {: .fs-1 } Font size 2 {: .fs-2 } Font size 3 {: .fs-3 } Font size 4 {: .fs-4 } Font size 5 {: .fs-5 } Font size 6 {: .fs-6 } Font size 7 {: .fs-7 } Font size 8 {: .fs-8 } Font size 9 {: .fs-9 } Font size 10 {: .fs-10 } . ",
     "url": "http://localhost:4000/docs/utilities/typography/#font-size",
     "relUrl": "/docs/utilities/typography/#font-size"
-  },"228": {
+  },"230": {
     "doc": "Typography",
     "title": "Font weight",
     "content": "Use the .fw-300 - .fw-700 to set an explicit font-size. Font weight 300 . Font weight 400 . Font weight 500 . Font weight 700 . In Markdown, use the `{: }` wrapper to apply custom classes: Font weight 300 {: .fw-300 } Font weight 400 {: .fw-400 } Font weight 500 {: .fw-500 } Font weight 700 {: .fw-700 } . ",
     "url": "http://localhost:4000/docs/utilities/typography/#font-weight",
     "relUrl": "/docs/utilities/typography/#font-weight"
-  },"229": {
+  },"231": {
     "doc": "Typography",
     "title": "Line height",
     "content": "Use the lh- classes to explicitly apply line height to text. | Class | line-height value | Notes | . | .lh-0 | 0 |   | . | .lh-tight | 1.1 | Default for headings | . | .lh-default | 1.4 | Default for body (paragraphs) | . No Line height No Line height . Tight line height Tight line height . Default line height Default line height . In Markdown, use the `{: }` wrapper to apply custom classes: No Line height No Line height {: .lh-0 } Tight line height Tight line height {: .lh-tight } Default line height Default line height {: .fh-default } . ",
     "url": "http://localhost:4000/docs/utilities/typography/#line-height",
     "relUrl": "/docs/utilities/typography/#line-height"
-  },"230": {
+  },"232": {
     "doc": "Typography",
     "title": "Text justification",
     "content": "By default text is justified left. Use these text- classes to override settings: . | Class | What it does | . | .text-left | text-align: left | . | .text-right | text-align: right | . | .text-center | text-align: center | . ",
     "url": "http://localhost:4000/docs/utilities/typography/#text-justification",
     "relUrl": "/docs/utilities/typography/#text-justification"
-  },"231": {
+  },"233": {
     "doc": "Typography",
     "title": "Typography",
     "content": " ",
     "url": "http://localhost:4000/docs/utilities/typography/",
     "relUrl": "/docs/utilities/typography/"
-  },"232": {
+  },"234": {
     "doc": "Udacity",
     "title": "Udacity",
     "content": " ",
     "url": "http://localhost:4000/docs/mooc/udacity/udacity/",
     "relUrl": "/docs/mooc/udacity/udacity/"
-  },"233": {
+  },"235": {
     "doc": "Udemy",
     "title": "Udemy",
     "content": " ",
     "url": "http://localhost:4000/docs/mooc/udemy/udemy/",
     "relUrl": "/docs/mooc/udemy/udemy/"
-  },"234": {
+  },"236": {
     "doc": "UI Components",
     "title": "UI Components",
     "content": "To make it as easy as possible to write documentation in plain Markdown, most UI components are styled using default Markdown elements with few additional CSS classes needed. ",
     "url": "http://localhost:4000/docs/ui-components",
     "relUrl": "/docs/ui-components"
-  },"235": {
+  },"237": {
     "doc": "Utilities",
     "title": "Utilities",
     "content": "CSS utility classes come in handy when you to want to override default styles to create additional whitespace (margins/padding), correct unexpected shifts in font size or weight, add color, or hide (or show) something at a specific screen size. ",
     "url": "http://localhost:4000/docs/utilities",
     "relUrl": "/docs/utilities"
-  },"236": {
+  },"238": {
     "doc": "vuejs-2-the-complete-guide 후기",
     "title": "[Udemy] vuejs-2-the-complete-guide 후기",
     "content": " ",
     "url": "http://localhost:4000/docs/mooc/udemy/vuejs/#udemy-vuejs-2-the-complete-guide-%ED%9B%84%EA%B8%B0",
     "relUrl": "/docs/mooc/udemy/vuejs/#udemy-vuejs-2-the-complete-guide-후기"
-  },"237": {
+  },"239": {
     "doc": "vuejs-2-the-complete-guide 후기",
     "title": "강의 URL",
     "content": "https://www.udemy.com/course/vuejs-2-the-complete-guide/ . ",
     "url": "http://localhost:4000/docs/mooc/udemy/vuejs/#%EA%B0%95%EC%9D%98-url",
     "relUrl": "/docs/mooc/udemy/vuejs/#강의-url"
-  },"238": {
+  },"240": {
     "doc": "vuejs-2-the-complete-guide 후기",
     "title": "학습 툴",
     "content": ". | visual studio code | . ",
     "url": "http://localhost:4000/docs/mooc/udemy/vuejs/#%ED%95%99%EC%8A%B5-%ED%88%B4",
     "relUrl": "/docs/mooc/udemy/vuejs/#학습-툴"
-  },"239": {
+  },"241": {
     "doc": "vuejs-2-the-complete-guide 후기",
     "title": "강의 구성",
     "content": ". | 총 670강의로 49시간 정도 소요. | vuejs버전이 올라갔을 때 강의가 업데이트 된다. | 강의 하나당 최소 1분에서 최대 15분 안팍으로 짧게 나눠져 있어서 수강하기 수월 | 강좌마다 기본 프로젝트가 첨부되어 있고, 강의 내용 들으면서 해당 프로젝트에 코딩을 하면 된다. | 과제 : 건너뛰기가 가능하지만, 과제를 통해서 복습이 가능. | . 세션 1 ~ 세션 5 : Vuejs의 기본 . 세션 6 ~ 세션 9 : 컴포넌트 학습 . 세션 10 : 이제까지 배운 것으로 미니프로젝트 구성학습 . 세션 11 : 폼 학습 . 세션 12 : Http Request호출 . 세션 13 : 라우팅 학습 . 세션 14 : Animations &amp; Transitions . 세션 15 : Vuex 학습 . 세션 16 : Web app 프로젝트 구성 학습 . 세션 17 ~ 세션 44 : 기타 프로젝트에 필요한 학습 . ",
     "url": "http://localhost:4000/docs/mooc/udemy/vuejs/#%EA%B0%95%EC%9D%98-%EA%B5%AC%EC%84%B1",
     "relUrl": "/docs/mooc/udemy/vuejs/#강의-구성"
-  },"240": {
+  },"242": {
     "doc": "vuejs-2-the-complete-guide 후기",
     "title": "선수 학습 조건",
     "content": ". | 기본 javascript 지식 필요 | ES6도 알아야하지만 필수는 아님. —&gt; 학습에 지장없음. | 기본 Html 및 CSS에 대해서 설명하지 않기때문에, 기본적인 것은 알고 있어야 한다. | . ",
     "url": "http://localhost:4000/docs/mooc/udemy/vuejs/#%EC%84%A0%EC%88%98-%ED%95%99%EC%8A%B5-%EC%A1%B0%EA%B1%B4",
     "relUrl": "/docs/mooc/udemy/vuejs/#선수-학습-조건"
-  },"241": {
+  },"243": {
     "doc": "vuejs-2-the-complete-guide 후기",
     "title": "언어 지원",
     "content": "영어로 진행되는 수업으로 한글 자막은 없고 영어 및 유럽권 자막이 있다. 강사님 말투가 빠른 편이 아니여서, 충분히 이해하고 따라가기에 어렵지 않음. ",
     "url": "http://localhost:4000/docs/mooc/udemy/vuejs/#%EC%96%B8%EC%96%B4-%EC%A7%80%EC%9B%90",
     "relUrl": "/docs/mooc/udemy/vuejs/#언어-지원"
-  },"242": {
+  },"244": {
     "doc": "vuejs-2-the-complete-guide 후기",
     "title": "학습 후기",
     "content": ". | 평일에는 1~2강의 정도 수강하고 있어서, 아직 세션10 ㅎ | 기초부터 실전까지 활용가능한 내용으로 잘 구성되어있는 것 같다. | 강의 속도도 빠르지 않고, Vuejs를 처음 접한 사람에게는 좋은 강의!! | 강의를 다 듣고 프로젝트에 바로 투입도 가능해보인다! | . ",
     "url": "http://localhost:4000/docs/mooc/udemy/vuejs/#%ED%95%99%EC%8A%B5-%ED%9B%84%EA%B8%B0",
     "relUrl": "/docs/mooc/udemy/vuejs/#학습-후기"
-  },"243": {
+  },"245": {
     "doc": "vuejs-2-the-complete-guide 후기",
     "title": "학습 요약",
     "content": "1.75x 정주행 요약 . ",
     "url": "http://localhost:4000/docs/mooc/udemy/vuejs/#%ED%95%99%EC%8A%B5-%EC%9A%94%EC%95%BD",
     "relUrl": "/docs/mooc/udemy/vuejs/#학습-요약"
-  },"244": {
+  },"246": {
     "doc": "vuejs-2-the-complete-guide 후기",
     "title": "vuejs-2-the-complete-guide 후기",
     "content": " ",
     "url": "http://localhost:4000/docs/mooc/udemy/vuejs/",
     "relUrl": "/docs/mooc/udemy/vuejs/"
-  },"245": {
+  },"247": {
     "doc": "1.75x 정주행 요약",
     "title": "1.75x 정주행 요약",
     "content": " ",
     "url": "http://localhost:4000/docs/mooc/udemy/vuejs_sub/",
     "relUrl": "/docs/mooc/udemy/vuejs_sub/"
-  },"246": {
+  },"248": {
     "doc": "애플 Symantec Root 인증서 제거로 인한 인증서 갱신",
     "title": "애플 Symantec Root 인증서 제거로 인한 인증서 갱신",
     "content": "# 애플 Symantec Root 인증서 제거로 인한 인증서 갱신 에러 : PKIX path building failed 원인 - 애플에서 symantec root인증서 제거해서, 인증불가 발생 - JRE 1.8.0_101 미만인 경우 발생 조치 - JRE 1.8.0_101 이상으로 버전업 - 인증서 추가 [Java - PKIX path building failed](https://blog.geunho.dev/posts/pkix-path-building-failed/) ",

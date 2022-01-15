@@ -1,0 +1,18 @@
+I"_<h1 id="synchronized-classes-vector-hashtable-stack-and-stringbuffer-should-not-be-used">Synchronized classes Vector, Hashtable, Stack and StringBuffer should not be used.</h1>
+
+<p><strong>[원인]</strong></p>
+
+<p>java:s1149 룰에 대한 것으로</p>
+
+<p>여기에 위반되는 이유는 static 메소드나 클래스에 StringBuilder가 아닌 StringBuffer등 멀티쓰레드에 적합한 API를 사용했기 떄문이다.</p>
+
+<p><img src="../img/s1149.png" alt="s1149.png" /></p>
+
+<p><strong>[해결]</strong></p>
+
+<p>나 같은 경우는 StringBuilder로 변경.</p>
+
+<p>[참고]</p>
+
+<p><a href="https://stackoverflow.com/questions/16672730/which-class-to-use-for-this-static-method-stringbuffer-or-stringbuilder" target="_blank">https://stackoverflow.com/questions/16672730/which-class-to-use-for-this-static-method-stringbuffer-or-stringbuilder</a></p>
+:ET
