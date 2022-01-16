@@ -15,7 +15,7 @@ postgresql - jdbc로 커넥션 맺어서 자바에서 ibatis쿼리 실행하는�
 **current transaction is aborted, commands ignored until end of transaction block**
 
 - -- The error occurred while applying a parameter map.
-- -- Check the .
+- -- Check the .
     
     **selectNextOne**
     
@@ -40,6 +40,6 @@ at org.springframework.orm.ibatis.SqlMapClientTemplate.execute(SqlMapClientTempl
 
 [원인]
 
-위에 처럼 나오면 쿼리에 문법적 오류로 인하여 현재 트랜잭션은 폐기된다는 뜻
+위에 처럼 나오면 쿼리에 문법적 오류로 인하여 현재 트랜잭션은 폐기된다는 뜻
 
 내 경우는 selectNextOne쿼리가 잘못되었음

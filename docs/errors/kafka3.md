@@ -10,7 +10,7 @@ nav_exclude: true
 
 에러 )
 
-**org.springframework.kafka.KafkaException: Ambiguous methods for payload type:** class AAA: handle and handle
+**org.springframework.kafka.KafkaException: Ambiguous methods for payload type:** class AAA: handle and handle
 
 at org.springframework.kafka.listener.adapter.DelegatingInvocableHandler.findHandlerForPayload(DelegatingInvocableHandler.java:233)
 
@@ -66,4 +66,4 @@ at java.base/java.lang.Thread.run(Thread.java:835)
 
 Process finished with exit code -1
 
-원인) 내가 handle메소드 인자를 Object타입으로 받은거랑 MessageCreated로 받은걸 두개 생성해서... 어디에 매핑할지 모호하다는 에러임. Object인자로 받는 메소드를 지우자
+원인) 내가 handle메소드 인자를 Object타입으로 받은거랑 MessageCreated로 받은걸 두개 생성해서... 어디에 매핑할지 모호하다는 에러임. Object인자로 받는 메소드를 지우자

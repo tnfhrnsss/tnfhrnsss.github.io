@@ -8,11 +8,11 @@ nav_exclude: true
 
 # PathVariable annotation was empty on param 0.
 
-Cause) @PathVariable("id") 일케 해야하는데, 그냥 @PathVariable이것만 함
+Cause) @PathVariable("id") 일케 해야하는데, 그냥 @PathVariable이것만 함
 
 Log)
 
-org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'aaa' defined in file [aaa.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'bbb' defined in file [bbb.class]: Unsatisfied dependency expressed through constructor parameter 9; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'CCCClient': FactoryBean threw exception on object creation; nested exception is java.lang.IllegalStateException: **PathVariable annotation was empty on param 0**.
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'aaa' defined in file [aaa.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'bbb' defined in file [bbb.class]: Unsatisfied dependency expressed through constructor parameter 9; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'CCCClient': FactoryBean threw exception on object creation; nested exception is java.lang.IllegalStateException: **PathVariable annotation was empty on param 0**.
 
 at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:769)
 

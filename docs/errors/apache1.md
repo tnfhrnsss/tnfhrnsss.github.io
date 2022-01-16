@@ -14,7 +14,7 @@ nav_exclude: true
 
 - --------------------
 
-BrowserMatch ".*MSIE.*" \         nokeepalive ssl-unclean-shutdown \         downgrade-1.0 force-response-1.0
+BrowserMatch ".*MSIE.*" \nokeepalive ssl-unclean-shutdown \downgrade-1.0 force-response-1.0
 
 - --------------------
 
@@ -24,18 +24,18 @@ BrowserMatch ".*MSIE.*" \         nokeepalive ssl-unclean-shutdown \    �
 
 파악해본결과 이 블로그에서 (http://blogs.msdn.com/b/ieinternals/archive/2011/03/26/https-and-connection-close-is-your-apache-modssl-server-configuration-set-to-slow.aspx)
 
-Four years ago, there was a [public call](https://www.blogger.com/blog/post/edit/2689228726924373128/658335713030481387#) to update the guidance to reflect the fact that users of more modern browsers were paying an unneeded performance penalty. Finally, in June 2010, the default guidance was changed in recognition of the fact that the problem never affected IE6 and later:
+Four years ago, there was a[public call](https://www.blogger.com/blog/post/edit/2689228726924373128/658335713030481387#)to update the guidance to reflect the fact that users of more modern browsers were paying an unneeded performance penalty. Finally, in June 2010, the default guidance was changed in recognition of the fact that the problem never affected IE6 and later:
 
-> BrowserMatch ".*MSIE [1-5].*" \ nokeepalive ssl-unclean-shutdown \ downgrade-1.0 force-response-1.0
+> BrowserMatch ".*MSIE [1-5].*" \nokeepalive ssl-unclean-shutdown \downgrade-1.0 force-response-1.0
 > 
 
 Unfortunately, many major Apache installations still haven’t been updated with even this guidance. Also, alert readers will spot a very obvious problem with the “new” regular expression.
 
-In the expression above, any IE version that *starts with* “1” will be treated as outdated and served connection slowly without Keep-Alive. Internet Explorer 1.0 didn’t even support SSL at all ([SSL was added in 2.0](https://www.blogger.com/blog/post/edit/2689228726924373128/658335713030481387#)), but worse, this loosely-written regular expression will also match *future* **MSIE 10.0, MSIE 11.0, MSIE 12.0** (etc) ****user-agent strings. Hence, Apache hosts will one day find that the *newest*browsers are forced into the “slow” lane!
+In the expression above, any IE version that *starts with*“1” will be treated as outdated and served connection slowly without Keep-Alive. Internet Explorer 1.0 didn’t even support SSL at all ([SSL was added in 2.0](https://www.blogger.com/blog/post/edit/2689228726924373128/658335713030481387#)), but worse, this loosely-written regular expression will also match*future***MSIE 10.0,MSIE 11.0,MSIE 12.0**(etc)****user-agent strings. Hence, Apache hosts will one day find that the*newest*browsers are forced into the “slow” lane!
 
 At the very least, Apache hosts should update their regular expression to this:
 
-> BrowserMatch ".*MSIE [2-5]\..*" \ nokeepalive ssl-unclean-shutdown \ downgrade-1.0 force-response-1.0
+> BrowserMatch ".*MSIE [2-5]\..*" \nokeepalive ssl-unclean-shutdown \downgrade-1.0 force-response-1.0
 > 
 
 …but ultimately, they should probably remove this hack altogether. The ancient Internet Explorer 6’s marketshare is in decline, and there’s almost never any business reason to try to accommodate even older browsers.
@@ -44,7 +44,7 @@ At the very least, Apache hosts should update their regular expression to this:
 
 - --------------
 
-원래 BrowserMatch 로 사용할 수 있는 유요한 설정은 특정 버전의 브라우저에 문제가 있어서 아래처럼 분기하고자 할때 쓴다.
+원래 BrowserMatch로 사용할 수 있는 유요한 설정은 특정 버전의 브라우저에 문제가 있어서 아래처럼 분기하고자 할때 쓴다.
 
 (http://webdir.tistory.com/178)
 

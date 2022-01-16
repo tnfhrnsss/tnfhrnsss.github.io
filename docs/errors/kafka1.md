@@ -14,11 +14,11 @@ nav_exclude: true
 
 ## Internal Server Error
 
-A 500 error has occurred: Request processing failed; nested exception is [org.apache.kafka.common.errors.TimeoutException](https://www.blogger.com/blog/post/edit/2689228726924373128/7388999278163586944#): Timeout of 60000ms expired before the position for partition retry-assignment-2 could be deter
+A 500 error has occurred: Request processing failed; nested exception is [org.apache.kafka.common.errors.TimeoutException](https://www.blogger.com/blog/post/edit/2689228726924373128/7388999278163586944#): Timeout of 60000ms expired before the position for partition retry-assignment-2 could be deter
 
 원인) host에 주소가 잘못박혀있거나.. 디폴트(60000ms) 로딩시간을 초과했다거나 할때 발생
 
-해결) 타임아웃 늘리려면, ProducerConfig.MAX_BLOCK_MS_CONFIG 설정을 주면 된다.
+해결) 타임아웃 늘리려면, ProducerConfig.MAX_BLOCK_MS_CONFIG 설정을 주면 된다.
 
 아니면 도커에 컨테이너 삭제하고 다시 deploy
 

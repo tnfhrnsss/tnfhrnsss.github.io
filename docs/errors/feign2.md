@@ -12,12 +12,12 @@ nav_exclude: true
 
 기존>
 
-@RequestParam(defaultValue = "0", required = false) int offset,
+@RequestParam(defaultValue ="0", required = false) int offset,
 
-@RequestParam(defaultValue = "10", required = false) int limit
+@RequestParam(defaultValue = "10", required = false) int limit
 
 변경>
 
-@RequestParam("offset") int offset,
+@RequestParam("offset") int offset,
 
-@RequestParam("limit") int limit
+@RequestParam("limit") int limit

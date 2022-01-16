@@ -8,13 +8,13 @@ nav_exclude: true
 
 # Failed to instantiate [javax.servlet.Filter]: Factory method 'springSecurityFilterChain' threw exception; nested exception is java.lang.NullPointerException 에러
 
-**현상)** springboot로 application 올리다가 에러 발생
+**현상)** springboot로 application 올리다가 에러 발생
 
 **에러)**
 
-07:54:50.971 main       WARN  stractApplicationContext:557 refresh         **Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'springSecurityFilterChain' defined in class path resource** [org/springframework/security/config/annotation/web/configuration/WebSecurityConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.servlet.Filter]: Factory method 'springSecurityFilterChain' threw exception; nested exception is java.lang.NullPointerException
+07:54:50.971 main WARN stractApplicationContext:557 refresh **Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'springSecurityFilterChain' defined in class path resource** [org/springframework/security/config/annotation/web/configuration/WebSecurityConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.servlet.Filter]: Factory method 'springSecurityFilterChain' threw exception; nested exception is java.lang.NullPointerException
 
-07:54:54.008 main       WARN  o.a.j.l.DirectJDKLog    :173 log             The web application [ROOT] appears to have started a thread named [RxIoScheduler-1 (Evictor)] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+07:54:54.008 main WARN o.a.j.l.DirectJDKLog:173 log The web application [ROOT] appears to have started a thread named [RxIoScheduler-1 (Evictor)] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
 
 java.base@12.0.2/jdk.internal.misc.Unsafe.park(Native Method)
 
@@ -34,7 +34,7 @@ java.base@12.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolEx
 
 java.base@12.0.2/java.lang.Thread.run(Thread.java:835)
 
-07:54:54.037 main       ERROR o.s.b.SpringApplication :821 reportFailure   Application run failed
+07:54:54.037 main ERROR o.s.b.SpringApplication :821 reportFailureApplication run failed
 
 org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'springSecurityFilterChain' defined in class path resource [org/springframework/security/config/annotation/web/configuration/WebSecurityConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.servlet.Filter]: Factory method 'springSecurityFilterChain' threw exception; nested exception is java.lang.NullPointerException
 
@@ -130,7 +130,7 @@ at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instant
 
 Process finished with exit code 1
 
-원인) 에러의 npe부분을 보면 springboot올릴때, WebSecurityConfig를 읽어가도록 했는데. WebSecurityConfig에서 읽어갈 설정이 yml에 없어서 널포인트 나는 것....
+원인) 에러의 npe부분을 보면 springboot올릴때, WebSecurityConfig를 읽어가도록 했는데. WebSecurityConfig에서 읽어갈 설정이 yml에 없어서 널포인트 나는 것....
 
 해결) 본인의 경우는 profile을 달리했는데, 그걸 서비스 올릴때 지정안해줘서 디폴트 yml보고 올라가다가 해당 security설정이 없어서 그런거라...profile을 지정해주면 된다.
 
