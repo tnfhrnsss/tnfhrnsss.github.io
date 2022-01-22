@@ -1,0 +1,60 @@
+I"l<h1 id="cant-generate-resourcebase-as-part-of-webapp-tmp-dir-name-javalangnullpointerexception">Can’t generate resourceBase as part of webapp tmp dir name: java.lang.NullPointerException</h1>
+
+<p>현상) 인텔리제이에서 application으로 jetty올리는데 에러가 나면서 안올라갈때</p>
+
+<p>오류) [09-29 09:01:17.454] WARN [main] [o.e.j.w.WebInfConfiguration.getCanonicalNameForWebAppTmpDir] 627 - Can’t generate resourceBase as part of webapp tmp dir name: java.lang.NullPointerException</p>
+
+<p>[09-29 09:01:17.665] WARN [main] [o.e.j.w.WebAppContext.doStart] 514 - Failed startup of context o.e.j.w.WebAppContext@17695df3{/router,[],null}</p>
+
+<p>java.lang.NullPointerException: null</p>
+
+<p>at org.eclipse.jetty.webapp.WebAppContext.getWebInf(WebAppContext.java:844)</p>
+
+<p>at org.eclipse.jetty.webapp.WebInfConfiguration.findWebInfLibJars(WebInfConfiguration.java:708)</p>
+
+<p>at org.eclipse.jetty.webapp.WebInfConfiguration.findJars(WebInfConfiguration.java:689)</p>
+
+<p>at org.eclipse.jetty.webapp.WebInfConfiguration.preConfigure(WebInfConfiguration.java:128)</p>
+
+<p>at org.eclipse.jetty.webapp.WebAppContext.preConfigure(WebAppContext.java:468)</p>
+
+<p>at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:504)</p>
+
+<p>at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)</p>
+
+<p>at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:132)</p>
+
+<p>at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:114)</p>
+
+<p>at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:61)</p>
+
+<p>at org.eclipse.jetty.server.handler.ContextHandlerCollection.doStart(ContextHandlerCollection.java:163)</p>
+
+<p>at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)</p>
+
+<p>at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:132)</p>
+
+<p>at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:114)</p>
+
+<p>at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:61)</p>
+
+<p>at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)</p>
+
+<p>at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:132)</p>
+
+<p>at org.eclipse.jetty.server.Server.start(Server.java:387)</p>
+
+<p>at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:114)</p>
+
+<p>at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:61)</p>
+
+<p>at org.eclipse.jetty.server.Server.doStart(Server.java:354)</p>
+
+<p>at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)</p>
+
+<p>원인)</p>
+
+<p>첫번째로, 이 프로젝트랑 상관없는 path의 디렉토리를 옮겼었는데, 그걸 못찾는다고 나온당…그래서 그건 그냥 .idea폴더 날리고 , 프로젝트 재생성</p>
+
+<p>두번째로, 어플리케이션 올릴때 Working directory에 %MODULE_WORKING_DIR%이렇게 줘야하는데 없어서,,,, 참고로 $MODULE_DIR$ 에서 %MODULE_WORKING_DIR% 이렇게 바뀜</p>
+:ET

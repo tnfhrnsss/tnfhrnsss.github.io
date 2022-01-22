@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://lizard-k.cf/sitemap.xml
+Sitemap: https://tnfhrnsss.github.io/sitemap.xml

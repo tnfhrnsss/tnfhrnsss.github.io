@@ -1,0 +1,16 @@
+I";<h1 id="javalangillegalstateexception-requestparamvalue-was-empty-on-parameter-0">java.lang.IllegalStateException: RequestParam.value() was empty on parameter 0</h1>
+
+<p>원인 : FeignClient로 선언한 adapter에 @RequestParam으로 값을 받아오는 부분에 맵핑을 잘못함.</p>
+
+<p>기존&gt;</p>
+
+<p>@RequestParam(defaultValue =”0”, required = false) int offset,</p>
+
+<p>@RequestParam(defaultValue = “10”, required = false) int limit</p>
+
+<p>변경&gt;</p>
+
+<p>@RequestParam(“offset”) int offset,</p>
+
+<p>@RequestParam(“limit”) int limit</p>
+:ET

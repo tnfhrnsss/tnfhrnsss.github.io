@@ -1,0 +1,41 @@
+I"<h1 id="current-transaction-is-aborted-commands-ignored-until-end-of-transaction-block">current transaction is aborted, commands ignored until end of transaction block</h1>
+
+<p>[현상]</p>
+
+<p>postgresql - jdbc로 커넥션 맺어서 자바에서 ibatis쿼리 실행하는데 아래와 같은 에러가 났다.</p>
+
+<p><strong>current transaction is aborted, commands ignored until end of transaction block</strong></p>
+
+<ul>
+  <li>– The error occurred while applying a parameter map.</li>
+  <li>
+    <p>– Check the .</p>
+
+    <p><strong>selectNextOne</strong></p>
+  </li>
+  <li>– Check the statement (update procedure failed).</li>
+  <li><strong>– Cause: org.postgresql.util.PSQLException: ERROR: current transaction is aborted, commands ignored until end of transaction block</strong></li>
+</ul>
+
+<p>at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeQueryWithCallback(MappedStatement.java:201)</p>
+
+<p>at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeQueryForObject(MappedStatement.java:120)</p>
+
+<p>at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.queryForObject(SqlMapExecutorDelegate.java:527)</p>
+
+<p>at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.queryForObject(SqlMapExecutorDelegate.java:502)</p>
+
+<p>at com.ibatis.sqlmap.engine.impl.SqlMapSessionImpl.queryForObject(SqlMapSessionImpl.java:106)</p>
+
+<p>at org.springframework.orm.ibatis.SqlMapClientTemplate$1.doInSqlMapClient(SqlMapClientTemplate.java:270)</p>
+
+<p>at org.springframework.orm.ibatis.SqlMapClientTemplate.execute(SqlMapClientTemplate.java:200)</p>
+
+<p>… 52 more</p>
+
+<p>[원인]</p>
+
+<p>위에 처럼 나오면 쿼리에 문법적 오류로 인하여 현재 트랜잭션은 폐기된다는 뜻</p>
+
+<p>내 경우는 selectNextOne쿼리가 잘못되었음</p>
+:ET

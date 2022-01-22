@@ -1,0 +1,24 @@
+I")<h1 id="kafdrop-보려는데-timeout-of-60000ms-expired-before-the-position-for-partition-retry-assignment-2-could-be-determined-에러날-때">kafdrop 보려는데 Timeout of 60000ms expired before the position for partition retry-assignment-2 could be determined 에러날 때</h1>
+
+<p>현상) kafdrop에 접속해서 스트림보려는데, 에러날때</p>
+
+<p>애러)</p>
+
+<h2 id="internal-server-error">Internal Server Error</h2>
+
+<p>A 500 error has occurred: Request processing failed; nested exception is <a href="https://www.blogger.com/blog/post/edit/2689228726924373128/7388999278163586944#">org.apache.kafka.common.errors.TimeoutException</a>: Timeout of 60000ms expired before the position for partition retry-assignment-2 could be deter</p>
+
+<p>원인) host에 주소가 잘못박혀있거나.. 디폴트(60000ms) 로딩시간을 초과했다거나 할때 발생</p>
+
+<p>해결) 타임아웃 늘리려면, ProducerConfig.MAX_BLOCK_MS_CONFIG 설정을 주면 된다.</p>
+
+<p>아니면 도커에 컨테이너 삭제하고 다시 deploy</p>
+
+<p>[참고]</p>
+
+<p><a href="https://www.blogger.com/blog/post/edit/2689228726924373128/7388999278163586944#">stackoverflow.com/a/60068634/14257397</a></p>
+
+<p><a href="https://www.blogger.com/blog/post/edit/2689228726924373128/7388999278163586944#">org.apache.kafka.common.errors.TimeoutException
+I have two broker 1.0.0 kafka cluster and I am running 1.0.0 kafka stream API application against this kafka.I increased the producer request.timeout.ms to 5 minutes to fix producer Timeoutexceptio…
+stackoverflow.com</a></p>
+:ET
