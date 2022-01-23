@@ -1,339 +1,339 @@
 {"0": {
-    "doc": "Data Analyst Nanodegree Program 후기",
-    "title": "Data Analyst Nanodegree Program 후기",
-    "content": " ",
-    "url": "http://localhost:4000/docs/mooc/udacity/Data%20Analyst/",
-    "relUrl": "/docs/mooc/udacity/Data%20Analyst/"
-  },"1": {
-    "doc": "Data Analyst Nanodegree Program 후기",
-    "title": "강의 URL",
-    "content": "2017년도에 수강했던 강의라 지금은 해당 강좌가 없어지고, 대체 강좌들이 생긴 것 같다. ",
-    "url": "http://localhost:4000/docs/mooc/udacity/Data%20Analyst/#%EA%B0%95%EC%9D%98-url",
-    "relUrl": "/docs/mooc/udacity/Data%20Analyst/#강의-url"
-  },"2": {
-    "doc": "Data Analyst Nanodegree Program 후기",
-    "title": "학습 툴",
-    "content": ". | python | jupyter notebook | anaconda | 노트와 연필 ← 필수 | ztable.jpg ← 소중… | . ",
-    "url": "http://localhost:4000/docs/mooc/udacity/Data%20Analyst/#%ED%95%99%EC%8A%B5-%ED%88%B4",
-    "relUrl": "/docs/mooc/udacity/Data%20Analyst/#학습-툴"
-  },"3": {
-    "doc": "Data Analyst Nanodegree Program 후기",
-    "title": "강의 구성",
-    "content": ". | udacity에서 전문대학처럼 전문가를 양성하고자 2017년도에 nanodegree강좌를 여러개 만들었었고, 이 수업은 그 중 하나로 한달에 30~40만원했던 수업;; | 강좌를 모두 학습하고 과제를 모두 통과하면 degree를 주고 채용연계까지 시켜주는 커리큘럼이 있었다. | . ",
-    "url": "http://localhost:4000/docs/mooc/udacity/Data%20Analyst/#%EA%B0%95%EC%9D%98-%EA%B5%AC%EC%84%B1",
-    "relUrl": "/docs/mooc/udacity/Data%20Analyst/#강의-구성"
-  },"4": {
-    "doc": "Data Analyst Nanodegree Program 후기",
-    "title": "선수 학습 조건",
-    "content": " ",
-    "url": "http://localhost:4000/docs/mooc/udacity/Data%20Analyst/#%EC%84%A0%EC%88%98-%ED%95%99%EC%8A%B5-%EC%A1%B0%EA%B1%B4",
-    "relUrl": "/docs/mooc/udacity/Data%20Analyst/#선수-학습-조건"
-  },"5": {
-    "doc": "Data Analyst Nanodegree Program 후기",
-    "title": "언어 지원",
-    "content": " ",
-    "url": "http://localhost:4000/docs/mooc/udacity/Data%20Analyst/#%EC%96%B8%EC%96%B4-%EC%A7%80%EC%9B%90",
-    "relUrl": "/docs/mooc/udacity/Data%20Analyst/#언어-지원"
-  },"6": {
-    "doc": "Data Analyst Nanodegree Program 후기",
-    "title": "학습 후기",
-    "content": ". | 저는 총 3개월동안 평일엔 퇴근해서 강의듣고, 주말엔 과제하면서 공부했던 기억이 난다. | 과제를 제출하면, 첨삭을 잘 해줬던 것도 기억이 난다. 타이타닉 과제는 리뷰를 여러번 받아서, 아직도 기억이 생생~ | . ",
-    "url": "http://localhost:4000/docs/mooc/udacity/Data%20Analyst/#%ED%95%99%EC%8A%B5-%ED%9B%84%EA%B8%B0",
-    "relUrl": "/docs/mooc/udacity/Data%20Analyst/#학습-후기"
-  },"7": {
     "doc": "Add a private constructor to hide the implicit public one",
     "title": "Add a private constructor to hide the implicit public one.",
     "content": "Utility classes should not have public constructors . 유틸리티 클래스는 public 생성자를 갖고 있으면 안된다. Utility classes, which are collections of static members, are not meant to be instantiated. Even abstract utility classes, which can be extended, should not have public constructors. static 멤버만 갖고 있는 클래스를 유틸리티 클래스로 보고, (추상화된 클래스더라도) public 생성자를 갖고 있으면 안된다. Java adds an implicit public constructor to every class which does not define at least one explicitly. Hence, at least one non-public constructor should be defined. 자바는 모든 클래스에 public 생성자를 갖고 있다. (선언하지 않아도) . 그러므로 적어도 public하지 않은 생성자를 한개는 정의해야함. [잘못된 코드] . class StringUtils { // Noncompliant public static String concatenate(String s1, String s2) { return s1 + s2; } } . [옳은 코드] . class StringUtils { // Compliant private StringUtils() { throw new IllegalStateException(\"Utility class\"); } public static String concatenate(String s1, String s2) { return s1 + s2; } } . [이 rule의 예외] . | 클래스에 main 메소드가 포함되어있으면 유틸리티 클래스라고 보지 않고, 이 규칙 적용에 제외됨. | . 문제가 되었던 코드에는 static 메소드 한개만 존재했음 . public class JsonParseUtil { public static getJson() { } } . —&gt; 수정. @NoArgsConstructor(access = AccessLevel.PRIVATE) // 파라미터없는 기본생성자를 생성 public class JsonParseUtil { public static getJson() { } } . ",
     "url": "http://localhost:4000/docs/quality/sonarqube/S1118/#add-a-private-constructor-to-hide-the-implicit-public-one",
     "relUrl": "/docs/quality/sonarqube/S1118/#add-a-private-constructor-to-hide-the-implicit-public-one"
-  },"8": {
+  },"1": {
     "doc": "Add a private constructor to hide the implicit public one",
     "title": "Add a private constructor to hide the implicit public one",
     "content": " ",
     "url": "http://localhost:4000/docs/quality/sonarqube/S1118/",
     "relUrl": "/docs/quality/sonarqube/S1118/"
-  },"9": {
+  },"2": {
     "doc": "Synchronized classes Vector, Hashtable, Stack and StringBuffer should not be used",
     "title": "Synchronized classes Vector, Hashtable, Stack and StringBuffer should not be used.",
     "content": "[원인] . java:s1149 룰에 대한 것으로 . 여기에 위반되는 이유는 static 메소드나 클래스에 StringBuilder가 아닌 StringBuffer등 멀티쓰레드에 적합한 API를 사용했기 떄문이다. [해결] . 나 같은 경우는 StringBuilder로 변경. [참고] . https://stackoverflow.com/questions/16672730/which-class-to-use-for-this-static-method-stringbuffer-or-stringbuilder . ",
     "url": "http://localhost:4000/docs/quality/sonarqube/S1149/#synchronized-classes-vector-hashtable-stack-and-stringbuffer-should-not-be-used",
     "relUrl": "/docs/quality/sonarqube/S1149/#synchronized-classes-vector-hashtable-stack-and-stringbuffer-should-not-be-used"
-  },"10": {
+  },"3": {
     "doc": "Synchronized classes Vector, Hashtable, Stack and StringBuffer should not be used",
     "title": "Synchronized classes Vector, Hashtable, Stack and StringBuffer should not be used",
     "content": " ",
     "url": "http://localhost:4000/docs/quality/sonarqube/S1149/",
     "relUrl": "/docs/quality/sonarqube/S1149/"
-  },"11": {
+  },"4": {
     "doc": "Convert the abstract class \"TemplateContentHandler\" into an interface",
     "title": "Convert the abstract class “TemplateContentHandler” into an interface.",
     "content": "Abstract classes without fields should be converted to interfaces. 필드가 없는 추상화 클래스는 인터페이스로 되어야한다. With Java 8’s “default method” feature, any abstract class without direct or inherited field should be converted into an interface. However, this change may not be appropriate in libraries or other applications where the class is intended to be used as an API. java8에서 제공하는 “default method” 기능으로, 어떤 추상화 클래스든 인터페이스로 바뀔수 있다. 그러나 이렇게 변경하는게 API로 제공된 어플리케이션이나 라이브러리인 경우는 맞지 않을 수 있다. (반드시 적용하는 룰은 아님) . Note that this rule is automatically disabled when the project’s sonar.java.source is lower than 8. ‘sonar.java.source’가 8보다 낮으면, 이 규칙은 자동적으로 disable상태 . [잘못된 코드] . public abstract class Car { public abstract void start(Environment c); public void stop(Environment c) { c.freeze(this); } } . [맞는 코드] . public interface Car { public void start(Environment c); public default void stop(Environment c) { c.freeze(this); } } . ",
     "url": "http://localhost:4000/docs/quality/sonarqube/S1610/#convert-the-abstract-class-templatecontenthandler-into-an-interface",
     "relUrl": "/docs/quality/sonarqube/S1610/#convert-the-abstract-class-templatecontenthandler-into-an-interface"
-  },"12": {
+  },"5": {
     "doc": "Convert the abstract class \"TemplateContentHandler\" into an interface",
     "title": "Convert the abstract class \"TemplateContentHandler\" into an interface",
     "content": " ",
     "url": "http://localhost:4000/docs/quality/sonarqube/S1610/",
     "relUrl": "/docs/quality/sonarqube/S1610/"
-  },"13": {
+  },"6": {
     "doc": "Source files should not have any duplicated blocks",
     "title": "Source files should not have any duplicated blocks",
     "content": " ",
     "url": "http://localhost:4000/docs/quality/sonarqube/S2440/",
     "relUrl": "/docs/quality/sonarqube/S2440/"
-  },"14": {
+  },"7": {
     "doc": "Source files should not have any duplicated blocks",
     "title": "1 duplicated blocks of code must be removed.",
     "content": "[원인] . block자체가 중복되는 코드들이 존재할 때 발생 . 의존성이 없는 컴포넌트였지만, 한개의 서비스안에 위치했기 때문에 발생 . [해결] . 중복되는 파일 중 한개를 열어서 왼쪽 회색 부분에 마우스 오버하면 duplicated된 block을 확인할 수 있다. 해결 방법은 여러가지가 되겠지만, 중복적인 코드가 필요한 이유 파악하고 제거 또는 대체를 하면 된다. ",
     "url": "http://localhost:4000/docs/quality/sonarqube/S2440/#1-duplicated-blocks-of-code-must-be-removed",
     "relUrl": "/docs/quality/sonarqube/S2440/#1-duplicated-blocks-of-code-must-be-removed"
-  },"15": {
+  },"8": {
     "doc": "Refactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed",
     "title": "Refactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.",
     "content": "try { String conversationId = kakaoMessageFlowService.open(kakaoMessage.getKakaoUser().getSenderKey()); if (StringUtils.isNotEmpty(conversationId)) { activeKakaoFlowService.register(activeKakaoKey, kakaoMessage.toConversationDomain(conversationId)); } } catch (Exception e) { if (e instanceof DataIntegrityViolationException || e instanceof ResourceAlreadyExistsException) { for (int i = 0; i &lt; 3; i++) { log.warn(\"ActiveKakao DuplicateKeyException occurred. - retrying..\" + activeKakaoKey); Optional&lt;KakaoRdo&gt; kakaoRdo = findAllByUserStatus(kakaoMessage.getKakaoUser()); if (kakaoRdo.isPresent()) { break; } try { Thread.sleep(500L); } catch (Exception ex) { log.error(ExceptionUtils.getStackTrace(e)); } } } else { try { activeKakaoFlowService.remove(activeKakaoKey); } catch (Exception ex) { log.warn(e.getMessage()); } } } . 문제 : 인지 복잡도가 높아서 문제 (빨간색 block된 부분) - 총 20개의 복잡도 발생한 코드 . 해결: instanceof로 익셉션 구분한 부분을 catch로 올림 . } catch (DataIntegrityViolationException | ResourceAlreadyExistsException e) { } catch (Exception ex) { } . ",
     "url": "http://localhost:4000/docs/quality/sonarqube/S3776/#refactor-this-method-to-reduce-its-cognitive-complexity-from-20-to-the-15-allowed",
     "relUrl": "/docs/quality/sonarqube/S3776/#refactor-this-method-to-reduce-its-cognitive-complexity-from-20-to-the-15-allowed"
-  },"16": {
+  },"9": {
     "doc": "Refactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed",
     "title": "Refactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed",
     "content": " ",
     "url": "http://localhost:4000/docs/quality/sonarqube/S3776/",
     "relUrl": "/docs/quality/sonarqube/S3776/"
-  },"17": {
+  },"10": {
     "doc": "Alarm Bot",
     "title": "게시물 업데이트 알람 봇 만들기",
     "content": ":: 요구사항 . | 카카오 비지니스API 공지사항 중 신규 게시물이 등록되면 슬랙DM으로 전송 | . :: 개발항목 . | 일배치 체크 | python slack 라이브러리 이용 | . ",
     "url": "http://localhost:4000/docs/sub-projects/alarm_bot/#%EA%B2%8C%EC%8B%9C%EB%AC%BC-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8-%EC%95%8C%EB%9E%8C-%EB%B4%87-%EB%A7%8C%EB%93%A4%EA%B8%B0",
     "relUrl": "/docs/sub-projects/alarm_bot/#게시물-업데이트-알람-봇-만들기"
-  },"18": {
+  },"11": {
     "doc": "Alarm Bot",
     "title": "Alarm Bot",
     "content": " ",
     "url": "http://localhost:4000/docs/sub-projects/alarm_bot/",
     "relUrl": "/docs/sub-projects/alarm_bot/"
-  },"19": {
+  },"12": {
     "doc": "BrowserMatch",
     "title": "BrowserMatch",
     "content": "기본 아파치를 윈도우에 설치하고 나니 httpd-ssl.conf에 . 아래 설정이 있었다. BrowserMatch “.MSIE.” \\nokeepalive ssl-unclean-shutdown \\downgrade-1.0 force-response-1.0 . 콘솔에 로그인해서 상담하기까지 활성화하는데 1분이나 걸리게 되어서 . 주석을 하고 재시작하니, 엄청 빨라짐. 파악해본결과 이 블로그에서 (http://blogs.msdn.com/b/ieinternals/archive/2011/03/26/https-and-connection-close-is-your-apache-modssl-server-configuration-set-to-slow.aspx) . Four years ago, there was apublic callto update the guidance to reflect the fact that users of more modern browsers were paying an unneeded performance penalty. Finally, in June 2010, the default guidance was changed in recognition of the fact that the problem never affected IE6 and later: . BrowserMatch “.MSIE [1-5].” \\nokeepalive ssl-unclean-shutdown \\downgrade-1.0 force-response-1.0 . Unfortunately, many major Apache installations still haven’t been updated with even this guidance. Also, alert readers will spot a very obvious problem with the “new” regular expression. In the expression above, any IE version that starts with“1” will be treated as outdated and served connection slowly without Keep-Alive. Internet Explorer 1.0 didn’t even support SSL at all (SSL was added in 2.0), but worse, this loosely-written regular expression will also matchfutureMSIE 10.0,MSIE 11.0,MSIE 12.0(etc)**user-agent strings. Hence, Apache hosts will one day find that thenewestbrowsers are forced into the “slow” lane! . At the very least, Apache hosts should update their regular expression to this: . BrowserMatch “.MSIE [2-5]..” \\nokeepalive ssl-unclean-shutdown \\downgrade-1.0 force-response-1.0 . …but ultimately, they should probably remove this hack altogether. The ancient Internet Explorer 6’s marketshare is in decline, and there’s almost never any business reason to try to accommodate even older browsers. 요약하면 삭제해야할 설정인데 아파치에서 아직도 껴서 배포하고 있다는 것.. 원래 BrowserMatch로 사용할 수 있는 유요한 설정은 특정 버전의 브라우저에 문제가 있어서 아래처럼 분기하고자 할때 쓴다. (http://webdir.tistory.com/178) . BrowserMatch “Mozilla/2” nokeepalive . BrowserMatch “MSIE 4.0b2;” nokeepalive downgrade-1.0 force-response-1.0 . BrowserMatch “RealPlayer 4.0” force-response-1.0 . BrowserMatch “Java/1.0” force-response-1.0 . BrowserMatch “JDK/1.0” force-response-1.0 . BrowserMatch 지시자는 특정 브라우저들에 대한 특정 수행을 지시하기 위한 설정들이다. | 첫번째 것은 네스케이프 2.x 또는 그를 흉내내는 브라우저에 대하여 KeepAlive 기능을 쓰지 않도록 한다. 이 브라우저들은 KeepAlive 구현에 문제점을 갖고 있기 때문이다. | 두번째 것은 HTTP/1.1을 잘못 구현하였고 301 또는 302 (redirect)반응에 대하여 KeepAlive를 제대로 지원하지 못하는 마이크로소프트 인터넷 익스플로러 4.0b2를 위한 것이다. | 세번째 것은 네번째 다섯번째 것들은 기본적인 1.1 반응도 제대로 처리하지 못함으로써 HTTP/1.1 스펙을 위반하고 있는 브라우저에 대하여 HTTP/1.1 반응을 하여 하지 않도록 한다. | . BrowserMatch “Microsoft Data Access Internet Publishing Provider” redirect-carefully . BrowserMatch “MS FrontPage” redirect-carefully . BrowserMatch “^WebDrive” redirect-carefully . BrowserMatch “^WebDAVFS/1.[0123]” redirect-carefully . BrowserMatch “^gnome-vfs/1.0” redirect-carefully . BrowserMatch “^XML Spy” redirect-carefully . BrowserMatch “^Dreamweaver-WebDAV-SCM1” redirect-carefully . 위 지시자들도 구현에 문제가 있는 것들에 대한 처리방식을 지정한 것이다. ",
     "url": "http://localhost:4000/docs/errors/apache1/",
     "relUrl": "/docs/errors/apache1/"
-  },"20": {
+  },"13": {
     "doc": "★bookmark",
     "title": "★bookmark",
     "content": "Keep looking. https://baek.dev/ . https://greensock.com/ . ",
     "url": "http://localhost:4000/docs/bookmark/",
     "relUrl": "/docs/bookmark/"
-  },"21": {
+  },"14": {
     "doc": "Bridge pattern",
     "title": "Bridge pattern",
     "content": " ",
     "url": "http://localhost:4000/docs/patterns/bridge_pattern/",
     "relUrl": "/docs/patterns/bridge_pattern/"
-  },"22": {
+  },"15": {
     "doc": "Buttons",
     "title": "Buttons",
     "content": " ",
     "url": "http://localhost:4000/docs/ui-components/buttons/",
     "relUrl": "/docs/ui-components/buttons/"
-  },"23": {
+  },"16": {
     "doc": "Buttons",
     "title": "Table of contents",
     "content": ". | Basic button styles . | Links that look like buttons | Button element | . | Using utilities with buttons . | Button size | Spacing between buttons | . | . ",
     "url": "http://localhost:4000/docs/ui-components/buttons/#table-of-contents",
     "relUrl": "/docs/ui-components/buttons/#table-of-contents"
-  },"24": {
+  },"17": {
     "doc": "Buttons",
     "title": "Basic button styles",
     "content": "Links that look like buttons . Link button . Link button Link button Link button . Link button . [Link button](http://example.com/){: .btn } [Link button](http://example.com/){: .btn .btn-purple } [Link button](http://example.com/){: .btn .btn-blue } [Link button](http://example.com/){: .btn .btn-green } [Link button](http://example.com/){: .btn .btn-outline } . Button element . GitHub Flavored Markdown does not support the button element, so you’ll have to use inline HTML for this: . Button element &lt;button type=\"button\" name=\"button\" class=\"btn\"&gt;Button element&lt;/button&gt; . ",
     "url": "http://localhost:4000/docs/ui-components/buttons/#basic-button-styles",
     "relUrl": "/docs/ui-components/buttons/#basic-button-styles"
-  },"25": {
+  },"18": {
     "doc": "Buttons",
     "title": "Using utilities with buttons",
     "content": "Button size . Wrap the button in a container that uses the font-size utility classes to scale buttons: . Big ass button . Tiny ass button . &lt;span class=\"fs-8\"&gt; [Link button](http://example.com/){: .btn } &lt;/span&gt; &lt;span class=\"fs-3\"&gt; [Tiny ass button](http://example.com/){: .btn } &lt;/span&gt; . Spacing between buttons . Use the margin utility classes to add spacing between two buttons in the same block. Button with space Button . Button with more space Button . [Button with space](http://example.com/){: .btn .btn-purple .mr-2 } [Button ](http://example.com/){: .btn .btn-blue } [Button with more space](http://example.com/){: .btn .btn-green .mr-4 } [Button ](http://example.com/){: .btn .btn-blue } . ",
     "url": "http://localhost:4000/docs/ui-components/buttons/#using-utilities-with-buttons",
     "relUrl": "/docs/ui-components/buttons/#using-utilities-with-buttons"
-  },"26": {
+  },"19": {
     "doc": "Chain of Responsibility",
     "title": "Chain of Responsibility",
     "content": "역학 사슬 패턴 . | 체인에 묶인 객체들끼리 순서대로 책임을 넘기는 구조 | . ",
     "url": "http://localhost:4000/docs/patterns/chain_of_responsibility/",
     "relUrl": "/docs/patterns/chain_of_responsibility/"
-  },"27": {
+  },"20": {
     "doc": "Chain of Responsibility",
     "title": "AS-IS.",
     "content": ". | 하나의 서비스에서 접수 처리와 메시지 전송 기능이 혼재 | . ",
     "url": "http://localhost:4000/docs/patterns/chain_of_responsibility/#as-is",
     "relUrl": "/docs/patterns/chain_of_responsibility/#as-is"
-  },"28": {
+  },"21": {
     "doc": "Chain of Responsibility",
     "title": "TO-BE.",
     "content": ". | 접수 처리 프로세스와 메시지 전송 프로세스를 별개로 분리 | 프로세스 순서를 체인으로 강제 ( 접수 프로세스 진행 후 → 메시지 전송 프로세스 진행) | . :: Client . // 우선순위 btalkMessageProcessor -&gt; btalkReceptionProcessor public void message(ConversationMessage conversationMessage) { btalkMessageProcessor.setNext(btalkReceptionProcessor); btalkMessageProcessor.support(conversationMessage); } . :: Handler Processor . @Slf4j public abstract class BtalkProcessor { private BtalkProcessor next = null; public BtalkProcessor setNext(BtalkProcessor next) { this.next = next; return next; } public final void support(ConversationMessage conversationMessage) { if (process(conversationMessage)) { action(conversationMessage); } else if (next != null) { next.support(conversationMessage); } else { log.error(\"There is no next process of btalk.\"); } } public abstract boolean process(ConversationMessage conversationMessage); public abstract void action(ConversationMessage conversationMessage); } . :: Sub Processor . [btalkMessageProcessor] public class BtalkMessageProcessor extends BtalkProcessor { @Override public boolean process(ConversationMessage conversationMessage) { return isPresent(conversationMessage); } @Override public void action(ConversationMessage conversationMessage) { sendMessage(conversationMessage); } } [btalkReceptionProcessor] public class BtalkReceptionProcessor extends BtalkProcessor { @Override public boolean process(ConversationMessage conversationMessage) { return !isPresent(conversationMessage); } @Override public void action(ConversationMessage conversationMessage) { reception(conversationMessage); } } . 참고. https://lktprogrammer.tistory.com/45 . ",
     "url": "http://localhost:4000/docs/patterns/chain_of_responsibility/#to-be",
     "relUrl": "/docs/patterns/chain_of_responsibility/#to-be"
-  },"29": {
+  },"22": {
     "doc": "Clipping",
     "title": "Clipping",
     "content": "To make it as easy as possible to write documentation in plain Markdown, most UI components are styled using default Markdown elements with few additional CSS classes needed. ",
     "url": "http://localhost:4000/docs/clipping",
     "relUrl": "/docs/clipping"
-  },"30": {
+  },"23": {
     "doc": "Code",
     "title": "Code",
     "content": " ",
     "url": "http://localhost:4000/docs/ui-components/code/",
     "relUrl": "/docs/ui-components/code/"
-  },"31": {
+  },"24": {
     "doc": "Code",
     "title": "Table of contents",
     "content": ". | Inline code | Syntax highlighted code blocks | Code blocks with rendered examples | . ",
     "url": "http://localhost:4000/docs/ui-components/code/#table-of-contents",
     "relUrl": "/docs/ui-components/code/#table-of-contents"
-  },"32": {
+  },"25": {
     "doc": "Code",
     "title": "Inline code",
     "content": "Code can be rendered inline by wrapping it in single back ticks. Lorem ipsum dolor sit amet, &lt;inline code snippet&gt; adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
     "url": "http://localhost:4000/docs/ui-components/code/#inline-code",
     "relUrl": "/docs/ui-components/code/#inline-code"
-  },"33": {
+  },"26": {
     "doc": "Code",
     "title": "Heading with &lt;inline code snippet&gt; in it.",
     "content": "Lorem ipsum dolor sit amet, `&lt;inline code snippet&gt;` adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ## Heading with `&lt;inline code snippet&gt;` in it. ",
     "url": "http://localhost:4000/docs/ui-components/code/#heading-with-inline-code-snippet-in-it",
     "relUrl": "/docs/ui-components/code/#heading-with-inline-code-snippet-in-it"
-  },"34": {
+  },"27": {
     "doc": "Code",
     "title": "Syntax highlighted code blocks",
     "content": "Use Jekyll’s built-in syntax highlighting with Rouge for code blocks by using three backticks, followed by the language name: . // Javascript code with syntax highlighting. var fun = function lang(l) { dateformat.i18n = require('./lang/' + l) return true; } . ```js // Javascript code with syntax highlighting. var fun = function lang(l) { dateformat.i18n = require('./lang/' + l) return true; } ``` . ",
     "url": "http://localhost:4000/docs/ui-components/code/#syntax-highlighted-code-blocks",
     "relUrl": "/docs/ui-components/code/#syntax-highlighted-code-blocks"
-  },"35": {
+  },"28": {
     "doc": "Code",
     "title": "Code blocks with rendered examples",
     "content": "To demonstrate front end code, sometimes it’s useful to show a rendered example of that code. After including the styles from your project that you’ll need to show the rendering, you can use a &lt;div&gt; with the code-example class, followed by the code block syntax. If you want to render your output with Markdown instead of HTML, use the markdown=\"1\" attribute to tell Jekyll that the code you are rendering will be in Markdown format… This is about to get meta… . Link button . [Link button](http://example.com/){: .btn } . &lt;div class=\"code-example\" markdown=\"1\"&gt; [Link button](http://example.com/){: .btn } &lt;/div&gt; ```markdown [Link button](http://example.com/){: .btn } ``` . ",
     "url": "http://localhost:4000/docs/ui-components/code/#code-blocks-with-rendered-examples",
     "relUrl": "/docs/ui-components/code/#code-blocks-with-rendered-examples"
-  },"36": {
+  },"29": {
     "doc": "Color",
     "title": "Color Utilities",
     "content": " ",
     "url": "http://localhost:4000/docs/utilities/color/#color-utilities",
     "relUrl": "/docs/utilities/color/#color-utilities"
-  },"37": {
+  },"30": {
     "doc": "Color",
     "title": "Table of contents",
     "content": ". | Light Greys | Dark Greys | Purples | Blues | Greens | Yellows | Reds | . All the colors used in Just the Docs have been systematized into a series of variables that have been extended to both font color and background color utility classes. ",
     "url": "http://localhost:4000/docs/utilities/color/#table-of-contents",
     "relUrl": "/docs/utilities/color/#table-of-contents"
-  },"38": {
+  },"31": {
     "doc": "Color",
     "title": "Light Greys",
     "content": "| Color value | Font color utility | Background color utility | . | grey-lt-000 | .text-grey-lt-000 | .bg-grey-lt-000 | . | grey-lt-100 | .text-grey-lt-100 | .bg-grey-lt-100 | . | grey-lt-200 | .text-grey-lt-200 | .bg-grey-lt-200 | . | grey-lt-300 | .text-grey-lt-300 | .bg-grey-lt-300 | . ",
     "url": "http://localhost:4000/docs/utilities/color/#light-greys",
     "relUrl": "/docs/utilities/color/#light-greys"
-  },"39": {
+  },"32": {
     "doc": "Color",
     "title": "Dark Greys",
     "content": "| Color value | Font color utility | Background color utility | . | grey-dk-000 | .text-grey-dk-000 | .bg-grey-dk-000 | . | grey-dk-100 | .text-grey-dk-100 | .bg-grey-dk-100 | . | grey-dk-200 | .text-grey-dk-200 | .bg-grey-dk-200 | . | grey-dk-250 | .text-grey-dk-250 | .bg-grey-dk-250 | . | grey-dk-300 | .text-grey-dk-300 | .bg-grey-dk-300 | . ",
     "url": "http://localhost:4000/docs/utilities/color/#dark-greys",
     "relUrl": "/docs/utilities/color/#dark-greys"
-  },"40": {
+  },"33": {
     "doc": "Color",
     "title": "Purples",
     "content": "| Color value | Font color utility | Background color utility | . | purple-000 | .text-purple-000 | .bg-purple-000 | . | purple-100 | .text-purple-100 | .bg-purple-100 | . | purple-200 | .text-purple-200 | .bg-purple-200 | . | purple-300 | .text-purple-300 | .bg-purple-300 | . ",
     "url": "http://localhost:4000/docs/utilities/color/#purples",
     "relUrl": "/docs/utilities/color/#purples"
-  },"41": {
+  },"34": {
     "doc": "Color",
     "title": "Blues",
     "content": "| Color value | Font color utility | Background color utility | . | blue-000 | .text-blue-000 | .bg-blue-000 | . | blue-100 | .text-blue-100 | .bg-blue-100 | . | blue-200 | .text-blue-200 | .bg-blue-200 | . | blue-300 | .text-blue-300 | .bg-blue-300 | . ",
     "url": "http://localhost:4000/docs/utilities/color/#blues",
     "relUrl": "/docs/utilities/color/#blues"
-  },"42": {
+  },"35": {
     "doc": "Color",
     "title": "Greens",
     "content": "| Color value | Font color utility | Background color utility | . | green-000 | .text-green-000 | .bg-green-000 | . | green-100 | .text-green-100 | .bg-green-100 | . | green-200 | .text-green-200 | .bg-green-200 | . | green-300 | .text-green-300 | .bg-green-300 | . ",
     "url": "http://localhost:4000/docs/utilities/color/#greens",
     "relUrl": "/docs/utilities/color/#greens"
-  },"43": {
+  },"36": {
     "doc": "Color",
     "title": "Yellows",
     "content": "| Color value | Font color utility | Background color utility | . | yellow-000 | .text-yellow-000 | .bg-yellow-000 | . | yellow-100 | .text-yellow-100 | .bg-yellow-100 | . | yellow-200 | .text-yellow-200 | .bg-yellow-200 | . | yellow-300 | .text-yellow-300 | .bg-yellow-300 | . ",
     "url": "http://localhost:4000/docs/utilities/color/#yellows",
     "relUrl": "/docs/utilities/color/#yellows"
-  },"44": {
+  },"37": {
     "doc": "Color",
     "title": "Reds",
     "content": "| Color value | Font color utility | Background color utility | . | red-000 | .text-red-000 | .bg-red-000 | . | red-100 | .text-red-100 | .bg-red-100 | . | red-200 | .text-red-200 | .bg-red-200 | . | red-300 | .text-red-300 | .bg-red-300 | . ",
     "url": "http://localhost:4000/docs/utilities/color/#reds",
     "relUrl": "/docs/utilities/color/#reds"
-  },"45": {
+  },"38": {
     "doc": "Color",
     "title": "Color",
     "content": " ",
     "url": "http://localhost:4000/docs/utilities/color/",
     "relUrl": "/docs/utilities/color/"
-  },"46": {
+  },"39": {
     "doc": "Configuration",
     "title": "Configuration",
     "content": "Just the Docs has some specific configuration parameters that can be defined in your Jekyll site’s _config.yml file. ",
     "url": "http://localhost:4000/docs/configuration/",
     "relUrl": "/docs/configuration/"
-  },"47": {
+  },"40": {
     "doc": "Configuration",
     "title": "Table of contents",
     "content": ". | Site logo | Search | Aux links | Heading anchor links | Footer content | Color scheme | Google Analytics | Document collections | . View this site’s _config.yml file as an example. ",
     "url": "http://localhost:4000/docs/configuration/#table-of-contents",
     "relUrl": "/docs/configuration/#table-of-contents"
-  },"48": {
+  },"41": {
     "doc": "Configuration",
     "title": "Site logo",
     "content": "# Set a path/url to a logo that will be displayed instead of the title logo: \"/assets/images/just-the-docs.png\" . ",
     "url": "http://localhost:4000/docs/configuration/#site-logo",
     "relUrl": "/docs/configuration/#site-logo"
-  },"49": {
+  },"42": {
     "doc": "Configuration",
     "title": "Search",
     "content": "# Enable or disable the site search # Supports true (default) or false search_enabled: true search: # Split pages into sections that can be searched individually # Supports 1 - 6, default: 2 heading_level: 2 # Maximum amount of previews per search result # Default: 3 previews: 3 # Maximum amount of words to display before a matched word in the preview # Default: 5 preview_words_before: 5 # Maximum amount of words to display after a matched word in the preview # Default: 10 preview_words_after: 10 # Set the search token separator # Default: /[\\s\\-/]+/ # Example: enable support for hyphenated search words tokenizer_separator: /[\\s/]+/ # Display the relative url in search results # Supports true (default) or false rel_url: true # Enable or disable the search button that appears in the bottom right corner of every page # Supports true or false (default) button: false . ",
     "url": "http://localhost:4000/docs/configuration/#search",
     "relUrl": "/docs/configuration/#search"
-  },"50": {
+  },"43": {
     "doc": "Configuration",
     "title": "Aux links",
     "content": "# Aux links for the upper right navigation aux_links: \"Just the Docs on GitHub\": - \"//github.com/pmarsceill/just-the-docs\" # Makes Aux links open in a new tab. Default is false aux_links_new_tab: false . ",
     "url": "http://localhost:4000/docs/configuration/#aux-links",
     "relUrl": "/docs/configuration/#aux-links"
-  },"51": {
+  },"44": {
     "doc": "Configuration",
     "title": "Heading anchor links",
     "content": "# Heading anchor links appear on hover over h1-h6 tags in page content # allowing users to deep link to a particular heading on a page. # # Supports true (default) or false heading_anchors: true . ",
     "url": "http://localhost:4000/docs/configuration/#heading-anchor-links",
     "relUrl": "/docs/configuration/#heading-anchor-links"
-  },"52": {
+  },"45": {
     "doc": "Configuration",
     "title": "Footer content",
     "content": "# Footer content # appears at the bottom of every page's main content # Note: The footer_content option is deprecated and will be removed in a future major release. Please use `_includes/footer_custom.html` for more robust markup / liquid-based content. footer_content: \"Copyright &amp;copy; 2017-2020 Patrick Marsceill. Distributed by an &lt;a href=\\\"https://github.com/pmarsceill/just-the-docs/tree/master/LICENSE.txt\\\"&gt;MIT license.&lt;/a&gt;\" # Footer last edited timestamp last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter last_edit_time_format: \"%b %e %Y at %I:%M %p\" # uses ruby's time format: https://ruby-doc.org/stdlib-2.7.0/libdoc/time/rdoc/Time.html # Footer \"Edit this page on GitHub\" link text gh_edit_link: true # show or hide edit this page link gh_edit_link_text: \"Edit this page on GitHub.\" gh_edit_repository: \"https://github.com/pmarsceill/just-the-docs\" # the github URL for your repo gh_edit_branch: \"master\" # the branch that your docs is served from # gh_edit_source: docs # the source that your files originate from gh_edit_view_mode: \"tree\" # \"tree\" or \"edit\" if you want the user to jump into the editor immediately . note: footer_content is deprecated, but still supported. For a better experience we have moved this into an include called _includes/footer_custom.html which will allow for robust markup / liquid-based content. | the “page last modified” data will only display if a page has a key called last_modified_date, formatted in some readable date format | last_edit_time_format uses Ruby’s DateTime formatter; see examples and more information at this link. | gh_edit_repository is the URL of the project’s GitHub repository | gh_edit_branch is the branch that the docs site is served from; defaults to master | gh_edit_source is the source directory that your project files are stored in (should be the same as site.source) | gh_edit_view_mode is \"tree\" by default, which brings the user to the github page; switch to \"edit\" to bring the user directly into editing mode | . ",
     "url": "http://localhost:4000/docs/configuration/#footer-content",
     "relUrl": "/docs/configuration/#footer-content"
-  },"53": {
+  },"46": {
     "doc": "Configuration",
     "title": "Color scheme",
     "content": "# Color scheme supports \"light\" (default) and \"dark\" color_scheme: dark . Preview dark color scheme . See Customization for more information. ",
     "url": "http://localhost:4000/docs/configuration/#color-scheme",
     "relUrl": "/docs/configuration/#color-scheme"
-  },"54": {
+  },"47": {
     "doc": "Configuration",
     "title": "Google Analytics",
     "content": "# Google Analytics Tracking (optional) # e.g, UA-1234567-89 ga_tracking: UA-5555555-55 ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings (true by default) . ",
     "url": "http://localhost:4000/docs/configuration/#google-analytics",
     "relUrl": "/docs/configuration/#google-analytics"
-  },"55": {
+  },"48": {
     "doc": "Configuration",
     "title": "Document collections",
     "content": "By default, the navigation and search include normal pages. Instead, you can also use Jekyll collections which group documents semantically together. For example, put all your documentation files in the _docs folder and create the docs collection: . # Define Jekyll collections collections: # Define a collection named \"docs\", its documents reside in the \"_docs\" directory docs: permalink: \"/:collection/:path/\" output: true just_the_docs: # Define which collections are used in just-the-docs collections: # Reference the \"docs\" collection docs: # Give the collection a name name: Documentation # Exclude the collection from the navigation # Supports true or false (default) nav_exclude: false # Exclude the collection from the search # Supports true or false (default) search_exclude: false . You can reference multiple collections. This creates categories in the navigation with the configured names. collections: docs: permalink: \"/:collection/:path/\" output: true tutorials: permalink: \"/:collection/:path/\" output: true just_the_docs: collections: docs: name: Documentation tutorials: name: Tutorials . ",
     "url": "http://localhost:4000/docs/configuration/#document-collections",
     "relUrl": "/docs/configuration/#document-collections"
+  },"49": {
+    "doc": "Data Analyst Nanodegree Program 후기",
+    "title": "Data Analyst Nanodegree Program 후기",
+    "content": " ",
+    "url": "http://localhost:4000/docs/mooc/udacity/data_analyst/",
+    "relUrl": "/docs/mooc/udacity/data_analyst/"
+  },"50": {
+    "doc": "Data Analyst Nanodegree Program 후기",
+    "title": "강의 URL",
+    "content": "2017년도에 수강했던 강의라 지금은 해당 강좌가 없어지고, 대체 강좌들이 생긴 것 같다. ",
+    "url": "http://localhost:4000/docs/mooc/udacity/data_analyst/#%EA%B0%95%EC%9D%98-url",
+    "relUrl": "/docs/mooc/udacity/data_analyst/#강의-url"
+  },"51": {
+    "doc": "Data Analyst Nanodegree Program 후기",
+    "title": "학습 툴",
+    "content": ". | python | jupyter notebook | anaconda | 노트와 연필 ← 필수 | ztable.jpg ← 소중… | . ",
+    "url": "http://localhost:4000/docs/mooc/udacity/data_analyst/#%ED%95%99%EC%8A%B5-%ED%88%B4",
+    "relUrl": "/docs/mooc/udacity/data_analyst/#학습-툴"
+  },"52": {
+    "doc": "Data Analyst Nanodegree Program 후기",
+    "title": "강의 구성",
+    "content": ". | udacity에서 전문대학처럼 전문가를 양성하고자 2017년도에 nanodegree강좌를 여러개 만들었었고, 이 수업은 그 중 하나로 한달에 30~40만원했던 수업;; | 강좌를 모두 학습하고 과제를 모두 통과하면 degree를 주고 채용연계까지 시켜주는 커리큘럼이 있었다. | . ",
+    "url": "http://localhost:4000/docs/mooc/udacity/data_analyst/#%EA%B0%95%EC%9D%98-%EA%B5%AC%EC%84%B1",
+    "relUrl": "/docs/mooc/udacity/data_analyst/#강의-구성"
+  },"53": {
+    "doc": "Data Analyst Nanodegree Program 후기",
+    "title": "선수 학습 조건",
+    "content": " ",
+    "url": "http://localhost:4000/docs/mooc/udacity/data_analyst/#%EC%84%A0%EC%88%98-%ED%95%99%EC%8A%B5-%EC%A1%B0%EA%B1%B4",
+    "relUrl": "/docs/mooc/udacity/data_analyst/#선수-학습-조건"
+  },"54": {
+    "doc": "Data Analyst Nanodegree Program 후기",
+    "title": "언어 지원",
+    "content": " ",
+    "url": "http://localhost:4000/docs/mooc/udacity/data_analyst/#%EC%96%B8%EC%96%B4-%EC%A7%80%EC%9B%90",
+    "relUrl": "/docs/mooc/udacity/data_analyst/#언어-지원"
+  },"55": {
+    "doc": "Data Analyst Nanodegree Program 후기",
+    "title": "학습 후기",
+    "content": ". | 저는 총 3개월동안 평일엔 퇴근해서 강의듣고, 주말엔 과제하면서 공부했던 기억이 난다. | 과제를 제출하면, 첨삭을 잘 해줬던 것도 기억이 난다. 타이타닉 과제는 리뷰를 여러번 받아서, 아직도 기억이 생생~ | . ",
+    "url": "http://localhost:4000/docs/mooc/udacity/data_analyst/#%ED%95%99%EC%8A%B5-%ED%9B%84%EA%B8%B0",
+    "relUrl": "/docs/mooc/udacity/data_analyst/#학습-후기"
   },"56": {
     "doc": "Decorator pattern",
     "title": "Decorator pattern",
@@ -707,77 +707,77 @@
     "url": "http://localhost:4000/docs/errors/jetty1/",
     "relUrl": "/docs/errors/jetty1/"
   },"118": {
-    "doc": "jpa 프로그래밍",
-    "title": "3. 영속성 관리",
-    "content": "@DynamicUpdate . 컬럼이 30개 이상이 되면, @DynamicUpdate를 사용한 동적 수정 쿼리가 정적 수정 쿼리보다 빠르다. 하지만 한 테이블에 컬럼이 30개 이상 된다는 것은 테이블 설계상 분리가 적절하게 되지 않았을 가능성이 높다. @SequenceGenerator . SequenceGenterator.allocationSize의 기본값은 50이다. 이는 최적화 때문인데, 만약 하나씩 증가해야한다면 1로 설정하면 된다. @SeqyebceGeberator는 @GeneratedValue 옆에 사용해도 된다. ",
-    "url": "http://localhost:4000/docs/clipping/jpa/jpa%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/#3-%EC%98%81%EC%86%8D%EC%84%B1-%EA%B4%80%EB%A6%AC",
-    "relUrl": "/docs/clipping/jpa/jpa%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/#3-영속성-관리"
-  },"119": {
-    "doc": "jpa 프로그래밍",
-    "title": "4. 엔티티 맵핑",
-    "content": "@Column 생략 . int data1; // @Column생략, 자바 기본타입으로 not null로 생성된다. Integer data2; // @Column 생략하면 nullable속성으로 생성된다. 따라서 자바 기본타입에 @Column을 사용하면 nullable = false로 지정하는 것이 안전하다. ",
-    "url": "http://localhost:4000/docs/clipping/jpa/jpa%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/#4-%EC%97%94%ED%8B%B0%ED%8B%B0-%EB%A7%B5%ED%95%91",
-    "relUrl": "/docs/clipping/jpa/jpa%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/#4-엔티티-맵핑"
-  },"120": {
-    "doc": "jpa 프로그래밍",
-    "title": "5. 연관관계 매핑 기초",
-    "content": "양방향 매핑 . 양방향 매핑시에는 무한 루프에 빠지지 않게 조심해야한다. 예를 들어 Member.toString()에서 getTeam()을 호출하고 Team.toString()에서 getMember()를 호출하면 무한 루프에 빠질 수 있다. 이런 문제는 엔티티를 JSON으로 변환할 때 자주 발생한다. ",
-    "url": "http://localhost:4000/docs/clipping/jpa/jpa%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/#5-%EC%97%B0%EA%B4%80%EA%B4%80%EA%B3%84-%EB%A7%A4%ED%95%91-%EA%B8%B0%EC%B4%88",
-    "relUrl": "/docs/clipping/jpa/jpa%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/#5-연관관계-매핑-기초"
-  },"121": {
-    "doc": "jpa 프로그래밍",
-    "title": "6. 다양한 연관관계 매핑",
-    "content": "일대다 . | 일대다 단방향 매핑보다는 다대일 양방향 매핑을 사용하자. | 관계형 데이터베이스 특성상 외래키는 항상 다 쪽에 있다. 그러므로 양방향 매핑에서 @OneToMany는 연관관계의 주인이 될 수 없다. 이런 이유로 @ManyToOne에는 mappedBy속성이 없다. | . ",
-    "url": "http://localhost:4000/docs/clipping/jpa/jpa%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/#6-%EB%8B%A4%EC%96%91%ED%95%9C-%EC%97%B0%EA%B4%80%EA%B4%80%EA%B3%84-%EB%A7%A4%ED%95%91",
-    "relUrl": "/docs/clipping/jpa/jpa%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/#6-다양한-연관관계-매핑"
-  },"122": {
-    "doc": "jpa 프로그래밍",
-    "title": "7. 고급 매핑",
-    "content": "복합키와 식별 관계 매핑 . | 복합 키에는 @GenerateValue를 사용할 수 없다. 복합 키를 구성하는 여러 컬럼 중 하나에도 사용할 수 없다. | . ",
-    "url": "http://localhost:4000/docs/clipping/jpa/jpa%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/#7-%EA%B3%A0%EA%B8%89-%EB%A7%A4%ED%95%91",
-    "relUrl": "/docs/clipping/jpa/jpa%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/#7-고급-매핑"
-  },"123": {
-    "doc": "jpa 프로그래밍",
-    "title": "9. 값 타입",
-    "content": "임베디드 타입(복합 값 타입) . | 임베디드 타입은 기본 생성자가 필수다. | 임베디드 타입을 포함한 모든 값 타입은 엔티티의 생명주기에 의존하므로 엔티티와 임베디드 타입의 관계를 UML로 표현하면 컴포지션 관계가 된다 | 하이버네이트는 임베디드 타입을 컴포넌트라고 한다. | . ",
-    "url": "http://localhost:4000/docs/clipping/jpa/jpa%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/#9-%EA%B0%92-%ED%83%80%EC%9E%85",
-    "relUrl": "/docs/clipping/jpa/jpa%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/#9-값-타입"
-  },"124": {
-    "doc": "jpa 프로그래밍",
-    "title": "12. 스프링 데데이이터 JPA",
-    "content": "쿼리 메소드 기능 . | 스프링 데이터 JPA 쿼리 생성 기능 | . ",
-    "url": "http://localhost:4000/docs/clipping/jpa/jpa%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/#12-%EC%8A%A4%ED%94%84%EB%A7%81-%EB%8D%B0%EB%8D%B0%EC%9D%B4%EC%9D%B4%ED%84%B0-jpa",
-    "relUrl": "/docs/clipping/jpa/jpa%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/#12-스프링-데데이이터-jpa"
-  },"125": {
-    "doc": "jpa 프로그래밍",
-    "title": "14. 컬렉션과 부가  기능",
-    "content": "리스너 . | 엔티티의 생명주기에 따른 이벤트를 처리할 수 있다. | 방법 . | 엔티티에 직접 이벤트를 적용하는 방법(@PostPersist, @PostLoad…) | 별도의 리스너 등록 @EntityListener(DuckListener.class) Public class Duck { ... } public class DuckListener { @PrePersist private void prePersist(Object obj) { } @PostPersist private void postPersist(Object obj) { } } . | 기본 리스너 사용 . | 모든 엔티티에 적용하는 경우라면 기본 리스너로 등록하면 된다. | . | . | . ",
-    "url": "http://localhost:4000/docs/clipping/jpa/jpa%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/#14-%EC%BB%AC%EB%A0%89%EC%85%98%EA%B3%BC-%EB%B6%80%EA%B0%80--%EA%B8%B0%EB%8A%A5",
-    "relUrl": "/docs/clipping/jpa/jpa%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/#14-컬렉션과-부가--기능"
-  },"126": {
-    "doc": "jpa 프로그래밍",
-    "title": "jpa 프로그래밍",
-    "content": ". ",
-    "url": "http://localhost:4000/docs/clipping/jpa/jpa%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/",
-    "relUrl": "/docs/clipping/jpa/jpa%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/"
-  },"127": {
     "doc": "Jpa",
     "title": "Clipping",
     "content": "jpa 프로그래밍 . ",
     "url": "http://localhost:4000/docs/clipping/jpa/jpa/#clipping",
     "relUrl": "/docs/clipping/jpa/jpa/#clipping"
-  },"128": {
+  },"119": {
     "doc": "Jpa",
     "title": "Jpa",
     "content": " ",
     "url": "http://localhost:4000/docs/clipping/jpa/jpa/",
     "relUrl": "/docs/clipping/jpa/jpa/"
-  },"129": {
+  },"120": {
     "doc": "store-jpa 모듈을 만들고 나니 Not a managed type 에러 날때",
     "title": "store-jpa 모듈을 만들고 나니 Not a managed type 에러 날때",
     "content": "에러 )11:30:46.596 main WARN stractApplicationContext:557 refresh Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name ‘aaaService’ defined in file []: Unsatisfied dependency expressed through constructor parameter 0; nested exception is at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:769) at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:218) at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1341) at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1187) at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:845) at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877) at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:742) at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:389) at org.springframework.boot.SpringApplication.run(SpringApplication.java:311) at org.springframework.boot.SpringApplication.run(SpringApplication.java:1213) at org.springframework.boot.SpringApplication.run(SpringApplication.java:1202) at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:769) at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:218) at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1341) at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1187) at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277) at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1251) at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1171) at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857) at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760) … 19 common frames omittedCaused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name ‘internalGatewayRepository’: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class AAAJpo at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778) at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277) at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1251) at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1171) at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857) at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760)… 33 common frames omittedCaused by: java.lang.IllegalArgumentException: Not a managed type: class AAAGatewayJpo at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:552) at org.springframework.data.jpa.repository.support.JpaMetamodelEntityInformation.(JpaMetamodelEntityInformation.java:74) at org.springframework.data.jpa.repository.support.JpaEntityInformationSupport.getEntityInformation(JpaEntityInformationSupport.java:66) at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getEntityInformation(JpaRepositoryFactory.java:201) at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:151) at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:134) at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:65) at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:305) at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:297) at org.springframework.data.util.Lazy.getNullable(Lazy.java:211) at org.springframework.data.util.Lazy.get(Lazy.java:94) at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:300) at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:121) at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837) at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774) ... 44 common frames omittedProcess finished with exit code 1 . [원인] . SpringApplication으로 서비스 올릴 때, scan하는 패키지는 test.www인데 springboot로 올리는 application 파일은 test.www.aaa.boot아래에 있었다 . 이걸 test.www.aaa 하위로 옮기고 나니 해결됨 . ",
     "url": "http://localhost:4000/docs/errors/jpa1/",
     "relUrl": "/docs/errors/jpa1/"
+  },"121": {
+    "doc": "jpa 프로그래밍",
+    "title": "3. 영속성 관리",
+    "content": "@DynamicUpdate . 컬럼이 30개 이상이 되면, @DynamicUpdate를 사용한 동적 수정 쿼리가 정적 수정 쿼리보다 빠르다. 하지만 한 테이블에 컬럼이 30개 이상 된다는 것은 테이블 설계상 분리가 적절하게 되지 않았을 가능성이 높다. @SequenceGenerator . SequenceGenterator.allocationSize의 기본값은 50이다. 이는 최적화 때문인데, 만약 하나씩 증가해야한다면 1로 설정하면 된다. @SeqyebceGeberator는 @GeneratedValue 옆에 사용해도 된다. ",
+    "url": "http://localhost:4000/docs/clipping/jpa/jpa_programming/#3-%EC%98%81%EC%86%8D%EC%84%B1-%EA%B4%80%EB%A6%AC",
+    "relUrl": "/docs/clipping/jpa/jpa_programming/#3-영속성-관리"
+  },"122": {
+    "doc": "jpa 프로그래밍",
+    "title": "4. 엔티티 맵핑",
+    "content": "@Column 생략 . int data1; // @Column생략, 자바 기본타입으로 not null로 생성된다. Integer data2; // @Column 생략하면 nullable속성으로 생성된다. 따라서 자바 기본타입에 @Column을 사용하면 nullable = false로 지정하는 것이 안전하다. ",
+    "url": "http://localhost:4000/docs/clipping/jpa/jpa_programming/#4-%EC%97%94%ED%8B%B0%ED%8B%B0-%EB%A7%B5%ED%95%91",
+    "relUrl": "/docs/clipping/jpa/jpa_programming/#4-엔티티-맵핑"
+  },"123": {
+    "doc": "jpa 프로그래밍",
+    "title": "5. 연관관계 매핑 기초",
+    "content": "양방향 매핑 . 양방향 매핑시에는 무한 루프에 빠지지 않게 조심해야한다. 예를 들어 Member.toString()에서 getTeam()을 호출하고 Team.toString()에서 getMember()를 호출하면 무한 루프에 빠질 수 있다. 이런 문제는 엔티티를 JSON으로 변환할 때 자주 발생한다. ",
+    "url": "http://localhost:4000/docs/clipping/jpa/jpa_programming/#5-%EC%97%B0%EA%B4%80%EA%B4%80%EA%B3%84-%EB%A7%A4%ED%95%91-%EA%B8%B0%EC%B4%88",
+    "relUrl": "/docs/clipping/jpa/jpa_programming/#5-연관관계-매핑-기초"
+  },"124": {
+    "doc": "jpa 프로그래밍",
+    "title": "6. 다양한 연관관계 매핑",
+    "content": "일대다 . | 일대다 단방향 매핑보다는 다대일 양방향 매핑을 사용하자. | 관계형 데이터베이스 특성상 외래키는 항상 다 쪽에 있다. 그러므로 양방향 매핑에서 @OneToMany는 연관관계의 주인이 될 수 없다. 이런 이유로 @ManyToOne에는 mappedBy속성이 없다. | . ",
+    "url": "http://localhost:4000/docs/clipping/jpa/jpa_programming/#6-%EB%8B%A4%EC%96%91%ED%95%9C-%EC%97%B0%EA%B4%80%EA%B4%80%EA%B3%84-%EB%A7%A4%ED%95%91",
+    "relUrl": "/docs/clipping/jpa/jpa_programming/#6-다양한-연관관계-매핑"
+  },"125": {
+    "doc": "jpa 프로그래밍",
+    "title": "7. 고급 매핑",
+    "content": "복합키와 식별 관계 매핑 . | 복합 키에는 @GenerateValue를 사용할 수 없다. 복합 키를 구성하는 여러 컬럼 중 하나에도 사용할 수 없다. | . ",
+    "url": "http://localhost:4000/docs/clipping/jpa/jpa_programming/#7-%EA%B3%A0%EA%B8%89-%EB%A7%A4%ED%95%91",
+    "relUrl": "/docs/clipping/jpa/jpa_programming/#7-고급-매핑"
+  },"126": {
+    "doc": "jpa 프로그래밍",
+    "title": "9. 값 타입",
+    "content": "임베디드 타입(복합 값 타입) . | 임베디드 타입은 기본 생성자가 필수다. | 임베디드 타입을 포함한 모든 값 타입은 엔티티의 생명주기에 의존하므로 엔티티와 임베디드 타입의 관계를 UML로 표현하면 컴포지션 관계가 된다 | 하이버네이트는 임베디드 타입을 컴포넌트라고 한다. | . ",
+    "url": "http://localhost:4000/docs/clipping/jpa/jpa_programming/#9-%EA%B0%92-%ED%83%80%EC%9E%85",
+    "relUrl": "/docs/clipping/jpa/jpa_programming/#9-값-타입"
+  },"127": {
+    "doc": "jpa 프로그래밍",
+    "title": "12. 스프링 데데이이터 JPA",
+    "content": "쿼리 메소드 기능 . | 스프링 데이터 JPA 쿼리 생성 기능 | . ",
+    "url": "http://localhost:4000/docs/clipping/jpa/jpa_programming/#12-%EC%8A%A4%ED%94%84%EB%A7%81-%EB%8D%B0%EB%8D%B0%EC%9D%B4%EC%9D%B4%ED%84%B0-jpa",
+    "relUrl": "/docs/clipping/jpa/jpa_programming/#12-스프링-데데이이터-jpa"
+  },"128": {
+    "doc": "jpa 프로그래밍",
+    "title": "14. 컬렉션과 부가  기능",
+    "content": "리스너 . | 엔티티의 생명주기에 따른 이벤트를 처리할 수 있다. | 방법 . | 엔티티에 직접 이벤트를 적용하는 방법(@PostPersist, @PostLoad…) | 별도의 리스너 등록 @EntityListener(DuckListener.class) Public class Duck { ... } public class DuckListener { @PrePersist private void prePersist(Object obj) { } @PostPersist private void postPersist(Object obj) { } } . | 기본 리스너 사용 . | 모든 엔티티에 적용하는 경우라면 기본 리스너로 등록하면 된다. | . | . | . ",
+    "url": "http://localhost:4000/docs/clipping/jpa/jpa_programming/#14-%EC%BB%AC%EB%A0%89%EC%85%98%EA%B3%BC-%EB%B6%80%EA%B0%80--%EA%B8%B0%EB%8A%A5",
+    "relUrl": "/docs/clipping/jpa/jpa_programming/#14-컬렉션과-부가--기능"
+  },"129": {
+    "doc": "jpa 프로그래밍",
+    "title": "jpa 프로그래밍",
+    "content": ". ",
+    "url": "http://localhost:4000/docs/clipping/jpa/jpa_programming/",
+    "relUrl": "/docs/clipping/jpa/jpa_programming/"
   },"130": {
     "doc": "애플 Symantec Root 인증서 제거로 인한 인증서 갱신",
     "title": "애플 Symantec Root 인증서 제거로 인한 인증서 갱신",
@@ -1094,8 +1094,8 @@
     "doc": "오케스트레이션 vs 코레오그래피",
     "title": "오케스트레이션 vs 코레오그래피",
     "content": "https://happy-coding-day.tistory.com/102?category=896687 . ",
-    "url": "http://localhost:4000/docs/patterns/orchestration_vs_%20choreography/",
-    "relUrl": "/docs/patterns/orchestration_vs_%20choreography/"
+    "url": "http://localhost:4000/docs/patterns/orchestration_vs_choreography/",
+    "relUrl": "/docs/patterns/orchestration_vs_choreography/"
   },"183": {
     "doc": "Patterns",
     "title": "Patterns",
