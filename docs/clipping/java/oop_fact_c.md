@@ -1,6 +1,8 @@
 ---
-layout: default
+layout: post
 title: 객체지향의 사실과 오해 정리
+date: 2021-09-09 13:07:45
+last_modified_at : 2021-09-09 13:07:45
 parent: Java
 has_children: false
 nav_order: 1

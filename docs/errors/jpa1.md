@@ -1,6 +1,8 @@
 ---
-layout: default
+layout: post
 title: store-jpa 모듈을 만들고 나니 Not a managed type 에러 날때
+date: 2021-09-09 13:07:45
+last_modified_at : 2021-09-09 13:07:45
 parent: Errors
 has_children: false
 nav_exclude: true

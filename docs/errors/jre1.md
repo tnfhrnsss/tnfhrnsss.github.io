@@ -1,6 +1,8 @@
 ---
-layout: default
+layout: post
 title: 애플 Symantec Root 인증서 제거로 인한 인증서 갱신
+date: 2021-09-09 13:07:45
+last_modified_at : 2021-09-09 13:07:45
 parent: Errors
 has_children: false
 nav_exclude: true

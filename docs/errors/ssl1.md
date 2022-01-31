@@ -1,6 +1,8 @@
 ---
-layout: default
+layout: post
 title: ssl 셋팅 후 갖가지 에러
+date: 2021-09-09 13:07:45
+last_modified_at : 2021-09-09 13:07:45
 parent: Errors
 has_children: false
 nav_exclude: true

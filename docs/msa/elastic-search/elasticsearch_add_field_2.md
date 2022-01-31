@@ -1,6 +1,8 @@
 ---
-layout: default
+layout: post
 title: elasticsearch 필드 추가(2)
+date: 2021-09-09 13:07:45
+last_modified_at : 2021-09-09 13:07:45
 parent: Elastic Search
 grand_parent: Msa
 nav_exclude: true

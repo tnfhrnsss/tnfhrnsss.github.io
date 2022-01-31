@@ -1,6 +1,8 @@
 ---
-layout: default
+layout: post
 title: Feign을 통해 @SpringQueryMap 사용
+date: 2021-09-09 13:07:45
+last_modified_at : 2021-09-09 13:07:45
 parent: Feign
 grand_parent: Msa
 nav_exclude: true

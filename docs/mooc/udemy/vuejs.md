@@ -1,6 +1,8 @@
 ---
-layout: default
+layout: post
 title: vuejs-2-the-complete-guide 후기
+date: 2021-09-09 13:07:45
+last_modified_at : 2021-09-09 13:07:45
 parent: Udemy
 grand_parent: Mooc
 nav_exclude: true

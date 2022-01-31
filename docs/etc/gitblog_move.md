@@ -1,6 +1,8 @@
 ---
-layout: default
+layout: post
 title: notion에서 gitblog로 이사
+date: 2021-09-09 13:07:45
+last_modified_at : 2021-09-09 13:07:45
 parent: Etc
 has_children: false
 nav_order: 1
