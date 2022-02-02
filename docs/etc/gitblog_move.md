@@ -2,7 +2,7 @@
 layout: post
 title: notion에서 gitblog로 이사
 date: 2021-09-09 13:07:45
-last_modified_at : 2021-09-09 13:07:45
+last_modified_at : 2022-02-02 16:18:45
 parent: Etc
 has_children: false
 nav_order: 1
@@ -155,6 +155,15 @@ gitblog를 생성하면, username으로 기본 주소가 되기 때문에 도메
 [[Github Blog] 파비콘(Favicon) 세팅하기](https://velog.io/@eona1301/Github-Blog-%ED%8C%8C%EB%B9%84%EC%BD%98Favicon-%EC%84%B8%ED%8C%85%ED%95%98%EA%B8%B0)
 
 header코드에 이미 선언되어 있어서, 생성한 파비콘 파일을 기존과 동일한 이름으로 교체만 해주었습니다!!
+
+## :: 검색엔진 등록
+
+### 구글 서치엔진
+- 저는 jekyll-sitemap 플러그인을 사용해서 sitemap.xml을 만들었는데요. 아무리해도 "사이트맵을 읽을 수 없음"만 표시되어서
+잘못 만들어졌다 했는데요.
+  - 처음엔 last_modified_at가 없어서 그런듯 싶어서, layout도 post로 변경하고 추가해줬습니다.
+  - [사이트맵 validation 체크 사이트](https://www.xml-sitemaps.com/validate-xml-sitemap.html)에서도 체크했는데요. 정상으로 표시됩니다.
+
 
 ## :: 마무리
 
