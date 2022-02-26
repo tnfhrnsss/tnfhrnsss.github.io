@@ -1,4 +1,4 @@
-I"�<h1 id="notion에서-gitblog로-이사">notion에서 gitblog로 이사</h1>
+I"(<h1 id="notion에서-gitblog로-이사">notion에서 gitblog로 이사</h1>
 
 <h2 id="-github에서-블로그를-사용하기-위한-사전-준비">:: github에서 블로그를 사용하기 위한 사전 준비</h2>
 
@@ -151,6 +151,19 @@ bundler using `bundle _1.17.3_ install`
 <p><a href="https://velog.io/@eona1301/Github-Blog-%ED%8C%8C%EB%B9%84%EC%BD%98Favicon-%EC%84%B8%ED%8C%85%ED%95%98%EA%B8%B0">[Github Blog] 파비콘(Favicon) 세팅하기</a></p>
 
 <p>header코드에 이미 선언되어 있어서, 생성한 파비콘 파일을 기존과 동일한 이름으로 교체만 해주었습니다!!</p>
+
+<h2 id="-검색엔진-등록">:: 검색엔진 등록</h2>
+
+<h3 id="구글-서치엔진">구글 서치엔진</h3>
+<ul>
+  <li>저는 jekyll-sitemap 플러그인을 사용해서 sitemap.xml을 만들었는데요. 아무리해도 “사이트맵을 읽을 수 없음”만 표시되어서
+잘못 만들어졌다 했는데요.
+    <ul>
+      <li>처음엔 last_modified_at가 없어서 그런듯 싶어서, layout도 post로 변경하고 추가해줬습니다.</li>
+      <li><a href="https://www.xml-sitemaps.com/validate-xml-sitemap.html">사이트맵 validation 체크 사이트</a>에서도 체크했는데요. 정상으로 표시됩니다.</li>
+    </ul>
+  </li>
+</ul>
 
 <h2 id="-마무리">:: 마무리</h2>
 
