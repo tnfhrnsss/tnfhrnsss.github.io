@@ -3,8 +3,9 @@ layout: post
 title: 전락 열거 타입 패턴
 date: 2021-09-09 13:07:45
 last_modified_at : 2021-09-09 13:07:45
-parent: Patterns
-has_children: false
+parent: Home
+# parent: Patterns
+# has_children: false
 nav_order: 2
 nav_exclude: true
 ---

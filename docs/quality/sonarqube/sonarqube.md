@@ -1,7 +1,8 @@
 ---
 layout: post
 title: SonarQube
-parent: Quality Practice
+parent: Home
+# parent: Quality Practice
 has_children: true
 nav_order: 1
 categories: SonarQube

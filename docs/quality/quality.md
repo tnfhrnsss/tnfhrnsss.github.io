@@ -11,6 +11,7 @@ last_modified_at : 2021-09-09 13:07:45
 sitemap :
   changefreq : daily
   priority : 1.0
+nav_exclude: true
 ---
 
 # Quality Practice

@@ -3,8 +3,9 @@ layout: post
 title: Programming Foundations with Python 후기
 date: 2021-09-09 13:07:45
 last_modified_at : 2021-09-09 13:07:45
-parent: Udacity
-grand_parent: Mooc
+parent: Home
+# parent: Udacity
+# grand_parent: Mooc
 nav_exclude: true
 ---
 

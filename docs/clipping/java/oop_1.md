@@ -1,12 +1,13 @@
 ---
 layout: post
 title: 기타
-parent: Java
 date: 2021-09-09 13:07:45
 last_modified_at : 2021-09-09 13:07:45
 has_children: false
 nav_order: 4
-grand_parent: Clipping
+parent: Home
+# parent: Java
+# grand_parent: Clipping
 ---
 
 # 오버로딩 vs 가변 인수

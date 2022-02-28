@@ -3,10 +3,11 @@ layout: post
 title: Effective Java
 date: 2021-09-09 13:07:45
 last_modified_at : 2021-09-09 13:07:45
-parent: Java
+parent: Home
+# parent: Java
+# grand_parent: Clipping
 has_children: false
 nav_order: 3
-grand_parent: Clipping
 sitemap:
     changefreq: week
     priority: 1.0

@@ -3,10 +3,11 @@ layout: post
 title: 웹API 디자인
 date: 2022-01-24 13:07:45
 last_modified_at : 2022-01-31 13:07:45
-parent: Java
 has_children: false
 nav_order: 3
-grand_parent: Clipping
+parent: Home
+# parent: Java
+# grand_parent: Clipping
 sitemap:
     changefreq: week
     priority: 1.0
