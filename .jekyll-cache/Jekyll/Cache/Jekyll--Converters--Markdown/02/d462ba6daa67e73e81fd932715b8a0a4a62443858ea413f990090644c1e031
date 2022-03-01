@@ -1,4 +1,4 @@
-I"(<h1 id="notion에서-gitblog로-이사">notion에서 gitblog로 이사</h1>
+I"v<h1 id="notion에서-gitblog로-이사">notion에서 gitblog로 이사</h1>
 
 <h2 id="-github에서-블로그를-사용하기-위한-사전-준비">:: github에서 블로그를 사용하기 위한 사전 준비</h2>
 
@@ -151,6 +151,11 @@ bundler using `bundle _1.17.3_ install`
 <p><a href="https://velog.io/@eona1301/Github-Blog-%ED%8C%8C%EB%B9%84%EC%BD%98Favicon-%EC%84%B8%ED%8C%85%ED%95%98%EA%B8%B0">[Github Blog] 파비콘(Favicon) 세팅하기</a></p>
 
 <p>header코드에 이미 선언되어 있어서, 생성한 파비콘 파일을 기존과 동일한 이름으로 교체만 해주었습니다!!</p>
+
+<h2 id="-댓글-추가">:: 댓글 추가</h2>
+<p>에드고시에 거듭 실패해서 이런 저런 이유를 찾던 중, 댓글기능이 없어서 그럴 수도 있단 글을 읽고 jekyll에 댓글 기능을 추가했습니다.</p>
+
+<p><a href="https://dev-yakuza.posstree.com/ko/jekyll/utterances/">utterance 댓글 설치</a></p>
 
 <h2 id="-검색엔진-등록">:: 검색엔진 등록</h2>
 
