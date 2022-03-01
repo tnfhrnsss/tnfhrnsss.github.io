@@ -5,12 +5,12 @@ date: 2022-01-24 13:07:45
 last_modified_at : 2022-01-31 13:07:45
 has_children: false
 nav_order: 3
-parent: Home
-# parent: Java
+parent: Java
 # grand_parent: Clipping
 sitemap:
     changefreq: week
     priority: 1.0
+nav_exclude: true
 ---
 
 2. 사용자를 위한 API 디자인하기

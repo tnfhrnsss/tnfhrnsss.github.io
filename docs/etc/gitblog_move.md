@@ -7,7 +7,7 @@ parent: Home
 # parent: Etc
 has_children: false
 nav_order: 1
-nav_exclude: true
+nav_exclude: false
 ---
 
 # notion에서 gitblog로 이사
