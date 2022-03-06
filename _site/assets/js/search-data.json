@@ -421,7 +421,7 @@
   },"70": {
     "doc": "notion에서 gitblog로 이사",
     "title": ":: 댓글 추가",
-    "content": "에드고시에 거듭 실패해서 이런 저런 이유를 찾던 중, 댓글기능이 없어서 그럴 수도 있단 글을 읽고 jekyll에 댓글 기능을 추가했습니다. utterance 댓글 설치 . ",
+    "content": "에드고시에 거듭 실패해서 이런 저런 이유를 찾던 중, 댓글기능이 없어서 그럴 수도 있단 글을 읽고 jekyll에 댓글 기능을 추가했습니다. 자세한 내용은 아래 블로그를 참고해주세요. 되게 간단하네요! utterance 댓글 설치 . ",
     "url": "http://localhost:4000/docs/etc/gitblog_move/#-%EB%8C%93%EA%B8%80-%EC%B6%94%EA%B0%80",
     "relUrl": "/docs/etc/gitblog_move/#-댓글-추가"
   },"71": {
