@@ -1,230 +1,302 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-  <loc>https://lizard-k.cf/</loc>
-  <lastmod>2022-03-06T08:44:41+00:00</lastmod>
-  <priority>1.00</priority>
+<loc>http://localhost:4000/404</loc>
 </url>
 <url>
-  <loc>https://lizard-k.cf/docs/etc/gitblog_move/</loc>
-  <lastmod>2022-03-06T08:44:41+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>http://localhost:4000/docs/quality/sonarqube/S1118/</loc>
+<lastmod>2021-09-09T22:07:45+09:00</lastmod>
 </url>
 <url>
-  <loc>https://lizard-k.cf/docs/clipping/jpa/jpa_programming/</loc>
-  <lastmod>2022-03-06T08:44:41+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>http://localhost:4000/docs/quality/sonarqube/S1149/</loc>
+<lastmod>2021-09-09T22:07:45+09:00</lastmod>
 </url>
 <url>
-  <loc>https://lizard-k.cf/docs/clipping/java/oop_fact_c/</loc>
-  <lastmod>2022-03-06T08:44:41+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>http://localhost:4000/docs/quality/sonarqube/S1610/</loc>
+<lastmod>2021-09-09T22:07:45+09:00</lastmod>
 </url>
 <url>
-  <loc>https://lizard-k.cf/docs/clipping/java/optional/</loc>
-  <lastmod>2022-03-06T08:44:41+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>http://localhost:4000/docs/quality/sonarqube/S2440/</loc>
+<lastmod>2021-09-09T22:07:45+09:00</lastmod>
 </url>
 <url>
-  <loc>https://lizard-k.cf/docs/clipping/java/effective_java/</loc>
-  <lastmod>2022-03-06T08:44:41+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>http://localhost:4000/docs/quality/sonarqube/S3776/</loc>
+<lastmod>2021-09-09T22:07:45+09:00</lastmod>
 </url>
 <url>
-  <loc>https://lizard-k.cf/docs/clipping/java/oop_1/</loc>
-  <lastmod>2022-03-06T08:44:41+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>http://localhost:4000/docs/sub-projects/alarm_bot/</loc>
+<lastmod>2021-09-09T22:07:45+09:00</lastmod>
 </url>
 <url>
-  <loc>https://lizard-k.cf/docs/errors</loc>
-  <lastmod>2022-03-06T08:44:41+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>http://localhost:4000/docs/errors/apache1/</loc>
+<lastmod>2021-09-09T22:07:45+09:00</lastmod>
 </url>
 <url>
-  <loc>https://lizard-k.cf/docs/patterns/enums_pattern/</loc>
-  <lastmod>2022-03-06T08:44:41+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>http://localhost:4000/docs/bookmark/</loc>
+<lastmod>2021-09-09T22:07:45+09:00</lastmod>
 </url>
 <url>
-  <loc>https://lizard-k.cf/docs/sub-projects/lets_encrypt_ssl/</loc>
-  <lastmod>2022-03-06T08:44:41+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>http://localhost:4000/docs/patterns/bridge_pattern/</loc>
+<lastmod>2021-09-09T22:07:45+09:00</lastmod>
 </url>
 <url>
-  <loc>https://lizard-k.cf/docs/sub-projects/tesseract_ocr_study/</loc>
-  <lastmod>2022-03-06T08:44:41+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>http://localhost:4000/docs/patterns/chain_of_responsibility/</loc>
+<lastmod>2021-09-09T22:07:45+09:00</lastmod>
 </url>
 <url>
-  <loc>https://lizard-k.cf/docs/patterns/chain_of_responsibility/</loc>
-  <lastmod>2022-03-06T08:44:41+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>http://localhost:4000/docs/clipping</loc>
+<lastmod>2021-09-09T22:07:45+09:00</lastmod>
 </url>
 <url>
-  <loc>https://lizard-k.cf/docs/sub-projects/liquibase/</loc>
-  <lastmod>2022-03-06T08:44:41+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>http://localhost:4000/docs/mooc/udacity/data_analyst/</loc>
+<lastmod>2021-09-09T22:07:45+09:00</lastmod>
 </url>
 <url>
-  <loc>https://lizard-k.cf/docs/patterns/decorator_pattern/</loc>
-  <lastmod>2022-03-06T08:44:41+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>http://localhost:4000/docs/patterns/decorator_pattern/</loc>
+<lastmod>2021-09-09T22:07:45+09:00</lastmod>
 </url>
 <url>
-  <loc>https://lizard-k.cf/docs/sub-projects/line_messaging/</loc>
-  <lastmod>2022-03-06T08:44:41+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>http://localhost:4000/docs/clipping/java/effective_java/</loc>
+<lastmod>2021-09-09T22:07:45+09:00</lastmod>
 </url>
 <url>
-  <loc>https://lizard-k.cf/docs/patterns/intercepting_filter_pattern/</loc>
-  <lastmod>2022-03-06T08:44:41+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>http://localhost:4000/docs/msa/elastic-search/elasticsearch/</loc>
+<lastmod>2021-09-09T22:07:45+09:00</lastmod>
 </url>
 <url>
-  <loc>https://lizard-k.cf/docs/patterns/typesafe_heterogeneous_container_pattern/</loc>
-  <lastmod>2022-03-06T08:44:41+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>http://localhost:4000/docs/msa/elastic-search/elasticsearch_add_field_1/</loc>
+<lastmod>2021-09-09T22:07:45+09:00</lastmod>
 </url>
 <url>
-  <loc>https://lizard-k.cf/docs/quality/sonarqube/S1118/</loc>
-  <lastmod>2022-03-06T08:44:41+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>http://localhost:4000/docs/msa/elastic-search/elasticsearch_add_field_2/</loc>
+<lastmod>2021-09-09T22:07:45+09:00</lastmod>
 </url>
 <url>
-  <loc>https://lizard-k.cf/docs/quality/sonarqube/S1610/</loc>
-  <lastmod>2022-03-06T08:44:41+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>http://localhost:4000/docs/msa/elastic-search/elasticsearch_backup/</loc>
+<lastmod>2021-09-09T22:07:45+09:00</lastmod>
 </url>
 <url>
-  <loc>https://lizard-k.cf/docs/mooc/udacity/data_analyst/</loc>
-  <lastmod>2022-03-06T08:44:41+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>http://localhost:4000/docs/patterns/enums_pattern/</loc>
+<lastmod>2021-09-09T22:07:45+09:00</lastmod>
 </url>
 <url>
-  <loc>https://lizard-k.cf/docs/msa/feign/retry/</loc>
-  <lastmod>2022-03-06T08:44:41+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>http://localhost:4000/docs/errors</loc>
+<lastmod>2021-09-09T22:07:45+09:00</lastmod>
 </url>
 <url>
-  <loc>https://lizard-k.cf/docs/msa/feign/springQueryMap/</loc>
-  <lastmod>2022-03-06T08:44:41+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>http://localhost:4000/docs/etc</loc>
+<lastmod>2021-09-09T22:07:45+09:00</lastmod>
 </url>
 <url>
-  <loc>https://lizard-k.cf/docs/mooc/udacity/python/</loc>
-  <lastmod>2022-03-06T08:44:41+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>http://localhost:4000/docs/patterns/factory_method_pattern/</loc>
+<lastmod>2021-09-09T22:07:45+09:00</lastmod>
 </url>
 <url>
-  <loc>https://lizard-k.cf/docs/quality/sonarqube/S3776/</loc>
-  <lastmod>2022-03-06T08:44:41+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>http://localhost:4000/docs/msa/feign/feign/</loc>
+<lastmod>2021-09-09T22:07:45+09:00</lastmod>
 </url>
 <url>
-  <loc>https://lizard-k.cf/docs/quality/sonarqube/s1149/</loc>
-  <lastmod>2022-03-06T08:44:41+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>http://localhost:4000/docs/errors/feign1/</loc>
+<lastmod>2021-09-09T22:07:45+09:00</lastmod>
 </url>
 <url>
-  <loc>https://lizard-k.cf/docs/msa/elastic-search/elasticsearch_backup/</loc>
-  <lastmod>2022-03-06T08:44:41+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>http://localhost:4000/docs/errors/feign2/</loc>
+<lastmod>2021-09-09T22:07:45+09:00</lastmod>
 </url>
 <url>
-  <loc>https://lizard-k.cf/docs/msa/elastic-search/elasticsearch_add_field_1/</loc>
-  <lastmod>2022-03-06T08:44:41+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>http://localhost:4000/docs/patterns/flyweight_pattern/</loc>
+<lastmod>2021-09-09T22:07:45+09:00</lastmod>
 </url>
 <url>
-  <loc>https://lizard-k.cf/docs/msa/elastic-search/elasticsearch_add_field_2/</loc>
-  <lastmod>2022-03-06T08:44:41+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>http://localhost:4000/docs/etc/gitblog_move/</loc>
+<lastmod>2022-02-03T01:18:45+09:00</lastmod>
 </url>
 <url>
-  <loc>https://lizard-k.cf/docs/mooc/udemy/vuejs/</loc>
-  <lastmod>2022-03-06T08:44:41+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>http://localhost:4000/</loc>
+<lastmod>2022-01-31T22:07:45+09:00</lastmod>
 </url>
 <url>
-  <loc>https://lizard-k.cf/docs/errors/apache1/</loc>
-  <lastmod>2022-03-06T08:44:41+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>http://localhost:4000/docs/patterns/intercepting_filter_pattern/</loc>
+<lastmod>2021-09-09T22:07:45+09:00</lastmod>
 </url>
 <url>
-  <loc>https://lizard-k.cf/docs/errors/jetty1/</loc>
-  <lastmod>2022-03-06T08:44:41+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>http://localhost:4000/docs/clipping/java/java/</loc>
+<lastmod>2021-09-09T22:07:45+09:00</lastmod>
 </url>
 <url>
-  <loc>https://lizard-k.cf/docs/errors/spring1/</loc>
-  <lastmod>2022-03-06T08:44:41+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>http://localhost:4000/docs/errors/java1/</loc>
+<lastmod>2021-09-09T22:07:45+09:00</lastmod>
 </url>
 <url>
-  <loc>https://lizard-k.cf/docs/errors/spring2/</loc>
-  <lastmod>2022-03-06T08:44:41+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>http://localhost:4000/docs/errors/java2/</loc>
+<lastmod>2021-09-09T22:07:45+09:00</lastmod>
 </url>
 <url>
-  <loc>https://lizard-k.cf/docs/errors/postgres2/</loc>
-  <lastmod>2022-03-06T08:44:41+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>http://localhost:4000/docs/errors/jetty1/</loc>
+<lastmod>2021-09-09T22:07:45+09:00</lastmod>
 </url>
 <url>
-  <loc>https://lizard-k.cf/docs/errors/kafka1/</loc>
-  <lastmod>2022-03-06T08:44:41+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>http://localhost:4000/docs/clipping/jpa/jpa/</loc>
+<lastmod>2021-09-09T22:07:45+09:00</lastmod>
 </url>
 <url>
-  <loc>https://lizard-k.cf/docs/errors/java2/</loc>
-  <lastmod>2022-03-06T08:44:41+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>http://localhost:4000/docs/errors/jpa1/</loc>
+<lastmod>2021-09-09T22:07:45+09:00</lastmod>
 </url>
 <url>
-  <loc>https://lizard-k.cf/docs/errors/feign1/</loc>
-  <lastmod>2022-03-06T08:44:41+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>http://localhost:4000/docs/clipping/jpa/jpa_programming/</loc>
+<lastmod>2021-09-09T22:07:45+09:00</lastmod>
 </url>
 <url>
-  <loc>https://lizard-k.cf/docs/errors/postgres1/</loc>
-  <lastmod>2022-03-06T08:44:41+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>http://localhost:4000/docs/errors/jre1/</loc>
+<lastmod>2021-09-09T22:07:45+09:00</lastmod>
 </url>
 <url>
-  <loc>https://lizard-k.cf/docs/errors/feign2/</loc>
-  <lastmod>2022-03-06T08:44:41+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>http://localhost:4000/docs/errors/kafka1/</loc>
+<lastmod>2021-09-09T22:07:45+09:00</lastmod>
 </url>
 <url>
-  <loc>https://lizard-k.cf/docs/errors/kafka2/</loc>
-  <lastmod>2022-03-06T08:44:41+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>http://localhost:4000/docs/errors/kafka2/</loc>
+<lastmod>2021-09-09T22:07:45+09:00</lastmod>
 </url>
 <url>
-  <loc>https://lizard-k.cf/docs/errors/kafka3/</loc>
-  <lastmod>2022-03-06T08:44:41+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>http://localhost:4000/docs/errors/kafka3/</loc>
+<lastmod>2021-09-09T22:07:45+09:00</lastmod>
 </url>
 <url>
-  <loc>https://lizard-k.cf/docs/errors/ssl1/</loc>
-  <lastmod>2022-03-06T08:44:41+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>http://localhost:4000/docs/sub-projects/kakao_vision_api_test/</loc>
+<lastmod>2021-09-09T22:07:45+09:00</lastmod>
 </url>
 <url>
-  <loc>https://lizard-k.cf/docs/errors/jpa1/</loc>
-  <lastmod>2022-03-06T08:44:41+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>http://localhost:4000/docs/sub-projects/keyclock/</loc>
+<lastmod>2021-09-09T22:07:45+09:00</lastmod>
 </url>
 <url>
-  <loc>https://lizard-k.cf/docs/errors/jre1/</loc>
-  <lastmod>2022-03-06T08:44:41+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>http://localhost:4000/docs/sub-projects/lets_encrypt_ssl/</loc>
+<lastmod>2021-09-09T22:07:45+09:00</lastmod>
 </url>
-
-
+<url>
+<loc>http://localhost:4000/docs/sub-projects/line_messaging/</loc>
+<lastmod>2021-09-09T22:07:45+09:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/docs/sub-projects/liquibase/</loc>
+<lastmod>2021-09-09T22:07:45+09:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/docs/mooc</loc>
+<lastmod>2021-09-09T22:07:45+09:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/docs/msa</loc>
+<lastmod>2021-09-09T22:07:45+09:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/docs/clipping/java/oop_1/</loc>
+<lastmod>2021-09-09T22:07:45+09:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/docs/clipping/java/oop_fact_c/</loc>
+<lastmod>2021-09-09T22:07:45+09:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/docs/clipping/java/optional/</loc>
+<lastmod>2021-09-09T22:07:45+09:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/docs/patterns/orchestration_vs_choreography/</loc>
+<lastmod>2021-09-09T22:07:45+09:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/docs/patterns</loc>
+<lastmod>2021-09-09T22:07:45+09:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/docs/errors/postgres1/</loc>
+<lastmod>2021-09-09T22:07:45+09:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/docs/errors/postgres2/</loc>
+<lastmod>2021-09-09T22:07:45+09:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/docs/mooc/udacity/python/</loc>
+<lastmod>2021-09-09T22:07:45+09:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/docs/quality</loc>
+<lastmod>2021-09-09T22:07:45+09:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/docs/msa/feign/retry/</loc>
+<lastmod>2021-09-09T22:07:45+09:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/docs/quality/sonarqube/sonarqube/</loc>
+<lastmod>2021-09-09T22:07:45+09:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/docs/errors/spring1/</loc>
+<lastmod>2021-09-09T22:07:45+09:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/docs/errors/spring2/</loc>
+<lastmod>2021-09-09T22:07:45+09:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/docs/msa/feign/springQueryMap/</loc>
+<lastmod>2021-09-09T22:07:45+09:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/docs/errors/ssl1/</loc>
+<lastmod>2021-09-09T22:07:45+09:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/docs/sub-projects</loc>
+<lastmod>2021-09-09T22:07:45+09:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/docs/patterns/telescoping_constructor_pattern/</loc>
+<lastmod>2021-09-09T22:07:45+09:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/docs/sub-projects/tesseract_ocr_study/</loc>
+<lastmod>2021-09-09T22:07:45+09:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/docs/patterns/tolerant_reader_pattern/</loc>
+<lastmod>2021-09-09T22:07:45+09:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/docs/patterns/typesafe_heterogeneous_container_pattern/</loc>
+<lastmod>2021-09-09T22:07:45+09:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/docs/mooc/udacity/udacity/</loc>
+<lastmod>2021-09-09T22:07:45+09:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/docs/mooc/udemy/udemy/</loc>
+<lastmod>2021-09-09T22:07:45+09:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/docs/mooc/udemy/vuejs/</loc>
+<lastmod>2021-09-09T22:07:45+09:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/docs/mooc/udemy/vuejs_sub/</loc>
+<lastmod>2021-09-09T22:07:45+09:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/docs/clipping/java/webapi/</loc>
+<lastmod>2022-01-31T22:07:45+09:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/google884799f729d350fb.html</loc>
+<lastmod>2021-12-27T12:25:13+09:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/naverc95a172f804e7ba05881a3e897bea0f8.html</loc>
+<lastmod>2022-03-06T19:38:28+09:00</lastmod>
+</url>
 </urlset>

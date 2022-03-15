@@ -1,0 +1,96 @@
+I"�%<ol>
+  <li>elasticsearch snapshot 기능을 사용</li>
+</ol>
+
+<p>(1) snapshot을 했을 경우, 저장할 repository가 필요하다.</p>
+
+<p>(2) GET _nodes를 실행시켰을 때 path.repo 값이 있는지 확인한다.</p>
+
+<p><img src="../img/els.png" alt="../img/els.png" /></p>
+
+<p>(3) (2)가 없는 경우,</p>
+
+<p>1) elasticsearch.yml에 아래 설정을 추가한다.</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">path.repo</span><span class="pi">:</span> <span class="pi">[</span><span class="s2">"</span><span class="s">/usr/share/elasticsearch/backup"</span><span class="pi">]</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  2) docker에서 elasticsearch reload한다.
+
+  3) 다시 kibana에서 GET _nodes 호출
+</code></pre></div></div>
+
+<p><img src="../img/els1.png" alt="../img/els1.png" /></p>
+
+<p>(4) repository의 path를 지정했으면, snapshot 리파지토리를 생성한다.</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">PUT</span><span class="w"> </span><span class="err">_snapshot/ticket_backup</span><span class="w">
+</span><span class="p">{</span><span class="w">
+  </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"fs"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"settings"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+	    </span><span class="nl">"location"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/usr/share/elasticsearch/backup"</span><span class="p">,</span><span class="w">   </span><span class="err">--&gt;</span><span class="w"> </span><span class="err">path.repo의</span><span class="w"> </span><span class="err">경로를</span><span class="w"> </span><span class="err">지정해준다.</span><span class="w">
+    </span><span class="nl">"compress"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">  </span><span class="err">--&gt;</span><span class="w"> </span><span class="err">압축할지</span><span class="w"> </span><span class="err">여부로</span><span class="p">,</span><span class="w"> </span><span class="err">mapping데이터만</span><span class="w"> </span><span class="err">압축되고</span><span class="w"> </span><span class="err">data가</span><span class="w"> </span><span class="err">압축되는</span><span class="w"> </span><span class="err">것은</span><span class="w"> </span><span class="err">아님.</span><span class="w"> </span><span class="err">디폴트(</span><span class="kc">true</span><span class="err">)</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p><img src="../img/els2.png" alt="../img/els2.png" /></p>
+
+<p>참고) elasticsearch를 재구동해도 snapshot repository가 영속되도록 하려면, volume에 path.repo를 추가해줘야한다.</p>
+
+<p>(5) snapshot 생성</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">PUT</span><span class="w"> </span><span class="err">_snapshot/ticket_backup/ticket_snapshot_</span><span class="mi">210513</span><span class="err">?wait_for_completion=</span><span class="kc">true</span><span class="w"> </span><span class="err">//</span><span class="w"> </span><span class="err">비동기로</span><span class="w"> </span><span class="err">실행</span><span class="w">
+</span><span class="p">{</span><span class="w">
+  </span><span class="nl">"indices"</span><span class="p">:</span><span class="w"> </span><span class="s2">"attic_ticket"</span><span class="p">,</span><span class="w">  </span><span class="err">//</span><span class="w"> </span><span class="err">snapshop할</span><span class="w"> </span><span class="err">doc으로</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="err">콤마로</span><span class="w"> </span><span class="err">여러개</span><span class="w"> </span><span class="err">지정가능.</span><span class="w"> </span><span class="err">alias명으로</span><span class="w"> </span><span class="err">불가</span><span class="w">
+  </span><span class="nl">"ignore_unavailable"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">  </span><span class="err">//</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="err">값일</span><span class="w"> </span><span class="err">경우</span><span class="p">,</span><span class="w"> </span><span class="err">missing되거나</span><span class="w"> </span><span class="err">closed</span><span class="w"> </span><span class="err">된</span><span class="w"> </span><span class="err">indices는</span><span class="w"> </span><span class="err">snapshot되지</span><span class="w"> </span><span class="err">않는다.(기본</span><span class="w"> </span><span class="err">값</span><span class="w"> </span><span class="kc">false</span><span class="err">)</span><span class="w">
+  </span><span class="nl">"include_global_state"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"metadata"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"backup_executor"</span><span class="p">:</span><span class="w"> </span><span class="s2">"jhsim"</span><span class="w">  </span><span class="err">//</span><span class="w"> </span><span class="err">추가</span><span class="w"> </span><span class="err">정보</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p><img src="../img/els3.png" alt="../img/els3.png" /></p>
+
+<p>(6) snapshot 조회</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">GET</span><span class="w"> </span><span class="err">_snapshot/ticket_backup/_all</span><span class="w">
+</span></code></pre></div></div>
+
+<p>(7) snapshot으로 복원</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">POST</span><span class="w"> </span><span class="err">_snapshot/ticket_backup/ticket_snapshot_</span><span class="mi">210513</span><span class="err">/_restore</span><span class="w">
+</span><span class="p">{</span><span class="w">
+  </span><span class="nl">"indices"</span><span class="p">:</span><span class="w"> </span><span class="s2">"attic_ticket"</span><span class="p">,</span><span class="w">   </span><span class="err">//</span><span class="w"> </span><span class="err">alias명으로</span><span class="w"> </span><span class="err">불가.</span><span class="w"> </span><span class="err">지정하지</span><span class="w"> </span><span class="err">않으면</span><span class="w"> </span><span class="err">전체를</span><span class="w"> </span><span class="err">복구한다.</span><span class="w">
+  </span><span class="nl">"ignore_unavailable"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"include_global_state"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"rename_pattern"</span><span class="p">:</span><span class="w"> </span><span class="s2">"(.+)"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"rename_replacement"</span><span class="p">:</span><span class="w"> </span><span class="s2">"restored_$1"</span><span class="w">  </span><span class="err">//</span><span class="w"> </span><span class="err">indices</span><span class="w"> </span><span class="err">이름과</span><span class="w"> </span><span class="err">중첩불가.</span><span class="w"> </span><span class="err">다른</span><span class="w"> </span><span class="err">이름으로</span><span class="w"> </span><span class="err">해야한다.</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p><img src="../img/els4.png" alt="../img/els4.png" /></p>
+
+<p>** 변경된 indices로 서비스하려면, alias를 활용해서 한다.</p>
+
+<p>(8) 복원 조회</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">GET</span><span class="w"> </span><span class="err">/_cat/indices?v</span><span class="w">
+</span></code></pre></div></div>
+
+<p><img src="../img/els5.png" alt="../img/els5.png" /></p>
+
+<p>(9) snapshot 삭제</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">DELETE</span><span class="w"> </span><span class="err">_snapshot/ticket_backup/ticket_snapshot_</span><span class="mi">210513</span><span class="w">
+</span></code></pre></div></div>
+
+<p><img src="../img/els6.png" alt="../img/els6.png" /></p>
+
+<h2 id="참고-사이트">참고 사이트</h2>
+
+<p><a href="https://lovekmg.github.io/2018/12/06/elasticsearch-backup-and-restore/">https://lovekmg.github.io/2018/12/06/elasticsearch-backup-and-restore/</a></p>
+
+<p><a href="https://kay0426.tistory.com/46">https://kay0426.tistory.com/46</a></p>
+:ET

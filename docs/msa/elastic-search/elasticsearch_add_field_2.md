@@ -7,9 +7,8 @@ parent: Home
 # parent: Elastic Search
 # grand_parent: Msa
 nav_exclude: true
+tags: [elasticsearch]
 ---
-
-# elasticsearch 필드 추가(2)
 
 [공통] 
 

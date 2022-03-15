@@ -11,6 +11,14 @@ layout: default
     {% endif %}
   </header>
 
+<div class="col-lg-8 col-md-10 mx-auto">
+{% if page.tags %}
+  {% for tag in page.tags %}
+    <span class="tag">{{ tag }}</span>
+  {% endfor %}
+{% endif %}
+</div>
+
 {{ content }}
 
 <div class="col-lg-8 col-md-10 mx-auto">

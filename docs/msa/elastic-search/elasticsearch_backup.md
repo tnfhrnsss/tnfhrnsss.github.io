@@ -9,8 +9,6 @@ parent: Home
 nav_exclude: true
 ---
 
-# elasticsearch 스냅샷 생성/복원/삭제
-
 1. elasticsearch snapshot 기능을 사용
 
 (1) snapshot을 했을 경우, 저장할 repository가 필요하다.

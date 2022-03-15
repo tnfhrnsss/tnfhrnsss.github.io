@@ -7,9 +7,8 @@ parent: Home
 # parent: Elastic Search
 # grand_parent: Msa
 nav_exclude: true
+tags: [elasticsearch]
 ---
-
-# elasticsearch 필드 추가(1)
 
 <aside>
 💡 지금까지 찾아본 방식 중 2가지를 정리

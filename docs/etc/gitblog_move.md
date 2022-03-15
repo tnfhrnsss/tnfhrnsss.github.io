@@ -8,9 +8,8 @@ parent: Home
 has_children: false
 nav_order: 1
 nav_exclude: false
+tags: [gitblog]
 ---
-
-# notion에서 gitblog로 이사
 
 ## :: github에서 블로그를 사용하기 위한 사전 준비
 
