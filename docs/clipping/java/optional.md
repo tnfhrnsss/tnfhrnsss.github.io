@@ -8,9 +8,8 @@ nav_order: 2
 parent: Home
 # parent: Java
 # grand_parent: Clipping
+tags: [java, optional, java8]
 ---
-
-# Optional 정리
 
 참조 블로그 : 
 

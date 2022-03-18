@@ -6,9 +6,8 @@ last_modified_at : 2021-09-09 13:07:45
 parent: Errors
 has_children: false
 nav_exclude: true
+tags: [spring, springboot]
 ---
-
-# PathVariable annotation was empty on param 0.
 
 Cause) @PathVariable("id") 일케 해야하는데, 그냥 @PathVariable이것만 함
 

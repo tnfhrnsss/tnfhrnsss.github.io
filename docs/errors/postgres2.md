@@ -6,9 +6,8 @@ last_modified_at : 2021-09-09 13:07:45
 parent: Errors
 has_children: false
 nav_exclude: true
+tags: [postgresql]
 ---
-
-# Please log in (using, e.g., "su") as the (unprivileged) user that will
 
 [현상]
 

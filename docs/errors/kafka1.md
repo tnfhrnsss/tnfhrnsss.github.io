@@ -6,6 +6,7 @@ last_modified_at : 2021-09-09 13:07:45
 parent: Errors
 has_children: false
 nav_exclude: true
+tags: [kafka, kafdrop]
 ---
 
 # kafdrop 보려는데 Timeout of 60000ms expired before the position for partition retry-assignment-2 could be determined 에러날 때

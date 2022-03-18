@@ -6,9 +6,8 @@ last_modified_at : 2021-09-09 13:07:45
 parent: Errors
 has_children: false
 nav_exclude: true
+tags: [ssl]
 ---
-
-# ssl 셋팅 후 갖가지 에러
 
 1. XMLHttpRequest cannot load https://aaa.ma.com:7443/. Response
 

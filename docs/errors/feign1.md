@@ -6,6 +6,7 @@ last_modified_at : 2021-09-09 13:07:45
 parent: Errors
 has_children: false
 nav_exclude: true
+tags: [hystrix, msa, feign]
 ---
 
 # com.netflix.client.ClientException: Load balancer does not have available server for client: aaa
