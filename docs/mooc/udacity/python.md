@@ -7,6 +7,7 @@ parent: Home
 # parent: Udacity
 # grand_parent: Mooc
 nav_exclude: true
+tags: [python, udacity]
 ---
 
 # Programming Foundations with Python 후기

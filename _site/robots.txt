@@ -1,6 +1,3 @@
 User-agent: *
 Allow: /
-Disallow: /docs/errors/java1
-Disallow: /docs/patterns/factory_method_pattern
-Disallow: /docs/quality/sonarqube/S2440
 Sitemap: https://lizard-k.cf/sitemap.xml

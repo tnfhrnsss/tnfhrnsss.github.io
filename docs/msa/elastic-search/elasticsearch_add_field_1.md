@@ -1,9 +1,9 @@
 ---
 layout: post
-title: elasticsearch 필드 추가(1)
+title: elasticsearch field add(1)
 date: 2021-09-09 13:07:45
-last_modified_at : 2021-09-09 13:07:45
-parent: Home
+last_modified_at : 2022-03-19 12:38:00
+parent: Msa
 # parent: Elastic Search
 # grand_parent: Msa
 nav_exclude: true

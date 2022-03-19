@@ -7,6 +7,7 @@ parent: Home
 # parent: Udemy
 # grand_parent: Mooc
 nav_exclude: true
+tags: [vuejs, udemy]
 ---
 
 # [Udemy] vuejs-2-the-complete-guide 후기

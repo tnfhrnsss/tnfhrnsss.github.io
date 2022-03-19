@@ -1,12 +1,13 @@
 ---
 layout: post
-title: elasticsearch 스냅샷 생성/복원/삭제
+title: elasticsearch snapshot create/restore/delete
 date: 2021-09-09 13:07:45
-last_modified_at : 2021-09-09 13:07:45
-parent: Home
+last_modified_at : 2022-03-19 12:38:00
+parent: Msa
 # parent: Elastic Search
 # grand_parent: Msa
 nav_exclude: true
+tags: [elasticsearch, backup]
 ---
 
 1. elasticsearch snapshot 기능을 사용

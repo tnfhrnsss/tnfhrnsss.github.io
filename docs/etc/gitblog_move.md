@@ -8,7 +8,7 @@ parent: Home
 has_children: false
 nav_order: 1
 nav_exclude: false
-tags: [gitblog]
+tags: [gitblog, jekyll]
 ---
 
 ## :: github에서 블로그를 사용하기 위한 사전 준비
@@ -161,6 +161,11 @@ header코드에 이미 선언되어 있어서, 생성한 파비콘 파일을 기
 자세한 내용은 아래 블로그를 참고해주세요.
 되게 간단하네요!
 [utterance 댓글 설치](https://dev-yakuza.posstree.com/ko/jekyll/utterances/)
+
+## :: 태그 추가
+아직도 할 것이 많네요 ㅋㅋㅋㅋ
+태그가 등록된다면 검색될 확률이 높아질 것 같아서 태그도 추가했습니다.
+[태그 추가](https://wormwlrm.github.io/2019/09/22/How-to-add-tags-on-Jekyll.html)
 
 ## :: 검색엔진 등록
 

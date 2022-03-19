@@ -1,6 +1,4 @@
-I"�<h1 id="browsermatch">BrowserMatch</h1>
-
-<p>기본 아파치를 윈도우에 설치하고 나니 httpd-ssl.conf에</p>
+I"�<p>기본 아파치를 윈도우에 설치하고 나니 httpd-ssl.conf에</p>
 
 <p>아래 설정이 있었다.</p>
 

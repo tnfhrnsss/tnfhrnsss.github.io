@@ -1,6 +1,4 @@
-I"�!<h1 id="pathvariable-annotation-was-empty-on-param-0">PathVariable annotation was empty on param 0.</h1>
-
-<p>Cause) @PathVariable(“id”) 일케 해야하는데, 그냥 @PathVariable이것만 함</p>
+I"{!<p>Cause) @PathVariable(“id”) 일케 해야하는데, 그냥 @PathVariable이것만 함</p>
 
 <p>Log)</p>
 

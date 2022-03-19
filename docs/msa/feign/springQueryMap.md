@@ -1,12 +1,13 @@
 ---
 layout: post
-title: Feign을 통해 @SpringQueryMap 사용
+title: How to use Feign @SpringQueryMap
 date: 2021-09-09 13:07:45
-last_modified_at : 2021-09-09 13:07:45
-parent: Home
+last_modified_at : 2022-03-19 12:38:00
+parent: Msa
 # parent: Feign
 # grand_parent: Msa
 nav_exclude: true
+tags: [feign]
 ---
 
 # feign을 통해 @SpringQueryMap 사용
