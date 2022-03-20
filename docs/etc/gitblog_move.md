@@ -144,6 +144,12 @@ gitblog를 생성하면, username으로 기본 주소가 되기 때문에 도메
 
 [도메인 무료로 SSL/TLS(HTTPS) 얻는 법 | Freenom & GitHub Pages](https://m.blog.naver.com/desbey7/222092439777)
 
+***dns와 sitemap관계***
+
+아무리 sitemap을 수정해도 가져올 수 없다고만 나와서 수동 등록까지 했는데요.
+[https://itgall.com/programming/236207](https://itgall.com/programming/236207) 글 읽고, 다시 cf도메인 연결을 삭제하고 github.io로 돌려놨습니다.
+
+
 ## :: 구글 검색엔진에 노출시키기
 
 [step-9-구글-검색-가능하게-하기](https://honbabzone.com/jekyll/start-gitHubBlog/#step-9-%EA%B5%AC%EA%B8%80-%EA%B2%80%EC%83%89-%EA%B0%80%EB%8A%A5%ED%95%98%EA%B2%8C-%ED%95%98%EA%B8%B0)
@@ -174,10 +180,6 @@ header코드에 이미 선언되어 있어서, 생성한 파비콘 파일을 기
 잘못 만들어졌다 했는데요.
   - 처음엔 last_modified_at가 없어서 그런듯 싶어서, layout도 post로 변경하고 추가해줬습니다.
   - [사이트맵 validation 체크 사이트](https://www.xml-sitemaps.com/validate-xml-sitemap.html)에서도 체크했는데요. 정상으로 표시됩니다.
-
-[!IMPORTANT]
-- 아무리 sitemap을 수정해도 가져올 수 없다고만 나와서 수동 등록까지 했는데요.
-[https://itgall.com/programming/236207](https://itgall.com/programming/236207) 글 읽고, 다시 cf도메인 연결을 삭제하고 github.io로 돌려놨습니다.
 
 ## :: 마무리
 
