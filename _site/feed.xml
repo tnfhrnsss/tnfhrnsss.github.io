@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>_JJ@Developer</title>
-    <description>This blog for software developing documentation.</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 19 Mar 2022 18:50:58 +0900</pubDate>
-    <lastBuildDate>Sat, 19 Mar 2022 18:50:58 +0900</lastBuildDate>
-    <generator>Jekyll v4.2.1</generator>
-    
-  </channel>
+    <channel>
+        <title>_JJ@Developer</title>
+        <description>This blog for software developing documentation.</description>
+        <link>http://localhost:4000/</link>
+        <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+        <pubDate>Sun, 20 Mar 2022 12:36:31 +0900</pubDate>
+        <lastBuildDate>Sun, 20 Mar 2022 12:36:31 +0900</lastBuildDate>
+        <generator>Jekyll v3.9.0</generator>
+        
+    </channel>
 </rss>
