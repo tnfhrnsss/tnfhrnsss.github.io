@@ -288,7 +288,6 @@ PLATFORMS
 DEPENDENCIES
   bundler (~> 2.1.4)
   github-pages
-  jekyll-feed
   jekyll-sitemap
   just-the-docs!
 
