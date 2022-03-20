@@ -175,6 +175,9 @@ header코드에 이미 선언되어 있어서, 생성한 파비콘 파일을 기
   - 처음엔 last_modified_at가 없어서 그런듯 싶어서, layout도 post로 변경하고 추가해줬습니다.
   - [사이트맵 validation 체크 사이트](https://www.xml-sitemaps.com/validate-xml-sitemap.html)에서도 체크했는데요. 정상으로 표시됩니다.
 
+[!IMPORTANT]
+- 아무리 sitemap을 수정해도 가져올 수 없다고만 나와서 수동 등록까지 했는데요.
+[https://itgall.com/programming/236207](https://itgall.com/programming/236207) 글 읽고, 다시 cf도메인 연결을 삭제하고 github.io로 돌려놨습니다.
 
 ## :: 마무리
 
