@@ -12,4 +12,3 @@ permalink: /
 {: .fs-9 .text-purple-100 }
 
 ---
-
