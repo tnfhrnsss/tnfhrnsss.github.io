@@ -18,7 +18,7 @@ tags: [upsource]
 
 hub의 프로젝트 목록에 들어가보면 이렇게 오류가 나있고 정전 이후에 커밋된 데이터를 가져오지 못했다.
 
-![upsource1.png](../img/upsource1.png)
+![upsource1.png](../img/upsource1.png){: width="200%" height="200%"}
 
 [error log]
 
