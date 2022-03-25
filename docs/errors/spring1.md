@@ -9,11 +9,13 @@ nav_exclude: true
 tags: [spring]
 ---
 
-# Failed to instantiate [javax.servlet.Filter]: Factory method 'springSecurityFilterChain' threw exception; nested exception is java.lang.NullPointerException 에러
+### Failed to instantiate [javax.servlet.Filter]: Factory method 'springSecurityFilterChain' threw exception; nested exception is java.lang.NullPointerException 에러
 
-**현상)** springboot로 application 올리다가 에러 발생
 
-**에러)**
+#### problems
+springboot로 application 올리다가 에러 발생
+
+#### error log
 
 
 ```
@@ -83,14 +85,12 @@ at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instant
 Process finished with exit code 1
 ```
 
-원인) 에러의 npe부분을 보면 springboot올릴때, WebSecurityConfig를 읽어가도록 했는데. WebSecurityConfig에서 읽어갈 설정이 yml에 없어서 널포인트 나는 것....
+#### cause
+에러의 npe부분을 보면 springboot올릴때, WebSecurityConfig를 읽어가도록 했는데. WebSecurityConfig에서 읽어갈 설정이 yml에 없어서 널포인트 나는 것....
 
-해결) 본인의 경우는 profile을 달리했는데, 그걸 서비스 올릴때 지정안해줘서 디폴트 yml보고 올라가다가 해당 security설정이 없어서 그런거라...profile을 지정해주면 된다.
+#### solved
+본인의 경우는 profile을 달리했는데, 그걸 서비스 올릴때 지정안해줘서 디폴트 yml보고 올라가다가 해당 security설정이 없어서 그런거라...profile을 지정해주면 된다.
 
-[참고]
+#### reference
 
 [stackoverflow.com/a/4952938 참고](https://www.blogger.com/blog/post/edit/2689228726924373128/6920522716639828181#)
-
-[Error creating bean with name 'springSecurityFilterChain'
-I have been following the Spring Security Reference and i added only this classes: @Configuration @EnableWebMvcSecurity public class WebSecurityConfig extends WebSecurityConfigurerAdapter { @
-stackoverflow.com](https://www.blogger.com/blog/post/edit/2689228726924373128/6920522716639828181#)
