@@ -3,11 +3,9 @@ layout: post
 title: kafka monitoring
 date: 2022-03-28 22:56:00
 last_modified_at : 2022-03-28 22:56:00
-parent: Home
-# parent: Etc
+parent: Etc
 has_children: false
-nav_order: 1
-nav_exclude: false
+nav_exclude: true
 tags: [kafka, grafana, burrow, telegraf, elasticsearch]
 ---
 

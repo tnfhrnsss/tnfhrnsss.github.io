@@ -3,11 +3,9 @@ layout: post
 title: notion에서 gitblog로 이사
 date: 2021-09-09 13:07:45
 last_modified_at : 2022-02-02 16:18:45
-parent: Home
-# parent: Etc
+parent: Etc
 has_children: false
-nav_order: 1
-nav_exclude: false
+nav_exclude: true
 tags: [gitblog, jekyll]
 ---
 

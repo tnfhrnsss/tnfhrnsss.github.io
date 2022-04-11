@@ -3,8 +3,7 @@ layout: post
 title: Connect to Elasticsearch in DBeaver
 date: 2022-03-29 21:34:00
 last_modified_at : 2022-03-29 21:34:00
-parent: Home
-# parent: Etc
+parent: Etc
 has_children: false
 nav_exclude: true
 tags: [dbeaver, elasticsearch]

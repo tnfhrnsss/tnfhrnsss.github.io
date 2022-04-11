@@ -3,11 +3,9 @@ layout: post
 title: upsource resource제한
 date: 2022-03-26 18:01:45
 last_modified_at : 2022-03-26 18:01:45
-parent: Home
-# parent: Etc
+parent: Etc
 has_children: false
-nav_order: 1
-nav_exclude: false
+nav_exclude: true
 tags: [upsource]
 ---
 

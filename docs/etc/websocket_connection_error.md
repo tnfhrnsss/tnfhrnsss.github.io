@@ -3,8 +3,7 @@ layout: post
 title: WebSocket connection error - nginx
 date: 2022-03-31 22:00:00
 last_modified_at : 2022-03-31 22:00:00
-parent: Home
-# parent: Etc
+parent: Etc
 has_children: false
 nav_exclude: true
 tags: [websocket, nginx]

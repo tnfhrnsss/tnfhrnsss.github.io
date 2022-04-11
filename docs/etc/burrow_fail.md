@@ -3,11 +3,9 @@ layout: post
 title: burrow Failed to compile TemplateOpen
 date: 2022-03-29 21:34:00
 last_modified_at : 2022-03-29 21:34:00
-parent: Home
-# parent: Etc
+parent: Etc
 has_children: false
-nav_order: 1
-nav_exclude: false
+nav_exclude: true
 tags: [kafka, burrow]
 ---
 
