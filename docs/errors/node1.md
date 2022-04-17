@@ -25,6 +25,6 @@ Error: Node Sass does not yet support your current environment: Windows 64-bit w
 
 해결 : 
 
-$ npm uninstall node-saas && npm install npde-saas
+$ npm uninstall node-saas && npm install node-saas
 
 [Error: Node Sass does not yet support your current environment: Windows 64-bit with false](https://stackoverflow.com/a/41082773/14257397)
