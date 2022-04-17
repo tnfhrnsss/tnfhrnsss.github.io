@@ -43,6 +43,6 @@ public class BtalkKey implements JsonSerializable {
 
 ### reference
 
-[https://stackoverflow.com/questions/30205006/why-does-jackson-2-not-recognize-the-first-capital-letter-if-the-leading-camel-c](https://stackoverflow.com/questions/30205006/why-does-jackson-2-not-recognize-the-first-capital-letter-if-the-leading-camel-c)
+[why-does-jackson-2-not-recognize-the-first-capital-letter-if-the-leading-camel-c](https://stackoverflow.com/questions/30205006/why-does-jackson-2-not-recognize-the-first-capital-letter-if-the-leading-camel-c)
 
-[http://futuretask.blogspot.com/2005/01/java-tip-6-dont-capitalize-first-two.html](http://futuretask.blogspot.com/2005/01/java-tip-6-dont-capitalize-first-two.html)
+[java-tip-6-dont-capitalize-first-two](http://futuretask.blogspot.com/2005/01/java-tip-6-dont-capitalize-first-two.html)
