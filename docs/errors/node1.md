@@ -28,3 +28,5 @@ Error: Node Sass does not yet support your current environment: Windows 64-bit w
 $ npm uninstall node-saas && npm install node-saas
 
 [Error: Node Sass does not yet support your current environment: Windows 64-bit with false](https://stackoverflow.com/a/41082773/14257397)
+
+- 서버에 python이 없다면, python2를 설치하고, node_modules삭제하고 다시 npm install하면 된다. 
