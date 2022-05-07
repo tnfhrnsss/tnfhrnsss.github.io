@@ -13,7 +13,7 @@ tags: [feign, eureka, ribbon, nginx]
 
 ![feignWithoutEureka](../img/feignWithoutEureka.png)
 
-주제: how to dynamically specify feign call service name according to the environment
+subject: how to dynamically specify feign call service name according to the environment
 
 ## 구성 환경 설명
 
