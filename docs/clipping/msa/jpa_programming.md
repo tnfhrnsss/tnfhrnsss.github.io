@@ -4,12 +4,10 @@ title: jpa 프로그래밍
 date: 2021-09-09 13:07:45
 last_modified_at : 2021-09-09 13:07:45
 has_children: false
-nav_order: 1
-parent: Home
-# parent: Jpa
-# grand_parent: Clipping
+parent: Clipping
 categories: java
 tags: ['R']
+nav_exclude: true
 ---
 
 ![jpa.png](../img/jpa.png)

@@ -3,14 +3,10 @@ layout: post
 title: Effective Java
 date: 2021-09-09 13:07:45
 last_modified_at : 2021-09-09 13:07:45
-parent: Home
-# parent: Java
-# grand_parent: Clipping
+parent: Clipping
 has_children: false
-nav_order: 3
-sitemap:
-    changefreq: week
-    priority: 1.0
+nav_order: 2
+nav_exclude: true
 ---
 
 # effective java 정리

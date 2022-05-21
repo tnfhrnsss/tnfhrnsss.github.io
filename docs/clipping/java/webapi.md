@@ -6,7 +6,7 @@ last_modified_at : 2022-01-31 13:07:45
 has_children: false
 nav_order: 3
 parent: Java
-# grand_parent: Clipping
+grand_parent: Clipping
 sitemap:
     changefreq: week
     priority: 1.0

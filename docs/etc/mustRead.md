@@ -5,7 +5,7 @@ date: 2022-04-17 09:49:00
 last_modified_at : 2022-04-17 09:49:00
 parent: Home
 has_children: false
-nav_exclude: false
+nav_exclude: true
 tags: [it book]
 ---
 

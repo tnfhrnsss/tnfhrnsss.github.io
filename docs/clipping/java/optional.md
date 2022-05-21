@@ -5,9 +5,8 @@ date: 2021-09-09 13:07:45
 last_modified_at : 2021-09-09 13:07:45
 has_children: false
 nav_order: 2
-parent: Home
-# parent: Java
-# grand_parent: Clipping
+parent: Java
+grand_parent: Clipping
 tags: [java, optional, java8]
 ---
 
