@@ -127,7 +127,7 @@
   },"21": {
     "doc": "Clipping",
     "title": "Clipping",
-    "content": "To make it as easy as possible to write documentation in plain Markdown, most UI components are styled using default Markdown elements with few additional CSS classes needed. ",
+    "content": " ",
     "url": "http://localhost:4000/docs/clipping",
     "relUrl": "/docs/clipping"
   },"22": {
@@ -516,653 +516,647 @@
     "relUrl": "/docs/errors/hazelcastSerializationException/"
   },"86": {
     "doc": "Home",
-    "title": "Summary List",
-    "content": ". ",
-    "url": "http://localhost:4000/#summary-list",
-    "relUrl": "/#summary-list"
+    "title": "recently update",
+    "content": " ",
+    "url": "http://localhost:4000/#recently-update",
+    "relUrl": "/#recently-update"
   },"87": {
+    "doc": "Home",
+    "title": "",
+    "content": " ",
+    "url": "http://localhost:4000/",
+    "relUrl": "/"
+  },"88": {
     "doc": "Home",
     "title": "Home",
     "content": " ",
     "url": "http://localhost:4000/",
     "relUrl": "/"
-  },"88": {
+  },"89": {
     "doc": "cannot be opened because it does not exist",
     "title": "cannot be opened because it does not exist",
     "content": "problems . 인텔리제이에서 spring boot run하면 아래와 같은 오류발생 . 09:06:19.237 main ERROR o.s.b.SpringApplication :834 reportFailure Application run failed org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [Application]; nested exception is java.io.FileNotFoundException: class path resource [ExpireTokenAdapter.class] cannot be opened because it does not exist at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:189) at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:320) at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:237) at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:280) at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:96) at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:707) at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:533) at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:755) at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:402) at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) at org.springframework.boot.SpringApplication.run(SpringApplication.java:1247) at org.springframework.boot.SpringApplication.run(SpringApplication.java:1236) at spectra.attic.talk.mocha.MochaApplication.main(MochaApplication.java:19) at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) at java.lang.reflect.Method.invoke(Method.java:498) at com.intellij.rt.execution.CommandLineWrapper.main(CommandLineWrapper.java:64) Caused by: java.io.FileNotFoundException: class path resource [spectra/attic/talk/mocha/expiretoken/adapter/ExpireTokenAdapter.class] cannot be opened because it does not exist at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:187) at org.springframework.core.type.classreading.SimpleMetadataReader.getClassReader(SimpleMetadataReader.java:55) at org.springframework.core.type.classreading.SimpleMetadataReader.&lt;init&gt;(SimpleMetadataReader.java:49) at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:103) at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.createMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:86) at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.getMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:73) at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:81) at org.springframework.context.annotation.ConfigurationClassParser.asSourceClass(ConfigurationClassParser.java:696) at org.springframework.context.annotation.ConfigurationClassParser$SourceClass.getInterfaces(ConfigurationClassParser.java:1024) at org.springframework.context.annotation.ConfigurationClassParser.processInterfaces(ConfigurationClassParser.java:386) at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:332) at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:250) at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:199) at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:304) at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:250) at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:207) at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:175) ... 19 common frames omitted Process finished with exit code 1 . try 1 . 절케해도 안되서 . 전체 maven get했는데 . java.lang.OutOfMemoryError: GC overhead limit exceeded 이렇게 오류나ㅓ 메모리 옵션 -xms1024m -xmx2048m으로 늘리고 다시 시도 . 그래도 에러나는 모듈있어서 . 에러나는 모듈은 폴더자체 rebuild해주고 다시 재시작하니까 된다 . 그래도 다음날 계속 소스를 pull받다보니 이미 존재하는 class파일인데 cannot find오류가 나서 . springboot 시작전에 before build하는 옵션을 제거하고 . solution . 수동 build하는 것으로 바꾸니 잘된다. 에러도 없고 오히려 이게 빠른것 같다. 수동 build는 인텔리제이 [Build &gt; Build Project] 실행 . ",
     "url": "http://localhost:4000/docs/errors/intellij1/",
     "relUrl": "/docs/errors/intellij1/"
-  },"89": {
+  },"90": {
     "doc": "Intercepting Filter Pattern",
     "title": "Intercepting Filter Pattern",
     "content": "Interception Filter Pattern . | 체인으로 묶인 필터를 통과하면서 최종적으로 Target 클래스에 도달하도록 한다. | 전처리/후처리를 수행하려고 하는 경우 사용 | . ",
     "url": "http://localhost:4000/docs/patterns/intercepting_filter_pattern/",
     "relUrl": "/docs/patterns/intercepting_filter_pattern/"
-  },"90": {
+  },"91": {
     "doc": "Intercepting Filter Pattern",
     "title": "Entity.",
     "content": "Filter:: . 실제로 필터작업을 구현하고, 실행 . public class AppChannelFilter implements BusinessMessageFilter { // 특정 App채널만 유효하도록 필터링 private final AppChannelTypeValidator appChannelTypeValidator; @Override public void execute(ConversationMessage conversationMessage) { appChannelTypeValidator.validate(); } } . Filter Chain:: . 여러 필터들을 순서대로 실행하기 위해 체인으로 묶음 . Target:: . 모든 필터가 통과되면 최종적으로 실행될 엔티티 . Filter Manager:: . 여러 필터들과 필터 체인을 연결 . public class BusinessMessageFilterManager { private final List&lt;BusinessMessageFilter&gt; businessMessageFilters; public void execute(ConversationMessage conversationMessage){ for (BusinessMessageFilter businessMessageFilter : businessMessageFilters) { businessMessageFilter.execute(conversationMessage); } } } . Client:: . 필터요청하는 엔티티 . public class BtalkMessageFilterExecutor { private final BusinessMessageFilterManager businessMessageFilterManager; public void filter(ConversationMessage conversationMessage) { businessMessageFilterManager.execute(conversationMessage); } } . 참고. https://www.tutorialspoint.com/design_pattern/intercepting_filter_pattern.htm . ",
     "url": "http://localhost:4000/docs/patterns/intercepting_filter_pattern/#entity",
     "relUrl": "/docs/patterns/intercepting_filter_pattern/#entity"
-  },"91": {
+  },"92": {
     "doc": "ios 웹앱 만들기",
     "title": "목표",
     "content": "firebase로 푸시받는 것 까지 하고 앱으로 배포 . ",
     "url": "http://localhost:4000/docs/etc/ios_webapp/#%EB%AA%A9%ED%91%9C",
     "relUrl": "/docs/etc/ios_webapp/#목표"
-  },"92": {
+  },"93": {
     "doc": "ios 웹앱 만들기",
     "title": "기본 웹앱 작성",
     "content": "웹앱 코드(https://www.youtube.com/watch?v=JafGypqFvs4) . ",
     "url": "http://localhost:4000/docs/etc/ios_webapp/#%EA%B8%B0%EB%B3%B8-%EC%9B%B9%EC%95%B1-%EC%9E%91%EC%84%B1",
     "relUrl": "/docs/etc/ios_webapp/#기본-웹앱-작성"
-  },"93": {
+  },"94": {
     "doc": "ios 웹앱 만들기",
     "title": "인증서 작업",
     "content": ". | testflight으로 푸시테스트가 가능하려면, AdHoc Provisioning Profile which will use the production push certificate을 발급받아야 한다. (개발용이면 안됨) | 일단 fcm을 통한 발송준비용 인증서 . | fcm을 통해서 발송하는 것은 apns를 통해서 하는 인증서 절차보다 간단합니다. apns를 통해 발송할 경우, fcm에서 한 절차보다 몇 가지 더 하면 됩니다.(두개를 공통으로 사용가능) | mac의 키체인에서 인증서 만들고 | Identifiers app등록 . | App ID Prefix는 아무거나 (teamid가 없는것도 됨) | push notification 선택 | . | 다 등록하고 다시 상세내용에서 push notification의 edit 화면에서 배포용 인증서 생성 . | 로컬 키체인에서 csr파일 생성 (앱이 다르면, 각각 만들어주는 것이 좋다) - https://ios-development.tistory.com/247 | 그러면 Certificates, Identifiers &amp; Profiles &gt; Certificate에서 푸시용 배포용 2개만들어지게 됨 | 그러면 총 개인용, 푸시용(Apple Push Services로 등록한), 배포용 3개가 됨 | 앱을 동일 계정으로 여러개 만들 경우는 identifiers app등록하고 csr인증서 연결해주고 key등록해주면 됨 | . | Profile은 fcm일땐 생성안해도 됨 | Keys 생성 (중요!) . | 나중에 fcm 콘솔에 등록해야 하므로, 다운로드 파일(p8), Key Id 적어야함 | . | . | firebase 설정 . | firebase 프로젝트 생성하고 → plist파일을 xcode에 넣고 → xcode 프로젝트에 firebase 라이브러리 추가하고(라이브러리는 firebase messaging 만 선택) → firebase 코드 추가한다. | 클라우드 메시지 → APN 인증 키 추가 . | apple developer의 Key 등록했을 때 받은, Keys의 Key Id, AuthKey~~.p8 | team Id는 계정의 팀 아이디를 적는다(인증서랑 무관) | . | . | 이제는 xcode 작업 . | Sigining &amp; Capabilities에 push notification 과 background modes 추가 . | background modes에는 background fetch와 remote notifications 선택 | . | info.plist에 속성 추가 . | FirebaseAppDelegateProxyEnabled를 boolean으로 추가하고 NO로 설정 | . | . | . ",
     "url": "http://localhost:4000/docs/etc/ios_webapp/#%EC%9D%B8%EC%A6%9D%EC%84%9C-%EC%9E%91%EC%97%85",
     "relUrl": "/docs/etc/ios_webapp/#인증서-작업"
-  },"94": {
+  },"95": {
     "doc": "ios 웹앱 만들기",
     "title": "푸시 메시지 발송",
     "content": ". | 테스트 . | node의 apn모듈로 발송 . | 준비물 : 위에서 인증서 생성시 다운받은 p8파일과 p8파일의 KeyID, 팀ID, 번들ID | . iOS APNs 인증 키 p8 (iOS Key로 푸시 보내기) . | firebase를 통해서 발송하는 방법도 있음 . | token을 에스프레소로 앱에서 호출하도록 해야함 | 발송시간을 지금으로 해도 폰으로 오기까지 2~3분정도 걸리는 것 같다 | . | . | token들을 서버 API를 통해 등록시키기 . Alamofire라이브러리를 pod로 설치해서 post api . iOS : Alamofire 를 이용한 API 호출 . | . ",
     "url": "http://localhost:4000/docs/etc/ios_webapp/#%ED%91%B8%EC%8B%9C-%EB%A9%94%EC%8B%9C%EC%A7%80-%EB%B0%9C%EC%86%A1",
     "relUrl": "/docs/etc/ios_webapp/#푸시-메시지-발송"
-  },"95": {
+  },"96": {
     "doc": "ios 웹앱 만들기",
     "title": "기타",
     "content": ". | 앱아이콘 적용(https://appicon.co/) | 뱃지 : ios는 서버에서 숫자를 발송시켜줘야한다고 함. 앱에선 왔을때 0으로 초기화하는 코드만 두고 | . ",
     "url": "http://localhost:4000/docs/etc/ios_webapp/#%EA%B8%B0%ED%83%80",
     "relUrl": "/docs/etc/ios_webapp/#기타"
-  },"96": {
+  },"97": {
     "doc": "ios 웹앱 만들기",
     "title": "배포",
     "content": ". | 방식 결정 : 배포방식 중 testflight을 사용해보도록 함 | . 알면 알수록 헷갈리는 IOS 환경 #2 - 앱 배포방식에 대해서 알아보자. | 순서 . | https://dev-yakuza.posstree.com/ko/react-native/ios-testflight/ 에 따라 xcode에서 앱 배포 | xcode의 archive로 여러 앱을 했더니 자꾸 codesign이 다른 키체인껄로 되어서 아래와 같은 에러가 난다. | . App Store Connect Operation Error No suitable application records were found. Verify your bundle identifier ‘~~~’ is correct. —&gt; 여러 가지 방법을 다 해봤지만, 결국 안되어서 Transporter앱을 통해서 업로드했다(https://red-cherry-ring.tistory.com/16) —&gt; 성공!! . | 배포전 info.plist파일에 수출규정준수 설정 제외시켜야 함 (https://jh3786.tistory.com/11) | . | 참고 . | https://testflight.apple.com/ | . | . ",
     "url": "http://localhost:4000/docs/etc/ios_webapp/#%EB%B0%B0%ED%8F%AC",
     "relUrl": "/docs/etc/ios_webapp/#배포"
-  },"97": {
+  },"98": {
     "doc": "ios 웹앱 만들기",
     "title": "reference",
     "content": "https://dev200ok.blogspot.com/2020/04/ios-notification-push.html . https://www.raywenderlich.com/11395893-push-notifications-tutorial-getting-started . ",
     "url": "http://localhost:4000/docs/etc/ios_webapp/#reference",
     "relUrl": "/docs/etc/ios_webapp/#reference"
-  },"98": {
+  },"99": {
     "doc": "ios 웹앱 만들기",
     "title": "기타",
     "content": "[iOS] 푸시알림 클라우드 메세지 보내기[2] (APNS, 파이어베이스) . | 내 계정이 회사 계정의 팀멤버로 연결되어서, 인증서를 생성할 수 없는 문제가 생겼는데.(팀관리자 계정이 갱신이 안되어서..) - 일단 푸시하려면 구독이 필요해보인다. | 내 맥은 카탈리나 10.15.7이고 xcode는 12.5로 ios15이상은 시뮬레이터나 폰에도 설치가 안되는 문제가 있다. | xcode13버전의 파일을 일부 옮겨와서 폰에 설치하려고 하니, 빌드는 성공했지만 아래오류 발생 | . The code signature version is no longer supported. Domain: com.apple.dt.MobileDeviceErrorDomain . | 해결은 https://stackoverflow.com/a/68467307 이렇게 -generate-entitlement-der를 추가해줬다. | 저걸해주고 나서 fcm연동하니 발생했는데, TARGETS -&gt; select[your project name] -&gt; General -&gt; Frameworks,Libraries,and EmbeddedContent 에 가서 Firebase Analystic인가 하는 라이브러리를 제거해줬더니 해결 | . | p12파일을 생성하기까지 | . iOS) APNs :: 인증서 발급받는 방법 (p.12, pem) . [ios] 자바 스프링 서버에서 iOS앱에 푸시 알림 보내기(APNs 개발용, 배포용) . [iOS] Spring 서버에서 사용할 APNS 인증서 준비 . ",
     "url": "http://localhost:4000/docs/etc/ios_webapp/#%EA%B8%B0%ED%83%80-1",
     "relUrl": "/docs/etc/ios_webapp/#기타-1"
-  },"99": {
+  },"100": {
     "doc": "ios 웹앱 만들기",
     "title": "ios 웹앱 만들기",
     "content": " ",
     "url": "http://localhost:4000/docs/etc/ios_webapp/",
     "relUrl": "/docs/etc/ios_webapp/"
-  },"100": {
+  },"101": {
     "doc": "Java",
     "title": "Java",
     "content": " ",
     "url": "http://localhost:4000/docs/clipping/java/java/",
     "relUrl": "/docs/clipping/java/java/"
-  },"101": {
+  },"102": {
     "doc": "header contains multiple values...",
     "title": "header contains multiple values ‘*, *’, but only one is allowed",
     "content": "header contains multiple values ‘*, *’, but only one is allowed . 라고 크롬콘솔에 찍힐때 . response.addheader를 똑같은 값으로 두번한건 아닌지 체크필요. 중복선언시 저런 에러난다. ",
     "url": "http://localhost:4000/docs/errors/java1/#header-contains-multiple-values---but-only-one-is-allowed",
     "relUrl": "/docs/errors/java1/#header-contains-multiple-values---but-only-one-is-allowed"
-  },"102": {
+  },"103": {
     "doc": "header contains multiple values...",
     "title": "header contains multiple values...",
     "content": " ",
     "url": "http://localhost:4000/docs/errors/java1/",
     "relUrl": "/docs/errors/java1/"
-  },"103": {
+  },"104": {
     "doc": "Unsatisfied dependency expressed through constructor parameter 8; nested exception...",
     "title": "Unsatisfied dependency expressed through constructor parameter 8; nested exception…",
     "content": "오류 : Unsatisfied dependency expressed through constructor parameter 8; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name ‘TestAdapter’: FactoryBean threw exception on object creation; nested exception is java.lang.IllegalStateException: Method find not annotated with HTTP method type (ex. GET, POST) . 원인:TestAdapter에 부모가 선언하지 않은 이름의 메소드로 선언되어있어서 그러함. 즉 부모에 있는데TestAdapter에 구현체가 없어서 나오는 에러 . ",
     "url": "http://localhost:4000/docs/errors/java2/#unsatisfied-dependency-expressed-through-constructor-parameter-8-nested-exception",
     "relUrl": "/docs/errors/java2/#unsatisfied-dependency-expressed-through-constructor-parameter-8-nested-exception"
-  },"104": {
+  },"105": {
     "doc": "Unsatisfied dependency expressed through constructor parameter 8; nested exception...",
     "title": "Unsatisfied dependency expressed through constructor parameter 8; nested exception...",
     "content": " ",
     "url": "http://localhost:4000/docs/errors/java2/",
     "relUrl": "/docs/errors/java2/"
-  },"105": {
+  },"106": {
     "doc": "Can't generate resourceBase as part of webapp tmp dir name",
     "title": "Can’t generate resourceBase as part of webapp tmp dir name: java.lang.NullPointerException",
     "content": "현상) 인텔리제이에서 application으로 jetty올리는데 에러가 나면서 안올라갈때 . 오류) [09-29 09:01:17.454] WARN [main] [o.e.j.w.WebInfConfiguration.getCanonicalNameForWebAppTmpDir] 627 - Can’t generate resourceBase as part of webapp tmp dir name: java.lang.NullPointerException . [09-29 09:01:17.665] WARN [main] [o.e.j.w.WebAppContext.doStart] 514 - Failed startup of context o.e.j.w.WebAppContext@17695df3{/router,[],null} . java.lang.NullPointerException: null . at org.eclipse.jetty.webapp.WebAppContext.getWebInf(WebAppContext.java:844) . at org.eclipse.jetty.webapp.WebInfConfiguration.findWebInfLibJars(WebInfConfiguration.java:708) . at org.eclipse.jetty.webapp.WebInfConfiguration.findJars(WebInfConfiguration.java:689) . at org.eclipse.jetty.webapp.WebInfConfiguration.preConfigure(WebInfConfiguration.java:128) . at org.eclipse.jetty.webapp.WebAppContext.preConfigure(WebAppContext.java:468) . at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:504) . at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68) . at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:132) . at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:114) . at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:61) . at org.eclipse.jetty.server.handler.ContextHandlerCollection.doStart(ContextHandlerCollection.java:163) . at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68) . at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:132) . at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:114) . at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:61) . at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68) . at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:132) . at org.eclipse.jetty.server.Server.start(Server.java:387) . at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:114) . at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:61) . at org.eclipse.jetty.server.Server.doStart(Server.java:354) . at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68) . 원인) . 첫번째로, 이 프로젝트랑 상관없는 path의 디렉토리를 옮겼었는데, 그걸 못찾는다고 나온당…그래서 그건 그냥 .idea폴더 날리고 , 프로젝트 재생성 . 두번째로, 어플리케이션 올릴때 Working directory에 %MODULE_WORKING_DIR%이렇게 줘야하는데 없어서,,,, 참고로 $MODULE_DIR$ 에서 %MODULE_WORKING_DIR% 이렇게 바뀜 . ",
     "url": "http://localhost:4000/docs/errors/jetty1/#cant-generate-resourcebase-as-part-of-webapp-tmp-dir-name-javalangnullpointerexception",
     "relUrl": "/docs/errors/jetty1/#cant-generate-resourcebase-as-part-of-webapp-tmp-dir-name-javalangnullpointerexception"
-  },"106": {
+  },"107": {
     "doc": "Can't generate resourceBase as part of webapp tmp dir name",
     "title": "Can't generate resourceBase as part of webapp tmp dir name",
     "content": " ",
     "url": "http://localhost:4000/docs/errors/jetty1/",
     "relUrl": "/docs/errors/jetty1/"
-  },"107": {
+  },"108": {
     "doc": "store-jpa 모듈을 만들고 나니 Not a managed type 에러 날때",
     "title": "store-jpa 모듈을 만들고 나니 Not a managed type 에러 날때",
     "content": "error log . 11:30:46.596 main WARN stractApplicationContext:557 refresh Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'aaaService' defined in file []: Unsatisfied dependency expressed through constructor parameter 0; nested exception is at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:769) at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:218) at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1341) at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1187) at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:845) at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877) at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:742) at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:389) at org.springframework.boot.SpringApplication.run(SpringApplication.java:311) at org.springframework.boot.SpringApplication.run(SpringApplication.java:1213) at org.springframework.boot.SpringApplication.run(SpringApplication.java:1202) at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:769) at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:218) at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1341) at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1187) at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277) at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1251) at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1171) at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857) at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760) ... 19 common frames omitted Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'internalGatewayRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class AAAJpo at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778) at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277) at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1251) at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1171) at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857) at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760)... 33 common frames omitted Caused by: java.lang.IllegalArgumentException: Not a managed type: class AAAGatewayJpo at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:552) at org.springframework.data.jpa.repository.support.JpaMetamodelEntityInformation.&lt;init&gt;(JpaMetamodelEntityInformation.java:74) at org.springframework.data.jpa.repository.support.JpaEntityInformationSupport.getEntityInformation(JpaEntityInformationSupport.java:66) at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getEntityInformation(JpaRepositoryFactory.java:201) at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:151) at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:134) at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:65) at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:305) at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:297) at org.springframework.data.util.Lazy.getNullable(Lazy.java:211) at org.springframework.data.util.Lazy.get(Lazy.java:94) at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:300) at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:121) at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837) at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774) ... 44 common frames omitted Process finished with exit code 1 . cause . SpringApplication으로 서비스 올릴 때, scan하는 패키지는 test.www인데 springboot로 올리는 application 파일은 test.www.aaa.boot아래에 있었다. 이걸 test.www.aaa 하위로 옮기고 나니 해결됨 . ",
     "url": "http://localhost:4000/docs/errors/jpa1/",
     "relUrl": "/docs/errors/jpa1/"
-  },"108": {
+  },"109": {
     "doc": "jpa 프로그래밍",
     "title": "3. 영속성 관리",
     "content": "@DynamicUpdate . 컬럼이 30개 이상이 되면, @DynamicUpdate를 사용한 동적 수정 쿼리가 정적 수정 쿼리보다 빠르다. 하지만 한 테이블에 컬럼이 30개 이상 된다는 것은 테이블 설계상 분리가 적절하게 되지 않았을 가능성이 높다. @SequenceGenerator . SequenceGenterator.allocationSize의 기본값은 50이다. 이는 최적화 때문인데, 만약 하나씩 증가해야한다면 1로 설정하면 된다. @SeqyebceGeberator는 @GeneratedValue 옆에 사용해도 된다. ",
     "url": "http://localhost:4000/docs/clipping/msa/jpa_programming/#3-%EC%98%81%EC%86%8D%EC%84%B1-%EA%B4%80%EB%A6%AC",
     "relUrl": "/docs/clipping/msa/jpa_programming/#3-영속성-관리"
-  },"109": {
+  },"110": {
     "doc": "jpa 프로그래밍",
     "title": "4. 엔티티 맵핑",
     "content": "@Column 생략 . int data1; // @Column생략, 자바 기본타입으로 not null로 생성된다. Integer data2; // @Column 생략하면 nullable속성으로 생성된다. 따라서 자바 기본타입에 @Column을 사용하면 nullable = false로 지정하는 것이 안전하다. ",
     "url": "http://localhost:4000/docs/clipping/msa/jpa_programming/#4-%EC%97%94%ED%8B%B0%ED%8B%B0-%EB%A7%B5%ED%95%91",
     "relUrl": "/docs/clipping/msa/jpa_programming/#4-엔티티-맵핑"
-  },"110": {
+  },"111": {
     "doc": "jpa 프로그래밍",
     "title": "5. 연관관계 매핑 기초",
     "content": "양방향 매핑 . 양방향 매핑시에는 무한 루프에 빠지지 않게 조심해야한다. 예를 들어 Member.toString()에서 getTeam()을 호출하고 Team.toString()에서 getMember()를 호출하면 무한 루프에 빠질 수 있다. 이런 문제는 엔티티를 JSON으로 변환할 때 자주 발생한다. ",
     "url": "http://localhost:4000/docs/clipping/msa/jpa_programming/#5-%EC%97%B0%EA%B4%80%EA%B4%80%EA%B3%84-%EB%A7%A4%ED%95%91-%EA%B8%B0%EC%B4%88",
     "relUrl": "/docs/clipping/msa/jpa_programming/#5-연관관계-매핑-기초"
-  },"111": {
+  },"112": {
     "doc": "jpa 프로그래밍",
     "title": "6. 다양한 연관관계 매핑",
     "content": "일대다 . | 일대다 단방향 매핑보다는 다대일 양방향 매핑을 사용하자. | 관계형 데이터베이스 특성상 외래키는 항상 다 쪽에 있다. 그러므로 양방향 매핑에서 @OneToMany는 연관관계의 주인이 될 수 없다. 이런 이유로 @ManyToOne에는 mappedBy속성이 없다. | . ",
     "url": "http://localhost:4000/docs/clipping/msa/jpa_programming/#6-%EB%8B%A4%EC%96%91%ED%95%9C-%EC%97%B0%EA%B4%80%EA%B4%80%EA%B3%84-%EB%A7%A4%ED%95%91",
     "relUrl": "/docs/clipping/msa/jpa_programming/#6-다양한-연관관계-매핑"
-  },"112": {
+  },"113": {
     "doc": "jpa 프로그래밍",
     "title": "7. 고급 매핑",
     "content": "복합키와 식별 관계 매핑 . | 복합 키에는 @GenerateValue를 사용할 수 없다. 복합 키를 구성하는 여러 컬럼 중 하나에도 사용할 수 없다. | . ",
     "url": "http://localhost:4000/docs/clipping/msa/jpa_programming/#7-%EA%B3%A0%EA%B8%89-%EB%A7%A4%ED%95%91",
     "relUrl": "/docs/clipping/msa/jpa_programming/#7-고급-매핑"
-  },"113": {
+  },"114": {
     "doc": "jpa 프로그래밍",
     "title": "9. 값 타입",
     "content": "임베디드 타입(복합 값 타입) . | 임베디드 타입은 기본 생성자가 필수다. | 임베디드 타입을 포함한 모든 값 타입은 엔티티의 생명주기에 의존하므로 엔티티와 임베디드 타입의 관계를 UML로 표현하면 컴포지션 관계가 된다 | 하이버네이트는 임베디드 타입을 컴포넌트라고 한다. | . ",
     "url": "http://localhost:4000/docs/clipping/msa/jpa_programming/#9-%EA%B0%92-%ED%83%80%EC%9E%85",
     "relUrl": "/docs/clipping/msa/jpa_programming/#9-값-타입"
-  },"114": {
+  },"115": {
     "doc": "jpa 프로그래밍",
     "title": "12. 스프링 데데이이터 JPA",
     "content": "쿼리 메소드 기능 . | 스프링 데이터 JPA 쿼리 생성 기능 | . ",
     "url": "http://localhost:4000/docs/clipping/msa/jpa_programming/#12-%EC%8A%A4%ED%94%84%EB%A7%81-%EB%8D%B0%EB%8D%B0%EC%9D%B4%EC%9D%B4%ED%84%B0-jpa",
     "relUrl": "/docs/clipping/msa/jpa_programming/#12-스프링-데데이이터-jpa"
-  },"115": {
+  },"116": {
     "doc": "jpa 프로그래밍",
     "title": "14. 컬렉션과 부가  기능",
     "content": "리스너 . | 엔티티의 생명주기에 따른 이벤트를 처리할 수 있다. | 방법 . | 엔티티에 직접 이벤트를 적용하는 방법(@PostPersist, @PostLoad…) | 별도의 리스너 등록 @EntityListener(DuckListener.class) Public class Duck { ... } public class DuckListener { @PrePersist private void prePersist(Object obj) { } @PostPersist private void postPersist(Object obj) { } } . | 기본 리스너 사용 . | 모든 엔티티에 적용하는 경우라면 기본 리스너로 등록하면 된다. | . | . | . ",
     "url": "http://localhost:4000/docs/clipping/msa/jpa_programming/#14-%EC%BB%AC%EB%A0%89%EC%85%98%EA%B3%BC-%EB%B6%80%EA%B0%80--%EA%B8%B0%EB%8A%A5",
     "relUrl": "/docs/clipping/msa/jpa_programming/#14-컬렉션과-부가--기능"
-  },"116": {
+  },"117": {
     "doc": "jpa 프로그래밍",
     "title": "jpa 프로그래밍",
     "content": ". ",
     "url": "http://localhost:4000/docs/clipping/msa/jpa_programming/",
     "relUrl": "/docs/clipping/msa/jpa_programming/"
-  },"117": {
+  },"118": {
     "doc": "애플 Symantec Root 인증서 제거로 인한 인증서 갱신",
     "title": "애플 Symantec Root 인증서 제거로 인한 인증서 갱신",
     "content": "에러 : PKIX path building failed . 원인 . | 애플에서 symantec root인증서 제거해서, 인증불가 발생 | JRE 1.8.0_101 미만인 경우 발생 | . 조치 . | JRE 1.8.0_101 이상으로 버전업 | 인증서 추가 | . Java - PKIX path building failed . ",
     "url": "http://localhost:4000/docs/errors/jre1/",
     "relUrl": "/docs/errors/jre1/"
-  },"118": {
+  },"119": {
     "doc": "Timeout of 60000ms expired before the position...",
     "title": "Timeout of 60000ms expired before the position...",
     "content": "kafdrop 보려는데 Timeout of 60000ms expired before the position for partition retry-assignment-2 could be determined 에러날 때 . problem . kafdrop에 접속해서 스트림보려는데, 에러날때 . error log . Internal Server Error . A 500 error has occurred: Request processing failed; nested exception is Timeout of 60000ms expired before the position for partition retry-assignment-2 could be deter . cause . host에 주소가 잘못박혀있거나.. 디폴트(60000ms) 로딩시간을 초과했다거나 할때 발생 . solution . 타임아웃 늘리려면, ProducerConfig.MAX_BLOCK_MS_CONFIG 설정을 주면 된다. 아니면 도커에 컨테이너 삭제하고 다시 deploy . reference . | stackoverflow.com/a/60068634/14257397 . | org.apache.kafka.common.errors.TimeoutException . | . ",
     "url": "http://localhost:4000/docs/errors/kafka1/",
     "relUrl": "/docs/errors/kafka1/"
-  },"119": {
+  },"120": {
     "doc": "kafka SerializationException",
     "title": "kafka SerializationException",
     "content": "org.apache.kafka.common.errors.SerializationException: Error deserializing key/value for partition . error log . 15:04:41.660 er#1-0-C-1 ERROR .k.l.LoggingErrorHandler: 37 handle Error while processing: null[org.apache.kafka.common.errors.SerializationException](https://www.blogger.com/blog/post/edit/2689228726924373128/1302139096699183138#): Error deserializing key/value for partition event.message-0 at offset 62. If needed, please seek past the record to continue consumption. Caused by: org.springframework.messaging.converter.MessageConversionException: failed to resolve class name. Class not found [AAA]; nested exception is java.lang.ClassNotFoundException: AAA at org.springframework.kafka.support.converter.DefaultJackson2JavaTypeMapper.getClassIdType(DefaultJackson2JavaTypeMapper.java:138) at org.springframework.kafka.support.converter.DefaultJackson2JavaTypeMapper.toJavaType(DefaultJackson2JavaTypeMapper.java:99) at org.springframework.kafka.support.serializer.JsonDeserializer.deserialize(JsonDeserializer.java:342) at org.apache.kafka.clients.consumer.internals.Fetcher.parseRecord(Fetcher.java:1041) at org.apache.kafka.clients.consumer.internals.Fetcher.access$3300(Fetcher.java:110) at org.apache.kafka.clients.consumer.internals.Fetcher$PartitionRecords.fetchRecords(Fetcher.java:1223) at org.apache.kafka.clients.consumer.internals.Fetcher$PartitionRecords.access$1400(Fetcher.java:1072) at org.apache.kafka.clients.consumer.internals.Fetcher.fetchRecords(Fetcher.java:562) at org.apache.kafka.clients.consumer.internals.Fetcher.fetchedRecords(Fetcher.java:523) at org.apache.kafka.clients.consumer.KafkaConsumer.pollForFetches(KafkaConsumer.java:1230) at org.apache.kafka.clients.consumer.KafkaConsumer.poll(KafkaConsumer.java:1187) at org.apache.kafka.clients.consumer.KafkaConsumer.poll(KafkaConsumer.java:1115) at brave.kafka.clients.TracingConsumer.poll(TracingConsumer.java:78) at brave.kafka.clients.TracingConsumer.poll(TracingConsumer.java:72) at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.pollAndInvoke(KafkaMessageListenerContainer.java:743) at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.run(KafkaMessageListenerContainer.java:700) at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) at java.base/java.lang.Thread.run(Thread.java:835) . cause . kafka consumer가 producer쪽이랑 header가 달라서, 즉 패키지 path가 달라서 그런거임.해결) kafkalistener에 property를 추가하거나 consumer config에 props.put(JsonDeserializer.USE_TYPE_INFO_HEADERS, false);를 추가한다.@KafkaListener(topics = BBB,groupId = BBB + “-push-subscriber”,properties = {“AAA”,”spring.json.use.type.headers:false”}) . reference . | org.apache.kafka.common.errors.SerializationException: Error deserializing key/value for partition t | Spring boot Kafka class deserialization - not in the trusted package | . ",
     "url": "http://localhost:4000/docs/errors/kafka2/",
     "relUrl": "/docs/errors/kafka2/"
-  },"120": {
+  },"121": {
     "doc": "org.springframework.kafka.KafkaException",
     "title": "org.springframework.kafka.KafkaException",
     "content": "org.springframework.kafka.KafkaException: Ambiguous methods for payload type . error log . org.springframework.kafka.KafkaException: Ambiguous methods for payload type:** class AAA: handle and handle at org.springframework.kafka.listener.adapter.DelegatingInvocableHandler.findHandlerForPayload(DelegatingInvocableHandler.java:233) at org.springframework.kafka.listener.adapter.DelegatingInvocableHandler.getHandlerForPayload(DelegatingInvocableHandler.java:168) at org.springframework.kafka.listener.adapter.DelegatingInvocableHandler.getMethodNameFor(DelegatingInvocableHandler.java:279) at org.springframework.kafka.listener.adapter.HandlerAdapter.getMethodAsString(HandlerAdapter.java:67) at org.springframework.kafka.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:302) at org.springframework.kafka.listener.adapter.RecordMessagingMessageListenerAdapter.onMessage(RecordMessagingMessageListenerAdapter.java:79) at org.springframework.kafka.listener.adapter.RecordMessagingMessageListenerAdapter.onMessage(RecordMessagingMessageListenerAdapter.java:50) at org.springframework.kafka.listener.adapter.RecordMessagingMessageListenerAdapter$$FastClassBySpringCGLIB$$cde8c01d.invoke(&lt;generated&gt;) at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749) at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) at org.springframework.cloud.sleuth.instrument.messaging.MessageListenerMethodInterceptor.invoke(TraceMessagingAutoConfiguration.java:324) at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688) at org.springframework.kafka.listener.adapter.RecordMessagingMessageListenerAdapter$$EnhancerBySpringCGLIB$$4dfa1e78.onMessage(&lt;generated&gt;) at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeOnMessage(KafkaMessageListenerContainer.java:1275) at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeOnMessage(KafkaMessageListenerContainer.java:1258) at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeRecordListener(KafkaMessageListenerContainer.java:1219) at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeWithRecords(KafkaMessageListenerContainer.java:1200) at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeRecordListener(KafkaMessageListenerContainer.java:1120) at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeListener(KafkaMessageListenerContainer.java:935) at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.pollAndInvoke(KafkaMessageListenerContainer.java:751) at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.run(KafkaMessageListenerContainer.java:700) at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) at java.base/java.lang.Thread.run(Thread.java:835) Process finished with exit code -1 . cause . 내가 handle메소드 인자를 Object타입으로 받은거랑 MessageCreated로 받은걸 두개 생성해서… 어디에 매핑할지 모호하다는 에러임. Object인자로 받는 메소드를 지우자 . ",
     "url": "http://localhost:4000/docs/errors/kafka3/",
     "relUrl": "/docs/errors/kafka3/"
-  },"121": {
+  },"122": {
     "doc": "kafka monitoring",
     "title": "kafka monitoring",
     "content": "구성 . kafka + burrow + telegraf + es . kafka와 es . | kafka와 es는 이미 설치되어있는 환경 | . burrow 설치 및 실행 . | burrow 설치 . | go언어 설치 | burrow설치 . | git받은담에, go언어로 설치 | . | burrow.toml 설정 . | 포트가 중복되어서 8200으로 변경 | kafka랑 zookeeper정보 변경 | . | . [general] pidfile=\"burrow.pid\" stdout-logfile=\"burrow.out\" access-control-allow-origin=\"mysite.example.com\" [logging] filename=\"logs/burrow.log\" level=\"info\" maxsize=100 maxbackups=30 maxage=10 use-localtime=false use-compression=true [zookeeper] servers=[ \"localhost:2181\" ] timeout=6 root-path=\"/burrow\" [client-profile.local] client-id=\"burrow-local\" kafka-version=\"2.13.0\" [cluster.local] class-name=\"kafka\" servers=[ \"localhost:9092\" ] client-profile=\"local\" topic-refresh=120 offset-refresh=30 groups-reaper-refresh=0 [consumer.local] class-name=\"kafka\" cluster=\"local\" servers=[ \"localhost:9092\" ] client-profile=\"local\" group-denylist=\"^(console-consumer-|python-kafka-consumer-|quick-).*$\" group-allowlist=\"\" [httpserver.default] address=\":8200\" [storage.default] class-name=\"inmemory\" workers=20 intervals=15 expire-group=604800 min-distance=1 . | burrow 서비스 시작 . nohup /root/go/bin/Burrow --config-dir=/usr/local/Burrow/config 1&gt; /dev/null 2&gt;&amp;1 &amp; . | 참고 . | . [Kafka] install Burrow to linux (centos) . | . [Kafka] 카프카 Burrow 설치 (카프카 모니터링) . | . | . telegraf 설치 및 실행 . | burrow로 수집한 내용을 es로 전달하기 위한 용도 | 설치 . sudo yum install telegraf . | 설정 . | /etc/telegraf/telegraf.conf 파일 | input으로는 burrow로 하니까, burrow설정 | . [[inputs.burrow]] ## Burrow API endpoints in format \"schema://host:port\". ## Default is \"http://localhost:8000\". servers = [\"http://localhost:8200\"] topics_exclude = [ \"__consumer_offsets\" ] groups_exclude = [\"console-*\"] . | output은 es에 넣을꺼니까 | . [[outputs.elasticsearch]] urls = [ \"http://localhost:9200\" ] # required. timeout = \"5s\" enable_sniffer = false health_check_interval = \"10s\" index_name = \"burrow-%Y.%m.%d\" # required. manage_template = true template_name = \"telegraf\" overwrite_template = false . | influxdb는 사용안하므로 주석처리 | . | 서비스 시작 . systemctl enable --now telegraf systemctl status telegraf . | 에러 . | [agent] Failed to connect to [outputs.elasticsear…fined’ 라고 나서 , influxdb 주석하고 나니 사라짐 | [agent] Failed to connect to [outputs.elasticsearch], retrying in 15s, error was ‘elasticsearch template_name configuration not defined’ . | 이건 outputs.elasticsearch설정의 template_name이 주석되어있어서 주석해체하니 에러 해결 | . | . | 참조 . | . Install Telegraf . | . 튜토리얼-Ubuntu Linux에서 Telegraf 설치 [단계별] . | . kibana . | es로 데이터가 전송되었으면, kibana에서 index를 burrow-*로 생성한다. | . grafana . | database를 elasticsearch 추가하고 index를 burrow꺼로 가져오도록 한다. | . reference . 아파치 카프카 Lag 모니터링 대시보드 만들기 . ",
     "url": "http://localhost:4000/docs/etc/kafka_monitoring/",
     "relUrl": "/docs/etc/kafka_monitoring/"
-  },"122": {
+  },"123": {
     "doc": "Kakao Vision API Test",
     "title": "카카오 비전 API 테스트",
     "content": " ",
     "url": "http://localhost:4000/docs/sub-projects/kakao_vision_api_test/#%EC%B9%B4%EC%B9%B4%EC%98%A4-%EB%B9%84%EC%A0%84-api-%ED%85%8C%EC%8A%A4%ED%8A%B8",
     "relUrl": "/docs/sub-projects/kakao_vision_api_test/#카카오-비전-api-테스트"
-  },"123": {
+  },"124": {
     "doc": "Kakao Vision API Test",
     "title": "Kakao Vision API Test",
     "content": " ",
     "url": "http://localhost:4000/docs/sub-projects/kakao_vision_api_test/",
     "relUrl": "/docs/sub-projects/kakao_vision_api_test/"
-  },"124": {
+  },"125": {
     "doc": "Keycloak",
     "title": "Keycloak 적용 검토",
     "content": "검토 기간 : 2020.03 ~ 2020.05 . 검토 내용 . | keycloak 사용 및 분석 | keycloak 적용시 장단점 | 기타 제약사항 | 결과적으로 자체 개발할 것인지 keycloak을 적용할 것인지 | . 검토 결과 . | 검토 결과 보고서 참고 | . Keycloak_poc결과보고서.zip . ",
     "url": "http://localhost:4000/docs/sub-projects/keyclock/#keycloak-%EC%A0%81%EC%9A%A9-%EA%B2%80%ED%86%A0",
     "relUrl": "/docs/sub-projects/keyclock/#keycloak-적용-검토"
-  },"125": {
+  },"126": {
     "doc": "Keycloak",
     "title": "Keycloak",
     "content": " ",
     "url": "http://localhost:4000/docs/sub-projects/keyclock/",
     "relUrl": "/docs/sub-projects/keyclock/"
-  },"126": {
+  },"127": {
     "doc": "let's encrypt ssl",
     "title": "let’s encrypt with (window, springboot)",
     "content": "로컬(윈도우)에서 springboot 어플리케이션에 ssl을 추가해서 테스트해볼 일이 생겼다. 무료 ssl로 let’s encrypt를 활용하기로 하고 설치 및 적용해봄 . | let’s encrypt는 certbot을 이용해서 설치하면 된다. | 아래 페이지로 이동해서 certbot install파일을 내려받는다. (다운로드) | . Certbot Instructions . | 관리자 권한으로 cmd창을 열고 아래 명령어를 쳐서 잘 설치된건지 확인한다. | . C:\\WINDOWS\\system32&gt; certbot --help . | dns 등록 | . freenom 이용함 (무료 dns) . | dns까지 준비되었다면, ssl을 생성한다. (dns가 없다면, 중간에 실패난다.) | . C:\\WINDOWS\\system32&gt;certbot certonly --standalone Saving debug log to C:\\Certbot\\log\\letsencrypt.log Please enter the domain name(s) you would like on your certificate (comma and/or space separated) (Enter 'c' to cancel): ~~~~~.~~~~ (dns주소 입력) Requesting a certificate for ~~~~~.~~~~ Successfully received certificate. Certificate is saved at: C:\\Certbot\\live\\~~~~~.~~~~fullchain.pem Key is saved at: C:\\Certbot\\live\\~~~~~.~~~~\\privkey.pem This certificate expires on 2022-02-17. These files will be updated when the certificate renews. Certbot has set up a scheduled task to automatically renew this certificate in the background. 참조) 자세한 내용은 아래 블로그 참고 . SpringBoot - Let’s Encrypt로 무료 SSL인증서를 발급받아 SpringBoot에 적용하기(Https) . | 생성한 ssl을 윈도우 폴더에 위치시키고 yml파일을 수정한다. | . server: port: 19010 ssl: enabled: true key-store: ~~~.jks key-store-type: \"JKS\" 또는 \"PKCS12\" 지정 key-store-password: ~~~~~~~~ 인증서 암호 key-alias: 선택항목으로 alias또는 CN명 trust-store: 선택항목 trust-store-password: 선택항목 . | 그리고 @SpringBootApplication파일을 run시킨다. | 내부망에 있다보니, lte로 테스트했을때, 유효한 인증서로 보였는데, line developers의 webhook url로 등록하고 verify하니까 아래 에러가 발생했다. | . An SSL connection error occurred. Confirm that your webhook URL uses HTTPS and has an SSL/TLS certificate issued by a root certification authority that's widely trusted by most browsers . 뭔가 유효하지 않은 느낌이다. | 인증서 유효성 체크사이트(https://www.digicert.com/help/) 에서 체크해본다. —&gt; 유효하지 않다고 나옴. | 브라우저에서 ip로 호출해보니 “ERR_CERT_COMMON_NAME_INVALID”라고 나온다. —&gt; 발급대상과 일치하지 않다는 에러라고 한다. | 포트를 19010에서 443으로 변경하고 다시 digicert에서 검사돌려보니 “TLS Certificate is not trusted” 라고 나온다. —&gt; 인증서 체인을 잘못 건것으로 keytool -list -v -keystore keystore.jks실행시켜서 인증서 개수가 3개 인지 확인한다. | . ",
     "url": "http://localhost:4000/docs/sub-projects/lets_encrypt_ssl/#lets-encrypt-with-window-springboot",
     "relUrl": "/docs/sub-projects/lets_encrypt_ssl/#lets-encrypt-with-window-springboot"
-  },"127": {
+  },"128": {
     "doc": "let's encrypt ssl",
     "title": "let's encrypt ssl",
     "content": " ",
     "url": "http://localhost:4000/docs/sub-projects/lets_encrypt_ssl/",
     "relUrl": "/docs/sub-projects/lets_encrypt_ssl/"
-  },"128": {
+  },"129": {
     "doc": "Line messaging API 적용 노트",
     "title": "Line messaging API 적용 노트",
     "content": ". | webhook 설정 - ssl설정 . | controller작성 . | . 기존 프로젝트에 line 메시징 API만 적용해야하는 환경이라, 라인sdk에서 적용한 스프링버전보다 높은 상황 . 자바는 컴파일은 1.8, . 런타임은 12로 되는 상황 . 간단한 컨트롤러 작성 . @Slf4j @RestController @LineMessageHandler public class LineMessageController { @EventMapping public void handleTextMessageEvent(MessageEvent&lt;TextMessageContent&gt; event) { log.info(\"event: \" + event); final String originalMessageText = event.getMessage().getText(); //return new TextMessage(originalMessageText); } @EventMapping public void handleDefaultMessageEvent(Event event) { System.out.println(\"event: \" + event); } } . 에러1) . 14:34:33.586 010-exec-6 ERROR ineMessageHandlerSupport:217 dispatch Unsupported event type. MessageEvent(replyToken=3406d4539061400ca6d199bc2bad16e6, source=UserSource(userId=Uec5b4b45de71961100290f7a7ff61d0a), message=TextMessageContent(id=15206625437201, text=123, emojis=null, mention=null), timestamp=2021-12-07T05:34:32.441Z, mode=ACTIVE) java.lang.UnsupportedOperationException: Unsupported event type. MessageEvent(replyToken=3406d4539061400ca6d199bc2bad16e6, source=UserSource(userId=Uec5b4b45de71961100290f7a7ff61d0a), message=TextMessageContent(id=15206625437201, text=123, emojis=null, mention=null), timestamp=2021-12-07T05:34:32.441Z, mode=ACTIVE) at com.linecorp.bot.spring.boot.support.LineMessageHandlerSupport.lambda$dispatchInternal$6(LineMessageHandlerSupport.java:226) at java.util.Optional.orElseThrow(Optional.java:290) at com.linecorp.bot.spring.boot.support.LineMessageHandlerSupport.dispatchInternal(LineMessageHandlerSupport.java:226) at com.linecorp.bot.spring.boot.support.LineMessageHandlerSupport.dispatch(LineMessageHandlerSupport.java:213) at com.linecorp.bot.spring.boot.support.LineMessageHandlerSupport.lambda$callback$4(LineMessageHandlerSupport.java:206) at java.util.ArrayList.forEach(ArrayList.java:1259) at com.linecorp.bot.spring.boot.support.LineMessageHandlerSupport.callback(LineMessageHandlerSupport.java:205) at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) at java.lang.reflect.Method.invoke(Method.java:498) at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105) at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878) at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792) at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) at javax.servlet.http.HttpServlet.service(HttpServlet.java:665) at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) at javax.servlet.http.HttpServlet.service(HttpServlet.java:750) at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) at brave.servlet.TracingFilter.doFilter(TracingFilter.java:68) at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) at brave.servlet.TracingFilter.doFilter(TracingFilter.java:87) at org.springframework.cloud.sleuth.instrument.web.LazyTracingFilter.doFilter(TraceWebServletAutoConfiguration.java:141) at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:97) at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707) at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) at java.lang.Thread.run(Thread.java:748) . 분석1) springboot로 띄울때, 디버깅해보면, LineMessageHandler를 선언한 클래스는 스프링에 등록되어 있지만, ‘@EventMapping을 선언한 메소드는 찾지 못하는 문제 발생 . 시도1) @SpringBootApplication(scanBasePackages = “~~~~”)가 기존 프로젝트에 추가된 상황이였는데, scan대상이 잘못되고 있는 것인가 해서, scanBasePackages를 제거하고 올리면 성공 . 하지만 scanBasePackages 설정은 다른 컨테이너와의 상속문제로 반드시 필요한 설정이라 뺄 수가 없음 . 시도2) 라인sdk의 echo를 다시 유심히 봤다. 차이는 @RestController뿐. @RestController를 제거해보니 성공 . 정리는 간단했지만, spring 버전차이를 중심으로 디버깅하다보니 삽질이 길었다. 문제는 @RestController 중복선언으로 보인다. LineMessageHandlerSupport.java내용을 보면 거기에도 @RestController를 자체적으로 선언하고 있다. @Slf4j @RestController @Import(ReplyByReturnValueConsumer.Factory.class) @ConditionalOnProperty(name = \"line.bot.handler.enabled\", havingValue = \"true\", matchIfMissing = true) public class LineMessageHandlerSupport { . 해당 파일의 주석으로도 되어있다. class에는 @LineMessageHandler를 method에는 @EventMappinig을 선언하라고… . ",
     "url": "http://localhost:4000/docs/sub-projects/line_messaging/",
     "relUrl": "/docs/sub-projects/line_messaging/"
-  },"129": {
+  },"130": {
     "doc": "Liquibase",
     "title": "Liquibase",
     "content": "검토 배경 . | 사이트 마이그레이션을 용이하게 하려면? | 수동으로 쿼리를 작성하게 되면, 누락되는 항목도 생기고, 버그도 발생 | . liquibase 주요 기능 . | change log | tracking work | . 검토 결과 . Q1. data diff가 가능한가? . | json data가 저장된 컬럼 비교가 가능한가? | . A1. | 자동으로 비교할 수 없고, liquibase db table에 변경이력을 쌓아야만 이력추적을 통해 가능 | 그 외에 다른 database object들에 대한 diff는 이력으로 쌓지 않아도 모두 가능 | ./liquibase --outputFile=mydiff.txt --driver=com.mysql.jdbc.Driver --classpath=lib/mysql-connector-java-8.0.25.jar --url=\"jdbc:mysql://localhost:3306/db1?serverTimezone=Asia/Seoul&amp;characterEncoding=UTF-8\" --username=root --password=password --referenceUrl=\"jdbc:mysql://localhost:3306/db2?serverTimezone=Asia/Seoul&amp;characterEncoding=UTF-8\" --referenceUsername=root --referencePassword=password -diffTypes=data diff . [mydiff.txt] Reference Database: root@localhost @ jdbc:mysql://localhost:3306/db2?serverTimezone=Asia/Seoul&amp;characterEncoding=UTF-8 (Default Schema: db2) Comparison Database: root@localhost @ jdbc:mysql://localhost:3306/db1?serverTimezone=Asia/Seoul&amp;characterEncoding=UTF-8 (Default Schema: db1) Compared Schemas: db2 -&gt; db1 Product Name: EQUAL Product Version: EQUAL Missing Catalog(s): NONE Unexpected Catalog(s): NONE Changed Catalog(s): NONE Missing Column(s): db2.mocha_survey_questionnaire.C_ACTIVE db2.mocha_survey.C_MESSAGE Unexpected Column(s): db1.mocha_knowledge.C_ACCESS_TYPE db1.mocha_removed_team.C_ALIAS Changed Column(s): db2.mocha_survey_response.C_CREATED_AT order changed from '5' to '4' db2.mocha_survey.C_ENABLED nullable changed from 'false' to 'true' order changed from '6' to '8' Missing Foreign Key(s): NONE Unexpected Foreign Key(s): NONE Changed Foreign Key(s): NONE Missing Index(s): NONE Unexpected Index(s): NONE Changed Index(s): NONE Missing Primary Key(s): NONE Unexpected Primary Key(s): NONE Changed Primary Key(s): NONE Missing Sequence(s): NONE Unexpected Sequence(s): NONE Changed Sequence(s): NONE Missing Table(s): mocha_survey_questionnaire mocha_survey_restrict Unexpected Table(s): crema_active_kakao Changed Table(s): NONE Missing Unique Constraint(s): NONE Unexpected Unique Constraint(s): NONE Changed Unique Constraint(s): NONE Missing View(s): NONE Unexpected View(s): NONE Changed View(s): NONE . 활용 방법 . | 제품의 버전별 DB이력관리가 필요하다면, git log를 변경이력으로 등록하게 해서 활용하는 방법을 생각해볼 수 있다. | . ",
     "url": "http://localhost:4000/docs/sub-projects/liquibase/",
     "relUrl": "/docs/sub-projects/liquibase/"
-  },"130": {
+  },"131": {
     "doc": "Mooc",
     "title": "Mooc",
     "content": "I summarize contents what I’ve learned through Online. udemy, udacity, inflearn, youtube.. so on. ",
     "url": "http://localhost:4000/docs/mooc",
     "relUrl": "/docs/mooc"
-  },"131": {
+  },"132": {
     "doc": "Msa",
     "title": "Summary",
     "content": " ",
     "url": "http://localhost:4000/docs/msa#summary",
     "relUrl": "/docs/msa#summary"
-  },"132": {
+  },"133": {
     "doc": "Msa",
     "title": "Msa",
     "content": "summarized the api/library used within Spring Cloud. ",
     "url": "http://localhost:4000/docs/msa",
     "relUrl": "/docs/msa"
-  },"133": {
-    "doc": "Must Read",
-    "title": "Java",
-    "content": ". | API 보안 관련 . | OAuth 2 in Action | API Security in Action | . | . ",
-    "url": "http://localhost:4000/docs/etc/mustRead/#java",
-    "relUrl": "/docs/etc/mustRead/#java"
   },"134": {
-    "doc": "Must Read",
-    "title": "Must Read",
-    "content": " ",
-    "url": "http://localhost:4000/docs/etc/mustRead/",
-    "relUrl": "/docs/etc/mustRead/"
-  },"135": {
     "doc": "directory index of \"..\\nginx-1.19.9/html/\" is forbidden",
     "title": "directory index of \"..\\nginx-1.19.9/html/\" is forbidden",
     "content": "directory index of “C:\\Users\\Desktop\\nginx-1.19.9/html/” is forbidden . problem . nginx를 통해서 url 파라미터로 보낸 url형태의 값을 전송하려고 하는데 . 만약에 초기 설치에서 index.html파일을 삭제할 경우 나타나는 에러 . 리눅스의 경우는 에러 메시지가 윈도우와 다름 . error log . *422\"/etc/nginx/html/index.html\" is not found (2: No such file or directory), client: x.x.x.x, server: xxx.xxx.kr, request: \"GET /?url=http%3A%2F%2Fxxx.xxx.com/test/12345.jpeg HTTP/1.1\", host: \"{nginxIp}:8050\" . [기존 nginx.conf] . server { listen 19013; server_name localhost; location ~* ^/(chat|image|file) { resolver 8.8.8.8; proxy_pass https://xxx.xxx.co.kr$uri; } location ~* ^.+\\.(jpg|jpeg|gif|png|ico|css|zip|tgz|gz|rar|bz2|pdf|txt|tar|wav|bmp|rtf|js|flv|swf|html|htm)$ { rewrite ^ $arg_url permanent; } location /ping { access_log on; add_header 'Content-Type' 'application/json'; return 200 '{\"status\":\"UP\"}'; } #error_page 404 /404.html; # redirect server error pages to the static page /50x.html # error_page 500 502 503 504 /50x.html; location = /50x.html { root html; } } . cause . | rewrite ^ $arg_url permanent; 에서 301로 리턴하면서 response를 루트 디렉토리를 통해 index.html 로 리다이렉트되는 것 같다. | . solution . | window나 linux 로그에 표시되는 경로에 임의의 index.html을 생성하는 방법 . | 서비스 운영 중에 서버가 이전하거나 파일이 생성될 경우, 다시 에러가 발생할 가능성이 크다. | . | root디렉토리를 서비스 디렉토리 하위로 변경하는 방법 . | 서비스 디렉토리로 옮기면, 그나마 임의로 삭제될 가능성은 적다 | nginx의 기본 root directorysms nginx.exe가 존재하는 path기준으로 설정된다. | 참고) | . Windows: Nginx configuration error GetFileAttributesEx . location / { root D:/tmp/html; index index.html index.htm; if ($request_filename ~* [jpg|jpeg|gif|png|pdf|txt|bmp]$) { rewrite ^ $arg_url permanent; break; } } . | 다시 리다이렉트되는 index.html도 301로 리턴되도록 설정한다. | 참고) | . nginx redirect loop, remove index.php from url . server { listen 8051; server_name localhost; **index index.html;** **if ($request_uri ~* \"^(.*/)index\\.html$\") { return 301 $1; }** **location / { rewrite ^ $arg_url permanent; }** location ~* ^/(chat|image|file) { resolver 8.8.8.8; proxy_pass https://xxx.xxx.co.kr$uri; } # Health Check location /ping { access_log on; add_header 'Content-Type' 'application/json'; return 200 '{\"status\":\"UP\"}'; } } . | . ",
     "url": "http://localhost:4000/docs/errors/nginx1/",
     "relUrl": "/docs/errors/nginx1/"
-  },"136": {
+  },"135": {
     "doc": "client intended to send too large body",
     "title": "client intended to send too large body",
     "content": "problem . front에서 첨부파일을 끌어서 업로드할 때, nginx에서 에러 발생하면서 아무 반응 없던 현상 . error . client intended to send too large body: 16095313 bytes . solved . nginx.conf에 아래 설정 추가 . http { client_max_body_size 500M; } . 0 으로 설정하면 무제한 . 500M으로 한 이유는 제품기획상 대용량 첨부가 불가능해서.. 무제한으로 했다가 화면 뻗을 것 같아서 그러했음 . reference . Nginx error: client intended to send too large body . ",
     "url": "http://localhost:4000/docs/errors/nginx_client_error/",
     "relUrl": "/docs/errors/nginx_client_error/"
-  },"137": {
+  },"136": {
     "doc": "Node Sass does not yet support your current environment",
     "title": "Node Sass does not yet support your current environment: Windows 64-bit with Unsupported runtime",
     "content": "react 프로젝트에 package.json을 npm으로 설치하다가 유독 자주 발생하는 에러 ㅠㅜ . 에러 메시지: . Failed to compile./src/components/messages/common/Modal/Modal.scss (./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-5-1!./node_modules/postcss-loader/src??postcss!./node_modules/resolve-url-loader??ref--6-oneOf-5-3!./node_modules/sass-loader/dist/cjs.js??ref--6-oneOf-5-4!./src/components/messages/common/Modal/Modal.scss) Error: Node Sass does not yet support your current environment: Windows 64-bit with Unsupported runtime (83) . 해결 : . $ npm uninstall node-saas &amp;&amp; npm install node-saas . Error: Node Sass does not yet support your current environment: Windows 64-bit with false . | 서버에 python이 없다면, python2를 설치하고, node_modules삭제하고 다시 npm install하면 된다. | . ",
     "url": "http://localhost:4000/docs/errors/node1/#node-sass-does-not-yet-support-your-current-environment-windows-64-bit-with-unsupported-runtime",
     "relUrl": "/docs/errors/node1/#node-sass-does-not-yet-support-your-current-environment-windows-64-bit-with-unsupported-runtime"
-  },"138": {
+  },"137": {
     "doc": "Node Sass does not yet support your current environment",
     "title": "Node Sass does not yet support your current environment",
     "content": " ",
     "url": "http://localhost:4000/docs/errors/node1/",
     "relUrl": "/docs/errors/node1/"
-  },"139": {
+  },"138": {
     "doc": "기타",
     "title": "오버로딩 vs 가변 인수",
     "content": ". | java9의 컬렉션 API 중 List 인터페이스에서 List.of의 오버로드 메소드들이 존재하는 이유 | . → 오버로드 말고 static List of(E... elements) 라고 선언할 수 있었음에도 사용하지 않은 이유 . → 내부적으로 가변 인수는 추가배열을 할당해서 리스트로 감싼다. → 이렇게 되면, 가변인수로 받은 배열을 할당 → 초기화 → gc까지 실행해야하는 비용이 필요하게 된다. 비슷한 예로 Set.of, Map.of 도 마찬가지 . ",
     "url": "http://localhost:4000/docs/clipping/java/oop_1/#%EC%98%A4%EB%B2%84%EB%A1%9C%EB%94%A9-vs-%EA%B0%80%EB%B3%80-%EC%9D%B8%EC%88%98",
     "relUrl": "/docs/clipping/java/oop_1/#오버로딩-vs-가변-인수"
-  },"140": {
+  },"139": {
     "doc": "기타",
     "title": "객체지향",
     "content": " ",
     "url": "http://localhost:4000/docs/clipping/java/oop_1/#%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5",
     "relUrl": "/docs/clipping/java/oop_1/#객체지향"
-  },"141": {
+  },"140": {
     "doc": "기타",
     "title": ":: 디미터의 법칙 (Law of Demeter)",
     "content": "디미터 법칙은 객체 O의 메소드 m은 다음의 객체들의 타입의 메소드만 호출해야 한다는 법칙이다. | O 객체 자신의 메소드들. (O itself) . | m의 파라미터로 넘어온 객체들의 메소드들.(M’s parameters) . | m 안에서 생성 되거나 초기화된 객체의 메소드들.(Any objects created/instantiated within M) . | O객체의 직접 소유하는 객체의 메소드들.(O’s direct component objects) . | . 5.O객체의 m에서 접근이 가능한 전역변수의 메소드들.(A global variable, accessible by O, in the scope of M) . class Demeter { private A a; private int func() { return 0; } public void example(B b) { C c = new C(); int f = func(); // 1번의 경우 b.invert(); // 2번의 경우 a = new A(); a.setActive(); // 3번의 경우 c.print(); // 4번의 경우 // Static으로 설정된 Setting 변수가 있다고 가정할때. string UserID = GlobalValues.Setting.getUserID(); //5의 경우 } } . 위의 종류에 해당하는 객체의 메소드들만 호출을 해야한다. 그렇지 않으면 유지보수 측면에서 문제점들이 발생한다. 아래의 예를 보면, . objectA.getObjectB().doSomething(); . objectA.getObjectB().getObjectC().doSomething(); . 출처: . https://hongjinhyeon.tistory.com/138 . ",
     "url": "http://localhost:4000/docs/clipping/java/oop_1/#-%EB%94%94%EB%AF%B8%ED%84%B0%EC%9D%98-%EB%B2%95%EC%B9%99-law-of-demeter",
     "relUrl": "/docs/clipping/java/oop_1/#-디미터의-법칙-law-of-demeter"
-  },"142": {
+  },"141": {
     "doc": "기타",
     "title": "기타",
     "content": " ",
     "url": "http://localhost:4000/docs/clipping/java/oop_1/",
     "relUrl": "/docs/clipping/java/oop_1/"
-  },"143": {
+  },"142": {
     "doc": "객체지향의 사실과 오해 정리",
     "title": "[객체지향의 사실과 오해] 정리",
     "content": ". | 협력하는 객체들의 공동체 . | 객체지향의 핵심은 클래스가 아니다. 클래스는 협력에 참여하는 객체를 만드는 데 필요한 구현 매커니즘일 뿐이다. | 클래스의 구조와 메서드가 아니라 객체의 역할, 책임, 협력에 집중하라. 객체지향은 객체를 지향하는 것이지 클래스를 지향하는 것이 아니다. | . | 이상한 나라의 객체 . | 객체는 상태를 캡슐 안에 감춰둔 채 외부로 노출하지 않는다. 객체가 외부에 노출하는 것은 행동뿐이며, 외부에서 객체에 접근할 수 있는 유일한 방법 역시 행동뿐이다. 2. | . | . ",
     "url": "http://localhost:4000/docs/clipping/java/oop_fact_c/#%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%9D%98-%EC%82%AC%EC%8B%A4%EA%B3%BC-%EC%98%A4%ED%95%B4-%EC%A0%95%EB%A6%AC",
     "relUrl": "/docs/clipping/java/oop_fact_c/#객체지향의-사실과-오해-정리"
-  },"144": {
+  },"143": {
     "doc": "객체지향의 사실과 오해 정리",
     "title": "객체지향의 사실과 오해 정리",
     "content": " ",
     "url": "http://localhost:4000/docs/clipping/java/oop_fact_c/",
     "relUrl": "/docs/clipping/java/oop_fact_c/"
-  },"145": {
+  },"144": {
     "doc": "Optional 정리",
     "title": ":: orElse(new …) 대신 orElseGet(() → new …)",
     "content": "orElse(new …) 대신 orElseGet(() → new …) 를 사용하도록 설명하는 부분이 있다. 이유는 orElse에 있는 값의 존재유무를 불문하고 무조건 실행되기 때문인데. 아래의 경우는 예외이다. @Slf4j @RequiredArgsConstructor @Service public class KakaoMessageAdapterService { private final List&lt;KakaoMessageAdapterHandler&gt; kakaoMessageAdapterHandlers; private ThirdPartyMessage getThirdPartyMessage(KakaoMessage kakaoMessage) { KakaoMessageAdapterHandler kakaoMessageAdapterHandler = kakaoMessageAdapterHandlers.stream() .filter(handler -&gt; handler.filter(kakaoMessage.getType().getThirdPartyMessageType())) .findFirst() .orElse(kakaoEtcMessageService); return kakaoMessageAdapterHandler.send(kakaoMessage); } } . | flow . | thirdparty messsage type별로 KakaoMessageAdapterHandler를 상속받아서 구현체가 존재한다. | 만약에 특정 type에 구현체가 존재하지 않는다면, kakaoEtcMessageService가 kakaoMessageAdapterHandler의 구현체가 된다. | . | 위의 경우 , filter로 선 체크 후 → findFirst하고 있는데 이미 구현체들을 filter로 통과시키기 때문에 무의미하게 kakaoEtcMessageService를 호출하고 있지 않다. | . ",
     "url": "http://localhost:4000/docs/clipping/java/optional/#-orelsenew--%EB%8C%80%EC%8B%A0-orelseget--new-",
     "relUrl": "/docs/clipping/java/optional/#-orelsenew--대신-orelseget--new-"
-  },"146": {
+  },"145": {
     "doc": "Optional 정리",
     "title": ":: 단지 값을 얻을 목적이라면 Optinal 대신 null 비교",
     "content": "optinal api가 생겼다고, 무조건 wrapping을 한다든지 남용하면 안된다. optional은 비용이 발생하므로 단순 null체크는 null로 하자. ",
     "url": "http://localhost:4000/docs/clipping/java/optional/#-%EB%8B%A8%EC%A7%80-%EA%B0%92%EC%9D%84-%EC%96%BB%EC%9D%84-%EB%AA%A9%EC%A0%81%EC%9D%B4%EB%9D%BC%EB%A9%B4-optinal-%EB%8C%80%EC%8B%A0-null-%EB%B9%84%EA%B5%90",
     "relUrl": "/docs/clipping/java/optional/#-단지-값을-얻을-목적이라면-optinal-대신-null-비교"
-  },"147": {
+  },"146": {
     "doc": "Optional 정리",
     "title": "Optional 정리",
     "content": "참조 블로그 : . effective java에서도 말하고 있지만, optional은 API 클라이언트에게 리턴값이 없음을 알려주는 기능에 초점을 맞춰야한다. 검사예외와 비슷한 취지의 쓰임으로 이해하면 된다. 참조 블로그 본문 내용 중 . ",
     "url": "http://localhost:4000/docs/clipping/java/optional/",
     "relUrl": "/docs/clipping/java/optional/"
-  },"148": {
+  },"147": {
     "doc": "오케스트레이션 vs 코레오그래피",
     "title": "오케스트레이션 vs 코레오그래피",
     "content": "https://happy-coding-day.tistory.com/102?category=896687 . ",
     "url": "http://localhost:4000/docs/patterns/orchestration_vs_choreography/",
     "relUrl": "/docs/patterns/orchestration_vs_choreography/"
-  },"149": {
+  },"148": {
     "doc": "Patterns",
     "title": "Patterns",
     "content": " ",
     "url": "http://localhost:4000/docs/patterns",
     "relUrl": "/docs/patterns"
-  },"150": {
+  },"149": {
     "doc": "current transaction is aborted, commands ignored until end of transaction block",
     "title": "current transaction is aborted, commands ignored until end of transaction block",
     "content": "[현상] . postgresql - jdbc로 커넥션 맺어서 자바에서 ibatis쿼리 실행하는데 아래와 같은 에러가 났다. current transaction is aborted, commands ignored until end of transaction block . | – The error occurred while applying a parameter map. | – Check the . selectNextOne . | – Check the statement (update procedure failed). | – Cause: org.postgresql.util.PSQLException: ERROR: current transaction is aborted, commands ignored until end of transaction block | . at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeQueryWithCallback(MappedStatement.java:201) . at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeQueryForObject(MappedStatement.java:120) . at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.queryForObject(SqlMapExecutorDelegate.java:527) . at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.queryForObject(SqlMapExecutorDelegate.java:502) . at com.ibatis.sqlmap.engine.impl.SqlMapSessionImpl.queryForObject(SqlMapSessionImpl.java:106) . at org.springframework.orm.ibatis.SqlMapClientTemplate$1.doInSqlMapClient(SqlMapClientTemplate.java:270) . at org.springframework.orm.ibatis.SqlMapClientTemplate.execute(SqlMapClientTemplate.java:200) . … 52 more . [원인] . 위에 처럼 나오면 쿼리에 문법적 오류로 인하여 현재 트랜잭션은 폐기된다는 뜻 . 내 경우는 selectNextOne쿼리가 잘못되었음 . ",
     "url": "http://localhost:4000/docs/errors/postgres1/",
     "relUrl": "/docs/errors/postgres1/"
-  },"151": {
+  },"150": {
     "doc": "Please log in (using, e.g., \"su\") as the (unprivileged) user that will",
     "title": "Please log in (using, e.g., \"su\") as the (unprivileged) user that will",
     "content": "[현상] . Please log in (using, e.g., “su”) as the (unprivileged) user that will . [원인] . 유닉스에 postgresql을 설치하고 나서 su로 로긴해서 ./pg_ctl로 서비스를 시작하려하는데 저런 에러가… . 일본 구글에서 해답을 찾았다. 블로그 http://nobuneko.com/blog/archives/2011/05/postgresqlinitdb_cannot_be_run.html . 해석 . 솔라리스 등에서 initdb를 실행하려고 하면, initdb: cannot be run as root라고 하는 에러메세지가 표시되고 initdb를 실행시킬 수 없게 된다 . 에러메세지를 읽으면, initdb는 root유저로 실행시킬 수 없다는 것을 알게 된다. 이 에러를 해결하려면 root 유저 외의 사용자로 initdb를 실행시키면 된다. 예를 들면, su - postgres에서 postgres유저를 만드니까 initdb를 postgres로 실행시키면된다. 같은 케이스는 아니지만 나도 su - postgres로 올리니까 해결됨. ",
     "url": "http://localhost:4000/docs/errors/postgres2/",
     "relUrl": "/docs/errors/postgres2/"
-  },"152": {
+  },"151": {
     "doc": "Could not locate PropertySource and the fail fast property is set, failing",
     "title": "Could not locate PropertySource and the fail fast property is set, failing",
     "content": "error . java.lang.IllegalStateException: Could not locate PropertySource and the fail fast property is set, failing at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locate(ConfigServicePropertySourceLocator.java:155) ~[spring-cloud-config-client-2.2.8.RELEASE.jar!/:2.2.8.RELEASE] at org.springframework.cloud.bootstrap.config.PropertySourceLocator.locateCollection(PropertySourceLocator.java:52) ~[spring-cloud-context-2.2.9.RELEASE.jar!/:2.2.9.RELEASE] at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locateCollection(ConfigServicePropertySourceLocator.java:170) ~[spring-cloud-config-client-2.2.8.RELEASE.jar!/:2.2.8.RELEASE] at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator$$FastClassBySpringCGLIB$$fa44b2a.invoke(&lt;generated&gt;) ~[spring-cloud-config-client-2.2.8.RELEASE.jar!/:2.2.8.RELEASE] at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.2.15.RELEASE.jar!/:5.2.15.RELEASE] at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779) ~[spring-aop-5.2.15.RELEASE.jar!/:5.2.15.RELEASE] at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.2.15.RELEASE.jar!/:5.2.15.RELEASE] at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.2.15.RELEASE.jar!/:5.2.15.RELEASE] at org.springframework.retry.interceptor.RetryOperationsInterceptor$1.doWithRetry(RetryOperationsInterceptor.java:91) ~[spring-retry-1.2.5.RELEASE.jar!/:na] at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:287) ~[spring-retry-1.2.5.RELEASE.jar!/:na] at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:164) ~[spring-retry-1.2.5.RELEASE.jar!/:na] at org.springframework.retry.interceptor.RetryOperationsInterceptor.invoke(RetryOperationsInterceptor.java:118) ~[spring-retry-1.2.5.RELEASE.jar!/:na] at org.springframework.retry.annotation.AnnotationAwareRetryOperationsInterceptor.invoke(AnnotationAwareRetryOperationsInterceptor.java:153) ~[spring-retry-1.2.5.RELEASE.jar!/:na] at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.15.RELEASE.jar!/:5.2.15.RELEASE] at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.2.15.RELEASE.jar!/:5.2.15.RELEASE] at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692) ~[spring-aop-5.2.15.RELEASE.jar!/:5.2.15.RELEASE] at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator$$EnhancerBySpringCGLIB$$537fc30a.locateCollection(&lt;generated&gt;) ~[spring-cloud-config-client-2.2.8.RELEASE.jar!/:2.2.8.RELEASE] at org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration.initialize(PropertySourceBootstrapConfiguration.java:98) ~[spring-cloud-context-2.2.9.RELEASE.jar!/:2.2.9.RELEASE] at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:623) [spring-boot-2.3.12.RELEASE.jar!/:2.3.12.RELEASE] at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:367) [spring-boot-2.3.12.RELEASE.jar!/:2.3.12.RELEASE] at org.springframework.boot.SpringApplication.run(SpringApplication.java:311) [spring-boot-2.3.12.RELEASE.jar!/:2.3.12.RELEASE] at org.springframework.boot.SpringApplication.run(SpringApplication.java:1247) [spring-boot-2.3.12.RELEASE.jar!/:2.3.12.RELEASE] at org.springframework.boot.SpringApplication.run(SpringApplication.java:1236) [spring-boot-2.3.12.RELEASE.jar!/:2.3.12.RELEASE] at spectra.attic.talk.crema.CremaApplication.main(CremaApplication.java:22) [classes!/:na] at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_292] at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_292] at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_292] at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_292] at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49) [crema-boot-3.1.0-exec.jar:na] at org.springframework.boot.loader.Launcher.launch(Launcher.java:108) [crema-boot-3.1.0-exec.jar:na] at org.springframework.boot.loader.Launcher.launch(Launcher.java:58) [crema-boot-3.1.0-exec.jar:na] at org.springframework.boot.loader.PropertiesLauncher.main(PropertiesLauncher.java:467) [crema-boot-3.1.0-exec.jar:na] Caused by: org.springframework.web.client.HttpServerErrorException$InternalServerError: 500 : [{\"timestamp\":\"2022-04-19T23:09:15.574+00:00\",\"status\":500,\"error\":\"Internal Server Error\",\"message\":\"\",\"path\":\"/config/crema/prod\"}] at org.springframework.web.client.HttpServerErrorException.create(HttpServerErrorException.java:100) ~[spring-web-5.2.15.RELEASE.jar!/:5.2.15.RELEASE] at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:186) ~[spring-web-5.2.15.RELEASE.jar!/:5.2.15.RELEASE] at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:125) ~[spring-web-5.2.15.RELEASE.jar!/:5.2.15.RELEASE] at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63) ~[spring-web-5.2.15.RELEASE.jar!/:5.2.15.RELEASE] at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:780) ~[spring-web-5.2.15.RELEASE.jar!/:5.2.15.RELEASE] at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:738) ~[spring-web-5.2.15.RELEASE.jar!/:5.2.15.RELEASE] at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:672) ~[spring-web-5.2.15.RELEASE.jar!/:5.2.15.RELEASE] at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:581) ~[spring-web-5.2.15.RELEASE.jar!/:5.2.15.RELEASE] at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.getRemoteEnvironment(ConfigServicePropertySourceLocator.java:271) ~[spring-cloud-config-client-2.2.8.RELEASE.jar!/:2.2.8.RELEASE] at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locate(ConfigServicePropertySourceLocator.java:114) ~[spring-cloud-config-client-2.2.8.RELEASE.jar!/:2.2.8.RELEASE] ... 31 common frames omitted . cause . yml파일에 오타가 있어서 발생했다. 암튼 yml파일을 읽어올수 없을 때 발생하는 것으로 location이 올바른지 profile에 맞는 yml인지 체크필요 . ",
     "url": "http://localhost:4000/docs/errors/propertySourceError/",
     "relUrl": "/docs/errors/propertySourceError/"
-  },"153": {
+  },"152": {
     "doc": "Programming Foundations with Python 후기",
     "title": "Programming Foundations with Python 후기",
     "content": " ",
     "url": "http://localhost:4000/docs/mooc/udacity/python/",
     "relUrl": "/docs/mooc/udacity/python/"
-  },"154": {
+  },"153": {
     "doc": "Programming Foundations with Python 후기",
     "title": "학습후기",
     "content": "파이썬 무식자도 기초를 잡아주는 비기너 강좌입니다. 총 7개의 주제로 이뤄져 있구요. 유다시티의 특징인 퀴즈가 많습니다. 누군가에게 설명하고 캡쳐해서 올리라는 퀴즈도 있습니다… 하지만 꼭 안그래도 됩니다. 저 말고도 많은 이들이 가르칠 사람 없어서, 혼자 학습한 내용을 캡쳐해서 올리기도 합니다. 아니면 블로그에 올리고 그것을 캡쳐해도 괜찮습니다. 어렵지 않게 초심자도 배울수 있는 커리큘럼입니다. 선수학습은 필요없구요. 자바나  OOP에 대한 개념이 있다면 더 빠르게 이해할 수 있을 듯 합니다. ",
     "url": "http://localhost:4000/docs/mooc/udacity/python/#%ED%95%99%EC%8A%B5%ED%9B%84%EA%B8%B0",
     "relUrl": "/docs/mooc/udacity/python/#학습후기"
-  },"155": {
+  },"154": {
     "doc": "Programming Foundations with Python 후기",
     "title": "강의내용 정리",
     "content": "12강. fetch vs axios . ",
     "url": "http://localhost:4000/docs/mooc/udacity/python/#%EA%B0%95%EC%9D%98%EB%82%B4%EC%9A%A9-%EC%A0%95%EB%A6%AC",
     "relUrl": "/docs/mooc/udacity/python/#강의내용-정리"
-  },"156": {
+  },"155": {
     "doc": "Quality Practice",
     "title": "Quality Practice",
     "content": " ",
     "url": "http://localhost:4000/docs/quality",
     "relUrl": "/docs/quality"
-  },"157": {
+  },"156": {
     "doc": "RejectedExecutionException",
     "title": "RejectedExecutionException",
     "content": "test scenario . | 1대를 대상으로 크레마 성능시나리오 돌림. | Xms256m -Xmx256m로 springboot 서비스 올림 | 인입되는 동시 메시지 수 20개 | 크레마 thread는 pool 100개, max 100개, queue 10개로 설정 | . error . Exception in KakaoMessageController.message() with cause = 'java.util.concurrent.RejectedExecutionException: Task java.util.concurrent.FutureTask@249a9d22 rejected from java.util.concurrent.ThreadPoolExecutor@3b96a13d [Running, pool size = 100, active threads = 1, queued tasks = 10, completed tasks = 9975]' and exception = 'Executor [java.util.concurrent.ThreadPoolExecutor@3b96a13d [Running, pool size = 100, active threads = 8, queued tasks = 5, completed tasks = 9975]] did not accept task: org.springframework.cloud.sleuth.instrument.async. TraceCallable@aaea32a'org.springframework.core.task.TaskRejectedException: Executor [java.util.concurrent.ThreadPoolExecutor@3b96a13d [Running, pool size = 100, active threads = 8, queued tasks = 5, completed tasks = 9975]] . problem . 서버상태) cpu는 정상, 다른서비스도 정상 . 조치) . | jvm메모리도 작은 상황에 큐가 max가 되어서 rejectException이 발생한 것으로 보임 . | 방법1. rejectexceptionhandler에 policy를 준다 (https://stackoverflow.com/questions/49290054/taskrejectedexception-in-threadpooltaskexecutor) . | callreturnpolicy를 쓰면 호출한 쓰레드로 동작을 하게하고, 그 쓰레드가 종료될 때까지 다른 호출은 지연된다는 문제 | queue가 꽉찬 상황에서 처리한다해도, 문제가 될 것으로 보임. queue가 왜 꽉 차서 안사라지는지 확인이 필요 . | 20개의 쓰레드가 동시에 호출된 문제. | . | . | . | queue사이즈는 적당한가?? . | https://stackoverflow.com/a/43874563/14257397 | acceptable time range / time to complete a task. | . | . conclusion . | queue size를 50으로 올린 후, jmx를 1024로 상향 | 반드시 maxpool만큼 채워서 쓰는게 아니라고 함. 즉, 실제로 corePoolSize가 스레드 개수보다 많다고 해서 maximumPoolSize 개수 까지 바로 생성하지 않는다. 그 전에 큐(workQueue)에 담고 대기한다. (구현체마다 다르지만, 일반적으로) | 그리고 나서 workQueue에도 담을 공간이 부족하다면 그때 maximumPoolSize 까지 스레드를 늘려 작업을 한다. 그 후 keepAliveTime에 도달하면 다시 corePoolSize 로 유지 된다. | 만약 queue가 다 찼으면 maxpoolsize만큼 생성한다. | 그러다 모든 쓰레드가 사용중이고 queue도 full이면 거부된다. | . ",
     "url": "http://localhost:4000/docs/errors/rejectedException/",
     "relUrl": "/docs/errors/rejectedException/"
-  },"158": {
+  },"157": {
     "doc": "Feign Retry",
     "title": "feign retry",
     "content": ". | 전역의 ribbon설정을 안쓰고자 함 | docker의 depends on도 방법 | . healthcheck: test: [“CMD”, “curl”, “-f”, “http://localhost:8040/actuator/health”] interval: 10s timeout: 5s retries: 10 . | feignclient 내부 configuration으로 Retryer를 Bean으로 등록해서 backoff제어한다. | . 참고) . 우아한 feign 적용기 - 우아한형제들 기술 블로그 . ",
     "url": "http://localhost:4000/docs/msa/feign/retry/#feign-retry",
     "relUrl": "/docs/msa/feign/retry/#feign-retry"
-  },"159": {
+  },"158": {
     "doc": "Feign Retry",
     "title": "Feign Retry",
     "content": " ",
     "url": "http://localhost:4000/docs/msa/feign/retry/",
     "relUrl": "/docs/msa/feign/retry/"
-  },"160": {
+  },"159": {
     "doc": "SonarQube",
     "title": "SonarQube",
     "content": "https://rules.sonarsource.com/java 기준으로 검출된 코드에 대해서 정리한 것입니다. ",
     "url": "http://localhost:4000/docs/quality/sonarqube/sonarqube/",
     "relUrl": "/docs/quality/sonarqube/sonarqube/"
-  },"161": {
+  },"160": {
     "doc": "Failed to instantiate [javax.servlet.Filter]...",
     "title": "Failed to instantiate [javax.servlet.Filter]...",
     "content": "Failed to instantiate [javax.servlet.Filter]: Factory method ‘springSecurityFilterChain’ threw exception; nested exception is java.lang.NullPointerException 에러 . problems . springboot로 application 올리다가 에러 발생 . error log . 07:54:50.971 main WARN stractApplicationContext:557 refresh **Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'springSecurityFilterChain' defined in class path resource** [org/springframework/security/config/annotation/web/configuration/WebSecurityConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.servlet.Filter]: Factory method 'springSecurityFilterChain' threw exception; nested exception is java.lang.NullPointerException 07:54:54.008 main WARN o.a.j.l.DirectJDKLog:173 log The web application [ROOT] appears to have started a thread named [RxIoScheduler-1 (Evictor)] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread: java.base@12.0.2/jdk.internal.misc.Unsafe.park(Native Method) java.base@12.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:235) java.base@12.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123) java.base@12.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182) java.base@12.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899) java.base@12.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054) java.base@12.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114) java.base@12.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) java.base@12.0.2/java.lang.Thread.run(Thread.java:835) 07:54:54.037 main ERROR o.s.b.SpringApplication :821 reportFailureApplication run failed org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'springSecurityFilterChain' defined in class path resource [org/springframework/security/config/annotation/web/configuration/WebSecurityConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.servlet.Filter]: Factory method 'springSecurityFilterChain' threw exception; nested exception is java.lang.NullPointerException at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:627) at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:456) at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1321) at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160) at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:307) at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:845) at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877) at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:742) at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:389) at org.springframework.boot.SpringApplication.run(SpringApplication.java:311) at org.springframework.boot.SpringApplication.run(SpringApplication.java:1213) at org.springframework.boot.SpringApplication.run(SpringApplication.java:1202) at xxx.XXXApplication.main(XXXApplication.java:18) Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.servlet.Filter]: Factory method 'springSecurityFilterChain' threw exception; nested exception is java.lang.NullPointerException at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:622) ... 21 common frames omitted **Caused by: java.lang.NullPointerException: null** at xxx.WebSecurityConfig.configure(**WebSecurityConfig.java:19**) at xxx.WebSecurityConfig.configure(WebSecurityConfig.java:10) at xxx.WebSecurityConfig$$EnhancerBySpringCGLIB$$5aba962.configure(&lt;generated&gt;) at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.configure(AbstractConfiguredSecurityBuilder.java:384) at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.doBuild(AbstractConfiguredSecurityBuilder.java:330) at org.springframework.security.config.annotation.AbstractSecurityBuilder.build(AbstractSecurityBuilder.java:41) at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration.springSecurityFilterChain(WebSecurityConfiguration.java:104) at org.springframework.security.config.annotation.web.configurationWebSecurityConfiguration$$EnhancerBySpringCGLIB$$3d7c30de.CGLIB$springSecurityFilterChain$3(&lt;generated&gt;) at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$$EnhancerBySpringCGLIB$$3d7c30de$$FastClassBySpringCGLIB$$8dd86ea6.invoke(&lt;generated&gt;) at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244) at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363) at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$$EnhancerBySpringCGLIB$$3d7c30de.springSecurityFilterChain(&lt;generated&gt;) at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) at java.base/java.lang.reflect.Method.invoke(Method.java:567) at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ... 22 common frames omitted Process finished with exit code 1 . cause . 에러의 npe부분을 보면 springboot올릴때, WebSecurityConfig를 읽어가도록 했는데. WebSecurityConfig에서 읽어갈 설정이 yml에 없어서 널포인트 나는 것…. solved . 본인의 경우는 profile을 달리했는데, 그걸 서비스 올릴때 지정안해줘서 디폴트 yml보고 올라가다가 해당 security설정이 없어서 그런거라…profile을 지정해주면 된다. reference . stackoverflow.com/a/4952938 참고 . ",
     "url": "http://localhost:4000/docs/errors/spring1/",
     "relUrl": "/docs/errors/spring1/"
-  },"162": {
+  },"161": {
     "doc": "PathVariable annotation was empty on param 0.",
     "title": "PathVariable annotation was empty on param 0.",
     "content": "cause and solution . @PathVariable(“id”) 일케 해야하는데, 그냥 @PathVariable이것만 함 . error log . org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'aaa' defined in file [aaa.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'bbb' defined in file [bbb.class]: Unsatisfied dependency expressed through constructor parameter 9; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'CCCClient': FactoryBean threw exception on object creation; nested exception is java.lang.IllegalStateException: **PathVariable annotation was empty on param 0**. at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:769) at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:218) at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1341) at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1187) at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:845) at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877) at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) CCCOperatorClient': FactoryBean threw exception on object creation; nested exception is java.lang.IllegalStateException: PathVariable annotation was empty on param 0. at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:769) at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:218) at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1341) at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1187) at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277) at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1251) at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1171) at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857) at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760) ... 19 common frames omitted Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'CCCOperatorClient': FactoryBean threw exception on object creation; nested exception is java.lang.IllegalStateException: PathVariable annotation was empty on param 0. at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:178) at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getObjectFromFactoryBean(FactoryBeanRegistrySupport.java:101) at org.springframework.beans.factory.support.AbstractBeanFactory.getObjectForBeanInstance(AbstractBeanFactory.java:1674) at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getObjectForBeanInstance(AbstractAutowireCapableBeanFactory.java:1249) at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:257) at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277) at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntr(DefaultListableBeanFactory.java:1474) at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidate(DefaultListableBeanFactory.java:1431) at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1214) at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1171) at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857) at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760) ... 33 common frames omitted Caused by: java.lang.IllegalStateException: PathVariable annotation was empty on param 0. at feign.Util.checkState(Util.java:130) at org.springframework.cloud.openfeign.annotation.PathVariableParameterProcessor.processArgument(PathVariableParameterProcessor.java:52) at org.springframework.cloud.openfeign.support.SpringMvcContract.processAnnotationsOnParameter(SpringMvcContract.java:292) at feign.Contract$BaseContract.parseAndValidateMetadata(Contract.java:110) at org.springframework.cloud.openfeign.support.SpringMvcContract.parseAndValidateMetadata(SpringMvcContract.java:188) at feign.Contract$BaseContract.parseAndValidatateMetadata(Contract.java:66) at feign.hystrix.HystrixDelegatingContract.parseAndValidatateMetadata(HystrixDelegatingContract.java:47) at feign.ReflectiveFeign$ParseHandlersByName.apply(ReflectiveFeign.java:154) at feign.ReflectiveFeign.newInstance(ReflectiveFeign.java:52) at feign.Feign$Builder.target(Feign.java:251) at org.springframework.cloud.openfeign.HystrixTargeter.target(HystrixTargeter.java:55) at org.springframework.cloud.openfeign.FeignClientFactoryBean.loadBalance(FeignClientFactoryBean.java:238) at org.springframework.cloud.openfeign.FeignClientFactoryBean.getTarget(FeignClientFactoryBean.java:267) at org.springframework.cloud.openfeign.FeignClientFactoryBean.getObject(FeignClientFactoryBean.java:247) at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:171) ... 45 common frames omitted . ",
     "url": "http://localhost:4000/docs/errors/spring2/",
     "relUrl": "/docs/errors/spring2/"
-  },"163": {
+  },"162": {
     "doc": "How to use Feign @SpringQueryMap",
     "title": "feign을 통해 @SpringQueryMap 사용",
     "content": ". ::요구사항 . 고객의 과거 상담 이력을 조회해서 다른 서비스로 전달하는 로직 . :: History API . @RestController @RequestMapping(\"histories\") public class HistoryQueryResource { private final HistoryQueryService historyQueryService; @GetMapping public HistoryList findAll( @SpringQueryMap HistoryQuery historyQuery ) { return historyQueryService.findAll(historyQuery); } } . ::Thirdparty . @FeignClient( contextId = \"HistoryQueryClient\", name = \"api\", configuration = {FeignConfiguration.class, FeignLoggerLevelConfiguration.class}, primary = false ) public interface HistoryQueryClient{ @GetMapping(\"histories\") HistoryList findAll(@SpringQueryMap HistoryQuery historyQuery); } . :: 문제 . | 컨트롤러가 Mapping파라미터로 선언한 HistoryQuery에 ArrayList, Map타입이 아니면 맵핑이 되지 않는 오류발생 | . @Builder @NoArgsConstructor(access = AccessLevel.PRIVATE) @AllArgsConstructor @Getter @ToString public class HistoryQuery implements JsonSerializable { @Builder.Default private int offset = 0; // --&gt; API서버로 맵핑되지 않음 @Builder.Default private int limit = 1; // --&gt; API서버로 맵핑되지 않음 @Builder.Default private IdList channelIds = IdList.empty(); // --&gt; 맵핑ok @Builder.Default private IdList status = IdList.empty(); // --&gt; 맵핑ok @Builder.Default private String customerId = StringUtils.EMPTY; // --&gt; API서버로 맵핑되지 않음 } . :: 문제 . | 호출 URL에는 문제가 없지만, History API 서버에는 offset, limit, customerId가 찍히지 않음 . -&gt; GET http://api/histories?offset=0&amp;status=closed&amp;limit=1 &amp;customerId=tester&amp;channelIds=kakao . | feign doc . | . Spring Cloud OpenFeign . doc을 보면, POJO, Map 모두 지원한다고 되어있지만, 테스트해보니 리스트나 맵이 아니면 안됨 . :: 문제해결 . | Param.Expander를 사용하는 방법 —&gt; 받는 쪽이 array, map이 아니면 이것도 안됨 | . Feign Client does not resolve Query parameter . | API 스펙을 변경하는 방법…. | . ",
     "url": "http://localhost:4000/docs/msa/feign/springQueryMap/#feign%EC%9D%84-%ED%86%B5%ED%95%B4-springquerymap-%EC%82%AC%EC%9A%A9",
     "relUrl": "/docs/msa/feign/springQueryMap/#feign을-통해-springquerymap-사용"
-  },"164": {
+  },"163": {
     "doc": "How to use Feign @SpringQueryMap",
     "title": "How to use Feign @SpringQueryMap",
     "content": " ",
     "url": "http://localhost:4000/docs/msa/feign/springQueryMap/",
     "relUrl": "/docs/msa/feign/springQueryMap/"
-  },"165": {
+  },"164": {
     "doc": "ssl 셋팅 후 갖가지 에러",
     "title": "ssl 셋팅 후 갖가지 에러",
     "content": ". | XMLHttpRequest cannot load https://aaa.ma.com:7443/. Response | . to preflight request doesn’t pass access control check: No ‘Access-Control-Allow-Origin’ . header is present on the requested resource. Origin . ‘http://127.0.0.1:8080’ is therefore not allowed access. | . | 접근한 aaa.ma.com 주소는 헤더가 다른 http://127.0.0.1:8080을 ajax로 호출할 수 없다. cors 때문에 | . | . | 공인인증서라면 인증서 설치에 문제겠지만 사설인증서인라면 인터넷브라우저의 인증서관리 화면에서 신뢰할수 잇는 루트기관으로 등록해준다 | . | . | 사설 인증서 브라우저에서 저장하려면 | . | . (1) 인터넷옵션 &gt; 내용 &gt; 인증서 선택 . (2) 신뢰할 수 있는 루트인증기관 탭 선택 &gt; 가져오기 . (3) 루트CA의 crt파일을 선택한다. (4) 브라우저 재시작 . | 제우스에 ssl셋팅하고 재시작했는데..아래처럼 truststore가 없다고 나오면..키파일 위치를 잘못잡았거나, 키스토어가 이상하거나 ㅠㅜ | . jeus.servlet.deployment.StartingException: File Not Found: D:\\TmaxSoft\\jeus6\\config\\testdomain\\truststore . | ERR_SSL_WEAK_SERVER_EPHEMERAL_DH_KEY | . | 크롬 버전 : 45.0.2454.99에서 나오는 에러로 ssl셋팅했을 때 보안설정이 낮아서 그런것으로.. | 크롬으로 url쳐서 개발자모드 보면 콘솔에 아래처럼 찍히는데.. 먼가 이제까지 브라우저에서 커버된게 deprecated된건가.. 모르겠지만 | . /deep/ combinator is deprecated. See https://www.chromestatus.com/features/6750456638341120 for more details. | 해결은 ssl인증서거는 설정에 ciper설정을 추가하면 된다. | 만약 톰캣이라면 아래처럼 connector설정 | . | err_ssl_fallback_beyond_minimum_version | . | 이것도 크롬에서만 나타난다 | 블로그) http://ondemand.tistory.com/214 | . 1) 크롬은 여전히 v45 에서 TLS v1.0 을 지원하고 있으니 TLS 버전 이슈는 아님, 2) 다만 크롬이 접속하려는 서버가 TLS Handshake 하는 과정에 이슈가 있을 경우, 기존에는 크롬이 Workaround 해주었지만, 3) v45 부터는 더이상 해당 Workaround 를 지원하지 않아서 발생하는 문제다 정도입니다. 구체적으로 어떤 웹 서버의 특정 버전이 이슈가 있는 것인지는 명확하게 정리된 내용을 찾지 못했습니다만 조치를 위해서는 서버측의 TLS Handshake 에 대한 보완이 필요한 것으로 추정 . ",
     "url": "http://localhost:4000/docs/errors/ssl1/",
     "relUrl": "/docs/errors/ssl1/"
-  },"166": {
+  },"165": {
     "doc": "Sub Projects",
     "title": "Sub Projects",
     "content": "Projects that I work on personally. ",
     "url": "http://localhost:4000/docs/sub-projects",
     "relUrl": "/docs/sub-projects"
-  },"167": {
+  },"166": {
     "doc": "점층적 생성자 패턴",
     "title": "점층적 생성자 패턴",
     "content": " ",
     "url": "http://localhost:4000/docs/patterns/telescoping_constructor_pattern/",
     "relUrl": "/docs/patterns/telescoping_constructor_pattern/"
-  },"168": {
+  },"167": {
     "doc": "Tesseract Ocr Study",
     "title": "tesseract ocr 공부",
     "content": "기술조사 ) Tesseract-ocr을 사용 . 순서1) 라이브러리설치에 앞서서, 맥으로 해야하기 때문에 홈브루 설치(https://whitepaek.tistory.com/3) . 순서2) tesseract, tesseract-lang설치 . brew install tesseract . brew install tesseract-lang . 순서3) sudo pip3 install pytesseract . sudo pip3 intall Image . 순서4) 실행한다. peter:~ peter$ tesseract /Users/peter/Downloads/IMG_5814.JPG /Users/peter/Downloads/aaa.txt -l kor . 순서4-1) 또는 파이썬으로 실행한다. import pytessearct . import PIL import Image . print(pytesseract.image_to_string(Image.open('/Users/peter/Downloads/IMG_5814.JPG'), lang='kor')) . 결과1) 별로 좋지 않은 결과 . 이 도 아이티 들으 그도 밸아차 가 소경더 [준공 023 자구 가바바 다자이 이누 그두자구 1611 11\\ 1000 너(|'0&gt;030)40) 이 지 성 지음 . 시도2) 이미지를 rotate시켜본다. &gt;&gt;&gt; im = Image.open('/Users/peter/Downloads/IMG_5814.JPG') &gt;&gt;&gt; img3 = im.rotate(90) &gt;&gt;&gt; print(pytesseract.image_to_string(img3, lang='kor')) . 결과2) 더 안좋음 ㅠㅜ . 몽|? 을 |? |0 도스 사기브 사고 ~ 요일 -………애 : 다 00000 0 디넌낸트이나 조는 [1 ~ 야 오어 1오 \" 0 . 시도3) tesseract의 train된 lang을 추가해본다. https://github.com/tesseract-ocr/tessdata/blob/master/kor.traineddata 에서 다운로드받고, . 받은 데이터파일을 아래에 추가. mac으로 terracert 를 설치한 경우, 추가할 위치는 /usr/local/share/tessdata 이다. 결과3) 첫번째에 비해 달라진걸 모르겠다 ㅠㅜ . 人 還 計生 lane Austen ()%+()&amp;1) 點 『 | 1 도 ~) 人 全 一 人 生 人 加 人 크 ” &gt; 재한 0 블 세 랐 도 기 ||” :( 총 니 . 내 - 올 를 SKIN 7! 올블 이 入 성 지음 . 시도4) 문제를 알았다… 폰트같은 글자 모양이나 길이에 대한 학습이 필요하다는 것을… . 시도5) 이미지를 box파일을 만든담에 https://hello-gg.tistory.com/5 에서처럼 하나씩 불러서 인식을 잡아준다. 그리고 학습 후 기존 학습파일에 add해준다. https://diyworld.tistory.com/114 . ",
     "url": "http://localhost:4000/docs/sub-projects/tesseract_ocr_study/#tesseract-ocr-%EA%B3%B5%EB%B6%80",
     "relUrl": "/docs/sub-projects/tesseract_ocr_study/#tesseract-ocr-공부"
-  },"169": {
+  },"168": {
     "doc": "Tesseract Ocr Study",
     "title": "Tesseract Ocr Study",
     "content": " ",
     "url": "http://localhost:4000/docs/sub-projects/tesseract_ocr_study/",
     "relUrl": "/docs/sub-projects/tesseract_ocr_study/"
-  },"170": {
+  },"169": {
     "doc": "Tolerant reader pattern",
     "title": "tolerant reader pattern",
     "content": " ",
     "url": "http://localhost:4000/docs/patterns/tolerant_reader_pattern/#tolerant-reader-pattern",
     "relUrl": "/docs/patterns/tolerant_reader_pattern/#tolerant-reader-pattern"
-  },"171": {
+  },"170": {
     "doc": "Tolerant reader pattern",
     "title": "Tolerant reader pattern",
     "content": " ",
     "url": "http://localhost:4000/docs/patterns/tolerant_reader_pattern/",
     "relUrl": "/docs/patterns/tolerant_reader_pattern/"
-  },"172": {
+  },"171": {
     "doc": "Type safe heterogeneous container pattern",
     "title": "타입 안전 이종 컨테이너 패턴",
     "content": "type safe heterogeneous container pattern . public class Favorites { public &lt;T&gt; void putFavorite(Class&lt;T&gt; type, T instance); public &lt;T&gt; T getFavorite(Class&lt;T&gt; type); } public static void main(String[] args) { Favorites f = new Favorites(); f.putFavorite(String.class, \"Java\"); f.putFavorite(Integer.class, 0xcafebabe); String favoritesString = f.getFavorite(String.class); } . | Favorites인스턴스는 String이 요청되면 Integer를 반환하는 일이 없기 때문에 타입안전하다고 볼 수 있다. | 일반 적인 맵과 달리 여러가지 타입의 원소를 담을 수 있어서, 타입안전이종 컨테이너라고 한다. | ex) DatabaseRow타입의 Column | . public class Favorites { private Map&lt;Class&lt;?&gt;, Object&gt; favorites = new HashMap&lt;&gt;(); public &lt;T&gt; void putFavorites(Class&lt;T&gt; type, T instance) { favorites.put(Objects.requireNonNull(type), type.cass(instance)); } } . | 타입을 한정시키고 싶다면? . | ex) annotation api | . public &lt;T extends Annotation&gt; T getAnnotation(Class&lt;T&gt; annotationType); static Annotation getAnnotation(AnnotatedElement element, String annotationTypeName) { Class&lt;?&gt; annotationType = null; // 비한정적 타입 토큰 try { annotationType = Class.forName(annotationTypeName); } catch (Exception ex) { throw new IllegalArgumentException(ex); } return element.getAnnotation(annotationType.asSubclass(Annotation.class)); } . | annotationType인수는 한정적 타입 토큰 | . | . ",
     "url": "http://localhost:4000/docs/patterns/typesafe_heterogeneous_container_pattern/#%ED%83%80%EC%9E%85-%EC%95%88%EC%A0%84-%EC%9D%B4%EC%A2%85-%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88-%ED%8C%A8%ED%84%B4",
     "relUrl": "/docs/patterns/typesafe_heterogeneous_container_pattern/#타입-안전-이종-컨테이너-패턴"
-  },"173": {
+  },"172": {
     "doc": "Type safe heterogeneous container pattern",
     "title": "Type safe heterogeneous container pattern",
     "content": " ",
     "url": "http://localhost:4000/docs/patterns/typesafe_heterogeneous_container_pattern/",
     "relUrl": "/docs/patterns/typesafe_heterogeneous_container_pattern/"
-  },"174": {
+  },"173": {
     "doc": "Udacity",
     "title": "Udacity",
     "content": " ",
     "url": "http://localhost:4000/docs/mooc/udacity/udacity/",
     "relUrl": "/docs/mooc/udacity/udacity/"
-  },"175": {
+  },"174": {
     "doc": "Udemy",
     "title": "Udemy",
     "content": " ",
     "url": "http://localhost:4000/docs/mooc/udemy/udemy/",
     "relUrl": "/docs/mooc/udemy/udemy/"
-  },"176": {
+  },"175": {
     "doc": "UnixFileSystem.createFileExclusively",
     "title": "UnixFileSystem.createFileExclusively",
     "content": "problem . | apache poi로 엑셀 파일을 생성해서 unix시스템에 파일쓰기할 때 Permission denied 발생 | . error . java.io.IOException: Permission denied at java.io.UnixFileSystem.createFileExclusively(Native Method) at java.io.File.createTempFile(File.java:2063) at org.apache.poi.util.DefaultTempFileCreationsStrategy.createTempFile(DefaultTempFileCreationsStrategy.java:110) . solved . | 만약에 톰캣 기본 폴더를 지정하지 않았다면, /tmp 경로에 가면 아래 폴더들이 존재한다. | . | hsperfdata_로 시작하는 폴더와 poifiles폴더의 권한이 맞게 되어있는지 체크 | 또는 기본 폴더도 변경하자 (centos에서는 주기적으로 /tmp 하위 삭제함) | . server: tomcat: basedir: /tmp 외의 폴더로 변경 . reference . java.io.IOException: Permission denied . ",
     "url": "http://localhost:4000/docs/errors/unixfile/",
     "relUrl": "/docs/errors/unixfile/"
-  },"177": {
+  },"176": {
     "doc": "jetbrains.vcs.server.api.VcsServiceException Failed to construct commits graph for...",
     "title": "upsource 동기화 오류",
     "content": " ",
     "url": "http://localhost:4000/docs/errors/upsource1/#upsource-%EB%8F%99%EA%B8%B0%ED%99%94-%EC%98%A4%EB%A5%98",
     "relUrl": "/docs/errors/upsource1/#upsource-동기화-오류"
-  },"178": {
+  },"177": {
     "doc": "jetbrains.vcs.server.api.VcsServiceException Failed to construct commits graph for...",
     "title": "problem",
     "content": "건물 정전되었을 때, upsource도 같이 고장나버렸다. 정전되면서 정리되지 못한 commit log파일들도 지우고, 어찌어찌 다시 살려냈는데 . hub의 프로젝트 목록에 들어가보면 이렇게 오류가 나있고 정전 이후에 커밋된 데이터를 가져오지 못했다. [error log] . Caused by: jetbrains.vcs.server.api.VcsServiceException: Failed to construct commits graph for talk-ui-backoffice{mappings: 1, mounts: 0}. Failed to const ruct graph for talk-ui-backoffice:. Failed to collect commits graph for talk-ui-backoffice:. jetbrains.buildServer.vcs.VcsException [2022-03-24 15:16:37,356] [Upsource Frontend Error] at jetbrains.vcs.server.core.impl.graph.global.CompositeGraphFactory.fetchGraph(CompositeGraphFactory.java:103) [2022-03-24 15:16:37,356] [Upsource Frontend Error] at jetbrains.vcs.server.core.impl.graph.GraphServiceImpl.fetchGraph(GraphServiceImpl.java:68) [2022-03-24 15:16:37,356] [Upsource Frontend Error] at jetbrains.vcs.server.core.impl.graph.FetchServiceImpl.fetch(FetchServiceImpl.java:22) [2022-03-24 15:16:37,356] [Upsource Frontend Error] at com.jetbrains.upsource.backend.cli.vcs.service.VcsServiceClient.processNewRevisions(VcsServiceClient.java:72) [2022-03-24 15:16:37,357] [Upsource Frontend Error] ... 19 more [2022-03-24 15:16:37,357] [Upsource Frontend Error] Caused by: jetbrains.vcs.server.api.VcsServiceException: Failed to construct graph for talk-ui-backoffice:. Failed to collect commits graph for talk-ui-ba ckoffice:. jetbrains.buildServer.vcs.VcsException [2022-03-24 15:16:37,357] [Upsource Frontend Error] at jetbrains.vcs.server.core.impl.graph.global.MappingCommitsGraphFutures$2.graph(MappingCommitsGraphFutures.java:41) [2022-03-24 15:16:37,357] [Upsource Frontend Error] at jetbrains.vcs.server.core.impl.graph.global.CompositeGraphBuilder.includeMappings(CompositeGraphBuilder.java:128) [2022-03-24 15:16:37,357] [Upsource Frontend Error] at jetbrains.vcs.server.core.impl.graph.global.CompositeGraphBuilder.loadGraphs(CompositeGraphBuilder.java:96) [2022-03-24 15:16:37,357] [Upsource Frontend Error] at jetbrains.vcs.server.core.impl.graph.global.CompositeGraphBuilder.fetchAllGraphs(CompositeGraphBuilder.java:62) [2022-03-24 15:16:37,357] [Upsource Frontend Error] at jetbrains.vcs.server.core.impl.graph.global.CompositeGraphFactory.fetchGraph(CompositeGraphFactory.java:99) [2022-03-24 15:16:37,357] [Upsource Frontend Error] ... 22 more [2022-03-24 15:16:37,357] [Upsource Frontend Error] Caused by: jetbrains.vcs.server.api.VcsServiceException: Failed to construct graph for talk-ui-backoffice:. Failed to collect commits graph for talk-ui-ba ckoffice:. jetbrains.buildServer.vcs.VcsException [2022-03-24 15:16:37,357] [Upsource Frontend Error] at jetbrains.vcs.server.core.impl.graph.global.MappingCommitsGraphFutures.error(MappingCommitsGraphFutures.java:57) [2022-03-24 15:16:37,357] [Upsource Frontend Error] at jetbrains.vcs.server.core.impl.graph.global.MappingCommitsGraphFutures.errorGraph(MappingCommitsGraphFutures.java:31) [2022-03-24 15:16:37,358] [Upsource Frontend Error] at jetbrains.vcs.server.core.impl.graph.global.CompositeGraphBuilder.lambda$loadGraphs$0(CompositeGraphBuilder.java:117) [2022-03-24 15:16:37,358] [Upsource Frontend Error] at jetbrains.vcs.server.core.impl.threading.TrueParallelExecutionImpl$2.call(TrueParallelExecutionImpl.java:86) [2022-03-24 15:16:37,358] [Upsource Frontend Error] at __. project_talk-ui-backoffice .__.call(JavaGeneratorTemplate.java:39) [2022-03-24 15:16:37,358] [Upsource Frontend Error] at com.jetbrains.upsource.common.NamedFrameUtil.withProject(NamedFrameUtil.java:27) [2022-03-24 15:16:37,358] [Upsource Frontend Error] at com.jetbrains.upsource.backend.cli.vcs.service.VcsServiceConnections$2.lambda$wrapMappingTask$0(VcsServiceConnections.java:73) [2022-03-24 15:16:37,358] [Upsource Frontend Error] at java.util.concurrent.FutureTask.run(FutureTask.java:266) [2022-03-24 15:16:37,358] [Upsource Frontend Error] at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [2022-03-24 15:16:37,358] [Upsource Frontend Error] at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [2022-03-24 15:16:37,358] [Upsource Frontend Error] at jetbrains.vcs.server.core.impl.threading.TrueParallelExecutionImpl$1$1.run(TrueParallelExecutionImpl.java:51) [2022-03-24 15:16:37,358] [Upsource Frontend Error] ... 1 more [2022-03-24 15:16:37,358] [Upsource Frontend Error] Caused by: jetbrains.vcs.server.api.VcsServiceException: Failed to collect commits graph for talk-ui-backoffice:. jetbrains.buildServer.vcs.VcsException [2022-03-24 15:16:37,358] [Upsource Frontend Error] at jetbrains.vcs.server.core.impl.graph.worker.VcsGraphSource.fetchCommits(VcsGraphSource.java:37) [2022-03-24 15:16:37,358] [Upsource Frontend Error] at jetbrains.vcs.server.core.impl.graph.mapping.MappingCommitsGraphFactory.buildGraph(MappingCommitsGraphFactory.java:70) [2022-03-24 15:16:37,359] [Upsource Frontend Error] at jetbrains.vcs.server.core.impl.graph.incremental.CachingCommitGraphFactory.buildGraph(CachingCommitGraphFactory.java:55) [2022-03-24 15:16:37,359] [Upsource Frontend Error] at jetbrains.vcs.server.core.impl.graph.global.CompositeGraphFactory$1.buildGraph(CompositeGraphFactory.java:85) [2022-03-24 15:16:37,359] [Upsource Frontend Error] at jetbrains.vcs.server.core.impl.graph.global.CompositeGraphBuilder.lambda$loadGraphs$0(CompositeGraphBuilder.java:110) [2022-03-24 15:16:37,359] [Upsource Frontend Error] ... 9 more [2022-03-24 15:16:37,359] [Upsource Frontend Error] Caused by: jetbrains.buildServer.vcs.VcsException: jetbrains.buildServer.vcs.VcsException [2022-03-24 15:16:37,359] [Upsource Frontend Error] at jetbrains.buildServer.buildTriggers.vcs.git.commitInfo.GitCommitsInfoBuilder.lambda$collectCommits$0(GitCommitsInfoBuilder.java:66) [2022-03-24 15:16:37,359] [Upsource Frontend Error] at jetbrains.buildServer.buildTriggers.vcs.git.RepositoryManagerImpl.runWithDisabledRemove(RepositoryManagerImpl.java:268) [2022-03-24 15:16:37,359] [Upsource Frontend Error] at jetbrains.buildServer.buildTriggers.vcs.git.commitInfo.GitCommitsInfoBuilder.collectCommits(GitCommitsInfoBuilder.java:59) [2022-03-24 15:16:37,359] [Upsource Frontend Error] at jetbrains.vcs.api.services.collectChanges.CommitsInfoServiceProvider$1.collectCommits(CommitsInfoServiceProvider.java:33) [2022-03-24 15:16:37,359] [Upsource Frontend Error] at jetbrains.vcs.server.core.impl.graph.worker.VcsGraphSource.fetchCommits(VcsGraphSource.java:33) [2022-03-24 15:16:37,359] [Upsource Frontend Error] ... 13 more [2022-03-24 15:16:37,359] [Upsource Frontend Error] Caused by: jetbrains.buildServer.vcs.VcsException [2022-03-24 15:16:37,359] [Upsource Frontend Error] at jetbrains.buildServer.buildTriggers.vcs.git.GitCollectChangesPolicy.fetchAllRefs(GitCollectChangesPolicy.java:143) [2022-03-24 15:16:37,359] [Upsource Frontend Error] at jetbrains.buildServer.buildTriggers.vcs.git.GitFetchService.fetchRepositoryImpl(GitFetchService.java:59) [2022-03-24 15:16:37,359] [Upsource Frontend Error] at jetbrains.buildServer.buildTriggers.vcs.git.GitFetchService.getOrCreateRepositoryState(GitFetchService.java:72) [2022-03-24 15:16:37,359] [Upsource Frontend Error] at jetbrains.buildServer.buildTriggers.vcs.git.commitInfo.GitCommitsInfoBuilder.lambda$collectCommits$0(GitCommitsInfoBuilder.java:62) [2022-03-24 15:16:37,359] [Upsource Frontend Error] ... 17 more [2022-03-24 15:16:37,360] [Upsource Frontend Error] Caused by: java.lang.NegativeArraySizeException [2022-03-24 15:16:37,360] [Upsource Frontend Error] at org.eclipse.jgit.internal.storage.file.PackIndexV1.&lt;init&gt;(PackIndexV1.java:96) [2022-03-24 15:16:37,360] [Upsource Frontend Error] at org.eclipse.jgit.internal.storage.file.PackIndex$PackIndexFactory.read(PackIndex.java:436) [2022-03-24 15:16:37,360] [Upsource Frontend Error] at org.eclipse.jgit.internal.storage.file.PackIndex$PackIndexFactory.open(PackIndex.java:391) [2022-03-24 15:16:37,360] [Upsource Frontend Error] at org.eclipse.jgit.internal.storage.file.PackFile.idx(PackFile.java:170) [2022-03-24 15:16:37,360] [Upsource Frontend Error] at org.eclipse.jgit.internal.storage.file.PackFile.get(PackFile.java:258) [2022-03-24 15:16:37,360] [Upsource Frontend Error] at org.eclipse.jgit.internal.storage.file.ObjectDirectory.openPackedObject(ObjectDirectory.java:417) [2022-03-24 15:16:37,360] [Upsource Frontend Error] at org.eclipse.jgit.internal.storage.file.ObjectDirectory.openPackedFromSelfOrAlternate(ObjectDirectory.java:386) [2022-03-24 15:16:37,360] [Upsource Frontend Error] at org.eclipse.jgit.internal.storage.file.ObjectDirectory.openObject(ObjectDirectory.java:378) [2022-03-24 15:16:37,360] [Upsource Frontend Error] at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:145) [2022-03-24 15:16:37,360] [Upsource Frontend Error] at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:229) [2022-03-24 15:16:37,360] [Upsource Frontend Error] at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:840) [2022-03-24 15:16:37,360] [Upsource Frontend Error] at org.eclipse.jgit.transport.FetchProcess.askForIsComplete(FetchProcess.java:344) [2022-03-24 15:16:37,360] [Upsource Frontend Error] at org.eclipse.jgit.transport.FetchProcess.executeImp(FetchProcess.java:159) [2022-03-24 15:16:37,360] [Upsource Frontend Error] at org.eclipse.jgit.transport.FetchProcess.execute(FetchProcess.java:122) [2022-03-24 15:16:37,360] [Upsource Frontend Error] at org.eclipse.jgit.transport.Transport.fetch(Transport.java:1138) [2022-03-24 15:16:37,360] [Upsource Frontend Error] at jetbrains.buildServer.buildTriggers.vcs.git.GitServerUtil.fetch(GitServerUtil.java:522) [2022-03-24 15:16:37,361] [Upsource Frontend Error] at jetbrains.buildServer.buildTriggers.vcs.git.FetchCommandImpl.fetchInSameProcess(FetchCommandImpl.java:290) [2022-03-24 15:16:37,361] [Upsource Frontend Error] at jetbrains.buildServer.buildTriggers.vcs.git.FetchCommandImpl.fetch(FetchCommandImpl.java:88) [2022-03-24 15:16:37,361] [Upsource Frontend Error] at jetbrains.buildServer.buildTriggers.vcs.git.CommitLoaderImpl.fetch(CommitLoaderImpl.java:108) [2022-03-24 15:16:37,361] [Upsource Frontend Error] at jetbrains.buildServer.buildTriggers.vcs.git.GitCollectChangesPolicy$FetchAllRefs.fetchTrackedRefs(GitCollectChangesPolicy.java:268) [2022-03-24 15:16:37,361] [Upsource Frontend Error] at jetbrains.buildServer.buildTriggers.vcs.git.GitCollectChangesPolicy.fetchAllRefs(GitCollectChangesPolicy.java:140) [2022-03-24 15:16:37,361] [Upsource Frontend Error] ... 20 more ... 38 more [2022-03-24 15:20:37,732] [Upsource Frontend Error] [2022-03-24 15:20:37,727] WARN VcsService-7 k-ui-backoffice h.global.CompositeGraphBuilder - Failed to construct mounted graph for talk-ui-backoffice:. Failed to collect commits graph for talk-ui-backoffice:. jetbrains.buildServer.vcs.VcsException [2022-03-24 15:20:37,732] [Upsource Frontend Error] jetbrains.vcs.server.api.VcsServiceException: Failed to collect commits graph for talk-ui-backoffice:. jetbrains.buildServer.vcs.VcsException [2022-03-24 15:20:37,732] [Upsource Frontend Error] at jetbrains.vcs.server.core.impl.graph.worker.VcsGraphSource.fetchCommits(VcsGraphSource.java:37) [2022-03-24 15:20:37,732] [Upsource Frontend Error] at jetbrains.vcs.server.core.impl.graph.mapping.MappingCommitsGraphFactory.buildGraph(MappingCommitsGraphFactory.java:70) [2022-03-24 15:20:37,732] [Upsource Frontend Error] at jetbrains.vcs.server.core.impl.graph.incremental.CachingCommitGraphFactory.buildGraph(CachingCommitGraphFactory.java:55) [2022-03-24 15:20:37,732] [Upsource Frontend Error] at jetbrains.vcs.server.core.impl.graph.global.CompositeGraphFactory$1.buildGraph(CompositeGraphFactory.java:85) [2022-03-24 15:20:37,732] [Upsource Frontend Error] at jetbrains.vcs.server.core.impl.graph.global.CompositeGraphBuilder.lambda$loadGraphs$0(CompositeGraphBuilder.java:110) [2022-03-24 15:20:37,733] [Upsource Frontend Error] at jetbrains.vcs.server.core.impl.threading.TrueParallelExecutionImpl$2.call(TrueParallelExecutionImpl.java:86) [2022-03-24 15:20:37,733] [Upsource Frontend Error] at __. project_talk-ui-backoffice .__.call(JavaGeneratorTemplate.java:39) [2022-03-24 15:20:37,733] [Upsource Frontend Error] at com.jetbrains.upsource.common.NamedFrameUtil.withProject(NamedFrameUtil.java:27) [2022-03-24 15:20:37,733] [Upsource Frontend Error] at com.jetbrains.upsource.backend.cli.vcs.service.VcsServiceConnection . ",
     "url": "http://localhost:4000/docs/errors/upsource1/#problem",
     "relUrl": "/docs/errors/upsource1/#problem"
-  },"179": {
+  },"178": {
     "doc": "jetbrains.vcs.server.api.VcsServiceException Failed to construct commits graph for...",
     "title": "solution",
     "content": "원인은 temp하위의 일부 파일이 서비스를 올린 계정과 달라서 접근할 수 없어서 동기화가 안되었던것 . /home/upsource/upsource-2020.1.1802/temp/upsource-frontend/vcs-service/caches/plugins/git . | ./upsource.sh stop | . 그래서 서비스 내리고 . | rm -rf * /home/upsource/upsource-2020.1.1802/temp | . temp폴더에 있는 파일들 모두 삭제하고 . | ./upsource.sh start | . 다시 재기동하니 solved~ . ",
     "url": "http://localhost:4000/docs/errors/upsource1/#solution",
     "relUrl": "/docs/errors/upsource1/#solution"
-  },"180": {
+  },"179": {
     "doc": "jetbrains.vcs.server.api.VcsServiceException Failed to construct commits graph for...",
     "title": "jetbrains.vcs.server.api.VcsServiceException Failed to construct commits graph for...",
     "content": " ",
     "url": "http://localhost:4000/docs/errors/upsource1/",
     "relUrl": "/docs/errors/upsource1/"
-  },"181": {
+  },"180": {
     "doc": "upsource resource제한",
     "title": "Project Add",
     "content": ". Project 메뉴에서 + 버튼을 통해 프로젝트를 추가합니다. Project화면에 등록한 프로젝트가 보이고, 우측에 설정 아이콘을 선택합니다. Project &gt; Settings . [Move resource here…] 버튼을 클릭해서, user별로 제한할 프로젝트들을 추가합니다. Project &gt; Access . 프로젝트에 설정한 리소스들에 접근할 group이나 role을 지정해줍니다. [Grant role..] 버튼을 클릭하면, Role, user, group을 선택할 수 있습니다. Role별로 업소스 기능 사용을 제한할 수 있습니다. roles메뉴에 가면 Hub 또는 Upsource 어플리케이션별 기능 제한을 할 수 있습니다. 저는 일반 개발자 user에는 코드리뷰 기능외에는 모두 막았습니다. 업소스 사업을 접으면서, 버그에 대한 조치는 이제 없을 듯합니다. 백업을 잘하고, 백업으로 롤백하는 것이 최선일 듯합니다. 오픈소스로 해주면 좋을꺼 같아요 . 여러가지 커스터마이징하고 싶은 기능도 있고, 수정하고 싶은 버그도 많은 것 같고.. 특히 카산드라는 장애가 많이 발생하네요. 암튼 저렇게 설정하고 일반 개발자 계정으로 로그인한 화면입니다. 전체 프로젝트가 150개 정도 되는데요. user가 속한 role에 연결된 프로젝트들만 보이고 있습니다. ",
     "url": "http://localhost:4000/docs/etc/upsource_setting/#project-add",
     "relUrl": "/docs/etc/upsource_setting/#project-add"
-  },"182": {
+  },"181": {
     "doc": "upsource resource제한",
     "title": "upsource resource제한",
     "content": "회사에 외주인력도 투입되면서, 리소스 접근제한이 필요하게 되었습니다. 구글에서 업소스 리소스 제한하는 방법을 찾아봤는데요, . 못찾아서, role과 group과 project단위로 user의 권한을 제한하는 방법으로 설정했습니다. ",
     "url": "http://localhost:4000/docs/etc/upsource_setting/",
     "relUrl": "/docs/etc/upsource_setting/"
-  },"183": {
+  },"182": {
     "doc": "vuejs-2-the-complete-guide 후기",
     "title": "[Udemy] vuejs-2-the-complete-guide 후기",
     "content": " ",
     "url": "http://localhost:4000/docs/mooc/udemy/vuejs/#udemy-vuejs-2-the-complete-guide-%ED%9B%84%EA%B8%B0",
     "relUrl": "/docs/mooc/udemy/vuejs/#udemy-vuejs-2-the-complete-guide-후기"
-  },"184": {
+  },"183": {
     "doc": "vuejs-2-the-complete-guide 후기",
     "title": "강의 URL",
     "content": "https://www.udemy.com/course/vuejs-2-the-complete-guide/ . ",
     "url": "http://localhost:4000/docs/mooc/udemy/vuejs/#%EA%B0%95%EC%9D%98-url",
     "relUrl": "/docs/mooc/udemy/vuejs/#강의-url"
-  },"185": {
+  },"184": {
     "doc": "vuejs-2-the-complete-guide 후기",
     "title": "학습 툴",
     "content": ". | visual studio code | . ",
     "url": "http://localhost:4000/docs/mooc/udemy/vuejs/#%ED%95%99%EC%8A%B5-%ED%88%B4",
     "relUrl": "/docs/mooc/udemy/vuejs/#학습-툴"
-  },"186": {
+  },"185": {
     "doc": "vuejs-2-the-complete-guide 후기",
     "title": "강의 구성",
     "content": ". | 총 670강의로 49시간 정도 소요. | vuejs버전이 올라갔을 때 강의가 업데이트 된다. | 강의 하나당 최소 1분에서 최대 15분 안팍으로 짧게 나눠져 있어서 수강하기 수월 | 강좌마다 기본 프로젝트가 첨부되어 있고, 강의 내용 들으면서 해당 프로젝트에 코딩을 하면 된다. | 과제 : 건너뛰기가 가능하지만, 과제를 통해서 복습이 가능. | . 세션 1 ~ 세션 5 : Vuejs의 기본 . 세션 6 ~ 세션 9 : 컴포넌트 학습 . 세션 10 : 이제까지 배운 것으로 미니프로젝트 구성학습 . 세션 11 : 폼 학습 . 세션 12 : Http Request호출 . 세션 13 : 라우팅 학습 . 세션 14 : Animations &amp; Transitions . 세션 15 : Vuex 학습 . 세션 16 : Web app 프로젝트 구성 학습 . 세션 17 ~ 세션 44 : 기타 프로젝트에 필요한 학습 . ",
     "url": "http://localhost:4000/docs/mooc/udemy/vuejs/#%EA%B0%95%EC%9D%98-%EA%B5%AC%EC%84%B1",
     "relUrl": "/docs/mooc/udemy/vuejs/#강의-구성"
-  },"187": {
+  },"186": {
     "doc": "vuejs-2-the-complete-guide 후기",
     "title": "선수 학습 조건",
     "content": ". | 기본 javascript 지식 필요 | ES6도 알아야하지만 필수는 아님. —&gt; 학습에 지장없음. | 기본 Html 및 CSS에 대해서 설명하지 않기때문에, 기본적인 것은 알고 있어야 한다. | . ",
     "url": "http://localhost:4000/docs/mooc/udemy/vuejs/#%EC%84%A0%EC%88%98-%ED%95%99%EC%8A%B5-%EC%A1%B0%EA%B1%B4",
     "relUrl": "/docs/mooc/udemy/vuejs/#선수-학습-조건"
-  },"188": {
+  },"187": {
     "doc": "vuejs-2-the-complete-guide 후기",
     "title": "언어 지원",
     "content": "영어로 진행되는 수업으로 한글 자막은 없고 영어 및 유럽권 자막이 있다. 강사님 말투가 빠른 편이 아니여서, 충분히 이해하고 따라가기에 어렵지 않음. ",
     "url": "http://localhost:4000/docs/mooc/udemy/vuejs/#%EC%96%B8%EC%96%B4-%EC%A7%80%EC%9B%90",
     "relUrl": "/docs/mooc/udemy/vuejs/#언어-지원"
-  },"189": {
+  },"188": {
     "doc": "vuejs-2-the-complete-guide 후기",
     "title": "학습 후기",
     "content": ". | 평일에는 1~2강의 정도 수강하고 있어서, 아직 세션10 ㅎ | 기초부터 실전까지 활용가능한 내용으로 잘 구성되어있는 것 같다. | 강의 속도도 빠르지 않고, Vuejs를 처음 접한 사람에게는 좋은 강의!! | 강의를 다 듣고 프로젝트에 바로 투입도 가능해보인다! | . ",
     "url": "http://localhost:4000/docs/mooc/udemy/vuejs/#%ED%95%99%EC%8A%B5-%ED%9B%84%EA%B8%B0",
     "relUrl": "/docs/mooc/udemy/vuejs/#학습-후기"
-  },"190": {
+  },"189": {
     "doc": "vuejs-2-the-complete-guide 후기",
     "title": "학습 요약",
     "content": "1.75x 정주행 요약 . ",
     "url": "http://localhost:4000/docs/mooc/udemy/vuejs/#%ED%95%99%EC%8A%B5-%EC%9A%94%EC%95%BD",
     "relUrl": "/docs/mooc/udemy/vuejs/#학습-요약"
-  },"191": {
+  },"190": {
     "doc": "vuejs-2-the-complete-guide 후기",
     "title": "vuejs-2-the-complete-guide 후기",
     "content": " ",
     "url": "http://localhost:4000/docs/mooc/udemy/vuejs/",
     "relUrl": "/docs/mooc/udemy/vuejs/"
-  },"192": {
+  },"191": {
     "doc": "1.75x 정주행 요약",
     "title": "1.75x 정주행 요약",
     "content": " ",
     "url": "http://localhost:4000/docs/mooc/udemy/vuejs_sub/",
     "relUrl": "/docs/mooc/udemy/vuejs_sub/"
-  },"193": {
+  },"192": {
     "doc": "웹API 디자인",
     "title": "웹API 디자인",
-    "content": ". | 사용자를 위한 API 디자인하기 2.3.5 API 목표 캔버스 . | 누가 - API를 사용하는 사용자들을 나열 | 무엇을 - API로 사용자들이 할 수 있는 것을 나열 | 어떻게 - 무엇을 단계별로 분해해 나열 | 입력(원천) - 각 단계를 진행하기 위해 필요한 요소들과 그것들의 원천을 나열(누락된 누가, 무엇을 또는 어떻게를 찾기 위함) | 출력(사용처) - 각 단계의 반환과 그 쓰임새를 나열(누락된 누가, 무엇 또는 어떻게를 찾기 위함) | 목표 - 명시적이고 간결하게 각각의 어떻게 + 입력 + 출력을 재구성 | . | . ",
+    "content": "API 설계시 꼭 체크해보기 . | 사용자를 위한 API 디자인하기 2.3.5 API 목표 캔버스 . | 누가 - API를 사용하는 사용자들을 나열 | 무엇을 - API로 사용자들이 할 수 있는 것을 나열 | 어떻게 - 무엇을 단계별로 분해해 나열 | 입력(원천) - 각 단계를 진행하기 위해 필요한 요소들과 그것들의 원천을 나열(누락된 누가, 무엇을 또는 어떻게를 찾기 위함) | 출력(사용처) - 각 단계의 반환과 그 쓰임새를 나열(누락된 누가, 무엇 또는 어떻게를 찾기 위함) | 목표 - 명시적이고 간결하게 각각의 어떻게 + 입력 + 출력을 재구성 | . | 기존 API를 변경할 때 . | 브레이킹 체인지가 일어나지 않도록해야한다. | . | . ",
     "url": "http://localhost:4000/docs/clipping/java/webapi/",
     "relUrl": "/docs/clipping/java/webapi/"
-  },"194": {
+  },"193": {
     "doc": "WebSocket connection error - nginx",
     "title": "WebSocket connection error - nginx",
     "content": "problem . nginx를 통해서 ui와 api간 ws통신하는데, . 개발자 도구에서 아래와 같은 에러메시지가 계속 발생하고 401 오류가 난다. error . WebSocket connection to 'ws:127.0.0.1:9091/websocket/112/gfwerwer/websocket?access_token=asdasdasdasda' failed: . cause . 웹소켓 통신을 하려면 헤더에 이 패킷이 upgrade될 패킷임을 웹서버가 알수 있도록 설정이 필요한대 . 그게 nginx.conf에 누락되어 있었음 . 그래서 바꾼 nginx.conf . [nginx.conf] server { listen 9091; location ~ /websocket/[0-9]+/ { proxy_pass http://localhost:9092; proxy_http_version 1.1; proxy_set_header Upgrade $http_upgrade; proxy_set_header Connection \"Upgrade\"; } location / { proxy_pass http://localhost:9092; } } . reference . nginx 에서 WebSocket Proxy 설정하기 . ",

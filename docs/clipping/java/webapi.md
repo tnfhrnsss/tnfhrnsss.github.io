@@ -5,13 +5,11 @@ date: 2022-01-24 13:07:45
 last_modified_at : 2022-01-31 13:07:45
 has_children: false
 nav_order: 3
-parent: Java
-grand_parent: Clipping
-sitemap:
-    changefreq: week
-    priority: 1.0
+parent: Clipping
 nav_exclude: true
 ---
+
+API 설계시 꼭 체크해보기
 
 2. 사용자를 위한 API 디자인하기
 2.3.5 API 목표 캔버스
@@ -21,3 +19,6 @@ nav_exclude: true
 - 입력(원천) - 각 단계를 진행하기 위해 필요한 요소들과 그것들의 원천을 나열(누락된 누가, 무엇을 또는 어떻게를 찾기 위함)
 - 출력(사용처) - 각 단계의 반환과 그 쓰임새를 나열(누락된 누가, 무엇 또는 어떻게를 찾기 위함)
 - 목표 - 명시적이고 간결하게 각각의 어떻게 + 입력 + 출력을 재구성
+
+3. 기존 API를 변경할 때
+- 브레이킹 체인지가 일어나지 않도록해야한다.
