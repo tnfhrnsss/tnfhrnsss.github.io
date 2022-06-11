@@ -4,13 +4,8 @@ title: SonarQube
 parent: Quality Practice
 has_children: true
 nav_order: 1
-categories: SonarQube
-tags: sitemap.xml Jekyll Github-Pages  
 date: 2021-09-09 13:07:45
 last_modified_at : 2021-09-09 13:07:45
-sitemap :
-  changefreq : daily
-  priority : 1.0
 nav_exclude: true
 ---
 

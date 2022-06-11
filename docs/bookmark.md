@@ -2,12 +2,10 @@
 layout: post
 title: ★bookmark
 date: 2021-09-09 13:07:45
-last_modified_at : 2021-09-09 13:07:45
+last_modified_at : 2022-06-09 13:07:45
 nav_order: 11
-nav_exclude: true
+nav_exclude: false
 ---
-
-# ★bookmark
 
 Keep looking.
 {: .fs-6 .fw-300 }

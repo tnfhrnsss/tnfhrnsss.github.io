@@ -108,22 +108,22 @@
     "relUrl": "/docs/etc/burrow_fail/"
   },"18": {
     "doc": "Chain of Responsibility",
-    "title": "Chain of Responsibility",
-    "content": "역학 사슬 패턴 . | 체인에 묶인 객체들끼리 순서대로 책임을 넘기는 구조 | . ",
-    "url": "http://localhost:4000/docs/patterns/chain_of_responsibility/",
-    "relUrl": "/docs/patterns/chain_of_responsibility/"
-  },"19": {
-    "doc": "Chain of Responsibility",
     "title": "AS-IS.",
     "content": ". | 하나의 서비스에서 접수 처리와 메시지 전송 기능이 혼재 | . ",
     "url": "http://localhost:4000/docs/patterns/chain_of_responsibility/#as-is",
     "relUrl": "/docs/patterns/chain_of_responsibility/#as-is"
-  },"20": {
+  },"19": {
     "doc": "Chain of Responsibility",
     "title": "TO-BE.",
     "content": ". | 접수 처리 프로세스와 메시지 전송 프로세스를 별개로 분리 | 프로세스 순서를 체인으로 강제 ( 접수 프로세스 진행 후 → 메시지 전송 프로세스 진행) | . :: Client . // 우선순위 btalkMessageProcessor -&gt; btalkReceptionProcessor public void message(ConversationMessage conversationMessage) { btalkMessageProcessor.setNext(btalkReceptionProcessor); btalkMessageProcessor.support(conversationMessage); } . :: Handler Processor . @Slf4j public abstract class BtalkProcessor { private BtalkProcessor next = null; public BtalkProcessor setNext(BtalkProcessor next) { this.next = next; return next; } public final void support(ConversationMessage conversationMessage) { if (process(conversationMessage)) { action(conversationMessage); } else if (next != null) { next.support(conversationMessage); } else { log.error(\"There is no next process of btalk.\"); } } public abstract boolean process(ConversationMessage conversationMessage); public abstract void action(ConversationMessage conversationMessage); } . :: Sub Processor . [btalkMessageProcessor] public class BtalkMessageProcessor extends BtalkProcessor { @Override public boolean process(ConversationMessage conversationMessage) { return isPresent(conversationMessage); } @Override public void action(ConversationMessage conversationMessage) { sendMessage(conversationMessage); } } [btalkReceptionProcessor] public class BtalkReceptionProcessor extends BtalkProcessor { @Override public boolean process(ConversationMessage conversationMessage) { return !isPresent(conversationMessage); } @Override public void action(ConversationMessage conversationMessage) { reception(conversationMessage); } } . 참고. https://lktprogrammer.tistory.com/45 . ",
     "url": "http://localhost:4000/docs/patterns/chain_of_responsibility/#to-be",
     "relUrl": "/docs/patterns/chain_of_responsibility/#to-be"
+  },"20": {
+    "doc": "Chain of Responsibility",
+    "title": "Chain of Responsibility",
+    "content": "역학 사슬 패턴 . | 체인에 묶인 객체들끼리 순서대로 책임을 넘기는 구조 | . ",
+    "url": "http://localhost:4000/docs/patterns/chain_of_responsibility/",
+    "relUrl": "/docs/patterns/chain_of_responsibility/"
   },"21": {
     "doc": "Clipping",
     "title": "Clipping",
@@ -912,22 +912,22 @@
     "relUrl": "/docs/errors/propertySourceError/"
   },"152": {
     "doc": "Programming Foundations with Python 후기",
-    "title": "Programming Foundations with Python 후기",
-    "content": " ",
-    "url": "http://localhost:4000/docs/mooc/udacity/python/",
-    "relUrl": "/docs/mooc/udacity/python/"
-  },"153": {
-    "doc": "Programming Foundations with Python 후기",
     "title": "학습후기",
     "content": "파이썬 무식자도 기초를 잡아주는 비기너 강좌입니다. 총 7개의 주제로 이뤄져 있구요. 유다시티의 특징인 퀴즈가 많습니다. 누군가에게 설명하고 캡쳐해서 올리라는 퀴즈도 있습니다… 하지만 꼭 안그래도 됩니다. 저 말고도 많은 이들이 가르칠 사람 없어서, 혼자 학습한 내용을 캡쳐해서 올리기도 합니다. 아니면 블로그에 올리고 그것을 캡쳐해도 괜찮습니다. 어렵지 않게 초심자도 배울수 있는 커리큘럼입니다. 선수학습은 필요없구요. 자바나  OOP에 대한 개념이 있다면 더 빠르게 이해할 수 있을 듯 합니다. ",
     "url": "http://localhost:4000/docs/mooc/udacity/python/#%ED%95%99%EC%8A%B5%ED%9B%84%EA%B8%B0",
     "relUrl": "/docs/mooc/udacity/python/#학습후기"
-  },"154": {
+  },"153": {
     "doc": "Programming Foundations with Python 후기",
     "title": "강의내용 정리",
     "content": "12강. fetch vs axios . ",
     "url": "http://localhost:4000/docs/mooc/udacity/python/#%EA%B0%95%EC%9D%98%EB%82%B4%EC%9A%A9-%EC%A0%95%EB%A6%AC",
     "relUrl": "/docs/mooc/udacity/python/#강의내용-정리"
+  },"154": {
+    "doc": "Programming Foundations with Python 후기",
+    "title": "Programming Foundations with Python 후기",
+    "content": " ",
+    "url": "http://localhost:4000/docs/mooc/udacity/python/",
+    "relUrl": "/docs/mooc/udacity/python/"
   },"155": {
     "doc": "Quality Practice",
     "title": "Quality Practice",
@@ -1092,71 +1092,65 @@
     "relUrl": "/docs/etc/upsource_setting/"
   },"182": {
     "doc": "vuejs-2-the-complete-guide 후기",
-    "title": "[Udemy] vuejs-2-the-complete-guide 후기",
-    "content": " ",
-    "url": "http://localhost:4000/docs/mooc/udemy/vuejs/#udemy-vuejs-2-the-complete-guide-%ED%9B%84%EA%B8%B0",
-    "relUrl": "/docs/mooc/udemy/vuejs/#udemy-vuejs-2-the-complete-guide-후기"
-  },"183": {
-    "doc": "vuejs-2-the-complete-guide 후기",
     "title": "강의 URL",
     "content": "https://www.udemy.com/course/vuejs-2-the-complete-guide/ . ",
     "url": "http://localhost:4000/docs/mooc/udemy/vuejs/#%EA%B0%95%EC%9D%98-url",
     "relUrl": "/docs/mooc/udemy/vuejs/#강의-url"
-  },"184": {
+  },"183": {
     "doc": "vuejs-2-the-complete-guide 후기",
     "title": "학습 툴",
     "content": ". | visual studio code | . ",
     "url": "http://localhost:4000/docs/mooc/udemy/vuejs/#%ED%95%99%EC%8A%B5-%ED%88%B4",
     "relUrl": "/docs/mooc/udemy/vuejs/#학습-툴"
-  },"185": {
+  },"184": {
     "doc": "vuejs-2-the-complete-guide 후기",
     "title": "강의 구성",
     "content": ". | 총 670강의로 49시간 정도 소요. | vuejs버전이 올라갔을 때 강의가 업데이트 된다. | 강의 하나당 최소 1분에서 최대 15분 안팍으로 짧게 나눠져 있어서 수강하기 수월 | 강좌마다 기본 프로젝트가 첨부되어 있고, 강의 내용 들으면서 해당 프로젝트에 코딩을 하면 된다. | 과제 : 건너뛰기가 가능하지만, 과제를 통해서 복습이 가능. | . 세션 1 ~ 세션 5 : Vuejs의 기본 . 세션 6 ~ 세션 9 : 컴포넌트 학습 . 세션 10 : 이제까지 배운 것으로 미니프로젝트 구성학습 . 세션 11 : 폼 학습 . 세션 12 : Http Request호출 . 세션 13 : 라우팅 학습 . 세션 14 : Animations &amp; Transitions . 세션 15 : Vuex 학습 . 세션 16 : Web app 프로젝트 구성 학습 . 세션 17 ~ 세션 44 : 기타 프로젝트에 필요한 학습 . ",
     "url": "http://localhost:4000/docs/mooc/udemy/vuejs/#%EA%B0%95%EC%9D%98-%EA%B5%AC%EC%84%B1",
     "relUrl": "/docs/mooc/udemy/vuejs/#강의-구성"
-  },"186": {
+  },"185": {
     "doc": "vuejs-2-the-complete-guide 후기",
     "title": "선수 학습 조건",
     "content": ". | 기본 javascript 지식 필요 | ES6도 알아야하지만 필수는 아님. —&gt; 학습에 지장없음. | 기본 Html 및 CSS에 대해서 설명하지 않기때문에, 기본적인 것은 알고 있어야 한다. | . ",
     "url": "http://localhost:4000/docs/mooc/udemy/vuejs/#%EC%84%A0%EC%88%98-%ED%95%99%EC%8A%B5-%EC%A1%B0%EA%B1%B4",
     "relUrl": "/docs/mooc/udemy/vuejs/#선수-학습-조건"
-  },"187": {
+  },"186": {
     "doc": "vuejs-2-the-complete-guide 후기",
     "title": "언어 지원",
     "content": "영어로 진행되는 수업으로 한글 자막은 없고 영어 및 유럽권 자막이 있다. 강사님 말투가 빠른 편이 아니여서, 충분히 이해하고 따라가기에 어렵지 않음. ",
     "url": "http://localhost:4000/docs/mooc/udemy/vuejs/#%EC%96%B8%EC%96%B4-%EC%A7%80%EC%9B%90",
     "relUrl": "/docs/mooc/udemy/vuejs/#언어-지원"
-  },"188": {
+  },"187": {
     "doc": "vuejs-2-the-complete-guide 후기",
     "title": "학습 후기",
     "content": ". | 평일에는 1~2강의 정도 수강하고 있어서, 아직 세션10 ㅎ | 기초부터 실전까지 활용가능한 내용으로 잘 구성되어있는 것 같다. | 강의 속도도 빠르지 않고, Vuejs를 처음 접한 사람에게는 좋은 강의!! | 강의를 다 듣고 프로젝트에 바로 투입도 가능해보인다! | . ",
     "url": "http://localhost:4000/docs/mooc/udemy/vuejs/#%ED%95%99%EC%8A%B5-%ED%9B%84%EA%B8%B0",
     "relUrl": "/docs/mooc/udemy/vuejs/#학습-후기"
-  },"189": {
+  },"188": {
     "doc": "vuejs-2-the-complete-guide 후기",
     "title": "학습 요약",
     "content": "1.75x 정주행 요약 . ",
     "url": "http://localhost:4000/docs/mooc/udemy/vuejs/#%ED%95%99%EC%8A%B5-%EC%9A%94%EC%95%BD",
     "relUrl": "/docs/mooc/udemy/vuejs/#학습-요약"
-  },"190": {
+  },"189": {
     "doc": "vuejs-2-the-complete-guide 후기",
     "title": "vuejs-2-the-complete-guide 후기",
     "content": " ",
     "url": "http://localhost:4000/docs/mooc/udemy/vuejs/",
     "relUrl": "/docs/mooc/udemy/vuejs/"
-  },"191": {
+  },"190": {
     "doc": "1.75x 정주행 요약",
     "title": "1.75x 정주행 요약",
     "content": " ",
     "url": "http://localhost:4000/docs/mooc/udemy/vuejs_sub/",
     "relUrl": "/docs/mooc/udemy/vuejs_sub/"
-  },"192": {
+  },"191": {
     "doc": "웹API 디자인",
     "title": "웹API 디자인",
     "content": "API 설계시 꼭 체크해보기 . | 사용자를 위한 API 디자인하기 2.3.5 API 목표 캔버스 . | 누가 - API를 사용하는 사용자들을 나열 | 무엇을 - API로 사용자들이 할 수 있는 것을 나열 | 어떻게 - 무엇을 단계별로 분해해 나열 | 입력(원천) - 각 단계를 진행하기 위해 필요한 요소들과 그것들의 원천을 나열(누락된 누가, 무엇을 또는 어떻게를 찾기 위함) | 출력(사용처) - 각 단계의 반환과 그 쓰임새를 나열(누락된 누가, 무엇 또는 어떻게를 찾기 위함) | 목표 - 명시적이고 간결하게 각각의 어떻게 + 입력 + 출력을 재구성 | . | 기존 API를 변경할 때 . | 브레이킹 체인지가 일어나지 않도록해야한다. | . | . ",
     "url": "http://localhost:4000/docs/clipping/java/webapi/",
     "relUrl": "/docs/clipping/java/webapi/"
-  },"193": {
+  },"192": {
     "doc": "WebSocket connection error - nginx",
     "title": "WebSocket connection error - nginx",
     "content": "problem . nginx를 통해서 ui와 api간 ws통신하는데, . 개발자 도구에서 아래와 같은 에러메시지가 계속 발생하고 401 오류가 난다. error . WebSocket connection to 'ws:127.0.0.1:9091/websocket/112/gfwerwer/websocket?access_token=asdasdasdasda' failed: . cause . 웹소켓 통신을 하려면 헤더에 이 패킷이 upgrade될 패킷임을 웹서버가 알수 있도록 설정이 필요한대 . 그게 nginx.conf에 누락되어 있었음 . 그래서 바꾼 nginx.conf . [nginx.conf] server { listen 9091; location ~ /websocket/[0-9]+/ { proxy_pass http://localhost:9092; proxy_http_version 1.1; proxy_set_header Upgrade $http_upgrade; proxy_set_header Connection \"Upgrade\"; } location / { proxy_pass http://localhost:9092; } } . reference . nginx 에서 WebSocket Proxy 설정하기 . ",

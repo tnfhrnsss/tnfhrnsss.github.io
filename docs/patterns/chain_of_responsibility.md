@@ -3,14 +3,11 @@ layout: post
 title: Chain of Responsibility
 date: 2021-09-09 13:07:45
 last_modified_at : 2021-09-09 13:07:45
-parent: Home
-# parent: Patterns
-# has_children: false
+parent: Patterns
+has_children: false
 nav_order: 5
 nav_exclude: true
 ---
-
-# Chain of Responsibility
 
 역학 사슬 패턴
 

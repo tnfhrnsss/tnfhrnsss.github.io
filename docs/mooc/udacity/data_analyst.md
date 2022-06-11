@@ -3,9 +3,8 @@ layout: post
 title: Data Analyst Nanodegree Program 후기
 date: 2021-09-09 13:07:45
 last_modified_at : 2021-09-09 13:07:45
-parent: Home
-# parent: Udacity
-# grand_parent: Mooc
+parent: Udacity
+grand_parent: Mooc
 nav_exclude: true
 ---
 
