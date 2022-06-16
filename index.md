@@ -12,6 +12,10 @@ permalink: /
 {: .fs-9 .text-purple-100 }
 
 
+## :: post
 
-![goal50](./220610_1.png)
+{: .fs-3 .black }
+[2022-06-16 CircularRedirectException](./docs/errors/nginx2.md)
+
+
 ---
