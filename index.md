@@ -16,9 +16,8 @@ permalink: /
 
 {: .fs-3 .black }
 
-[2022-06-16 CircularRedirectException](./docs/errors/nginx2.md) 
-
-[2022-06-18 how to connect elasticsearch in dbeaver](./docs/etc/dbeaver1.md)
-
+[2022-06-16 CircularRedirectException](./docs/errors/nginx2.md)  
+[2022-06-18 how to connect elasticsearch in dbeaver](./docs/etc/dbeaver1.md)  
+[2022-06-21 sonarqube > S2275](./docs/quality/sonarqube/S2275.md)
 
 ---
