@@ -3,7 +3,8 @@ layout: post
 title: client intended to send too large body
 date: 2022-04-08 21:13:00
 last_modified_at : 2022-04-08 21:13:00
-parent: Errors
+parent: Nginx
+grand_parent: Msa
 has_children: false
 nav_exclude: true
 tags: [nginx]

@@ -2,11 +2,14 @@
 layout: post
 title: Home
 date: 2022-01-31 13:07:45
-last_modified_at : 2022-06-10 21:55:45
+last_modified_at : 2022-07-01 21:34:00
 nav_order: 1
 has_children: false
 permalink: /
 ---
+
+# note
+아직도 에버노트와 노션에서 이동 중 입니다..
 
 # recently update
 {: .fs-9 .text-purple-100 }
