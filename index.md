@@ -8,7 +8,7 @@ has_children: false
 permalink: /
 ---
 
-## note
+## :: note
 아직도 에버노트와 노션에서 이동 중 입니다..
 
 ## recently update

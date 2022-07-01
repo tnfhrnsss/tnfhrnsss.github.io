@@ -3,7 +3,8 @@ layout: post
 title: directory index of "..\nginx-1.19.9/html/" is forbidden
 date: 2022-04-01 22:09:00
 last_modified_at : 2022-04-01 22:09:00
-parent: Errors
+parent: Nginx
+grand_parent: Msa
 has_children: false
 nav_exclude: true
 tags: [nginx]
