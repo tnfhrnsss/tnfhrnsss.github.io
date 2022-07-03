@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: Kafka
 date: 2022-07-01 23:50:00
 last_modified_at : 2022-07-01 23:50:00

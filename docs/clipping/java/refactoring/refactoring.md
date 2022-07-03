@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: Refactoring
 date: 2015-02-24 00:00:00
 last_modified_at : 2015-02-24 00:00:00

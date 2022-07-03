@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: Msa
 date: 2021-09-09 13:07:45
 last_modified_at : 2021-09-09 13:07:45
@@ -8,6 +8,6 @@ has_children: true
 permalink: /docs/msa
 ---
 
-summarized the api/library used within Spring Cloud.
+# Note
 
-# Summary
+summarized the api/library used within Spring Cloud.

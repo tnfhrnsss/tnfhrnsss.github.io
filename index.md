@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: Home
 date: 2022-01-31 13:07:45
 last_modified_at : 2022-07-01 21:34:00

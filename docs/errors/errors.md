@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: Errors
 date: 2021-09-09 13:07:45
 last_modified_at : 2021-09-09 13:07:45
@@ -8,7 +8,7 @@ has_children: true
 permalink: /docs/errors
 ---
 
-# Errors
+# Note
 
 About some errors that I know. It might be duplicated. Cause to figure out, I read another blog or stackoverflow.com searching for them.
 I will go on adding the post.
