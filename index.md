@@ -19,6 +19,7 @@ permalink: /
 
 {: .fs-3 .black }
 
+[2022-07-07 Change Nginx Log Level](./docs/msa/nginx/nginx_log.md)
 [2022-07-06 Error attempting to apply AttributeConverter](./docs/errors/attributeConverter_error.md)  
 [2022-07-05 Zuul routes path - 404 not found error](./docs/msa/spring-cloud/zuul_route_not_found.md)  
 [2022-07-04 Feign log level](./docs/msa/feign/feign_log_level.md)  
