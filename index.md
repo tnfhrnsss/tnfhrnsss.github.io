@@ -19,7 +19,7 @@ permalink: /
 
 {: .fs-3 .black }
 
-[2022-07-11 webpage 스크랩핑 후 갱신여부 체크하는 어플리케이션 개발](./docs/etc/webpage_scrapping.md)
+[2022-07-11 webpage 스크랩핑 후 갱신여부 체크하는 어플리케이션 개발](./docs/etc/webpage_scrapping.md)  
 [2022-07-09 The write format 1 is smaller than the supported format 2](./docs/errors/h2_error.md)  
 [2022-07-08 docker hazelcast management-center start error](./docs/errors/docker_hazelcast_start_error.md)  
 [2022-07-07 Change Nginx Log Level](./docs/msa/nginx/nginx_log.md)  
