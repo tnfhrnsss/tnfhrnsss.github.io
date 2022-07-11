@@ -1,6 +1,6 @@
 ---
 layout: post
-title: webpage 문자를 스크랩핑해서 갱신여부 체크하는 어플리케이션 개발
+title: webpage 스크랩핑 후 갱신여부 체크하는 어플리케이션 개발
 date: 2022-07-11 22:30:00
 last_modified_at : 2022-07-11 22:30:00
 parent: Etc
