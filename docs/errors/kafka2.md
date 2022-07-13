@@ -14,9 +14,6 @@ tags: [kafka, kafdrop]
 ### error log
 
 ```
-15:04:41.660 er#1-0-C-1 ERROR .k.l.LoggingErrorHandler: 37 handle Error while processing: 
-null[org.apache.kafka.common.errors.SerializationException](https://www.blogger.com/blog/post/edit/2689228726924373128/1302139096699183138#): 
-
 Error deserializing key/value for partition event.message-0 at offset 62. 
 If needed, please seek past the record to continue consumption.
 
@@ -82,49 +79,10 @@ spectra.attic.talk.mocha.btalk.btalk.messaging.event.BtalkUpdated:spectra.attic.
 
 ```
 
-단, 해당 이벤트의 모든 헤더를 정의하지 않으면 MessageConversionException 오류 발생
-```
+단, 해당 이벤트의 모든 헤더를 정의하지 않으면 아까와 동일한 SerializationException, MessageConversionException 에러 발생
 
-Caused by: org.apache.kafka.common.errors.SerializationException: Error deserializing key/value for partition event.mocha.btalk-0 at offset 28. If needed, please seek past the record to continue consumption.
-Caused by: org.springframework.messaging.converter.MessageConversionException: failed to resolve class name. Class not found [spectra.attic.talk.mocha.btalk.btalk.messaging.event.BtalkUpdated]; nested exception is java.lang.ClassNotFoundException: spectra.attic.talk.mocha.btalk.btalk.messaging.event.BtalkUpdated
-	at org.springframework.kafka.support.converter.DefaultJackson2JavaTypeMapper.getClassIdType(DefaultJackson2JavaTypeMapper.java:139)
-	at org.springframework.kafka.support.converter.DefaultJackson2JavaTypeMapper.toJavaType(DefaultJackson2JavaTypeMapper.java:100)
-	at org.springframework.kafka.support.serializer.JsonDeserializer.deserialize(JsonDeserializer.java:472)
-	at org.apache.kafka.clients.consumer.internals.Fetcher.parseRecord(Fetcher.java:1324)
-	at org.apache.kafka.clients.consumer.internals.Fetcher.access$3400(Fetcher.java:129)
-	at org.apache.kafka.clients.consumer.internals.Fetcher$CompletedFetch.fetchRecords(Fetcher.java:1555)
-	at org.apache.kafka.clients.consumer.internals.Fetcher$CompletedFetch.access$1700(Fetcher.java:1391)
-	at org.apache.kafka.clients.consumer.internals.Fetcher.fetchRecords(Fetcher.java:683)
-	at org.apache.kafka.clients.consumer.internals.Fetcher.fetchedRecords(Fetcher.java:634)
-	at org.apache.kafka.clients.consumer.KafkaConsumer.pollForFetches(KafkaConsumer.java:1289)
-	at org.apache.kafka.clients.consumer.KafkaConsumer.poll(KafkaConsumer.java:1243)
-	at org.apache.kafka.clients.consumer.KafkaConsumer.poll(KafkaConsumer.java:1173)
-	at sun.reflect.GeneratedMethodAccessor344.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
-	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:205)
-	at com.sun.proxy.$Proxy340.poll(Unknown Source)
-	at brave.kafka.clients.TracingConsumer.poll(TracingConsumer.java:89)
-	at brave.kafka.clients.TracingConsumer.poll(TracingConsumer.java:83)
-	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doPoll(KafkaMessageListenerContainer.java:1246)
-	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.pollAndInvoke(KafkaMessageListenerContainer.java:1146)
-	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.run(KafkaMessageListenerContainer.java:1059)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
-	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
-	at java.util.concurrent.FutureTask.run(FutureTask.java)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.lang.ClassNotFoundException: 
-	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
-	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
-	at java.lang.Class.forName0(Native Method)
-	at java.lang.Class.forName(Class.java:348)
-	at org.springframework.util.ClassUtils.forName(ClassUtils.java:284)
-	at org.springframework.kafka.support.converter.DefaultJackson2JavaTypeMapper.getClassIdType(DefaultJackson2JavaTypeMapper.java:135)
-	... 26 common frames omitted
-```
+그리고 또 하나의 단점은 yml이 지저분해진다..
+
 
 #### reference
 
