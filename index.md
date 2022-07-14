@@ -19,6 +19,7 @@ permalink: /
 
 {: .fs-3 .black }
 
+[2022-07-14 kafka fail retry & backoff](./docs/msa/kafka/kafka_fail_retry.md)  
 [2022-07-13 kafka SerializationException](./docs/errors/kafka2.md)  
 [2022-07-12 Alias name [root] does not identify a key entry](./docs/errors/ssl_alias_error.md)  
 [2022-07-11 webpage 스크랩핑 후 갱신여부 체크하는 어플리케이션 개발](./docs/etc/webpage_scrapping.md)  
