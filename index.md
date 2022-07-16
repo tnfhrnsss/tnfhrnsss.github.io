@@ -19,6 +19,8 @@ permalink: /
 
 {: .fs-3 .black }
 
+[2022-07-16 TimedSupervisorTask task supervisor timed out](./docs/errors/timedSupervisorTask_timed_out.md)
+[2022-07-15 DNS_PROBE_FINISHED_NXDOMAIN](./docs/errors/dns_probe_finished_nxdomain.md)  
 [2022-07-14 kafka fail retry & backoff](./docs/msa/kafka/kafka_fail_retry.md)  
 [2022-07-13 kafka SerializationException](./docs/errors/kafka2.md)  
 [2022-07-12 Alias name [root] does not identify a key entry](./docs/errors/ssl_alias_error.md)  
