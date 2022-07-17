@@ -19,6 +19,7 @@ permalink: /
 
 {: .fs-3 .black }
 
+[2022-07-17 AngularJS Advanced Framework Techniques 수강 정리](./docs/mooc/etc/edx_angularjs.md)  
 [2022-07-16 TimedSupervisorTask task supervisor timed out](./docs/errors/timedSupervisorTask_timed_out.md)  
 [2022-07-15 DNS_PROBE_FINISHED_NXDOMAIN](./docs/errors/dns_probe_finished_nxdomain.md)  
 [2022-07-14 kafka fail retry & backoff](./docs/msa/kafka/kafka_fail_retry.md)  
@@ -32,7 +33,5 @@ permalink: /
 [2022-07-05 Zuul routes path - 404 not found error](./docs/msa/spring-cloud/zuul_route_not_found.md)  
 [2022-07-04 Feign log level](./docs/msa/feign/feign_log_level.md)  
 [2022-06-21 sonarqube > S2275](./docs/quality/sonarqube/S2275.md)  
-[2022-06-18 how to connect elasticsearch in dbeaver](./docs/etc/dbeaver1.md)  
-[2022-06-16 CircularRedirectException](./docs/errors/nginx2.md)  
 
 ---
