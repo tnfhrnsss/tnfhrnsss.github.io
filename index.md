@@ -19,6 +19,7 @@ permalink: /
 
 {: .fs-3 .black }
 
+[2022-07-18 Unknown Faceted Project Problem](./docs/errors/eclipse_error1.md)  
 [2022-07-17 AngularJS Advanced Framework Techniques 수강 정리](./docs/mooc/etc/edx_angularjs.md)  
 [2022-07-16 TimedSupervisorTask task supervisor timed out](./docs/errors/timedSupervisorTask_timed_out.md)  
 [2022-07-15 DNS_PROBE_FINISHED_NXDOMAIN](./docs/errors/dns_probe_finished_nxdomain.md)  
