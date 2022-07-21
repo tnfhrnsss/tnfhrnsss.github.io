@@ -19,6 +19,7 @@ permalink: /
 
 {: .fs-3 .black }
 
+[2022-07-21 Confluent와 Imply 웨비나 온라인 참석 후기](./docs/mooc/etc/confluent_imply_webinar.md)  
 [2022-07-19 spring config additional-location not working](./docs/msa/spring-cloud/spring_config1.md)  
 [2022-07-18 Unknown Faceted Project Problem](./docs/errors/eclipse_error1.md)  
 [2022-07-17 AngularJS Advanced Framework Techniques 수강 정리](./docs/mooc/etc/edx_angularjs.md)  
@@ -34,6 +35,5 @@ permalink: /
 [2022-07-06 Error attempting to apply AttributeConverter](./docs/errors/attributeConverter_error.md)  
 [2022-07-05 Zuul routes path - 404 not found error](./docs/msa/spring-cloud/zuul_route_not_found.md)  
 [2022-07-04 Feign log level](./docs/msa/feign/feign_log_level.md)  
-[2022-06-21 sonarqube > S2275](./docs/quality/sonarqube/S2275.md)  
 
 ---
