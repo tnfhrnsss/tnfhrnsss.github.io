@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Confluent와 Imply 웨비나 온라인 참석 후기
+title: Confluent & Imply 웨비나 온라인 참석 후기
 date: 2022-07-21 22:26:00
 last_modified_at : 2022-07-21 22:26:00
 parent: Etc
@@ -22,13 +22,13 @@ nav_exclude: true
     
 
 - 분석어플리케이션 데모
-    - druid웹콘솔을 통해서 간단히 토픽 생성하고 kafka 데이터 수집하는 데모였는데, 복잡한 프로그래밍이 필요없어서 편해보이지만 kafka를 잘 모르면 사용하기 어려울 것 같았다.
+    - druid웹콘솔을 통해서 간단히 토픽 생성하고 kafka 데이터 수집하는 데모였는데, 복잡한 프로그래밍이 필요없어서 편해보이지만 kafka를 잘 모르면 사용하기 어려울 것 같습니다.
 - k2d stack(kafka+druid) 활용사례
     - kafka이벤트를 받아서 imply에 넘겨서 druid를 통해 실시간 분석을 하고 어플리케이션에 전달하는 것
     - 장점 : netflow 수집 및 분석, 스트림 분석 , Application 성능 관리
     
 - kafk 모니터링이 가능한 대시보드
-    - 현재 회사에서 사용하는 그라파나로는 토픽별 lag이나 cpu점유 정도 확인할 수 있는데요. 이 제품은 뭔가 더 디테일하게 다른 정보도 확인할 수 있는 것 같습니다…
+    - 현재 회사에서 사용하는 그라파나로는 토픽별 lag이나 cpu점유 정도 확인할 수 있는데요. 이 제품은 뭔가 더 디테일하게 다른 정보도 확인할 수 있는 것 같습니다.
     
     ![confluent_imply_webinar1](../img/confluent_imply_webinar1.png)
     
