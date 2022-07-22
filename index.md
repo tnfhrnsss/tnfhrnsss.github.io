@@ -8,8 +8,8 @@ has_children: false
 permalink: /
 ---
 
-## :: note
-에버노트와 노션에서 이동 중 입니다..
+## :: 진행 중 프로젝트
+ 
 
 ## recently update
 {: .fs-9 .text-purple-100 }
@@ -19,6 +19,7 @@ permalink: /
 
 {: .fs-3 .black }
 
+[2022-07-23 aws alb waf 403 error](./docs/errors/alb_waf_rule_403.md)  
 [2022-07-21 Confluent & Imply 웨비나 온라인 참석 후기](./docs/mooc/etc/confluent_imply_webinar.md)  
 [2022-07-19 spring config additional-location not working](./docs/msa/spring-cloud/spring_config1.md)  
 [2022-07-18 Unknown Faceted Project Problem](./docs/errors/eclipse_error1.md)  
