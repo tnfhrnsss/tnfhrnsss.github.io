@@ -13,9 +13,9 @@ permalink: /
 
 ### :: project
 
-[webpage 스크랩핑 후 갱신여부 체크하는 어플리케이션 개발](./docs/etc/webpage_scrapping.md)  
-다른 msa서비스 API 변경 체크 - tdd작성
-springboot admin - custom 메뉴 추가(quartz 설정 화면 추가)
+- [webpage 스크랩핑 후 갱신여부 체크하는 어플리케이션 개발](./docs/etc/webpage_scrapping.md)  
+- 다른 msa서비스 API 변경 체크 - tdd작성  
+- springboot admin - custom 메뉴 추가(quartz 설정 화면 추가)  
 
 ### :: post
 
