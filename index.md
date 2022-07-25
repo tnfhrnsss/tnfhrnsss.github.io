@@ -21,6 +21,7 @@ permalink: /
 
 {: .fs-3 .black }
 
+[2022-07-25 SpelEvaluationException EL1008E CacheExpressionRootObject](./docs/errors/spelEvaluationException.md)  
 [2022-07-23 nginx query string encoding problem](./docs/msa/nginx/nginx_encoding_problem.md)  
 [2022-07-23 aws elb waf 403 error](./docs/errors/elb_waf_rule_403.md)  
 [2022-07-21 Confluent & Imply 웨비나 온라인 참석 후기](./docs/mooc/etc/confluent_imply_webinar.md)  
