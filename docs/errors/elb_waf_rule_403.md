@@ -67,6 +67,15 @@ POST API Body 부분에 https:// ~ 와 같은 첨부파일 url이 들어가는 �
 
 그래서 룰 변경 요청으로 해결했습니다.
 
+# waf rule
+
+waf에서 block
+
+| GenericRFI_BODY | 요청 본문의 값을 검사하고 웹 애플리케이션에서 원격 파일 포함
+(RFI, Remote File Inclusion)을 도용하는 경우 제어
+ex) :// |
+| --- | --- |
+
 | 필드 | 설명 | 값 |
 | --- | --- | --- |
 | type | 　 | https  |

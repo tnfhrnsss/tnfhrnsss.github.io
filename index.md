@@ -21,6 +21,8 @@ permalink: /
 
 {: .fs-3 .black }
 
+[2022-08-03 Feign client Async call](./docs/msa/feign/feignclient_async.md)  
+[2022-08-03 kafka consumer lag solved](./docs/msa/kafka/kafka_consumer_lag.md)  
 [2022-07-25 SpelEvaluationException EL1008E CacheExpressionRootObject](./docs/errors/spelEvaluationException.md)  
 [2022-07-23 nginx query string encoding problem](./docs/msa/nginx/nginx_encoding_problem.md)  
 [2022-07-23 aws elb waf 403 error](./docs/errors/elb_waf_rule_403.md)  
