@@ -42,6 +42,15 @@ url에 인코딩된 특수문자로 에러가 발생합니다.
 
 슬래시가 한번일 경우 한번만 matching시키고 나머지는 (.*)$로 잡으면되는데
 
+```
+location ~* ^.+\.(jpg|jpeg|gif|png|pdf|txt|bmp)$ { 
+```
+
+이렇게 작성하면 조건을 타지도 못한다. 
+이유는 query_string의 내용으로 location을 matching시킬수 없다고 한다.
+
+## try3..
+
 경로가 여러개 일 경우는 억지로 한다면 이렇게 하게 됩니다.
 
 ```bash
@@ -54,13 +63,13 @@ if ($args ~ (test.com)%2F(.*)%2F(.*)%2F(.*)%2F(.*)$) {
 }
 ```
 
-### try2-problem
+### try3-problem
 
 앞서 설명했듯이 url자체가 유동적일 가능성이 크기 때문에 위의 방법은 사용하면 안 됩니다.
 
 ---
 
-## try3..
+## try4..
 
 그래서 찾던 중 njs모듈 설치를 하면 된다고 해서 적용해봤습니다.
 
@@ -127,7 +136,7 @@ http {
 
 —>  대신 add-module이 configure된 것이라 nginx.conf에 load_module안해도 됨
 
-### try3-problem
+### try4-problem
 
 njs를 설치하면 인코딩된 url을 디코드시켜주기 때문에 문제가 해결됩니다.
 
@@ -135,7 +144,7 @@ njs를 설치하면 인코딩된 url을 디코드시켜주기 때문에 문제�
 
 ---
 
-## try4..(solved)
+## try5..(solved)
 
 좀더 검색해보니 아래 블로그를 발견!!
 

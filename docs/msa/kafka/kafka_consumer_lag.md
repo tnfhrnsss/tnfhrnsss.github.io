@@ -3,7 +3,7 @@ layout: post
 title: kafka consumer lag solved
 date: 2022-08-03 21:42:00
 last_modified_at : 2022-08-03 21:42:00
-parent: kafka
+parent: Kafka
 grand_parent: Msa
 nav_exclude: true
 tags: [kafka, lag]

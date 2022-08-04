@@ -3,7 +3,7 @@ layout: post
 title: kafka fail retry & backoff
 date: 2022-07-14 22:58:00
 last_modified_at : 2022-07-14 22:58:00
-parent: kafka
+parent: Kafka
 grand_parent: Msa
 nav_exclude: true
 tags: [kafka, retry]
