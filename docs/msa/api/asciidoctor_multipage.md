@@ -3,7 +3,7 @@ layout: post
 title: asciidoctor multiple pages from a single page
 date: 2022-04-02 16:06:00
 last_modified_at : 2022-04-02 16:06:00
-parent: Etc
+parent: Api
 has_children: false
 nav_exclude: true
 tags: [asciidoc, asciidoctor]
