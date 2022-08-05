@@ -4,7 +4,7 @@ title: asciidoctor multiple pages from a single page
 date: 2022-04-02 16:06:00
 last_modified_at : 2022-04-02 16:06:00
 parent: Api
-has_children: false
+grand_parent: Msa
 nav_exclude: true
 tags: [asciidoc, asciidoctor]
 ---
