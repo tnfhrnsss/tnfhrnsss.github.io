@@ -21,6 +21,7 @@ permalink: /
 
 {: .fs-3 .black }
 
+[2022-08-12 Jpa saveAll Stress Test Result](./docs/msa/jpa/jpa_saveAll.md)  
 [2022-08-11 Twilio Studio Study](./docs/etc/twilio_studio_study.md)  
 [2022-08-09 git pull > exit code 128 error](./docs/errors/git_pull_128_error.md)  
 [2022-08-05 asciidoc conditional tag using](./docs/msa/api/asciidoc_conditional_tag_using.md)  
@@ -38,10 +39,5 @@ permalink: /
 [2022-07-14 kafka fail retry & backoff](./docs/msa/kafka/kafka_fail_retry.md)  
 [2022-07-13 kafka SerializationException](./docs/errors/kafka2.md)  
 [2022-07-12 Alias name [root] does not identify a key entry](./docs/errors/ssl_alias_error.md)  
-[2022-07-09 The write format 1 is smaller than the supported format 2](./docs/errors/h2_error.md)  
-[2022-07-08 docker hazelcast management-center start error](./docs/errors/docker_hazelcast_start_error.md)  
-[2022-07-07 Change Nginx Log Level](./docs/msa/nginx/nginx_log.md)  
-[2022-07-06 Error attempting to apply AttributeConverter](./docs/errors/attributeConverter_error.md)  
-[2022-07-05 Zuul routes path - 404 not found error](./docs/msa/spring-cloud/zuul_route_not_found.md)  
 
 ---
