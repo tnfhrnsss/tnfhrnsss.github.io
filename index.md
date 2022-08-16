@@ -21,6 +21,7 @@ permalink: /
 
 {: .fs-3 .black }
 
+[2022-08-15 Promise rejected SyntaxError Unexpected end of input](./docs/errors/promise_rejected_syntaxError.md)  
 [2022-08-12 Jpa saveAll Stress Test Result](./docs/msa/jpa/jpa_saveAll.md)  
 [2022-08-11 Twilio Studio Study](./docs/etc/twilio_studio_study.md)  
 [2022-08-09 git pull > exit code 128 error](./docs/errors/git_pull_128_error.md)  
@@ -34,10 +35,6 @@ permalink: /
 [2022-07-19 spring config additional-location not working](./docs/msa/spring-cloud/spring_config1.md)  
 [2022-07-18 Unknown Faceted Project Problem](./docs/errors/eclipse_error1.md)  
 [2022-07-17 AngularJS Advanced Framework Techniques 수강 정리](./docs/mooc/etc/edx_angularjs.md)  
-[2022-07-16 TimedSupervisorTask task supervisor timed out](./docs/errors/timedSupervisorTask_timed_out.md)  
-[2022-07-15 DNS_PROBE_FINISHED_NXDOMAIN](./docs/errors/dns_probe_finished_nxdomain.md)  
-[2022-07-14 kafka fail retry & backoff](./docs/msa/kafka/kafka_fail_retry.md)  
-[2022-07-13 kafka SerializationException](./docs/errors/kafka2.md)  
-[2022-07-12 Alias name [root] does not identify a key entry](./docs/errors/ssl_alias_error.md)  
+[2022-07-16 TimedSupervisorTask task supervisor timed out](./docs/errors/timedSupervisorTask_timed_out.md)   
 
 ---
