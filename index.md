@@ -21,7 +21,7 @@ permalink: /
 
 {: .fs-3 .black }
 
-[2022-08-18 우아한 객체지향 강의 (by 우형) 정리](./docs/mooc/etc/baemin_object%20_oriented.md)  
+[2022-08-18 우아한 객체지향 강의 (by 우형) 정리](./docs/mooc/etc/baemin_object_oriented.md)  
 [2022-08-15 Promise rejected SyntaxError Unexpected end of input](./docs/errors/promise_rejected_syntaxError.md)  
 [2022-08-12 Jpa saveAll Stress Test Result](./docs/msa/jpa/jpa_saveAll.md)  
 [2022-08-11 Twilio Studio Study](./docs/etc/twilio_studio_study.md)  
