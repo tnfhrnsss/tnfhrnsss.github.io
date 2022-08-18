@@ -41,7 +41,7 @@ https://github.com/eternity-oop
 - **다중성이 적은 방향을 선택하라**
     - one to many 보다 many to one으로
     
-    ![baemin_object _oriented.png](../img/baemin_object _oriented.png)
+    ![baemin_object_oriented.png](../img/baemin_object_oriented.png)
     
 
 - 의존성이 필요없다면 제거하라
