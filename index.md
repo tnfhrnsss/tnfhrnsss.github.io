@@ -21,6 +21,7 @@ permalink: /
 
 {: .fs-3 .black }
 
+[2022-08-27 우아한 CRUD - 퍼시스턴스 프레임워크 정리](./docs/mooc/youtube/woowahan_crud_persistence.md)  
 [2022-08-26 datatable lib 적용](./docs/etc/datatable_lib.md)  
 [2022-08-18 우아한 객체지향 강의 (by 우형) 정리](./docs/mooc/etc/baemin_object_oriented.md)  
 [2022-08-15 Promise rejected SyntaxError Unexpected end of input](./docs/errors/promise_rejected_syntaxError.md)  
