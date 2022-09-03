@@ -21,6 +21,7 @@ permalink: /
 
 {: .fs-3 .black }
 
+[2022-09-03 우아한 CRUD - Spring Data JDBC Advanced](./docs/mooc/youtube/woowahan_crud_jdbc_advanced.md)  
 [2022-08-27 우아한 CRUD - 퍼시스턴스 프레임워크 정리](./docs/mooc/youtube/woowahan_crud_persistence.md)  
 [2022-08-26 datatable lib 적용](./docs/etc/datatable_lib.md)  
 [2022-08-18 우아한 객체지향 강의 (by 우형) 정리](./docs/mooc/etc/baemin_object_oriented.md)  
@@ -31,13 +32,5 @@ permalink: /
 [2022-08-05 asciidoc conditional tag using](./docs/msa/api/asciidoc_conditional_tag_using.md)  
 [2022-08-03 Feign client Async call](./docs/msa/feign/feignclient_async.md)  
 [2022-08-03 kafka consumer lag solved](./docs/msa/kafka/kafka_consumer_lag.md)  
-[2022-07-25 SpelEvaluationException EL1008E CacheExpressionRootObject](./docs/errors/spelEvaluationException.md)  
-[2022-07-23 nginx query string encoding problem](./docs/msa/nginx/nginx_encoding_problem.md)  
-[2022-07-23 aws elb waf 403 error](./docs/errors/elb_waf_rule_403.md)  
-[2022-07-21 Confluent & Imply 웨비나 온라인 참석 후기](./docs/mooc/etc/confluent_imply_webinar.md)  
-[2022-07-19 spring config additional-location not working](./docs/msa/spring-cloud/spring_config1.md)  
-[2022-07-18 Unknown Faceted Project Problem](./docs/errors/eclipse_error1.md)  
-[2022-07-17 AngularJS Advanced Framework Techniques 수강 정리](./docs/mooc/etc/edx_angularjs.md)  
-[2022-07-16 TimedSupervisorTask task supervisor timed out](./docs/errors/timedSupervisorTask_timed_out.md)   
 
 ---
