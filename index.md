@@ -21,6 +21,7 @@ permalink: /
 
 {: .fs-3 .black }
 
+[2022-09-06 intellij gc overhead limit exceeded maven](./docs/errors/intellij_gc.md)  
 [2022-09-03 우아한 CRUD - Spring Data JDBC Advanced](./docs/mooc/youtube/woowahan_crud_jdbc_advanced.md)  
 [2022-08-27 우아한 CRUD - 퍼시스턴스 프레임워크 정리](./docs/mooc/youtube/woowahan_crud_persistence.md)  
 [2022-08-26 datatable lib 적용](./docs/etc/datatable_lib.md)  
