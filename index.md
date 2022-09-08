@@ -21,6 +21,7 @@ permalink: /
 
 {: .fs-3 .black }
 
+[2022-09-08 A "NullPointerException" could be thrown; "getListenerContainer()" can return null.](./docs/quality/sonarqube/S2259.md)  
 [2022-09-07 BeanInstantiationException Failed to instantiate](./docs/errors/beanInstantiationException.md)  
 [2022-09-06 intellij gc overhead limit exceeded maven](./docs/errors/intellij_gc.md)  
 [2022-09-03 우아한 CRUD - Spring Data JDBC Advanced](./docs/mooc/youtube/woowahan_crud_jdbc_advanced.md)  
