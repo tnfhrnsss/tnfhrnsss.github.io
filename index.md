@@ -11,7 +11,7 @@ permalink: /
 ## recently update
 {: .fs-9 .text-purple-100 }
 
-### :: activity
+### :: toy project
 
 - [webpage 스크랩핑 후 갱신여부 체크하는 어플리케이션 개발](./docs/etc/webpage_scrapping.md)  
 - 다른 msa서비스 API 변경 체크 - tdd작성  
@@ -21,6 +21,7 @@ permalink: /
 
 {: .fs-3 .black }
 
+[2022-09-19 upsource ReviewNotFoundException](./docs/errors/upsource_reviewNotFoundException.md)  
 [2022-09-08 A "NullPointerException" could be thrown; "getListenerContainer()" can return null.](./docs/quality/sonarqube/S2259.md)  
 [2022-09-07 BeanInstantiationException Failed to instantiate](./docs/errors/beanInstantiationException.md)  
 [2022-09-06 intellij gc overhead limit exceeded maven](./docs/errors/intellij_gc.md)  

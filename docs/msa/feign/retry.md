@@ -14,6 +14,7 @@ tags: [feign, retry]
 1. 전역의 ribbon설정을 안쓰고자 함
 2. docker의 depends on도 방법
 
+
 healthcheck:
 test: ["CMD", "curl", "-f", "[http://localhost:8040/actuator/health](http://localhost:8040/actuator/health)"]
 interval: 10s
