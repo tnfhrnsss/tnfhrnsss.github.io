@@ -2,11 +2,11 @@
 layout: post
 title: kafka SerializationException
 date: 2021-09-09 13:07:45
-last_modified_at : 2022-07-13 20:34:00
-parent: Errors
-has_children: false
+last_modified_at : 2022-09-20 20:34:00
+parent: Kafka
+grand_parent: Msa
 nav_exclude: true
-tags: [kafka, kafdrop]
+tags: [kafka, kafdrop, serialization]
 ---
 
 ## org.apache.kafka.common.errors.SerializationException: Error deserializing key/value for partition
@@ -81,10 +81,25 @@ spectra.attic.talk.mocha.btalk.btalk.messaging.event.BtalkUpdated:spectra.attic.
 
 단, 해당 이벤트의 모든 헤더를 정의하지 않으면 아까와 동일한 SerializationException, MessageConversionException 에러 발생
 
-그리고 또 하나의 단점은 yml이 지저분해진다..
+### solved4
+또 다른 방법은 이벤트를 수신하는 클래스의 @KafkaListener에 spring.json.type.mapping을 설정하는 것
+
+```
+@KafkaListener(
+    topics = {
+        "TestTopic"
+    },
+    groupId = "test-event-subscriber",
+    properties = {
+        "spring.json.type.mapping:"
+            + "spectra.attic.talk.mocha.btalk.btalk.messaging.event.BtalkCreated:spectra.attic.talk.crema.business.btalk.message.send.messaging.event.TicketCreated,"
+            + "spectra.attic.talk.mocha.btalk.btalk.messaging.event.BtalkUpdated:spectra.attic.talk.crema.business.btalk.message.send.messaging.event.TicketUpdated"
+    }
+)
+```
 
 
-#### reference
+### reference
 
 - [org.apache.kafka.common.errors.SerializationException: Error deserializing key/value for partition t](http://blog.naver.com/PostView.nhn?blogId=simpolor&logNo=221757494878&parentCategoryNo=&categoryNo=218&viewDate=&isShowPopularPosts=false&from=postView)
 - [Spring boot Kafka class deserialization - not in the trusted package](https://stackoverflow.com/questions/55477941/spring-boot-kafka-class-deserialization-not-in-the-trusted-package)
