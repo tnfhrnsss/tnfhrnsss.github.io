@@ -46,4 +46,4 @@ environment:
   cluster.initial_master_nodes: "node"
 ```
 
-[Elasticsearch 설치 시 오류 the default discovery settings are unsuitable for production use; at least one of [discovery.seed_hosts, discovery.seed_providers, cluster.initial_master_nodes] must be configured](https://horae.tistory.com/entry/Elasticsearch-%EC%84%A4%EC%B9%98-%EC%8B%9C-%EC%98%A4%EB%A5%98-the-default-discovery-settings-are-unsuitable-for-production-use-at-least-one-of-discoveryseedhosts-discoveryseedproviders-clusterinitialmasternodes-must-be-configured)
+[Elasticsearch 설치 시 오류](https://horae.tistory.com/entry/Elasticsearch-%EC%84%A4%EC%B9%98-%EC%8B%9C-%EC%98%A4%EB%A5%98-the-default-discovery-settings-are-unsuitable-for-production-use-at-least-one-of-discoveryseedhosts-discoveryseedproviders-clusterinitialmasternodes-must-be-configured)  
