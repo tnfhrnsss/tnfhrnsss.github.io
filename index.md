@@ -21,6 +21,7 @@ permalink: /
 
 {: .fs-3 .black }
 
+[2022-09-21 docker elasticsearch shutdown cause](./docs/errors/docker_elasticsearch.md)  
 [2022-09-19 upsource ReviewNotFoundException](./docs/errors/upsource_reviewNotFoundException.md)  
 [2022-09-08 A "NullPointerException" could be thrown; "getListenerContainer()" can return null.](./docs/quality/sonarqube/S2259.md)  
 [2022-09-07 BeanInstantiationException Failed to instantiate](./docs/errors/beanInstantiationException.md)  
