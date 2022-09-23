@@ -47,6 +47,8 @@ meta.properties를 수정하라는 식의 해결방법 뿐이였다.
 
 kafka가 올라가자마자 죽으니 서버에 접근도 불가능했기 때문에 방법이 없었는데..
 
+Volumes 화면에서 삭제하니 해결되었다!
+
 1. Stop and Remove Kafka Containter
 2. Remove Kafka Image
 3. go to [Volumes] and deleta all of kafka data and log directories
