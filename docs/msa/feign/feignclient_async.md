@@ -18,7 +18,7 @@ AsyncFeign<Object> asyncFeign = AsyncFeign.asyncBuilder()
     .requestInterceptor(new FeignConfiguration().requestInterceptor())
     .build();
 
-asyncFeign.newInstance(new Target.HardCodedTarget(BotHistoryClient.class, "mocha", ""));
+asyncFeign.newInstance(new Target.HardCodedTarget(BotHistoryClient.class, "test", ""));
 ```
 
 구현을 하고 보니, AsyncFeign에 `@Experimental`가 있었다.  
@@ -62,7 +62,7 @@ public interface FeignAsyncClient {
 ```java
 @FeignClient(
     contextId = "BotHistoryClient",
-    name = "mocha",
+    name = "test",
     configuration = {FeignConfiguration.class, FeignRetryConfiguration.class},
     primary = false
 )

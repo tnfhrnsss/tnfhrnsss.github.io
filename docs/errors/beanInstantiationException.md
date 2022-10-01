@@ -14,11 +14,8 @@ tags: [spring boot]
 ```prolog
 Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: 
 Error creating bean with name 'org.springframework.security.config.annotation.web.reactive.WebFluxSecurityConfiguration': Unsatisfied dependency expressed through method 'setSecurityWebFilterChains' parameter 0; 
-nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'filterChain' defined in class path resource [spectra/attic/coreasset/ecosystem/barista/config/WebFluxSecurityConfig.class]: 
-Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.web.server.SecurityWebFilterChain]: 
-Factory method 'filterChain' threw exception; nested exception is java.lang.NullPointerException
-11:26:43.768 main       ERROR o.s.b.SpringApplication :824 reportFailure   Application run failed
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'filterChain' defined in class path resource [spectra/attic/coreasset/ecosystem/barista/config/WebFluxSecurityConfig.class]: 
+nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'filterChain' defined in class path resource [WebFluxSecurityConfig.class]: 
+Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.web.server.SecurityWebFilterChain]:
 Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.web.server.SecurityWebFilterChain]: 
 Factory method 'filterChain' threw exception; nested exception is java.lang.NullPointerException
 	
@@ -46,7 +43,7 @@ run할 때 발생하는 에러에서 npe나 bean create못한다는 에러이면
 SecurityWebFilterChain을 bean으로 등록하는 클래스에 아래의 코드가 있었는데
 
 ```prolog
-@Value("${attic.buzzer.security.ignores:}")
+@Value("${security.ignores:}")
 private String[] securityIgnores;
 ```
 

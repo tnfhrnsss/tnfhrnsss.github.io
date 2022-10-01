@@ -24,7 +24,7 @@ DNS request timed out.
 timeout was 2 seconds.
 DNS request timed out.
 timeout was 2 seconds.
-*** DC1.spectra.co.kr에 대한 요청이 제한 시간을 초과했습니다.
+*** ...에 대한 요청이 제한 시간을 초과했습니다.
 ```
 
 ## try1..

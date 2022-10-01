@@ -12,11 +12,11 @@ tags: [git]
 ## error log
 
 ```java
-git.exe clone --progress --branch develop -v "[https://--/qm/loadtest/tree/develop](https://--/qm/loadtest/tree/develop)" "D:\_GIT\attic-project\qm\develop"
-Cloning into 'D:\_GIT\attic-project\qm\develop'...
+git.exe clone --progress --branch develop -v "[https://--/qm/loadtest/tree/develop](https://--/qm/loadtest/tree/develop)" "D:\_GIT\project\qm\develop"
+Cloning into 'D:\_GIT\project\qm\develop'...
 fatal: unable to update url base from redirection:
 asked for: [https://--/qm/loadtest/tree/develop/info/refs?service=git-upload-pack](https://--/qm/loadtest/tree/develop/info/refs?service=git-upload-pack)
-redirect: [https://--/users/sign_in](https://gitlab.spectra.co.kr/users/sign_in)
+redirect: [https://--/users/sign_in](https://--/users/sign_in)
 
 git did not exit cleanly (exit code 128) (391 ms @ 2022-08-01 오전 8:41:19)
 ```

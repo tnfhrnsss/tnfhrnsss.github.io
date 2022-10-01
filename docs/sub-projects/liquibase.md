@@ -52,15 +52,15 @@ Missing Catalog(s): NONE
 Unexpected Catalog(s): NONE
 Changed Catalog(s): NONE
 Missing Column(s): 
-     db2.mocha_survey_questionnaire.C_ACTIVE
-     db2.mocha_survey.C_MESSAGE
+     db2.survey_questionnaire.C_ACTIVE
+     db2.survey.C_MESSAGE
 Unexpected Column(s): 
-     db1.mocha_knowledge.C_ACCESS_TYPE
-     db1.mocha_removed_team.C_ALIAS
+     db1.knowledge.C_ACCESS_TYPE
+     db1.removed_team.C_ALIAS
 Changed Column(s): 
-     db2.mocha_survey_response.C_CREATED_AT
+     db2.survey_response.C_CREATED_AT
           order changed from '5' to '4'
-     db2.mocha_survey.C_ENABLED
+     db2.survey.C_ENABLED
           nullable changed from 'false' to 'true'
           order changed from '6' to '8'
 Missing Foreign Key(s): NONE
@@ -76,8 +76,8 @@ Missing Sequence(s): NONE
 Unexpected Sequence(s): NONE
 Changed Sequence(s): NONE
 Missing Table(s): 
-     mocha_survey_questionnaire
-     mocha_survey_restrict
+     survey_questionnaire
+     survey_restrict
 Unexpected Table(s): 
      crema_active_kakao
 Changed Table(s): NONE

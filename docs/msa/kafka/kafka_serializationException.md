@@ -52,7 +52,7 @@ kafkalistener에 property를 추가하거나
     topics = KafkaTenant.PREFIX + BusinessTopics.EVENT_MESSAGE,    
     groupId = BusinessTopics.EVENT_MESSAGE + "-crema-business-message-subscriber",    
     properties = {        
-        "spring.json.value.default.type:spectra.attic.talk.crema.business.message.send.messaging.event.MessageCreated",        
+        "spring.json.value.default.type:messaging.event.MessageCreated",        
         "spring.json.use.type.headers:false"   
         }
     )
@@ -74,8 +74,8 @@ spring:
   kafka:
     consumer:
       properties:
-        spring.json.type.mapping: spectra.attic.talk.mocha.btalk.btalk.messaging.event.BtalkCreated:spectra.attic.talk.crema.business.btalk.message.send.messaging.event.TicketCreated,
-spectra.attic.talk.mocha.btalk.btalk.messaging.event.BtalkUpdated:spectra.attic.talk.crema.business.btalk.message.send.messaging.event.TicketUpdated
+        spring.json.type.mapping: messaging.event.BtalkCreated:messaging.event.TicketCreated,
+messaging.event.BtalkUpdated:messaging.event.TicketUpdated
 
 ```
 
@@ -92,8 +92,8 @@ spectra.attic.talk.mocha.btalk.btalk.messaging.event.BtalkUpdated:spectra.attic.
     groupId = "test-event-subscriber",
     properties = {
         "spring.json.type.mapping:"
-            + "spectra.attic.talk.mocha.btalk.btalk.messaging.event.BtalkCreated:spectra.attic.talk.crema.business.btalk.message.send.messaging.event.TicketCreated,"
-            + "spectra.attic.talk.mocha.btalk.btalk.messaging.event.BtalkUpdated:spectra.attic.talk.crema.business.btalk.message.send.messaging.event.TicketUpdated"
+            + "messaging.event.BtalkCreated:messaging.event.TicketCreated,"
+            + "messaging.event.BtalkUpdated:messaging.event.TicketUpdated"
     }
 )
 ```

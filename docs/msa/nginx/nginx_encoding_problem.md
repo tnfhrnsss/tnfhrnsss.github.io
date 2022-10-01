@@ -160,7 +160,7 @@ feign으로 nginx호출할 때, url을 XAttachUrl 헤더에 셋팅하고 호출
 
 ```java
 @FeignClient(
-    contextId = "spectra.attic.talk.crema.thirdparty.file.client.ThirdPartyGatewayFileClient",
+    contextId = "client.ThirdPartyGatewayFileClient",
     name = "${crema.thirdparty.thirdparty-gateway.name}",
     configuration = {MultipartSupportConfig.class},
     primary = false

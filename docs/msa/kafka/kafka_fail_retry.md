@@ -24,7 +24,7 @@ kafka는 SeekToCurrentErrorHandler를 통해서 retry를 20번 반복
 ```prolog
 08:16:36.560 er#8-0-C-1 ERROR o.s.c.l.LogAccessor     :149 error           Error handler threw an exception
 
-org.springframework.kafka.KafkaException: Seek to current after exception; nested exception is org.springframework.kafka.listener.ListenerExecutionFailedException: Listener method 'public void spectra.attic.talk.crema.thirdparty.kakao.message.receive.subscriber.KakaoMessageEventSubscriber.handle(java.util.List<spectra.attic.talk.crema.thirdparty.kakao.message.domain.receive.KakaoMessage>)' threw exception; nested exception is spectra.attic.talk.crema.conversation.setting.domain.exception.NotAllowedKeyException: Not Allowed Key Exception : e3158759b0449439fe59b2edb32b4de91bce13fa; nested exception is spectra.attic.talk.crema.conversation.setting.domain.exception.NotAllowedKeyException: Not Allowed Key Exception : e3158759b0449439fe59b2edb32b4de91bce13fa
+org.springframework.kafka.KafkaException: Seek to current after exception; nested exception is org.springframework.kafka.listener.ListenerExecutionFailedException: Listener method 'public void KakaoMessageEventSubscriber.handle(java.util.List<KakaoMessage>)' threw exception; nested exception is domain.exception.NotAllowedKeyException: Not Allowed Key Exception : e3158759b0449439fe59b2edb32b4de91bce13fa; nested exception is NotAllowedKeyException: Not Allowed Key Exception : e3158759b0449439fe59b2edb32b4de91bce13fa
 
 ```
 

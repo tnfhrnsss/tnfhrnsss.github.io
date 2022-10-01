@@ -12,28 +12,27 @@ tags: [java8, annotation]
 #### error log
 expressed through field 'expirations'; nested exception is org.springframework.beans.ConversionNotSupportedException: Failed to convert value of type 'java.lang.String' to required type 'java.util.List'; nested exception is java.lang.IllegalStateException:
 
-Cannot convert value of type 'java.lang.String' to required type 'spectra.attic.talk.mocha.authentication.authentication.domain.device.DeviceExpiration':
+Cannot convert value of type 'java.lang.String' to required type 'DeviceExpiration':
 
 no matching editors or conversion strategy found
 
 설정yml
 
 ```
-mocha:
-  login:
-    expirations:
-      - device: pc
-        limit: 5
-      - device: mobile
-        limit: 1440
-      - device: tablet
-        limit: 1440
+login:
+  expirations:
+    - device: pc
+      limit: 5
+    - device: mobile
+      limit: 1440
+    - device: tablet
+      limit: 1440
 ```
 
 #### cause
 
 ```
-@Value("${attic.mocha.login.expirations:}")
+@Value("${login.expirations:}")
 private List<DeviceExpiration> expirations;
 ```
 
@@ -43,7 +42,7 @@ To mapping Object, using `@ConfigurationProperties`로 선언해야한다.
 ```
 @Getter
 @Component
-@ConfigurationProperties("attic.mocha.login")
+@ConfigurationProperties("login")
 public class ExpirationConfig {
     private List<DeviceExpiration> expirations;
 
