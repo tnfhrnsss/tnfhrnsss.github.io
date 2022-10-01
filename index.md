@@ -21,6 +21,7 @@ permalink: /
 
 {: .fs-3 .black }
 
+[2022-10-01 실전 Querydsl 수강 정리(ing)](./docs/mooc/inflearn/inflearn_querydsl.md)  
 [2022-10-01 change Feign And Loadbalancer Retry](./docs/msa/spring-cloud/spring_upgrade_retry.md)  
 [2022-10-01 change Hystrix to Resilience4j](./docs/msa/spring-cloud/spring_upgrade_resilience4j.md)  
 [2022-10-01 change netflix-ribbon to spring-cloud-loadbalancer](./docs/msa/spring-cloud/spring_upgrade_scl.md)  
