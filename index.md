@@ -21,6 +21,9 @@ permalink: /
 
 {: .fs-3 .black }
 
+[2022-10-01 change Feign And Loadbalancer Retry](./docs/msa/spring-cloud/spring_upgrade_retry.md)  
+[2022-10-01 change Hystrix to Resilience4j](./docs/msa/spring-cloud/spring_upgrade_resilience4j.md)  
+[2022-10-01 change netflix-ribbon to spring-cloud-loadbalancer](./docs/msa/spring-cloud/spring_upgrade_scl.md)  
 [2022-09-23 kafka inconsistentClusterIdException](./docs/msa/kafka/kafka_inconsistentClusterIdException.md)  
 [2022-09-21 docker elasticsearch shutdown cause](./docs/errors/docker_elasticsearch.md)  
 [2022-09-19 upsource ReviewNotFoundException](./docs/errors/upsource_reviewNotFoundException.md)  
@@ -28,15 +31,5 @@ permalink: /
 [2022-09-07 BeanInstantiationException Failed to instantiate](./docs/errors/beanInstantiationException.md)  
 [2022-09-06 intellij gc overhead limit exceeded maven](./docs/errors/intellij_gc.md)  
 [2022-09-03 우아한 CRUD - Spring Data JDBC Advanced](./docs/mooc/youtube/woowahan_crud_jdbc_advanced.md)  
-[2022-08-27 우아한 CRUD - 퍼시스턴스 프레임워크 정리](./docs/mooc/youtube/woowahan_crud_persistence.md)  
-[2022-08-26 datatable lib 적용](./docs/etc/datatable_lib.md)  
-[2022-08-18 우아한 객체지향 강의 (by 우형) 정리](./docs/mooc/etc/baemin_object_oriented.md)  
-[2022-08-15 Promise rejected SyntaxError Unexpected end of input](./docs/errors/promise_rejected_syntaxError.md)  
-[2022-08-12 Jpa saveAll Stress Test Result](./docs/msa/jpa/jpa_saveAll.md)  
-[2022-08-11 Twilio Studio Study](./docs/etc/twilio_studio_study.md)  
-[2022-08-09 git pull > exit code 128 error](./docs/errors/git_pull_128_error.md)  
-[2022-08-05 asciidoc conditional tag using](./docs/msa/api/asciidoc_conditional_tag_using.md)  
-[2022-08-03 Feign client Async call](./docs/msa/feign/feignclient_async.md)  
-[2022-08-03 kafka consumer lag solved](./docs/msa/kafka/kafka_consumer_lag.md)  
 
 ---
