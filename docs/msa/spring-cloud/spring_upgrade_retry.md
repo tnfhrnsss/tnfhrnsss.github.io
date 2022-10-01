@@ -51,10 +51,10 @@ spring:
     loadbalancer:
       enabled: true
       retry:
-	      enabled: true
-	      maxRetriesOnSameServiceInstance: 2
-	      maxRetriesOnNextServiceInstance: 2
-	      retryableStatusCodes: 502, 503
+	    enabled: true
+	    maxRetriesOnSameServiceInstance: 2
+	    maxRetriesOnNextServiceInstance: 2
+	    retryableStatusCodes: 502, 503
 ```
 
 - loadbalancer에 등록한 인스턴스 내부에서의 retry는 동작하고 있는데,  `maxRetriesOnSameServiceInstance`에 대한 동작이 안되고 있음
@@ -69,7 +69,7 @@ spring:
     ```yaml
     logging:
       level:
-    		org.springframework.cloud.openfeign.loadbalancer: trace
+    	org.springframework.cloud.openfeign.loadbalancer: trace
     ```
     
 - 디버깅하면 yml에 설정된 값으로 실행되지 않고 0으로 읽어가고 있습니다. 그래서 코드를 보니 loadbalanceProperties를 serviceId 하위로 찾고 있다는 것을 발견했습니다.
@@ -83,11 +83,11 @@ spring:
           enabled: true
           clients:
             crema-gateway:
-    	        retry:
-    		        enabled: true
-    		        maxRetriesOnSameServiceInstance: 2
-    		        maxRetriesOnNextServiceInstance: 2
-    		        retryableStatusCodes: 502, 503
+    	      retry:
+    		    enabled: true
+    		    maxRetriesOnSameServiceInstance: 2
+    		    maxRetriesOnNextServiceInstance: 2
+    		    retryableStatusCodes: 502, 503
     ```
     
 - 설정한 값으로 잘 읽어오고 있습니다.
