@@ -18,10 +18,10 @@ tags: [spring cloud, spring boot]
     - hystrix는 자바6 기반, resilience4j는 자바8기반
     - 자바8기반이기 때문에 함수형으로 작성되었다는 것
 - spring-retry, resilience4j의 retry, loadbalancer의 retry 차이
-    - [https://velog.io/@garden6/API-재시도를-처리할수-있는-여러가지-방안들](https://velog.io/@garden6/API-재시도를-처리할수-있는-여러가지-방안들) —> 여기에 너무나도 잘 정리되어있다.
+    - [https://velog.io/@garden6/API-재시도를-처리할수-있는-여러가지-방안들](https://velog.io/@garden6/API-재시도를-처리할수-있는-여러가지-방안들) —> 여기에 너무나도 잘 정리되어 있습니다.
     - spring-retry
-        - annotation을 통해서 spring aop를 호출할 수 있다.
-        - @EnableRetry, @Retryable을 통해 특정 exception일때 제어가 가능하며, method단위로도 설정이 가능하다
+        - annotation을 통해서 spring aop를 호출할 수 있고
+        - @EnableRetry, @Retryable을 통해 특정 exception일때 제어가 가능하며, method단위로도 설정이 가능합니다.
         - 기본 구현 코드 : [https://www.baeldung.com/spring-retry](https://www.baeldung.com/spring-retry)
     - resilience4j
         - @Retry을 사용하며, 인스턴스 기반으로 Retry

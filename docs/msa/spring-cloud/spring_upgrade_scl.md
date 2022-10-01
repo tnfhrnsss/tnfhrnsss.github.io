@@ -108,7 +108,7 @@ tags: [spring cloud, spring boot]
             crema-gateway:
               refetch-instances: false
               # refetch-instances-interval: 60
-              # repeat-health-check: false시
+              # repeat-health-check: false
     ```
     
 - 실패 로그
@@ -194,14 +194,6 @@ tags: [spring cloud, spring boot]
         	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:329)
         	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:225)
         	at org.springframework.cloud.openfeign.loadbalancer.RetryableFeignBlockingLoadBalancerClient.execute(RetryableFeignBlockingLoadBalancerClient.java:113)
-        	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:119)
-        	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:89)
-        	at org.springframework.cloud.openfeign.FeignCircuitBreakerInvocationHandler.lambda$asSupplier$1(FeignCircuitBreakerInvocationHandler.java:128)
-        	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
-        	at java.util.concurrent.FutureTask.run(FutureTask.java)
-        	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-        	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-        	at java.lang.Thread.run(Thread.java:748)
         ```
         
     - exception에 대한 retry가 호출되어야합니다. 이건 다른 post로 정리하겠습니다.
@@ -296,12 +288,8 @@ spring:
     
     ```yaml
     logging:
-    	level:
-    		org:
-          springframework:
-            cloud:
-              openfeign:
-                loadbalancer: debug
+      level:
+        org.springframework.cloud.openfeign.loadbalancer: debug
     ```
     
 - loadbalancer policy에 대해
@@ -312,7 +300,12 @@ spring:
 
 # problems
 
-- 일부러 가용하지 않은 서버를 설정하지 않을 것 같지만, 만약에 여러대의 instance 중 가용하지 않은 서버가 있으면 첨에 서비스 올리고 최초로 인스턴스를 호출하면, 2~3초정도 걸린다. 그 이후로는 캐싱되어서 빠른 것 같은데.  최초로 전송할 땐, 실패할 경우에 대한 healthcheck를 최초 한번 하는 것 같다. 그 실패에 대한 delay가 발생하는 것으로 보인다.
+- 일부러 가용하지 않은 서버를 instance로 설정하지 않겠지만, 
+만약에 여러대의 instance 중 가용하지 않은 서버가 있으면, 
+처음에 서비스 올리고 최초로 인스턴스를 호출하면, 2~3초정도 걸립니다.
+그 이후로는 가용한 서버 정보가 메모리에 저장되어 있기 때문에 밀리세컨드안에 실행되지만
+최초로 전송할 땐, 실패할 경우에 대한 healthcheck를 yml에 설정한 값으로 수행합니다.
+그래서 그 실패에 대한 delay가 발생합니다.
     
     ```java
     2022-09-29 14:53:21.632 DEBUG 25112 --- [pool-1-thread-1] RetryableFeignBlockingLoadBalancerClient : Service instance retrieved from LoadBalancedRetryContext: was null. Reattempting service instance selection
@@ -326,61 +319,6 @@ spring:
     	at org.springframework.cloud.circuitbreaker.resilience4j.Resilience4JCircuitBreaker.run(Resilience4JCircuitBreaker.java:123) ~[spring-cloud-circuitbreaker-resilience4j-2.1.3.jar:2.1.3]
     	at org.springframework.cloud.client.circuitbreaker.CircuitBreaker.run(CircuitBreaker.java:30) ~[spring-cloud-commons-3.1.3.jar:3.1.3]
     	at org.springframework.cloud.openfeign.FeignCircuitBreakerInvocationHandler.invoke(FeignCircuitBreakerInvocationHandler.java:107) ~[spring-cloud-openfeign-core-3.1.3.jar:3.1.3]
-    	at com.sun.proxy.$Proxy103.hello(Unknown Source) ~[na:na]
-    	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_202]
-    	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_202]
-    	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_202]
-    	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_202]
-    	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.22.jar:5.3.22]
-    	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.22.jar:5.3.22]
-    	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.22.jar:5.3.22]
-    	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.22.jar:5.3.22]
-    	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.22.jar:5.3.22]
-    	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.22.jar:5.3.22]
-    	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070) ~[spring-webmvc-5.3.22.jar:5.3.22]
-    	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.22.jar:5.3.22]
-    	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.22.jar:5.3.22]
-    	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.22.jar:5.3.22]
-    	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.65.jar:4.0.FR]
-    	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.22.jar:5.3.22]
-    	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.65.jar:4.0.FR]
-    	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-    	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-    	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
-    	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-    	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-    	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.22.jar:5.3.22]
-    	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.22.jar:5.3.22]
-    	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-    	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-    	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.22.jar:5.3.22]
-    	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.22.jar:5.3.22]
-    	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-    	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-    	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96) ~[spring-boot-actuator-2.7.2.jar:2.7.2]
-    	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.22.jar:5.3.22]
-    	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-    	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-    	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.22.jar:5.3.22]
-    	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.22.jar:5.3.22]
-    	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-    	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-    	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-    	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.65.jar:9.0.65]
-    	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.65.jar:9.0.65]
-    	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [tomcat-embed-core-9.0.65.jar:9.0.65]
-    	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.65.jar:9.0.65]
-    	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.65.jar:9.0.65]
-    	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [tomcat-embed-core-9.0.65.jar:9.0.65]
-    	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-embed-core-9.0.65.jar:9.0.65]
-    	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.65.jar:9.0.65]
-    	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-embed-core-9.0.65.jar:9.0.65]
-    	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789) [tomcat-embed-core-9.0.65.jar:9.0.65]
-    	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.65.jar:9.0.65]
-    	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.65.jar:9.0.65]
-    	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.65.jar:9.0.65]
-    	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.65.jar:9.0.65]
-    	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_202]
     
     2022-09-29 14:53:25.163 DEBUG 25112 --- [pool-1-thread-1] RetryableFeignBlockingLoadBalancerClient : Selected service instance: DefaultServiceInstance{instanceId='localhost-9093', serviceId='world-no-eureka', host='localhost', port=9093, secure=false, metadata={}}
     2022-09-29 14:53:25.163 DEBUG 25112 --- [pool-1-thread-1] RetryableFeignBlockingLoadBalancerClient : Using service instance from LoadBalancedRetryContext: DefaultServiceInstance{instanceId='localhost-9093', serviceId='world-no-eureka', host='localhost', port=9093, secure=false, metadata={}}

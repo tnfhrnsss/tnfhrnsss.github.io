@@ -40,7 +40,7 @@ tags: [spring cloud, spring boot]
 
 - 다른 어플리케이션으로 feign call했는데, 가용한 상태가 아니라면,
     - feign.RetryableException를 throw하고
-    - status를 -1 로 리턴시킨다
+    - status를 -1 로 리턴
 
 ```java
 throwable = {RetryableException@21177} "feign.RetryableException: "
@@ -58,7 +58,7 @@ throwable = {RetryableException@21177} "feign.RetryableException: "
 ### 최종 코드
 
 - FeignClient
-    - fallbackFactory를 선언하고, BusinessFallbackFactory를 상속받는다
+    - fallbackFactory를 선언하고, BusinessFallbackFactory를 상속받습니다.
     
     ```java
     @FeignClient(
@@ -90,8 +90,8 @@ throwable = {RetryableException@21177} "feign.RetryableException: "
     ```
     
 - FallbackFactory Class
-    - FallbackFactory을 상세 구현한다.
-    - 여러 client에서 공통으로 사용하게 하기 위해 상세 구현체는 별도로 분리했다.
+    - FallbackFactory을 상세 구현합니다.
+    - 여러 client에서 공통으로 사용하게 하기 위해 상세 구현체는 별도로 분리했습니다.
     
     ```java
     @Slf4j
@@ -111,7 +111,7 @@ throwable = {RetryableException@21177} "feign.RetryableException: "
     ```
     
 - ExceptionConverter
-    - FeignException status별로 실패 비지니스가 다르기 때문에, case처리했다.
+    - FeignException status별로 실패 비지니스가 다르기 때문에, case처리했습니다.
     
     ```java
     @Slf4j
