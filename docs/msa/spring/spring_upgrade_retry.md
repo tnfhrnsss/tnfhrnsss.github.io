@@ -3,7 +3,7 @@ layout: post
 title: change Feign And Loadbalancer Retry
 date: 2022-10-01 09:48:00
 last_modified_at : 2022-10-01 09:48:00
-parent: SpringCloud
+parent: Spring
 grand_parent: Msa
 nav_exclude: true
 tags: [spring cloud, spring boot]

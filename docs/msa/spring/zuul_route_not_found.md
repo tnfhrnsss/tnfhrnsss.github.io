@@ -3,7 +3,7 @@ layout: post
 title: zuul routes 404 not found error
 date: 2022-07-05 21:20:00
 last_modified_at : 2022-07-05 21:20:00
-parent: SpringCloud
+parent: Spring
 grand_parent: Msa
 nav_exclude: true
 tags: [spring cloud, zuul]

@@ -3,7 +3,7 @@ layout: post
 title: spring config additional-location not working
 date: 2022-07-19 20:05:00
 last_modified_at : 2022-07-19 20:05:00
-parent: SpringCloud
+parent: Spring
 grand_parent: Msa
 nav_exclude: true
 tags: [spring cloud, config, yml]
