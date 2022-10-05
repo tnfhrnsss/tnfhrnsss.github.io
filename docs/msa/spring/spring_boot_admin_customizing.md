@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Spring boot Admin Customizing
+title: spring boot admin customizing
 date: 2022-10-05 20:51:00
 last_modified_at : 2022-10-05 20:51:00
 parent: Spring
