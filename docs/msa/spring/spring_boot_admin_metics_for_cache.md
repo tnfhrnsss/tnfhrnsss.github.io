@@ -47,8 +47,8 @@ tags: [spring, admin, metrics, cache]
 
 ## solved
 
-- CacheMetricsRegistrar을 상속받아서 구현하면 된다고 함! ([https://gunju-ko.github.io/spring/2018/12/19/SpringMircometer.html](https://gunju-ko.github.io/spring/2018/12/19/SpringMircometer.html))
-- 해보진 않았지만, [https://medium.com/@iliamsharipov_56660/spring-boot-actuator-for-concurrentmapcache-2c7f0d290934](https://medium.com/@iliamsharipov_56660/spring-boot-actuator-for-concurrentmapcache-2c7f0d290934) 를 참고하면 적용가능해보입니다.
+- CacheMetricsRegistrar을 상속받아서 구현하면 된다고 함! ([SpringMircometer](https://gunju-ko.github.io/spring/2018/12/19/SpringMircometer.html))
+- 해보진 않았지만, [spring-boot-actuator-for-concurrentmapcache](https://medium.com/@iliamsharipov_56660/spring-boot-actuator-for-concurrentmapcache-2c7f0d290934) 를 참고하면 적용가능해보입니다.
 
 ## reference
 
@@ -56,4 +56,4 @@ tags: [spring, admin, metrics, cache]
 
 [Spring Boot Actuator Web API Documentation](https://docs.spring.io/spring-boot/docs/current/actuator-api/htmlsingle/#metrics)
 
-[https://docs.spring.io/spring-boot/docs/current/reference/html/actuator.html](https://docs.spring.io/spring-boot/docs/current/reference/html/actuator.html)
+[spring boot actuator doc](https://docs.spring.io/spring-boot/docs/current/reference/html/actuator.html)

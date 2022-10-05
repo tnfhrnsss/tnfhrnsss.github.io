@@ -14,7 +14,7 @@ tags: [spring, admin]
 ## to do list
 
 - 간단하게 spring admin에 커스텀 메뉴를 추가해봅니다.
-- helpdoc : [https://codecentric.github.io/spring-boot-admin/current/#customizing-custom-views](https://codecentric.github.io/spring-boot-admin/current/#customizing-custom-views)
+- helpdoc : [spring-boot-admin customizing-custom-views](https://codecentric.github.io/spring-boot-admin/current/#customizing-custom-views)
 
 ℹ️ 주의 : ui는 vuejs로만 가능합니다!
 
@@ -22,7 +22,7 @@ tags: [spring, admin]
 
 1. github에 가서 소스를 내려받아서 프로젝트 셋팅을 합니다. 
 
-[spring-boot-admin/spring-boot-admin-samples/spring-boot-admin-sample-custom-ui at master · codecentric/spring-boot-admin](https://github.com/codecentric/spring-boot-admin/tree/master/spring-boot-admin-samples/spring-boot-admin-sample-custom-ui)
+[spring-boot-admin](https://github.com/codecentric/spring-boot-admin/tree/master/spring-boot-admin-samples/spring-boot-admin-sample-custom-ui)
 
 1. 저는 spring boot 2.7.4를 기준으로 작업했습니다.
 2. eureka에 등록되어 작업하는 것을 기준으로 했을 경우에만 아래 내용을 적용하면 될 것 같습니다. 그 외의 방식은 별도의 doc문서를 참고하면 됩니다.
@@ -69,7 +69,7 @@ tags: [spring, admin]
 ## load custom-ui
 
 1. 기존 spring-boot-admin 서비스에 custom작업했던 페이지를 add하는 방법은 3가지 정도 파악했는데요.
-    1. 1안) yml에 아래 속성을 추가합니다.
+    1. 방법1) yml에 아래 속성을 추가합니다.
         
         ```yaml
         spring.boot.admin.ui.cache.no-cache: true
@@ -77,8 +77,8 @@ tags: [spring, admin]
         spring.boot.admin.ui.cache-templates: false
         ```
         
-    2. 2안) 위에서 생성된 jar를 외부 jar로 dependency추가하는 방법이 있습니다.
-    3. 3안) spring-boot-admin-server-ui를 npm run build해서 생성된 spring-boot-admin-server-ui-2.1.1-SNAPSHOT.jar로 서비스를 대체해서 띄우는 방법이 있습니다.
+    2. 방법2) 위에서 생성된 jar를 외부 jar로 dependency추가하는 방법이 있습니다.
+    3. 방법3) spring-boot-admin-server-ui를 npm run build해서 생성된 spring-boot-admin-server-ui-2.1.1-SNAPSHOT.jar로 서비스를 대체해서 띄우는 방법이 있습니다.
 
 ## done!
 
@@ -143,8 +143,8 @@ vue-cli-service오류가 계속 나서, 해결하는데 시간이 좀 걸렸습�
 
 # reference
 
-[https://zuminternet.github.io/ZUM-Pilot-advanced_quartz_scheduler_admin/](https://zuminternet.github.io/ZUM-Pilot-advanced_quartz_scheduler_admin/)
+[ZUM-Pilot-advanced_quartz_scheduler_admin/](https://zuminternet.github.io/ZUM-Pilot-advanced_quartz_scheduler_admin/)
 
 [Spring Boot Admin Reference Guide](https://codecentric.github.io/spring-boot-admin/current/#customizing-custom-views)
 
-[https://www.linkedin.com/pulse/exploit-spring-boot-admin-sba-good-way-preeti-gupta](https://www.linkedin.com/pulse/exploit-spring-boot-admin-sba-good-way-preeti-gupta)
+[exploit-spring-boot-admin-sba-good-way-preeti-gupta](https://www.linkedin.com/pulse/exploit-spring-boot-admin-sba-good-way-preeti-gupta)
