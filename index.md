@@ -15,13 +15,14 @@ permalink: /
 
 - [webpage 스크랩핑 후 갱신여부 체크하는 어플리케이션 개발](./docs/etc/webpage_scrapping.md)  
 - 다른 msa서비스 API 변경 체크 - tdd작성  
-- [springboot admin - custom 메뉴 추가(quartz 설정 화면 추가)](./docs/etc/spring_boot_admin_quartz.md)  
 
 ### :: post
 
 {: .fs-3 .black }
 
-[2022-10-02 spring camp 2017 about spring web flux](./docs/msa/spring/spring_camp_2017_web_flux.md)  
+[2022-10-05 Spring boot Admin Customizing](./docs/msa/spring/spring_boot_admin_customizing.md)  
+[2022-10-05 Spring boot admin metrics for cache](./docs/msa/spring/spring_boot_admin_metics_for_cache.md)  
+[2022-10-02 Spring camp 2017 about spring web flux](./docs/msa/spring/spring_camp_2017_web_flux.md)  
 [2022-10-01 실전 Querydsl 수강 정리(ing)](./docs/mooc/inflearn/inflearn_querydsl.md)  
 [2022-10-01 change Feign And Loadbalancer Retry](./docs/msa/spring/spring_upgrade_retry.md)  
 [2022-10-01 change Hystrix to Resilience4j](./docs/msa/spring/spring_upgrade_resilience4j.md)  
