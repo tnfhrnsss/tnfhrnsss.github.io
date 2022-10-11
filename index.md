@@ -20,6 +20,7 @@ permalink: /
 
 {: .fs-3 .black }
 
+[2022-10-11 linux jenkins start failure](./docs/errors/linux_jenkins_start_failure.md)  
 [2022-10-05 spring boot admin customizing](./docs/msa/spring/spring_boot_admin_customizing.md)  
 [2022-10-05 spring boot admin metrics for cache](./docs/msa/spring/spring_boot_admin_metics_for_cache.md)  
 [2022-10-02 spring camp 2017 about spring web flux](./docs/msa/spring/spring_camp_2017_web_flux.md)  
