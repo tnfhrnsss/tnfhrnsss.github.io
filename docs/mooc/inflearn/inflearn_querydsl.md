@@ -9,13 +9,9 @@ nav_exclude: true
 tags: [querydsl, jpa]
 ---
 
-# 실전 Querydsl 수강 정리
-
 # 강의 주소
 
-[실전! Querydsl - 인프런 | 강의](https://inf.run/Zdvf)
-
-강사: 김영한
+[실전! Querydsl](https://inf.run/Zdvf)
 
 # 소개
 
