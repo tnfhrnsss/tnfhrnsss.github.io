@@ -20,11 +20,11 @@ permalink: /
 
 {: .fs-3 .black }
 
+[2022-10-15 실전 Querydsl 수강 정리](./docs/mooc/inflearn/inflearn_querydsl.md)  
 [2022-10-11 linux jenkins start failure](./docs/errors/linux_jenkins_start_failure.md)  
 [2022-10-05 spring boot admin customizing](./docs/msa/spring/spring_boot_admin_customizing.md)  
 [2022-10-05 spring boot admin metrics for cache](./docs/msa/spring/spring_boot_admin_metics_for_cache.md)  
 [2022-10-02 spring camp 2017 about spring web flux](./docs/msa/spring/spring_camp_2017_web_flux.md)  
-[2022-10-01 실전 Querydsl 수강 정리(ing)](./docs/mooc/inflearn/inflearn_querydsl.md)  
 [2022-10-01 change Feign And Loadbalancer Retry](./docs/msa/spring/spring_upgrade_retry.md)  
 [2022-10-01 change Hystrix to Resilience4j](./docs/msa/spring/spring_upgrade_resilience4j.md)  
 [2022-10-01 change netflix-ribbon to spring-cloud-loadbalancer](./docs/msa/spring/spring_upgrade_scl.md)  
