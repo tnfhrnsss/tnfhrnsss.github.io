@@ -20,6 +20,7 @@ permalink: /
 
 {: .fs-3 .black }
 
+[2022-10-18 postman api test and integrating with jenkins](./docs/etc/postman_integrating_jenkins.md)  
 [2022-10-17 우아한테크세미나 - 개발자가 꼭 알아야 할 애플리케이션 보안](./docs/mooc/youtube/woowahan_security.md)  
 [2022-10-15 실전 Querydsl 수강 정리](./docs/mooc/inflearn/inflearn_querydsl.md)  
 [2022-10-11 linux jenkins start failure](./docs/errors/linux_jenkins_start_failure.md)  
