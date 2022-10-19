@@ -88,6 +88,7 @@ tags: [postman, jenkins]
         
 2. 그리고 Configuration > 빌드 후 조치에서 [**Publish JUnit test result report**]를 선택하고 위에서 command로 작성한 xml파일명을 입력합니다.
 3. 빌드 실행 후 생성된 파일을 확인합니다. 
+    ![pij6.png](../img/pij6.png)
 
 ### view test result
 
