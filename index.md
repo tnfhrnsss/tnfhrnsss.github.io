@@ -19,6 +19,7 @@ permalink: /
 
 {: .fs-3 .black }
 
+[2022-10-24 Async & Spring 개발](./docs/msa/spring/async_spring.md)  
 [2022-10-19 Field doesn't have a default value](./docs/errors/sql_error_1364.md)  
 [2022-10-18 postman api test and integrating with jenkins](./docs/etc/postman_integrating_jenkins.md)  
 [2022-10-17 우아한테크세미나 - 개발자가 꼭 알아야 할 애플리케이션 보안](./docs/mooc/youtube/woowahan_security.md)  
@@ -30,12 +31,5 @@ permalink: /
 [2022-10-01 change Feign And Loadbalancer Retry](./docs/msa/spring/spring_upgrade_retry.md)  
 [2022-10-01 change Hystrix to Resilience4j](./docs/msa/spring/spring_upgrade_resilience4j.md)  
 [2022-10-01 change netflix-ribbon to spring-cloud-loadbalancer](./docs/msa/spring/spring_upgrade_scl.md)  
-[2022-09-23 kafka inconsistentClusterIdException](./docs/msa/kafka/kafka_inconsistentClusterIdException.md)  
-[2022-09-21 docker elasticsearch shutdown cause](./docs/errors/docker_elasticsearch.md)  
-[2022-09-19 upsource ReviewNotFoundException](./docs/errors/upsource_reviewNotFoundException.md)  
-[2022-09-08 A "NullPointerException" could be thrown; "getListenerContainer()" can return null.](./docs/quality/sonarqube/S2259.md)  
-[2022-09-07 BeanInstantiationException Failed to instantiate](./docs/errors/beanInstantiationException.md)  
-[2022-09-06 intellij gc overhead limit exceeded maven](./docs/errors/intellij_gc.md)  
-[2022-09-03 우아한 CRUD - Spring Data JDBC Advanced](./docs/mooc/youtube/woowahan_crud_jdbc_advanced.md)  
 
 ---
