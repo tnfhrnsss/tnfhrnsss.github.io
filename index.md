@@ -19,6 +19,7 @@ permalink: /
 
 {: .fs-3 .black }
 
+[2022-11-07 실전 아파치 카프카 정리 정리](./docs/clipping/msa/apachekafka.md)   
 [2022-10-24 Async & Spring 개발](./docs/msa/spring/async_spring.md)  
 [2022-10-19 Field doesn't have a default value](./docs/errors/sql_error_1364.md)  
 [2022-10-18 postman api test and integrating with jenkins](./docs/etc/postman_integrating_jenkins.md)  
