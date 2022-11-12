@@ -67,7 +67,7 @@ eureka:
     register-with-eureka: true
 ```
 
-[https://stackoverflow.com/questions/37542939/problems-spring-cloud-config-and-spring-cloud-bus](https://stackoverflow.com/questions/37542939/problems-spring-cloud-config-and-spring-cloud-bus)
+[stackoverflow - problems-spring-cloud-config-and-spring-cloud-bus](https://stackoverflow.com/questions/37542939/problems-spring-cloud-config-and-spring-cloud-bus)
 
 ## try 2
 
