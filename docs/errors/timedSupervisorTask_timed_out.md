@@ -16,44 +16,44 @@ tags: [java, springboot]
 ## error
 
 ```prolog
-07:53:02.003 ryClient-0 WARN  .n.d.TimedSupervisorTask: 73 run             task supervisor timed out
+07:53:02.003 ryClient-0 WARN  .n.d.TimedSupervisorTask: 73 run task supervisor timed out
 java.util.concurrent.TimeoutException: null
-        at java.util.concurrent.FutureTask.get(FutureTask.java:205)
-        at com.netflix.discovery.TimedSupervisorTask.run(TimedSupervisorTask.java:68)
-        at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
-        at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-        at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
-        at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
-        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-        at java.lang.Thread.run(Thread.java:748)
-07:53:17.011 ryClient-0 WARN  .n.d.TimedSupervisorTask: 73 run             task supervisor timed out
+at java.util.concurrent.FutureTask.get(FutureTask.java:205)
+at com.netflix.discovery.TimedSupervisorTask.run(TimedSupervisorTask.java:68)
+at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+07:53:17.011 ryClient-0 WARN  .n.d.TimedSupervisorTask: 73 run task supervisor timed out
 java.util.concurrent.TimeoutException: null
-        at java.util.concurrent.FutureTask.get(FutureTask.java:205)
-        at com.netflix.discovery.TimedSupervisorTask.run(TimedSupervisorTask.java:68)
-        at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
-        at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-        at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
-        at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
-        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-        at java.lang.Thread.run(Thread.java:748)
-07:53:25.348 main       DEBUG s.a.c.s.c.c.CipherConfig: 19 cipherCrypto    CipherCrypto:CipherCryptoProperties{encryptAlgorithm='AES/ECB/PKCS5Padding'}
+at java.util.concurrent.FutureTask.get(FutureTask.java:205)
+at com.netflix.discovery.TimedSupervisorTask.run(TimedSupervisorTask.java:68)
+at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+07:53:25.348 main       DEBUG s.a.c.s.c.c.CipherConfig: 19 cipherCrypto  CipherCrypto:CipherCryptoProperties{encryptAlgorithm='AES/ECB/PKCS5Padding'}
 07:53:25.363 main       DEBUG s.a.c.s.c.c.JsonCrypto  : 30 <init>          JsonCrypto[CipherCrypto], CryptoProperties{enabled=true, encryptFields=[message, metadata.address, name, email, phone, extra, answerValues]}
-07:53:37.015 ryClient-0 WARN  .n.d.TimedSupervisorTask: 84 run             task supervisor rejected the task
+07:53:37.015 ryClient-0 WARN  .n.d.TimedSupervisorTask: 84 run task supervisor rejected the task
 java.util.concurrent.RejectedExecutionException: Task java.util.concurrent.FutureTask@354aaa21 rejected from java.util.concurrent.ThreadPoolExecutor@704822ec[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
-        at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2063)
-        at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:830)
-        at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1379)
-        at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
-        at com.netflix.discovery.TimedSupervisorTask.run(TimedSupervisorTask.java:66)
-        at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
-        at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-        at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
-        at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
-        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-        at java.lang.Thread.run(Thread.java:748)
+at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2063)
+at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:830)
+at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1379)
+at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
+at com.netflix.discovery.TimedSupervisorTask.run(TimedSupervisorTask.java:66)
+at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
 ```
 
 ## try 1 (실패)
