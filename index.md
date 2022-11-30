@@ -19,6 +19,8 @@ permalink: /
 
 {: .fs-3 .black }
 
+[2022-11-30 스프링 핵심 원리 - 고급편 수강 정리](./docs/mooc/inflearn/spring_core_advance.md) . 
+[2022-11-30 더 자바, Java 8 수강 정리](./docs/mooc/inflearn/the_java8.md) . 
 [2022-11-15 Add apm in kibana](./docs/quality/monitoring/add_apm_in_kibana.md)  
 [2022-11-07 실전 아파치 카프카 정리 정리](./docs/clipping/msa/apachekafka.md)   
 [2022-10-24 Async & Spring 개발](./docs/msa/spring/async_spring.md)  
