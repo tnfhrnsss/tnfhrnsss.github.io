@@ -43,4 +43,4 @@ at org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration.h2Consol
 
 h2버전 업 전에 생성했던 h2파일이 이전 버전이어서 생긴 문제로 보여서
 
-이전 h2파일 삭제하고 다시 재기동!
+delete old version h2 files and restart h2.
