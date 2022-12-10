@@ -2,14 +2,12 @@
 layout: post
 title: The write format 1 is smaller than the supported format 2
 date: 2022-07-09 21:32:00
-last_modified_at : 2022-07-09 21:32:00
+last_modified_at : 2022-12-10 18:46:00
 parent: Errors
 has_children: false
 nav_exclude: true
 tags: [hystrix, msa, feign]
 ---
-
-# The write format 1 is smaller than the supported format 2 [2.0.206/5]
 
 ## error
 
