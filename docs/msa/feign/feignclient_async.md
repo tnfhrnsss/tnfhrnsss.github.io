@@ -2,14 +2,14 @@
 layout: post
 title: Feign client Async call
 date: 2022-08-03 21:48:00
-last_modified_at : 2022-08-03 21:48:00
+last_modified_at : 2022-12-10 21:48:00
 parent: Feign
 grand_parent: Msa
 nav_exclude: true
 tags: [feign, async]
 ---
 
-## try1. `AsyncFeign` 사용하기
+## try1. Use `AsyncFeign`
 
 [How to build REST API client using Feign in Spring Boot](https://levelup.gitconnected.com/how-to-build-rest-api-client-using-feign-in-spring-boot-50db38289420)
 
@@ -25,7 +25,7 @@ asyncFeign.newInstance(new Target.HardCodedTarget(BotHistoryClient.class, "test"
 
 제품에는 못 넣을꺼 같아서 직접 구현했다.
 
-## try2. CompletableFuture.runAsync 호출
+## try2. Call CompletableFuture.runAsync
 
 ```java
 private final Executor taskExecutor;

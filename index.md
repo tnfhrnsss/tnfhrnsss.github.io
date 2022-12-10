@@ -11,9 +11,9 @@ permalink: /
 ## recently update
 {: .fs-9 .text-purple-100 }
 
-### :: toy project
+### :: ing..
 
-- [webpage 스크랩핑 후 갱신여부 체크하는 어플리케이션 개발](./docs/etc/webpage_scrapping.md)  
+- 
 
 ### :: post
 
