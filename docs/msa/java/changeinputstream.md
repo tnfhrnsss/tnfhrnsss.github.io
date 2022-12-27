@@ -111,6 +111,7 @@ private FileInputStreamResource getMultipartFile(FileCdo fileCdo) {
 
 ```
 
+- 리팩토링이 필요해보이긴 하지만, 서버에 선적용 후 테스트해봤습니다.
 - 적용 후 APM 모니터링
     - 첨부파일 몇 개로 진행한 테스트라 개선점이 눈에 띄게 나타나는 것은 아니지만, 최악의 상황은 발생하지 않을 것 같다는 생각입니다.
 
