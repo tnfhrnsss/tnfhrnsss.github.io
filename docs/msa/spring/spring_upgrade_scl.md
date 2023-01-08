@@ -2,7 +2,7 @@
 layout: post
 title: change netflix-ribbon to spring-cloud-loadbalancer
 date: 2022-10-01 09:48:00
-last_modified_at : 2022-10-01 09:48:00
+last_modified_at : 2023-01-09 01:03:00
 parent: Spring
 grand_parent: Msa
 nav_exclude: true
@@ -12,7 +12,6 @@ tags: [spring cloud, spring boot]
 # summary
 
 - 기존에 eureka에 등록되지 않은 서비스에 대한 loadbalance처리를 ribbon을 통해 처리하고 있었는데, eos되면서 spring-cloud-loadbalancer로 대체하게 되었습니다.
-- 상세 코드는 github에 올려두겠습니다(아직 작업중..)
 
 # 내용
 
