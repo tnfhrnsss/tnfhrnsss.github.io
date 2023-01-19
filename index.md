@@ -15,15 +15,17 @@ permalink: /
 
 - (nextstep) 함수(메소드)자바 플레이그라운드 with TDD, 클린코드  
 - (youtube) 토비의 봄 TV 스프링 리액티브 프로그래밍(1) - Reactive Streams  
-- (inflearn) 더 자바, 애플리케이션을 테스트하는 다양한 방법 
+- (youtube) modulith architecture 공부
 
 ### :: post
 
 {: .fs-3 .black }
 
+[2023-01-19 ConnectionClosedException](./docs/msa/nginx/connectionClosedException.md)  
 [2023-01-15 spring boot application running too slow](./docs/msa/spring/spring_boot_running_too_slow.md)  
 [2022-12-27 change ByteArrayInputStream to InputStreamResource](./docs/msa/java/changeinputstream.md)  
 [2022-12-18 lazy한 종료 상태 동기화 시도](./docs/sub-projects/lazy_status_sync.md)  
+[2022-12-24 더 자바, 애플리케이션을 테스트하는 다양한 방법](./docs/mooc/inflearn/java_app_test.md)  
 [2022-11-30 스프링 핵심 원리 - 고급편 수강 정리](./docs/mooc/inflearn/spring_core_advance.md)  
 [2022-11-30 더 자바, Java 8 수강 정리](./docs/mooc/inflearn/the_java8.md)  
 [2022-11-15 Add apm in kibana](./docs/quality/monitoring/add_apm_in_kibana.md)  
