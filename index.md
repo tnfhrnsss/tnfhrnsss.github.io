@@ -21,6 +21,7 @@ permalink: /
 
 {: .fs-3 .black }
 
+[2023-01-20 org.apache.jasper.JasperException PWC6033 Error in Javac compilation for JSP](./docs/errors/jetty_jasperException_pwc6033.md)  
 [2023-01-19 ConnectionClosedException](./docs/msa/nginx/connectionClosedException.md)  
 [2023-01-15 spring boot application running too slow](./docs/msa/spring/spring_boot_running_too_slow.md)  
 [2022-12-27 change ByteArrayInputStream to InputStreamResource](./docs/msa/java/changeinputstream.md)  
