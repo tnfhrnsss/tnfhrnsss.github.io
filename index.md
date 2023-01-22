@@ -21,6 +21,7 @@ permalink: /
 
 {: .fs-3 .black }
 
+[2023-01-22 org.apache.jasper.JasperException- PWC6349](./docs/errors/jasperException_pwc6349.md)    
 [2023-01-21 jetty - Form too many keys](./docs/errors/jetty_form_too_many_keys.md)  
 [2023-01-20 org.apache.jasper.JasperException PWC6033 Error in Javac compilation for JSP](./docs/errors/jetty_jasperException_pwc6033.md)  
 [2023-01-19 ConnectionClosedException](./docs/msa/nginx/connectionClosedException.md)  
