@@ -21,6 +21,7 @@ permalink: /
 
 {: .fs-3 .black }
 
+[2023-01-26 Either re-interrupt this method or rethrow the "InterruptedException" ...](./docs/quality/sonarqube/S2142.md)  
 [2023-01-22 org.apache.jasper.JasperException- PWC6349](./docs/errors/jasperException_pwc6349.md)    
 [2023-01-21 jetty - Form too many keys](./docs/errors/jetty_form_too_many_keys.md)  
 [2023-01-20 org.apache.jasper.JasperException PWC6033 Error in Javac compilation for JSP](./docs/errors/jetty_jasperException_pwc6033.md)  
