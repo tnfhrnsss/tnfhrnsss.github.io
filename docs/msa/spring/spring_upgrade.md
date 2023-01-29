@@ -21,9 +21,9 @@ tags: [spring cloud, spring boot]
 
 # 작업 내용
 
-[change netflix-ribbon to spring-cloud-loadbalancer](./docs/msa/spring/spring_upgrade_scl.md)  
-[change Hystrix to Resilience4j](./docs/msa/spring/spring_upgrade_resilience4j.md)  
-[change Feign And Loadbalancer Retry](./docs/msa/spring/spring_upgrade_retry.md)  
+[change netflix-ribbon to spring-cloud-loadbalancer](./spring_upgrade_scl.md)  
+[change Hystrix to Resilience4j](./spring_upgrade_resilience4j.md)  
+[change Feign And Loadbalancer Retry](./spring_upgrade_retry.md)  
 
 
 # reference
