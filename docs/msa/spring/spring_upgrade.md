@@ -1,6 +1,6 @@
 ---
 layout: post
-title: spring boot and cloud version up
+title: spring boot and cloud version up to 2.7.3
 date: 2022-10-01 09:48:00
 last_modified_at : 2022-10-01 09:48:00
 parent: Spring
@@ -21,9 +21,9 @@ tags: [spring cloud, spring boot]
 
 # 작업 내용
 
-[change netflix-ribbon to spring-cloud-loadbalancer](./docs/msa/spring-cloud/spring_upgrade_scl.md)  
-[change Hystrix to Resilience4j](./docs/msa/spring-cloud/spring_upgrade_resilience4j.md)  
-[change Feign And Loadbalancer Retry](./docs/msa/spring-cloud/spring_upgrade_retry.md)  
+[change netflix-ribbon to spring-cloud-loadbalancer](./docs/msa/spring/spring_upgrade_scl.md)  
+[change Hystrix to Resilience4j](./docs/msa/spring/spring_upgrade_resilience4j.md)  
+[change Feign And Loadbalancer Retry](./docs/msa/spring/spring_upgrade_retry.md)  
 
 
 # reference
