@@ -112,7 +112,7 @@ nav_exclude: true
 
 ## 기존 blocking방식의 restapi와의 동작방식 차이
 
-- [https://vimalma1093.medium.com/java-springboot-blocking-vs-non-blocking-rest-api-implementation-fe5643840287](https://vimalma1093.medium.com/java-springboot-blocking-vs-non-blocking-rest-api-implementation-fe5643840287){:target="_blank"}에서 매우 자세히 설명하고 있습니다.
+- [java-springboot-blocking-vs-non-blocking-rest-api](https://vimalma1093.medium.com/java-springboot-blocking-vs-non-blocking-rest-api-implementation-fe5643840287){:target="_blank"}에서 매우 자세히 설명하고 있습니다.
 - 스프링 캠프 유튜브에서도 자세히 들을 수 있습니다.
 
 # reference
