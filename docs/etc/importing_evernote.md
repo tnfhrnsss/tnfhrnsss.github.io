@@ -32,4 +32,4 @@ nav_exclude: true
 
 ## reference
 
-[https://timelyphoto.com/blog/2021/how-to-fix-evernote-to-notion-import](https://timelyphoto.com/blog/2021/how-to-fix-evernote-to-notion-import)
+[https://timelyphoto.com/blog/2021/how-to-fix-evernote-to-notion-import](https://timelyphoto.com/blog/2021/how-to-fix-evernote-to-notion-import){:target="_blank"}

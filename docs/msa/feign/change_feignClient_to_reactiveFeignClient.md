@@ -89,7 +89,7 @@ nav_exclude: true
 
 ## WebClient를 사용할 경우
 
-- [https://www.baeldung.com/spring-boot-feignclient-vs-webclient](https://www.baeldung.com/spring-boot-feignclient-vs-webclient)를 참고합니다.
+- [https://www.baeldung.com/spring-boot-feignclient-vs-webclient](https://www.baeldung.com/spring-boot-feignclient-vs-webclient){:target="_blank"}를 참고합니다.
     
     ```java
     @GetMapping(value = "/products-non-blocking", produces = MediaType.TEXT_EVENT_STREAM_VALUE)
@@ -112,12 +112,12 @@ nav_exclude: true
 
 ## 기존 blocking방식의 restapi와의 동작방식 차이
 
-- [https://vimalma1093.medium.com/java-springboot-blocking-vs-non-blocking-rest-api-implementation-fe5643840287](https://vimalma1093.medium.com/java-springboot-blocking-vs-non-blocking-rest-api-implementation-fe5643840287)에서 매우 자세히 설명하고 있습니다.
+- [https://vimalma1093.medium.com/java-springboot-blocking-vs-non-blocking-rest-api-implementation-fe5643840287](https://vimalma1093.medium.com/java-springboot-blocking-vs-non-blocking-rest-api-implementation-fe5643840287){:target="_blank"}에서 매우 자세히 설명하고 있습니다.
 - 스프링 캠프 유튜브에서도 자세히 들을 수 있습니다.
 
 # reference
 
-- [https://cloud.spring.io/spring-cloud-openfeign/reference/html/#reactive-support](https://cloud.spring.io/spring-cloud-openfeign/reference/html/#reactive-support)
-- [https://www.vinsguru.com/spring-webclient-with-feign/](https://www.vinsguru.com/spring-webclient-with-feign/)
-- [http://gunsdevlog.blogspot.com/2020/09/reactive-streams-reactor-webflux.html](http://gunsdevlog.blogspot.com/2020/09/reactive-streams-reactor-webflux.html)
-- [https://techblog.woowahan.com/2619/](https://techblog.woowahan.com/2619/)
+- [https://cloud.spring.io/spring-cloud-openfeign/reference/html/#reactive-support](https://cloud.spring.io/spring-cloud-openfeign/reference/html/#reactive-support){:target="_blank"}
+- [https://www.vinsguru.com/spring-webclient-with-feign/](https://www.vinsguru.com/spring-webclient-with-feign/){:target="_blank"}
+- [http://gunsdevlog.blogspot.com/2020/09/reactive-streams-reactor-webflux.html](http://gunsdevlog.blogspot.com/2020/09/reactive-streams-reactor-webflux.html){:target="_blank"}
+- [https://techblog.woowahan.com/2619/](https://techblog.woowahan.com/2619/){:target="_blank"}
