@@ -63,7 +63,7 @@ tags: [kafka, lag]
 ### 1. lag처리
 
 - B어플리케이션을 호출하는 feign client를 비동기로 호출해서 해결했다.
-- [Feign client Async call](./docs/msa/feign/feignclient_async.md)에 따로 정리했다.
+- [Feign client Async call](../feign/feignclient_async.md)에 따로 정리했다.
     
 
 ### 2. 다건에 대한 jpa store save로직 변경
