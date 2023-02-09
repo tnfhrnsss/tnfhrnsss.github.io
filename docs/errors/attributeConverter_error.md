@@ -15,7 +15,9 @@ tags: [jpa]
 
 ```
 10:40:52.851 40-exec-10 INFO  r.m.e.DevModeRestMessage: 19 process rest message is for development mode
-10:40:52.852 40-exec-10 ERROR .ExceptionHandlerManager: 34 handleResponse  [status] 500 INTERNAL_SERVER_ERROR, [code]: 500999, [message] Unexpected error occurred., [detail message] Error attempting to apply AttributeConverter; nested exception is javax.persistence.PersistenceException: Error attempting to apply AttributeConverter,
+10:40:52.852 40-exec-10 ERROR .ExceptionHandlerManager: 34 handleResponse  
+[status] 500 INTERNAL_SERVER_ERROR, [code]: 500999, [message] Unexpected error occurred., 
+[detail message] Error attempting to apply AttributeConverter; nested exception is javax.persistence.PersistenceException: Error attempting to apply AttributeConverter,
 org.springframework.orm.jpa.JpaSystemException: Error attempting to apply AttributeConverter; 
 nested exception is javax.persistence.PersistenceException: 
 Error attempting to apply AttributeConverter
@@ -31,7 +33,8 @@ at [Source: (String)"test"; line: 1, column: 5]
 at org.hibernate.metamodel.model.convert.internal.JpaAttributeConverterImpl.toRelationalValue(JpaAttributeConverterImpl.java:50)
 at org.hibernate.type.descriptor.converter.AttributeConverterSqlTypeDescriptorAdapter$1.bind(AttributeConverterSqlTypeDescriptorAdapter.java:78)
 ... 161 common frames omitted
-Caused by: com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'test': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+Caused by: com.fasterxml.jackson.core.JsonParseException: 
+Unrecognized token 'test': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
 at [Source: (String)"test"; line: 1, column: 5]
 at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1851)
 at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:717)
