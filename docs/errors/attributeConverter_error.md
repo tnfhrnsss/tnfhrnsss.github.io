@@ -17,8 +17,10 @@ tags: [jpa]
 10:40:52.851 40-exec-10 INFO  r.m.e.DevModeRestMessage: 19 process rest message is for development mode
 10:40:52.852 40-exec-10 ERROR .ExceptionHandlerManager: 34 handleResponse  
 [status] 500 INTERNAL_SERVER_ERROR, [code]: 500999, [message] Unexpected error occurred., 
-[detail message] Error attempting to apply AttributeConverter; nested exception is javax.persistence.PersistenceException: Error attempting to apply AttributeConverter,
-org.springframework.orm.jpa.JpaSystemException: Error attempting to apply AttributeConverter; 
+[detail message] Error attempting to apply AttributeConverter; 
+nested exception is javax.persistence.PersistenceException: Error attempting to apply AttributeConverter,
+org.springframework.orm.jpa.JpaSystemException: 
+Error attempting to apply AttributeConverter; 
 nested exception is javax.persistence.PersistenceException: 
 Error attempting to apply AttributeConverter
 at org.springframework.orm.jpa.EntityManagerFactoryUtils.convertJpaAccessExceptionIfPossible(EntityManagerFactoryUtils.java:408)
