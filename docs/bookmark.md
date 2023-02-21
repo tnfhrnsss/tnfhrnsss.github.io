@@ -16,8 +16,8 @@ I will keep looking.
 [https://blog.outsider.ne.kr/](https://blog.outsider.ne.kr/)
 
 # 기업 기술 블로그
-- NHN Cloud Meetup(https://meetup.nhncloud.com/)  
-- Kakao Tech(https://tech.kakao.com/blog/)  
-- 우아한 형제들(https://techblog.woowahan.com/)
-- LINE Engineering(https://engineering.linecorp.com/ko/blog/)  
-- 당근마켓 팀블로그(https://medium.com/daangn)  
+- [NHN Cloud Meetup](https://meetup.nhncloud.com/)  
+- [Kakao Tech](https://tech.kakao.com/blog/)  
+- [우아한 형제들](https://techblog.woowahan.com/)
+- [LINE Engineering](https://engineering.linecorp.com/ko/blog/)  
+- [당근마켓 팀블로그](https://medium.com/daangn)  
