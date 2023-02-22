@@ -10,7 +10,7 @@ nav_exclude: true
 
 ## 토비님의 학습법에 대한 답변  원문
 
-[https://www.inflearn.com/questions/763626/공부-방법에-대해서-질문드립니다?utm_source=mailchimp&utm_medium=email&utm_campaign=traffic_helloinf_inflearnpick&utm_content=20230221_v18](https://www.inflearn.com/questions/763626/%EA%B3%B5%EB%B6%80-%EB%B0%A9%EB%B2%95%EC%97%90-%EB%8C%80%ED%95%B4%EC%84%9C-%EC%A7%88%EB%AC%B8%EB%93%9C%EB%A6%BD%EB%8B%88%EB%8B%A4?utm_source=mailchimp&utm_medium=email&utm_campaign=traffic_helloinf_inflearnpick&utm_content=20230221_v18)
+[토비님 학습법 - 인프런](https://www.inflearn.com/questions/763626/%EA%B3%B5%EB%B6%80-%EB%B0%A9%EB%B2%95%EC%97%90-%EB%8C%80%ED%95%B4%EC%84%9C-%EC%A7%88%EB%AC%B8%EB%93%9C%EB%A6%BD%EB%8B%88%EB%8B%A4?utm_source=mailchimp&utm_medium=email&utm_campaign=traffic_helloinf_inflearnpick&utm_content=20230221_v18)
 
 읽으면 육성으로 들리는 기분이 든다..
 
