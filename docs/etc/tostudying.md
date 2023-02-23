@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 앞으로의 목표!
+title: 나의 Learning curve
 date: 2023-02-22 21:42:00
 last_modified_at : 2023-02-22 21:42:00
 parent: Etc
