@@ -16,6 +16,7 @@ permalink: /
 - (nextstep) 함수(메소드)자바 플레이그라운드 with TDD, 클린코드  
 - (youtube) 토비의 봄 TV 스프링 리액티브 프로그래밍(1) - Reactive Streams  
 - (youtube) modulith architecture 공부
+- (book) Expert One-on-One J2EE Design and Development 번역 정리
 
 ### :: post
 
