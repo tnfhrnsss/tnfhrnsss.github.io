@@ -9,7 +9,7 @@ nav_order: 1
 nav_exclude: true
 ---
 
-# spring design pattern
+# [spring design pattern]
 
 ## 1. 생성 패턴
 

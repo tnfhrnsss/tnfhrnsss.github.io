@@ -17,6 +17,7 @@ permalink: /
 - (youtube) 토비의 봄 TV 스프링 리액티브 프로그래밍(1) - Reactive Streams  
 - (youtube) modulith architecture 공부
 - [(book) Expert One-on-One J2EE Design and Development 번역 정리](./docs/clipping/java/j2EE_design_and_development.md)  
+- [오픈소스에서 사용하는 디자인 패턴 정리](./docs/patterns/opensourcepatterns.md)  
 
 ### :: post
 
