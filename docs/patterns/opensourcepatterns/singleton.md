@@ -2,7 +2,7 @@
 layout: post
 title: Singleton Pattern
 date: 2023-03-02 23:11:45
-last_modified_at : 2023-03-02 23:11:45
+last_modified_at : 2023-03-04 23:44:00
 parent: opensourcepatterns
 has_children: false
 nav_exclude: true
@@ -11,7 +11,11 @@ nav_exclude: true
 - 어플리케이션 당 존재하는 객체의 인스턴스를 오직 한개만 보장하는 매커니즘
 - 이 패턴은 공유 리소스를 관리할 때와 로깅과 같은 cross-cutting서비스를 제공할 때 유용하다.
 
-# 1. singleton beans
+# 1. usage
+- 하나만 존재해도 잘 돌아가는 객체들을 대상으로 적용하는 패턴으로 인스턴스가 2개 이상이 되면 리소스를 잡아먹는다거나 결과에 일관성이 없다는 등의 문제가 생길 수 있다.
+- 전역변수와의 차이점 : 전역변수는 어플리케이션이 시작될 때 객체가 생성되게 되는데 사용전에 이미 자원을 차지하게 되어 불필요한 객체 생성이 될 수 있다.
+
+# 2. singleton beans
 
 - 일반적으로 싱글톤은 어플리케이션에 전역에 유일한 것이다. 하지만 스프링은 아니다. 이러한 제약은 느슨해졌고 대신에 스프링은 application이 아닌 spring Ioc 컨테이너당 객체 한개로 싱글톤을 규정하고 있다.
 - 이 뜻은 스프링은 application context당 오직 한개의 bean만 생성한다
