@@ -64,8 +64,8 @@ nav_exclude: true
             	@Override
             	public void run() {
             		for (int i=1; i<=10; i++) {
-            				setChanged();  // 상태 변경하고
-            				notifyObservers(i);  // 알린다(push). iterable로 치자면 next()함수가 되겠다. next는 pull
+            			setChanged();  // 상태 변경하고
+            			notifyObservers(i);  // 알린다(push). iterable로 치자면 next()함수가 되겠다. next는 pull
             		}
             	}
             }
@@ -114,27 +114,26 @@ nav_exclude: true
     	@Override
     	public void subscribe(Subscriber subscriber) { // 이건 Publisher가 subscribe()를 제공하는 것이고 Subscriber가 이걸 호출하는 것
     		subscriber.onSubscribe(new Subscription() {
-    					@Override
-    					public void request(long n) {
-    							// 이걸 요청했더라도 publisher에 데이터가 없을 수 있다.
-    							while(true) {
-    								if (it.hasNext()) {
-    										subsriber.onNext(it.next));
-    								} else {
-    										subscriber.onComplete();
-    										break;
-    								}
-    							}
-    					}
-    				
-    					@Override
-    					public void cancel() {
-    							
-    					}
-    			});
-    	}
-    
+				@Override
+				public void request(long n) {
+					// 이걸 요청했더라도 publisher에 데이터가 없을 수 있다.
+					while(true) {
+						if (it.hasNext()) {
+							subsriber.onNext(it.next));
+						} else {
+							subscriber.onComplete();
+							break;
+						}
+					}
+				}
+			
+				@Override
+				public void cancel() {
+						
+				}
+		});
     }
+}
     
     Subscriber<Integer> s = new Subscriber<Integer>() {
     	Subscription subscription;
