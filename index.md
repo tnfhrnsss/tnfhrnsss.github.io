@@ -2,7 +2,7 @@
 layout: default
 title: Home
 date: 2022-01-31 13:07:45
-last_modified_at : 2022-07-04 21:34:00
+last_modified_at : 2023-04-01 21:34:00
 nav_order: 1
 has_children: false
 permalink: /
@@ -13,9 +13,6 @@ permalink: /
 
 ### :: ing..
 
-- (nextstep) 함수(메소드)자바 플레이그라운드 with TDD, 클린코드  
-- (youtube) 토비의 봄 TV 스프링 리액티브 프로그래밍(1) - Reactive Streams  
-- (youtube) modulith architecture 공부
 - [(book) Expert One-on-One J2EE Design and Development 번역 정리](./docs/clipping/java/j2EE_design_and_development.md)  
 - [오픈소스에서 사용하는 디자인 패턴 정리](./docs/patterns/opensourcepatterns.md)  
 
@@ -23,6 +20,7 @@ permalink: /
 
 {: .fs-3 .black }
 
+[2023-04-01 12factor application + alpha](./docs/clipping/msa/12factors.md)  
 [2023-03-23 Fields in a "Serializable" class should either be transient or serializable](./docs/quality/sonarqube/S1948.md)  
 [2023-03-07 토비의 봄 TV 스프링 리액티브 프로그래밍(14) - Flux의 특징과 활용방법 정리](./docs/mooc/youtube/tobylee_reactivestream_flux.md)  
 [2023-03-05 토비의 봄 TV 스프링 리액티브 프로그래밍(1) - Reactive Streams](./docs/mooc/youtube/tobylee_reactivestream1.md)  
