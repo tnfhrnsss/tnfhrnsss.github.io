@@ -46,8 +46,13 @@ key를 string값으로 주고 싶다면 single quote를 줘야한다.
 
 아니면, 전역변수로 선언하거나
 
+- 전역변수를 key로 사용하려면
+* 반드시 public해야하고
+* 반드시 static final 상태여야 한다.
+
 ```java
 public static final String KEY = "cacheKey";
+
 @Override
 @Cacheable(value = "cacheName", key = "#root.target.KEY")
 ```
