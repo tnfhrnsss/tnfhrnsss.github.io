@@ -36,7 +36,7 @@ nav_exclude: true
 
 ```java
 @LoadBalancerClient(name="crema-gateway", configuration = {FeignLBInstanceConfigurationWithHealthCheck.class})
-public class FeignLBClientConfiguration {
+public class GatewayClientConfiguration {
 
     @LoadBalanced
     @Bean
@@ -55,14 +55,14 @@ public class FeignLBClientConfiguration {
 @Service
 @RequiredArgsConstructor
 public class KakaoBotHistoryFlowService {
-    private final WebClient.Builder webClientBuilder;
+    private final GatewayClientConfiguration gatewayClientConfiguration;
 
     public void requestBotHistory(ActiveKakao activeKakao) {
-        Flux<KakaoBotHistoryRdo> historyRdoFlux = webClientBuilder
+        Flux<KakaoBotHistoryRdo> historyRdoFlux = gatewayClientConfiguration.webClientBuilder()
             .build()
             .post()
             .uri("http://crema-gateway/chatbothistory/")
-            .body(Mono.fromSupplier(() -> new KakaoBotHistorySdo(activeKakao.getUserKey(), activeKakao.getSenderKey())), KakaoBotHistorySdo.class)
+            .body(Mono.fromSupplier(() -> kakaoBotHistorySdo), KakaoBotHistorySdo.class)
             .retrieve()
             .bodyToFlux(KakaoBotHistoryRdo.class);
 
@@ -73,6 +73,8 @@ public class KakaoBotHistoryFlowService {
 
 - bean으로 선언된 webclientbuilder를 통해 외부 챗봇이력을 non-blocking방식으로 조회한 후 메시지 어플리케이션으로 전달하는 로직입니다.
 - config속성이 feignclient처럼 단순하게 분리해서 동작이 되도록 라이브러리가 탄생했음 좋겠네요
+- 전체적으로 보면 gw를 통해서 호출하는 경우와 직접 feign으로 호출하는 코드가 혼재된 상태인데요 가독성도 떨어지고, 처음 보는 사람은 이해하기 어려울 것 같습니다.
+- 리팩토링 포인트가 또 하나 생성되는...
 
 # webflux 6 이라면
 
