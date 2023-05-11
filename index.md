@@ -21,21 +21,10 @@ permalink: /
 
 {: .fs-3 .black }
 
+[2023-05-11 swagger-ui loading slow](./docs/etc/swagger-ui_loading_slow.md)  
 [2023-04-03 Change FeignClient to Webflux with spring load balancer](./docs/msa/feign/change_feignClient2webflux_with_scl.md)  
 [2023-04-01 12factor application + alpha](./docs/clipping/msa/12factors.md)  
 [2023-03-23 Fields in a "Serializable" class should either be transient or serializable](./docs/quality/sonarqube/S1948.md)  
 [2023-03-07 토비의 봄 TV 스프링 리액티브 프로그래밍(14) - Flux의 특징과 활용방법 정리](./docs/mooc/youtube/tobylee_reactivestream_flux.md)  
 [2023-03-05 토비의 봄 TV 스프링 리액티브 프로그래밍(1) - Reactive Streams](./docs/mooc/youtube/tobylee_reactivestream1.md)  
-[2023-02-26 실전! 스프링 부트와 JPA활용2](./docs/mooc/inflearn/spring_boot_jpa_advance.md)  
-[2023-02-22 나의 Learning curve](./docs/etc/tostudying.md)  
-[2023-02-09 what is containerless](./docs/patterns/containerless.md)  
-[2023-02-04 Change FeignClient to ReactiveFeignClient](./docs/msa/feign/change_feignClient_to_reactiveFeignClient.md)  
-[2023-01-28 importing evernote to notion](./docs/etc/importing_evernote.md)  
-[2023-01-26 Either re-interrupt this method or rethrow the "InterruptedException" ...](./docs/quality/sonarqube/S2142.md)  
-[2023-01-22 org.apache.jasper.JasperException- PWC6349](./docs/errors/jasperException_pwc6349.md)    
-[2023-01-21 jetty - Form too many keys](./docs/errors/jetty_form_too_many_keys.md)  
-[2023-01-20 org.apache.jasper.JasperException PWC6033 Error in Javac compilation for JSP](./docs/errors/jetty_jasperException_pwc6033.md)  
-[2023-01-19 ConnectionClosedException](./docs/msa/nginx/connectionClosedException.md)  
-[2023-01-15 spring boot application running too slow](./docs/msa/spring/spring_boot_running_too_slow.md)  
-
 ---
