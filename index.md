@@ -21,6 +21,7 @@ permalink: /
 
 {: .fs-3 .black }
 
+[2023-05-16 @ParameterizedTest와 initializationError](./docs/msa/java/parameterizedTest_initializationError.md)  
 [2023-05-15 Warning Parameter 'xxx' is never used](./docs/quality/sonarqube/warning_parameter.md)  
 [2023-05-13 Remove this use of "Double"; it is deprecated.](./docs/quality/sonarqube/S1874.md)  
 [2023-05-11 swagger-ui loading slow](./docs/etc/swagger-ui_loading_slow.md)  
