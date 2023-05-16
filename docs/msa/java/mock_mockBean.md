@@ -1,6 +1,6 @@
 ---
 layout: post
-title: @Mock vs @MockBean
+title: '@Mock vs @MockBean'
 date: 2023-05-17 08:07:00
 last_modified_at : 2023-05-17 08:07:00
 parent: Java
