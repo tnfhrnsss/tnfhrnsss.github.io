@@ -15,12 +15,12 @@ permalink: /
 
 - [(book) Expert One-on-One J2EE Design and Development 번역 정리](./docs/clipping/java/j2EE_design_and_development.md)  
 - [오픈소스에서 사용하는 디자인 패턴 정리](./docs/patterns/opensourcepatterns.md)  
-- [자리 배치 전산화 프로젝트 with chat gpt](./docs/sub-projects/office_seat_with_chatgpt.md)  
 
 ### :: post
 
 {: .fs-3 .black }
 
+[2023-05-18 자리 배치 전산화 프로젝트 with chat gpt](./docs/sub-projects/office_seat_with_chatgpt.md)  
 [2023-05-17 @Mock vs @MockBean](./docs/msa/java/mock_mockBean.md)  
 [2023-05-16 @ParameterizedTest와 initializationError](./docs/msa/java/parameterizedTest_initializationError.md)  
 [2023-05-15 Warning Parameter 'xxx' is never used](./docs/quality/sonarqube/warning_parameter.md)  
