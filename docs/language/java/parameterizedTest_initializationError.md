@@ -4,7 +4,7 @@ title: @ParameterizedTest와 initializationError
 date: 2023-05-16 08:01:00
 last_modified_at : 2023-05-16 08:01:00
 parent: Java
-grand_parent: Msa
+grand_parent: Language
 has_children: false
 nav_exclude: true
 ---

@@ -4,7 +4,7 @@ title: Map 인터페이스 정리
 date: 2023-05-19 08:23:00
 last_modified_at : 2023-05-19 08:23:00
 parent: Java
-grand_parent: Msa
+grand_parent: Language
 has_children: false
 nav_exclude: true
 ---

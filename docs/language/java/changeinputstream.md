@@ -4,7 +4,7 @@ title: change ByteArrayInputStream to InputStreamResource
 date: 2022-12-27 17:07:00
 last_modified_at : 2023-01-07 17:07:00
 parent: Java
-grand_parent: Msa
+grand_parent: Language
 has_children: false
 nav_exclude: true
 ---

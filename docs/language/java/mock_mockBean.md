@@ -4,7 +4,7 @@ title: '@Mock vs @MockBean'
 date: 2023-05-17 08:07:00
 last_modified_at : 2023-05-17 08:07:00
 parent: Java
-grand_parent: Msa
+grand_parent: Language
 has_children: false
 nav_exclude: true
 ---
