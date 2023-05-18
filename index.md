@@ -20,9 +20,10 @@ permalink: /
 
 {: .fs-3 .black }
 
+[2023-05-19 Map 인터페이스 정리](./docs/language/java/map_interface.md)  
 [2023-05-18 자리 배치 전산화 프로젝트 with chat gpt](./docs/sub-projects/office_seat_with_chatgpt.md)  
-[2023-05-17 @Mock vs @MockBean](./docs/msa/java/mock_mockBean.md)  
-[2023-05-16 @ParameterizedTest와 initializationError](./docs/msa/java/parameterizedTest_initializationError.md)  
+[2023-05-17 @Mock vs @MockBean](./docs/language/java/mock_mockBean.md)  
+[2023-05-16 @ParameterizedTest와 initializationError](./docs/language/java/parameterizedTest_initializationError.md)  
 [2023-05-15 Warning Parameter 'xxx' is never used](./docs/quality/sonarqube/warning_parameter.md)  
 [2023-05-13 Remove this use of "Double"; it is deprecated.](./docs/quality/sonarqube/S1874.md)  
 [2023-05-11 swagger-ui loading slow](./docs/etc/swagger-ui_loading_slow.md)  
