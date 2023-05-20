@@ -20,6 +20,7 @@ permalink: /
 
 {: .fs-3 .black }
 
+[2023-05-20 Try nginx proxy_pass without dns server](./docs/msa/nginx/try_nginx_proxy_pass_without_dns_server.md)  
 [2023-05-19 Map 인터페이스 정리](./docs/language/java/map_interface.md)  
 [2023-05-18 자리 배치 전산화 프로젝트 with chat gpt](./docs/sub-projects/office_seat_with_chatgpt.md)  
 [2023-05-17 @Mock vs @MockBean](./docs/language/java/mock_mockBean.md)  
