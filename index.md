@@ -20,6 +20,7 @@ permalink: /
 
 {: .fs-3 .black }
 
+[2023-06-01 Replace this type parametrization by the final type `String`.](./docs/quality/sonarqube/S4968.md)  
 [2023-05-27 SQLException Incorrect string value '\xA4\xB7'](./docs/errors/jpaSystemException_1.md)  
 [2023-05-25 elastic search response long type to change date format](./docs/msa/elastic-search/elasticsearch_script.md)  
 [2023-05-20 Try nginx proxy_pass without dns server](./docs/msa/nginx/try_nginx_proxy_pass_without_dns_server.md)  
