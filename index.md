@@ -20,6 +20,7 @@ permalink: /
 
 {: .fs-3 .black }
 
+[2023-06-05 local cache와 invalidation message propagation 전략을 활용하여 api 성능 튜닝하기 - 강의 정리](./docs/mooc/youtube/localcache_imdg.md)  
 [2023-06-01 Replace this type parametrization by the final type `String`.](./docs/quality/sonarqube/S4968.md)  
 [2023-05-27 SQLException Incorrect string value '\xA4\xB7'](./docs/errors/jpaSystemException_1.md)  
 [2023-05-25 elastic search response long type to change date format](./docs/msa/elastic-search/elasticsearch_script.md)  
@@ -33,6 +34,4 @@ permalink: /
 [2023-05-11 swagger-ui loading slow](./docs/etc/swagger-ui_loading_slow.md)  
 [2023-04-03 Change FeignClient to Webflux with spring load balancer](./docs/msa/feign/change_feignClient2webflux_with_scl.md)  
 [2023-04-01 12factor application + alpha](./docs/clipping/msa/12factors.md)  
-[2023-03-23 Fields in a "Serializable" class should either be transient or serializable](./docs/quality/sonarqube/S1948.md)  
-[2023-03-07 토비의 봄 TV 스프링 리액티브 프로그래밍(14) - Flux의 특징과 활용방법 정리](./docs/mooc/youtube/tobylee_reactivestream_flux.md)  
-[2023-03-05 토비의 봄 TV 스프링 리액티브 프로그래밍(1) - Reactive Streams](./docs/mooc/youtube/tobylee_reactivestream1.md)  
+
