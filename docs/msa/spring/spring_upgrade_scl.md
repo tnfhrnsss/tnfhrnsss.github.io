@@ -96,6 +96,7 @@ tags: [spring cloud, spring boot]
 - loadbalancer를 healthcheck를 통해서 사용하기 위해서는 healthcheck정보가 필요합니다
 - 만약에 설정이 따로 없다면, actuator/healthcheck를 기본으로 호출하게 됩니다.
 - 저는 기존에 ribbon으로도 제공했던 pingurl이 있었기 때문에 그 설정 그대로 옮기기만 했습니다.
+- refetch-instances, refetch-instances-interval, repeat-health-check 설정들은 serviceId 개별적으로 설정할 수 없습니다. 개별적으로 설정하려면, 커스텀이 필요합니다.
     
     ```yaml
     spring:
@@ -104,10 +105,7 @@ tags: [spring cloud, spring boot]
           health-check:
             path:
               crema-gateway: /ping
-            crema-gateway:
-              refetch-instances: false
-              # refetch-instances-interval: 60
-              # repeat-health-check: false
+              port: 8777
     ```
     
 - 실패 로그
