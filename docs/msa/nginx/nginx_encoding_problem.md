@@ -150,7 +150,7 @@ njs를 설치하면 인코딩된 url을 디코드시켜주기 때문에 문제�
 
 [https://lng1982.tistory.com/341](https://lng1982.tistory.com/341)
 
-—> path나 body에 있는 string은 무조건 인코딩된다고 합니다.
+—> path나 body에 있는 string은 무조건 인코딩된다고 합니다. 
 
 그래서 저는 url을 header에 넣는 것으로 꼼수를 부려봤습니다.
 
@@ -194,3 +194,38 @@ location ~* /attach/download {
 
 - $part1은 도메인
 - $part2는 도메인 이후의 path, 파라미터 등의 나머지
+
+### add. 23.06.10 
+
+- 이번엔 url에 쿼리스트링이 포함되면서 header에 있는 query string의 ? 물음표도 인코딩되어 404 에러가 발생하고 있었습니다.
+- nginx의 error log를 debug로 변경하면 아래처럼 물음표가 %3F로 변환되어 호출되는 것을 확인할 수 있습니다.
+
+```
+"GET /dna/mBOdC/oZ07liuNex/S0hbYfYvbw9JRvhEk6LC7b/i_0468034a7859.jpg%3Fcredential=zf3biCPbmWRjbqf40YG HTTP/1.0
+Host: aaa.net
+Connection: close
+XAttachUrl: https://aaa.net/dna/mBOdC/oZ07liuNex/S0hbYfYvbw9JRvhEk6LC7b/i_0468034a7859.jpg?credential=zf3biCPbmWRjbqf40YG
+User-Agent: PostmanRuntime/7.32.2
+Accept: */*
+```
+
+- 그래서 어플리케이션에서 호출할 때 헤더를 하나더 추가해서 쿼리스트링만 별도의 헤더변수로 전달하도록 했습니다.
+- XAttachQuery 헤더 변수 추가
+
+[nginx.conf]
+
+```bash
+location ~* /attach/download {
+
+    resolver 8.8.8.8;
+   if ($http_XAttachUrl ~ http[s]?:\/?\/?([^\/]+)(.*)$) {
+        set $part1 $1;
+        set $part2 $2;
+        rewrite . $part2?$http_XAttachQuery break;
+        proxy_pass http://$part1;
+    }
+
+        proxy_redirect off;
+        error_log /var/log/nginx/dn-m.img.error.log debug;
+}
+```
