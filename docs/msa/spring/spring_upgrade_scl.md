@@ -239,13 +239,16 @@ spring:
         maxRetriesOnNextServiceInstance: 2
         retryableStatusCodes: 502, 503
       health-check:
+        refetch-instances: true
+        refetch-instances-interval: 60s // default 25s
+        repeat-health-check: false
         path:
           crema-gateway: /ping
-        crema-gateway:
-          refetch-instances: false
-          # refetch-instances-interval: 60
-          # repeat-health-check: false
 ```
+
+6. refetch
+    - 위에서처럼 설정하면, 최초 호출시 한번 /ping이 호출되고, 그 이후 60초마다 호출된다.
+    - 스프링 전역에서만 설정할 수 있으므로 주의가 필요하다.
 
 # About ping
 
