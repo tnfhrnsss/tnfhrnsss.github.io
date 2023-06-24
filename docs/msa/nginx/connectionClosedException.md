@@ -1,6 +1,7 @@
 ---
 layout: post
 title: ConnectionClosedException
+description: ConnectionClosedException
 date: 2023-01-19 21:25:00
 last_modified_at : 2023-01-19 21:25:00
 parent: Nginx
@@ -8,6 +9,7 @@ grand_parent: Msa
 has_children: false
 nav_exclude: true
 tags: [nginx]
+keywords: nginx
 ---
 
 ## problem

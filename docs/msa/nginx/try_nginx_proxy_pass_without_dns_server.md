@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Try nginx proxy_pass without dns server
+description: Try nginx proxy_pass without dns server
 date: 2023-05-20 12:32:00
 last_modified_at : 2023-05-20 12:32:00
 parent: Nginx
@@ -8,6 +9,7 @@ grand_parent: Msa
 has_children: false
 nav_exclude: true
 tags: [nginx]
+keywords: nginx
 ---
 
 # problem

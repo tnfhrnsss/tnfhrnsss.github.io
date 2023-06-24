@@ -1,6 +1,7 @@
 ---
 layout: post
 title: CircularRedirectException
+description: CircularRedirectException
 date: 2022-06-16 21:05:00
 last_modified_at : 2022-06-16 21:05:00
 parent: Nginx
@@ -8,6 +9,7 @@ grand_parent: Msa
 has_children: false
 nav_exclude: true
 tags: [nginx]
+keywords: nginx
 ---
 
 ### error log
