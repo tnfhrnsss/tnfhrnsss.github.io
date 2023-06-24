@@ -1,6 +1,7 @@
 ---
 layout: post
 title: nginx query string encoding problem
+description: nginx query string encoding problem
 date: 2022-07-23 23:01:00
 last_modified_at : 2022-07-23 23:01:00
 parent: Nginx
@@ -8,6 +9,7 @@ grand_parent: Msa
 has_children: false
 nav_exclude: true
 tags: [nginx, encoding, feign]
+keywords: nginx
 ---
 
 ## 요구사항

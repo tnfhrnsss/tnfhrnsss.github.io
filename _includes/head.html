@@ -10,6 +10,10 @@
     {% endif %}
   {% endunless %}
 
+  {% if page.keywords %}
+      <meta name="keywords" content="{{ page.keywords }}">
+  {% endif %}
+
   <link rel="shortcut icon" href="{{ 'favicon.ico' | relative_url }}" type="image/x-icon">
 
   <link rel="stylesheet" href="{{ '/assets/css/just-the-docs-default.css' | relative_url }}">
