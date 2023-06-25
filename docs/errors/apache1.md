@@ -1,12 +1,14 @@
 ---
 layout: post
 title: BrowserMatch
+description: BrowserMatch
 date: 2021-09-09 13:07:45
 last_modified_at : 2021-09-09 13:07:45
 parent: Errors
 has_children: false
 nav_exclude: true
 tags: [apache, browsermatch]
+keywords: apache
 ---
 
 기본 아파치를 윈도우에 설치하고 나니 httpd-ssl.conf에

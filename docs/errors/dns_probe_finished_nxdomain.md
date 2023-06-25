@@ -1,12 +1,14 @@
 ---
 layout: post
 title: DNS_PROBE_FINISHED_NXDOMAIN
+description: DNS_PROBE_FINISHED_NXDOMAIN
 date: 2022-07-15 21:25:00
 last_modified_at : 2022-07-15 21:25:00
 parent: Errors
 has_children: false
 nav_exclude: true
 tags: [ssl, freenom]
+keywords: freenom
 ---
 
 freenom에 등록한 도메인주소로 잘 써왔는데

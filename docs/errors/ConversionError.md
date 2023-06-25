@@ -1,12 +1,14 @@
 ---
 layout: post
 title: ConversionNotSupportedException
+description: ConversionNotSupportedException
 date: 2022-03-27 12:58:45
 last_modified_at : 2022-03-27 12:58:45
 parent: Errors
 has_children: false
 nav_exclude: true
 tags: [java8, annotation]
+keywords: java8
 ---
 
 #### error log

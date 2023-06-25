@@ -1,12 +1,14 @@
 ---
 layout: post
 title: BeanInstantiationException Failed to instantiate
+description: BeanInstantiationException Failed to instantiate
 date: 2022-09-07 21:41:00
 last_modified_at : 2022-09-07 21:41:00
 parent: Errors
 has_children: false
 nav_exclude: true
 tags: [spring boot]
+keywords: springboot
 ---
 
 ## problem

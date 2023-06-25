@@ -1,12 +1,14 @@
 ---
 layout: post
 title: Error attempting to apply AttributeConverter
+description: Error attempting to apply AttributeConverter
 date: 2022-07-06 18:15:00
 last_modified_at : 2022-07-06 18:15:00
 parent: Errors
 has_children: false
 nav_exclude: true
 tags: [jpa]
+keywords: jpa
 ---
 
 ## Error attempting to apply AttributeConverter; nested exception is javax.persistence.PersistenceException: Error attempting to apply AttributeConverter
