@@ -7,6 +7,8 @@ parent: Errors
 has_children: false
 nav_exclude: true
 tags: [elb, waf]
+description: aws elb waf 403 error
+keywords: elb
 ---
 
 ## problem

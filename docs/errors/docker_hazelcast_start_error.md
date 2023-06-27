@@ -7,6 +7,8 @@ parent: Errors
 has_children: false
 nav_exclude: true
 tags: [docker, hazelcast]
+description: docker hazelcast management-center start error
+keywords: docker
 ---
 
 ### problem

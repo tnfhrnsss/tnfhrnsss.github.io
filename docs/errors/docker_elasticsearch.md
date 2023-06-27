@@ -1,12 +1,14 @@
 ---
 layout: post
 title: docker elasticsearch shutdown cause
+description: docker elasticsearch shutdown cause
 date: 2022-09-21 21:28:00
 last_modified_at : 2022-09-21 21:28:00
 parent: Errors
 has_children: false
 nav_exclude: true
 tags: [docker, elasticsearch]
+keywords: docker
 ---
 
 ## problem 1

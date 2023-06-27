@@ -7,6 +7,8 @@ parent: Errors
 has_children: false
 nav_exclude: true
 tags: [eclipse]
+description: Unknown Faceted Project Problem
+keywords: eclipse
 ---
 
 ## problem
