@@ -20,6 +20,7 @@ permalink: /
 
 {: .fs-3 .black }
 
+[2023-07-03 sync product license using delegation pattern](./docs/patterns/delegation_pattern.md)  
 [2023-06-05 local cache와 invalidation message propagation 전략을 활용하여 api 성능 튜닝하기 - 강의 정리](./docs/mooc/youtube/localcache_imdg.md)  
 [2023-06-01 Replace this type parametrization by the final type `String`.](./docs/quality/sonarqube/S4968.md)  
 [2023-05-27 SQLException Incorrect string value '\xA4\xB7'](./docs/errors/jpaSystemException_1.md)  
