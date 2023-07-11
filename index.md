@@ -20,6 +20,7 @@ permalink: /
 
 {: .fs-3 .black }
 
+[2023-07-11 java compiler 매개변수 이름을 유지할 때 발생하는 deserializer 문제](./docs/errors/java_compiler_parameters.md)  
 [2023-07-11 npm install failed](./docs/errors/npm_install_error.md)  
 [2023-07-11 HV000151) A method overriding another method must not redefine ...](./docs/errors/HV000151.md)  
 [2023-07-03 sync product license using delegation pattern](./docs/patterns/delegation_pattern.md)  
