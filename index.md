@@ -20,6 +20,7 @@ permalink: /
 
 {: .fs-3 .black }
 
+[2023-07-11 npm install failed](./docs/errors/npm_install_error.md)  
 [2023-07-11 HV000151) A method overriding another method must not redefine ...](./docs/errors/HV000151.md)  
 [2023-07-03 sync product license using delegation pattern](./docs/patterns/delegation_pattern.md)  
 [2023-06-05 local cache와 invalidation message propagation 전략을 활용하여 api 성능 튜닝하기 - 강의 정리](./docs/mooc/youtube/localcache_imdg.md)  
