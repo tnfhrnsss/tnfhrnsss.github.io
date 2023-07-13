@@ -64,6 +64,7 @@ keywords: kafka
     ```
 
 # Repository
+https://github.com/tnfhrnsss/kafka-monitoring.git
 
 # Snapshot
 
