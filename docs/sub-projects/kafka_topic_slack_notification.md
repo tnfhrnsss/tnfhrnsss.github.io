@@ -67,4 +67,4 @@ keywords: kafka
 
 # Snapshot
 
-![kafka_topic_slack_notification.png](../img/kafka_topic_slack_notification.png)
+![kafka_topic_slack_notification.png](./img/kafka_topic_slack_notification.png)
