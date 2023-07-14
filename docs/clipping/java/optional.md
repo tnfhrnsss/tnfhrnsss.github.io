@@ -55,3 +55,12 @@ public class KakaoMessageAdapterService {
 optinal api가 생겼다고, 무조건 wrapping을 한다든지 남용하면 안된다.
 
 optional은 비용이 발생하므로 단순 null체크는 null로 하자.
+
+## The Mother of All Bikesheds: Stuart Marks
+1. 절대로 Optional 변수와 반환값에 null을 사용하지 말라
+2. Optional에 값이 들어 있다는 것을 확신하지 않는 한 Optional.get()을 쓰지 말라
+3. Optional.isPresent()이나 Optionial.get() 외 API를 가능한 사용하라.
+4. Optional에서 여러 메서드를 연속해서 호출하고 값을 얻기 위한 Optional을 생성하는 것은 권장하지 않는다.
+5. Optional로 값을 처리하는 중에 그 안에 중간값을 처리하기 위해 또 다른 Optional이 사용되면 너무 복잡해진다.
+6. Optional을 필드(직렬화가 안되기 떄문에), 메서드 매개변수, 집합 자료형에 쓰지말라.
+7. 집합 자료형(List, Set, Map)을 감싸는 데 Optional을 쓰지 말고 집합을 사용해라.
