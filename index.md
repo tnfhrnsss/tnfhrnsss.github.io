@@ -20,6 +20,7 @@ permalink: /
 
 {: .fs-3 .black }
 
+[2023-07-22 When SonarQube Detects Code Smells, Send Slack DM](./docs/sub-projects/sonarqube_codesmell_slack_notification.md)  
 [2023-07-13 Kafka Topic Change Notification with Slack](./docs/sub-projects/kafka_topic_slack_notification.md)  
 [2023-07-11 java compiler 매개변수 이름을 유지할 때 발생하는 deserializer 문제](./docs/errors/java_compiler_parameters.md)  
 [2023-07-11 npm install failed](./docs/errors/npm_install_error.md)  
