@@ -101,13 +101,23 @@ curl --location 'https://slack.com/api/conversations.members?channel=xxxxx' \
 --header 'Authorization: Bearer xxxxx'
 ```
 
-## 2. User Profile API
+## 2. User Profile API( -> user.info API로 변경)
 
 - 권한이 user.read, user.profile.read, user.read.email이 있어야한다.
 - [https://api.slack.com/methods/users.profile.get](https://api.slack.com/methods/users.profile.get)
 
 ```bash
 curl --location 'https://slack.com/api/users.profile.get?user=xxxxx' \
+--header 'Authorization: Bearer xxxxxxxx'
+```
+
+## 2. User Info API
+
+- Slack 관리자 설정에서 이메일 표시 설정을 하지 않으면, users.profile.get은 이메일 값을 반환하지 않기 때문에 user.info api로 변경했다.
+- [https://api.slack.com/methods/users.info](https://api.slack.com/methods/users.info)
+
+```bash
+curl --location 'https://slack.com/api/users.info?user=xxxxxxxx' \
 --header 'Authorization: Bearer xxxxxxxx'
 ```
 
