@@ -137,6 +137,7 @@ curl --location 'https://slack.com/api/chat.postMessage' \
 }'
 ```
 
+- 단, 일치하는 사용자가 슬랙 채널에 없을 경우, admin에게 발송한다.
 
 # Repository
 https://github.com/tnfhrnsss/sonarqube_monitoring.git
@@ -144,11 +145,3 @@ https://github.com/tnfhrnsss/sonarqube_monitoring.git
 # Output
 
 ![sonarqube_codesmell_slack_notification.png](./img/sonarqube_codesmell_slack_notification.png)
-
-# 남은 할일
-
-- 젠킨스 파이프라인으로 등록
-    - 토큰 보안처리
-- 코드 스멜이 많을 경우 페이징 처리 필요하다.
-- 스프링 배치 추가
-- python으로도 구현해야겠다!
