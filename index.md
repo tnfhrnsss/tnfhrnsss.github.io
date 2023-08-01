@@ -20,6 +20,7 @@ permalink: /
 
 {: .fs-3 .black }
 
+[2023-08-01 Safely handling 'null' in Java](./docs/language/java/null_safe.md)  
 [2023-07-27 process leaked file descriptors](./docs/errors/process_leaked_file_descriptors.md)  
 [2023-07-22 When SonarQube Detects Code Smells, Send Slack DM](./docs/sub-projects/sonarqube_codesmell_slack_notification.md)  
 [2023-07-13 Kafka Topic Change Notification with Slack](./docs/sub-projects/kafka_topic_slack_notification.md)  
