@@ -3,7 +3,7 @@ layout: post
 title: When SonarQube Detects Code Smells, Send Slack DM
 description: When SonarQube Detects Code Smells, Send Slack DM
 date: 2023-07-22 17:57:00
-last_modified_at : 2023-07-22 17:57:00
+last_modified_at : 2023-08-02 09:38:00
 parent: Sub Projects
 has_children: false
 nav_exclude: true
@@ -15,14 +15,16 @@ keywords: sonarqube
 - 항상 릴리스 때 몰아서 처리해야했던 코드스멜을 일배치 점검을 통해서 빠른 릴리스될 수 있도록
 - 검증 컴포넌트가 많다보니, 매번 소나큐브 콘솔 통해서 확인해야하는 불편함 해소
 - 본인이 작업한 코드는 본인이 처리하도록 하는 독려와 강요 사이..
+- 23.08.02 추가 : hotspot도 검출된 결과를 알림하도록 추가
 
 # 작업 내용
 - API들은 feign client를 통해서 개발했다.
 - 일단 jar로 만들고 API로 호출하도록 했다.
 
 # SonarQube API
-
 - 릴리스 대상 컴포넌트들은 yml에 설정하고 검증 대상으로 했다.
+
+## Get codesmell
 - 사용한 이슈 검색 search api
     - /api/issues/search
     - code-smell search 파라미터
@@ -89,6 +91,65 @@ keywords: sonarqube
         }
         ```
         
+## Get hotspot
+- search api
+    - /api/hotspots/search
+    - hotspots search 파라미터
+    
+    ```bash
+    curl --location 'http://localhost:9100/api/hotspots/search?projectKey=[%%]&p=1&ps=500&status=TO_REVIEW&onlyMine=false'
+    ```
+    
+    - response
+        
+        ```bash
+        {
+            "paging": {
+                "pageIndex": 1,
+                "pageSize": 500,
+                "total": 3
+            },
+            "hotspots": [
+                {
+                    "key": "AYl3Y5wciG4epeyw8haF",
+                    "component": ":src/lib/util/stringUtil.ts",
+                    "project": "",
+                    "securityCategory": "others",
+                    "vulnerabilityProbability": "LOW",
+                    "status": "TO_REVIEW",
+                    "line": 98,
+                    "message": "Make sure that using a regular expression is safe here.",
+                    "author": "",
+                    "creationDate": "2023-07-21T16:37:30+0900",
+                    "updateDate": "2023-08-01T23:40:09+0900",
+                    "textRange": {
+                        "startLine": 98,
+                        "endLine": 98,
+                        "startOffset": 17,
+                        "endOffset": 198
+                    },
+                    "flows": [],
+                    "ruleKey": "typescript:S4784",
+                    "messageFormattings": []
+                }
+            ],
+            "components": [
+                {
+                    "key": "",
+                    "qualifier": "TRK",
+                    "name": "",
+                    "longName": ""
+                },
+                {
+                    "key": ":src/lib/util/stringUtil.ts",
+                    "qualifier": "FIL",
+                    "name": "stringUtil.ts",
+                    "longName": "src/lib/util/stringUtil.ts",
+                    "path": "src/lib/util/stringUtil.ts"
+                }
+            ]
+        }
+        ```
 
 # Slack API
 
