@@ -5,6 +5,7 @@ date: 2023-02-23 19:57:45
 last_modified_at : 2023-02-23 19:57:45
 parent: Clipping
 has_children: false
+nav_exclude: true
 ---
 
 # 1. ****J2EE Architectures****

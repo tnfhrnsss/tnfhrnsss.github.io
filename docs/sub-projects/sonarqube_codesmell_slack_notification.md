@@ -201,7 +201,7 @@ curl --location 'https://slack.com/api/chat.postMessage' \
 - 단, 일치하는 사용자가 슬랙 채널에 없을 경우, admin에게 발송한다.
 
 # Repository
-https://github.com/tnfhrnsss/sonarqube_monitoring.git
+https://github.com/tnfhrnsss/sonarqube_slack_alarm.git
 
 # Output
 
