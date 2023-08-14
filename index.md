@@ -20,6 +20,7 @@ permalink: /
 
 {: .fs-3 .black }
 
+[2023-08-14 좋은 API 디자인이란](./docs/clipping/msa/goodapidesign.md)  
 [2023-08-01 Safely handling 'null' in Java](./docs/language/java/null_safe.md)  
 [2023-07-27 process leaked file descriptors](./docs/errors/process_leaked_file_descriptors.md)  
 [2023-07-22 When SonarQube Detects Code Smells, Send Slack DM](./docs/sub-projects/sonarqube_codesmell_slack_notification.md)  
