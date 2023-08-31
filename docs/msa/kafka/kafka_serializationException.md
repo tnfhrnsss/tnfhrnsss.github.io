@@ -98,6 +98,7 @@ messaging.event.BtalkUpdated:messaging.event.TicketUpdated
 )
 ```
 
+- 만약에 이렇게 했는데 class not found exception이 발생한다면 spring.json.type.mapping로 설정한 여러 클래스들을 한 줄로 만든담에 개행을 해보도록 한다.
 
 ### reference
 
