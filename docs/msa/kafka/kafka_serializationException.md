@@ -46,7 +46,7 @@ at java.base/java.lang.Thread.run(Thread.java:835)
 kafka consumer가 producer쪽이랑 header가 달라서, 즉 패키지 path가 달라서 그런거임.
 
 ### solved1
-kafkalistener에 property를 추가하거나 
+kafkalistener에 spring.json.use.type.headers:false property를 추가한다.
 ```
 @KafkaListener(    
     topics = KafkaTenant.PREFIX + BusinessTopics.EVENT_MESSAGE,    
@@ -58,6 +58,10 @@ kafkalistener에 property를 추가하거나
     )
 
 ```
+
+ℹ️ 주의 
+- 카프카 이벤트를 배치로 수신받을 때, 여러 유형의 메시지를 한번에 받으면 안된다. 배치 대상에 중복으로 들어가게 되는 위험이 발생해서, 중복으로 처리하게 된다.
+- 즉, 배치로 구현해야할 경우는 json header를 구분해서 받아야한다.
 
 ### solved2
 consumer config에 
