@@ -20,6 +20,7 @@ permalink: /
 
 {: .fs-3 .black }
 
+[2023-09-09 static하게 만들기 using nginx](./docs/msa/nginx/using_nginx_static.md)  
 [2023-08-24 spring-cloud-stream's kafka vs spring-kafka](./docs/msa/spring/spring_cloud_stream.md)  
 [2023-08-14 좋은 API 디자인이란](./docs/clipping/msa/goodapidesign.md)  
 [2023-08-01 Safely handling 'null' in Java](./docs/language/java/null_safe.md)  
