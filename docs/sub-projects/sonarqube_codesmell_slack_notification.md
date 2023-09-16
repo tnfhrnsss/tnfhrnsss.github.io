@@ -24,7 +24,9 @@ keywords: sonarqube
 - hotspot도 검출된 결과를 알림하도록 추가
 
 ### 23.09.15 #12
-- dm을 발송해도, 수정을 하지 않는 사람은 수정하지 않아서 팀내 의견 교환후 본부 채널 알림으로 변경
+- delivery type 추가 
+    * dm or mention
+- mention의 경우, 공개채널에 알림하는 것으로 메시지는 통합해서 한번만 발송된다.
 
 # SonarQube API
 - 릴리스 대상 컴포넌트들은 yml에 설정하고 검증 대상으로 했다.
@@ -210,4 +212,8 @@ https://github.com/tnfhrnsss/sonarqube_slack_alarm.git
 
 # Output
 
-![sonarqube_codesmell_slack_notification.png](./img/sonarqube_codesmell_slack_notification.png)
+## dm
+![sonarqube_dm_alert](./img/sonarqube_dm_alert.png)
+
+## mention
+![sonarqube_mention_alert](./img/sonarqube_mention_alert.png)
