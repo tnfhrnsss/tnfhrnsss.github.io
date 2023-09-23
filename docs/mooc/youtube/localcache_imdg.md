@@ -153,6 +153,8 @@ IMDG는 데이터의 변경이나 삭제가 발생했을 때 캐시의 무효화
 - 적용 배경
     - spring jpa에서 2lc는 findById() PK 단건 조회만으로도 HIT가 된다.
     - 그래서 findAllById() PK복수 조회는 기본적으로 cache를 타지 않는다. 그래서 전반적으로 findAllById를 자주 호출할 경우, 캐시를 적용해서 HIT율을 높히는 것이 관건
+    - 히트율이 70%이하면 캐시를 안쓰는게 좋다. 한번 read연산을 얼마나 자주하는지 체크하는 것이 좋다. 
+    - 히트율 관련해서는 별도의 포스트로 ..
 
 # 5. Local Cache & Invalidation Message Propagation 전략 적용 시점
 
