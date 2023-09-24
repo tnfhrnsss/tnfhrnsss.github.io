@@ -124,6 +124,16 @@ static Map<String, String> findAll(List<String> members) {
     
     - api발송에 실패할 경우, jenkins에 연동한 slackSend기능을 통해서 발송하도록 설정
 
+
+# 참고
+
+- jenkins에 slack token을 저장해두고 job에서 변수로 쓰고 싶을 때
+  * jenkins 콘솔 > credential 관리에서 토큰을 생성하고 
+  * use scret text or file을 선택하면 credential 설정을 sh에서 변수로 사용할 수 있다.
+  * https://stackoverflow.com/a/43764192/14257397
+
+  ![jenkins_config.png](./img/jenkins_config.png)
+
 # Repository
 
 [https://github.com/tnfhrnsss/jenkins_slack_notifier.git](https://github.com/tnfhrnsss/jenkins_slack_notifier.git){:target="_blank"}
