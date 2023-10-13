@@ -21,3 +21,11 @@ I will keep looking.
 - [우아한 형제들](https://techblog.woowahan.com/)
 - [LINE Engineering](https://engineering.linecorp.com/ko/blog/)  
 - [당근마켓 팀블로그](https://medium.com/daangn)  
+- [컬리](https://helloworld.kurly.com/)  
+- [Meta](https://engineering.fb.com/)  
+- [11번가](https://11st-tech.github.io/)  
+- [카카오 엔터프라이즈](https://tech.kakaoenterprise.com/)  
+- [올리브영](https://oliveyoung.tech/)  
+- [드라마앤컴퍼니](https://blog.dramancompany.com/)  
+
+# 기술 유트브 채널
