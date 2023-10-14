@@ -21,6 +21,13 @@ keywords: jenkins
 - 실패난 코드 정보를 jenkins 로그에서 추출해야만 정확한 담당자를 지목할 수 있지만, 그게 안되어서 빌드 실패난 모듈의 git history를 조회하는 방식으로 작업했다.
 - 장기적으로는 jira에 feature branch를 연결해서, task branch 단위로 빌드하고 결과를 담당자에게 알려주는 것으로 프로세스 검토가 필요하다.
 
+# 작업 내용
+- API들은 feign client를 통해서 개발했다.
+- jenkins pipeline script를 통해 실패시 API를 호출하도록 했다.
+
+### 23.10.15
+- 슬랙 메시지에 job name 추가
+
 # 구현
 
 ## 1. 실패시 호출될 API 스펙 작성
