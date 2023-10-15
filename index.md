@@ -21,6 +21,7 @@ permalink: /
 
 {: .fs-3 .black }
 
+[2023-10-15 BeanDefinitionOverrideException](./docs/errors/beanDefinitionOverrideException.md)  
 [2023-09-20 When jenkins builds fail, Send message to slack channel with commit author mention](./docs/sub-projects/jenkins_slack_notifier.md)  
 [2023-09-09 static하게 만들기 using nginx](./docs/msa/nginx/using_nginx_static.md)  
 [2023-08-24 spring-cloud-stream's kafka vs spring-kafka](./docs/msa/spring/spring_cloud_stream.md)  
