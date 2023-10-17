@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Chain of Responsibility
+title: Multiple Chain of Responsibility
 date: 2021-09-09 13:07:45
 last_modified_at : 2021-09-09 13:07:45
 parent: Patterns
@@ -23,14 +23,23 @@ nav_exclude: true
 
 - 접수 처리 프로세스와 메시지 전송 프로세스를 별개로 분리
 - 프로세스 순서를 체인으로 강제 ( 접수 프로세스 진행 후 → 메시지 전송 프로세스 진행)
+- 3개 이상의 프로세스 순서를 체인으로 강제하는 것 추가
 
 ### :: Client
 
 ```java
-// 우선순위 btalkMessageProcessor -> btalkReceptionProcessor
+// 우선순위 talkInitProcessor -> talkAcceptProcessor -> talkJoinForceProcessor -> messageProcessor
 public void message(ConversationMessage conversationMessage) {
-        btalkMessageProcessor.setNext(btalkReceptionProcessor);
-        btalkMessageProcessor.support(conversationMessage);
+    talkInitProcessor
+        .setNext(talkAcceptProcessor);
+
+    talkAcceptProcessor
+        .setNext(talkJoinForceProcessor);
+
+    talkJoinForceProcessor
+        .setNext(messageProcessor);
+
+    talkInitProcessor.support(conversationThirdPartyMessage);
 }
 ```
 
@@ -65,8 +74,8 @@ public abstract class BtalkProcessor {
 ### :: Sub Processor
 
 ```java
-[btalkMessageProcessor]
-public class BtalkMessageProcessor extends BtalkProcessor {
+[talkInitProcessor]
+public class TalkInitProcessor extends BtalkProcessor {
     @Override
     public boolean process(ConversationMessage conversationMessage) {
         return isPresent(conversationMessage);
@@ -78,8 +87,8 @@ public class BtalkMessageProcessor extends BtalkProcessor {
     }
 }
 
-[btalkReceptionProcessor]
-public class BtalkReceptionProcessor extends BtalkProcessor {
+[talkAcceptProcessor]
+public class TalkAcceptProcessor extends BtalkProcessor {
     @Override
     public boolean process(ConversationMessage conversationMessage) {
         return !isPresent(conversationMessage);
