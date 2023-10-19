@@ -13,7 +13,6 @@ permalink: /
 
 ### :: ing..
 
-- [(book) Expert One-on-One J2EE Design and Development 번역 정리](./docs/clipping/java/j2EE_design_and_development.md)  
 - [오픈소스에서 사용하는 디자인 패턴 정리](./docs/patterns/opensourcepatterns.md)  
 - [optimization of test case](./docs/quality/testcase/optimization_of_test_case.md)  
 
