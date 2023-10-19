@@ -19,9 +19,10 @@ nav_exclude: true
 # 배경
 
 - test first 원칙
-- unit 테스트 케이스 수가 적다.
-- unit 테스트뿐이다.
+- 단위 테스트 케이스 수가 적다.
+- 단위 테스트뿐이다.
 - 테스트 코드 수행 속도 개선이 필요하다.
+- 인터페이스를 테스트하도록 하자.(구현체를 테스트하면, 리팩토링할 때마다 테스트가 꺠지게 된다.)
 
 # 주의
 - TDD를 실패하는 사람이 하는 테스트 (출처 : okkycon:2018 이규원 - 당신들의 TDD가 실패하는 이유)
@@ -31,11 +32,11 @@ nav_exclude: true
 
 # 작업
 
-## 1. Unit 테스트 케이스 추가
+## 1. 단위 테스트 케이스 추가
 
 - 46건 → 295건으로 추가 작성 진행
 
-## 2. Junit 테스트 뿐이다.
+## 2. 단위 테스트 뿐이다.
 
 ### 2-1. Acceptance Test (계획 중)
 
@@ -55,7 +56,7 @@ nav_exclude: true
 ### 2-3. Service Integration Test(진행중)
 
 - 통합 테스트는 다른 시스템 구성 요소 또는 모듈 간의 상호 작용을 테스트하는 것으로 이러한 테스트는 시스템의 여러 부분이 함께 작동하는지 확인하는 것이 중요하다
-- 대상은 jpa, cache, kafka 등등
+- 대상은 객체간, 서비스 간, 시스템간 : jpa, cache, kafka 등등
 - 대상 1) cacheManager Test
 
 ```java
@@ -175,3 +176,5 @@ public class KakaoEndWaitingIntegrationTest {
 https://tech.pick-git.com
 
 https://bperhaps.tistory.com
+
+https://youtu.be/3LMmPXoGI9Q?si=EQs1boUOI-GAaGEG
