@@ -79,7 +79,7 @@ private List<BusinessMessageTypeFlowService> businessMessageTypeFlowServices
 = mock(ArrayList.class, withSettings().useConstructor().defaultAnswer(CALLS_REAL_METHODS));
 ```
 
-- Mockito를 사용하여 `ArrayList` 클래스의 mock개체를 만드는 것으로 중요한 것은 @Spy를 선언한 것으로 java17 이상이 아니면 Spy를 통해서 mock객체를 만들어야 한다.
+- Mockito를 사용하여 `ArrayList` 클래스의 mock개체를 만드는 것으로 중요한 것은 @Spy를 선언한 것으로 java17 이상이 아니면 Spy를 통해서 mock객체를 만들고 초기화해줘야 한다.
     - `useConstructor` 는 `ArrayList` 클래스의 생성자를 호출하여 mock객체를 초기화하라는 의미
     - `CALLS_REAL_METHODS`는 mock 객체가 호출될 때 실제 메서드를 호출하도록 지정하는 것
 
