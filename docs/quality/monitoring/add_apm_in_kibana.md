@@ -6,6 +6,7 @@ last_modified_at : 2022-11-15 21:07:00
 parent: Monitoring
 grand_parent: Quality Practice
 nav_exclude: true
+description: Add apm in kibana
 ---
 
 # 설치 버전 정보
@@ -20,6 +21,8 @@ nav_exclude: true
 
 - 사전 준비
     - es와 kibana는 설치가 되어있다고 가정
+
+### Linux
 - 순서
     - kibana 콘솔(localhost:5601)에서 APM 서버 add 선택하면 상세 순서가 나옵니다.
     - rpm 다운 및 설치
@@ -39,6 +42,17 @@ nav_exclude: true
         - kibana화면에서 ([http://localhost:5601/app/kibana#/home/tutorial/apm](http://172.16.120.183:5601/app/kibana#/home/tutorial/apm)) check
         
         ![apm_kibana.png](../img/apm_kibana.png)
+
+### Window
+- 순서
+    - [APM 다운로드 페이지](https://www.elastic.co/kr/downloads/apm) 에서 다운로드받는다.
+    - 압축 풀고
+    - elasticsearch 서버가 로컬과 다르다면 apm-server.yml 수정한다. (디폴트는 localhost:9200)
+    - start the APM Server
+
+        ```
+        ./apm-server -e
+        ```
         
 
 ## 2. APM Agents 설치
@@ -67,7 +81,7 @@ nav_exclude: true
 
 ![apm_kibana3.png](../img/apm_kibana3.png)
 
-## ERROR1
+## Error1
 
 apm rpm 설치 후 service apm-server start했는데 아래와 같은 에러가 messages에 찍히고 있고 elasticsearch와 연결되지 않음
 
@@ -102,6 +116,16 @@ node:
   data: true
   ingest: true
 ```
+
+## Error2
+
+서비스 올리고 아래와 같은 에러가 찍히면서 서비스 연결이 안된다면,
+
+```prolog
+{"log.level":"error","@timestamp":"2023-11-10T08:50:53.903+0900","log.origin":{"file.name":"go-docappender@v0.2.1-0.20230829163624-c69a1cf8ce35/appender.go","file.line":278},"message":"bulk indexing request failed","service.name":"apm-server","error":{"message":"server shutting down"},"ecs.version":"1.6.0"}
+```
+
+-> 버전 호환문제로 apm을 7.6.2버전으로 다시 설치하니 해결됨
 
 # reference
 
