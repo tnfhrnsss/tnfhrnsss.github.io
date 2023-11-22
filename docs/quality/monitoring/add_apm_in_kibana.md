@@ -62,7 +62,8 @@ description: Add apm in kibana
     
     ```bash
     java -javaagent:/home/apm/elastic-apm-agent-1.34.1.jar \
-    -Delastic.apm.service_name=victory
+    -Delastic.apm.service_name=victory \
+    -Delastic.apm.server_urls=http://localhost:8200 \
     ```
     
 - apm agent 서비스 상태 확인
