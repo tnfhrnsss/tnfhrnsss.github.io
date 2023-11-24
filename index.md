@@ -28,6 +28,7 @@ permalink: /
 
 {: .fs-3 .black }
 
+[2023-11-24 Each tag parameter must be in the form 'key:value'..](./docs/errors/tagparameterformaterror.md)  
 [2023-11-05 MessageConversionException failed to resolve class name](./docs/msa/kafka/messageConversionException.md)  
 [2023-11-04 Cannot read the array length because "elementData" is null](./docs/errors/elementData_is_null.md)  
 [2023-10-15 BeanDefinitionOverrideException](./docs/errors/beanDefinitionOverrideException.md)  
