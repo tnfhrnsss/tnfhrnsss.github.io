@@ -24,7 +24,7 @@ but was: test-data-exists,
 
 캐시 annotation에 사용되는 값들은 태그 형식? spel과 같은 형태로 key:value에 맞춰서 작성해야하는데 그게 맞지 않아서 발생한 것으로
 
-spring boot actuator에서 이러한 태그들 포맷에 대해 검사를 하다보니 약간은 엉뚱?할수 있는 InvalidEndpointRequestException가 발생해서 쉽게 원인파악이 힘들 수 있다
+spring boot actuator에서 이러한 태그들 포맷에 대해 검사를 하다보니 약간은 엉뚱?할수 있는 InvalidEndpointRequestException가 발생해서  원인파악이 쉽지 않다.
 
 # problem
 
