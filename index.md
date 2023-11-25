@@ -19,15 +19,11 @@ permalink: /
 ## recently update
 {: .fs-9 .text-purple-100 }
 
-### :: ing..
-
-- [오픈소스에서 사용하는 디자인 패턴 정리](./docs/patterns/opensourcepatterns.md)  
-- [optimization of test case](./docs/quality/testcase/optimization_of_test_case.md)  
-
 ### :: post
 
 {: .fs-3 .black }
 
+[2023-11-25 Exception logs accumulated in Elasticsearch, send a notification to a Slack channel.](./docs/sub-projects/elasticsearch_log_notification.md)  
 [2023-11-24 Each tag parameter must be in the form 'key:value'..](./docs/errors/tagparameterformaterror.md)  
 [2023-11-05 MessageConversionException failed to resolve class name](./docs/msa/kafka/messageConversionException.md)  
 [2023-11-04 Cannot read the array length because "elementData" is null](./docs/errors/elementData_is_null.md)  
