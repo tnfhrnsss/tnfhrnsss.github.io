@@ -131,7 +131,7 @@ public class FeignAsyncClientService {
 
     ```java
         public void write(String conversationId, KakaoWriteCdo kakaoWriteCdo) {
-            this.send(kakaoWriteCdo).thenAccept(kakaoClientRdo -> whenComplete(kakaoClientRdo, conversationId));
+            this.send(kakaoWriteCdo).thenAccept(kakao -> whenComplete(kakao, conversationId));
         }
 
         public CompletableFuture<KakaoClientRdo> send(Object o) {
