@@ -126,8 +126,9 @@ public class FeignAsyncClientService {
 
 *IMPOTANT* 
 * (23.11.25) 리턴용 함수 apiFutureSupplier를 수정
-    - 기존에는 get()함수를 통해 응답값을 반환받다보니, 결과를 기다리게 되고, 결국  비동기적으로 호출했음에도 불구하고 블록킹이 발생해서 병목이 발생되는 구간이 되고 말았다.
+    - 기존에는 get()함수를 통해 응답값을 반환받다보니, 결과를 기다리게 되고, 결국  비동기적으로 호출했음에도 불구하고 블록킹이 발생해서 병목이 발생되는 구간이 되고 말았다. 
     - CompletableFuture<T> 로 반환하고, 호출한 서비스에서 아래와 같이 결과 또는 예외처리를 한다.
+    - 고려할 점은 get을 통해 병목이 발생해서, 비동기 처리로 병목이 해결된다해도 다른 곳으로 부하가 이전할 가능성이 있기 때문에 부하 해결을 위해서 비동기처리를 한다고 생각하는 것이 항상 맞는 것은 아니다.
 
     ```java
         public void write(String conversationId, KakaoWriteCdo kakaoWriteCdo) {
