@@ -2,7 +2,7 @@
 layout: post
 title: Feign client Async call
 date: 2022-08-03 21:48:00
-last_modified_at : 2022-12-10 21:48:00
+last_modified_at : 2023-11-26 08:54:00
 parent: Feign
 grand_parent: Msa
 nav_exclude: true
@@ -114,15 +114,37 @@ public class FeignAsyncClientService {
             });
     }
 
-		public <T> T apiFutureSupplier(FeignAsyncSupplierClient feignAsyncClient, Object o, Class<T> rt) {
-        try {
-            return CompletableFuture.supplyAsync(() -> feignAsyncClient.execute(o), taskExecutor)
-                .thenApply(reponse -> JsonUtil.fromJson(reponse, rt)).get();
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
+    public <T> CompletableFuture<T> apiFutureSupplier(FeignAsyncSupplierClient feignAsyncClient, Object o, Class<T> rt) {
+        return CompletableFuture.supplyAsync(() -> feignAsyncClient.execute(o), taskExecutor)
+            .thenApply(response -> JsonUtil.fromJson(response, rt));
     }
+
 }
 ```
 
-FeignAsyncClientService에서 runAsync 또는 리턴용 supplyAsync로 비동기 호출하도록 한다.
+* FeignAsyncClientService에서 runAsync 또는 리턴용 supplyAsync로 비동기 호출하도록 한다.
+
+*IMPOTANT* 
+* (23.11.25) 리턴용 함수 apiFutureSupplier를 수정
+    - 기존에는 get()함수를 통해 응답값을 반환받다보니, 결과를 기다리게 되고, 결국  비동기적으로 호출했음에도 불구하고 블록킹이 발생해서 병목이 발생되는 구간이 되고 말았다.
+    - CompletableFuture<T> 로 반환하고, 호출한 서비스에서 아래와 같이 결과 또는 예외처리를 한다.
+
+    ```java
+        public void write(String conversationId, KakaoWriteCdo kakaoWriteCdo) {
+            this.send(kakaoWriteCdo).thenAccept(kakaoClientRdo -> whenComplete(kakaoClientRdo, conversationId));
+        }
+
+        public CompletableFuture<KakaoClientRdo> send(Object o) {
+            try {
+                return feignAsyncClientService.apiFutureSupplier(kakaoWriteClient, o, KakaoClientRdo.class);    
+            } catch (RuntimeException e) {        
+                if (ExceptionUtils.containsExceptionNested(e, ConnectException.class)) {
+                    log.error("Kakao Connection failed: Connection refused.");        
+                }    
+            }    
+            return CompletableFuture.completedFuture(KakaoClientRdo.defaultError());
+        }
+
+    ```
+
+
