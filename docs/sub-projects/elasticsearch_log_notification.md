@@ -88,7 +88,7 @@ static void publish(String channelId, String message) {
 
 # Repository
 
-[hhttps://github.com/tnfhrnsss/elasticsearch_log_notifier](https://github.com/tnfhrnsss/elasticsearch_log_notifier){:target="_blank"}
+[https://github.com/tnfhrnsss/elasticsearch_log_notifier](https://github.com/tnfhrnsss/elasticsearch_log_notifier){:target="_blank"}
 
 # Output
 ![es_log_notifier_message.png](./img/es_log_notifier_message.png)
