@@ -13,9 +13,3 @@ nav_exclude: false
 
 Books I Read This Year 🤎✨☕️
 {: .fs-6 .fw-300 }
-
-
----
-
-# 2024.1.1 ~
-- [2024-01-13 The Stranger](./2024/2024.md)                                                                             
