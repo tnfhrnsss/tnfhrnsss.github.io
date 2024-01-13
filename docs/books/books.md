@@ -11,41 +11,11 @@ nav_exclude: false
 
 # Books
 
-Projects that I work on personally.
+Books I Read This Year 🤎✨☕️
 {: .fs-6 .fw-300 }
 
 
 ---
 
-## Year in Review
-
-- Top 5 Books I Read This Year 🤎✨☕️
-    
-    
-
-
-# —Book Journal—
-    
-
-| **Name**                                     | **Cover**                                                                                          | **Date Finished** | **Date Started** | **Genre**          | **Month**   | **Rating** | **Status**   |
-|----------------------------------------------|----------------------------------------------------------------------------------------------------|-------------------|------------------|--------------------|-------------|------------|--------------|
-| Icebreaker By Hannah Grace                   | icebreaker.jpeg                | 2023년 1월 5일       | 2023년 1월 1일      | Romance            | ❄️January   | ⭐️⭐️⭐️⭐️   | Finished     |
-| Heart of the Raven Prince By Tessonja Odette | heart_of_the_raven_prince.jpeg | 2023년 1월 12일      | 2023년 1월 9일      | "Fantasy, Romance" | ❄️January   | ⭐️⭐️⭐️⭐️   | Finished     |
-| A Court of Silver Flames By Sarah J. Maas    | silver.jpeg                    | 2023년 1월 20일      | 2023년 1월 10일     | "Fantasy, Romance" | ❄️January   | ⭐️⭐️⭐️⭐️   | Finished     |
-| Title by author                              |                                                                                                    | 2023년 6월 14일      | 2023년 6월 8일      | Fantasy            | ❄️January   | ⭐️⭐️⭐️⭐️⭐️ | Finished     |
-| Title by author                              |                                                                                                    | 2023년 6월 14일      | 2023년 6월 8일      | Fantasy            | ❄️January   | ⭐️⭐️⭐️⭐️⭐️ | Finished     |
-| Title by author                              |                                                                                                    | 2023년 6월 14일      | 2023년 6월 8일      | Fantasy            | 💌February  | ⭐️⭐️⭐️⭐️⭐️ | Finished     |
-| Title by author                              |                                                                                                    | 2023년 6월 14일      | 2023년 6월 8일      | Fantasy            | 🧚‍♀️March  | ⭐️⭐️⭐️⭐️⭐️ | Finished     |
-| Title by author                              |                                                                                                    | 2023년 6월 14일      | 2023년 6월 8일      | Fantasy            | 🌧️April    | ⭐️⭐️⭐️⭐️⭐️ | Finished     |
-| Title by author                              |                                                                                                    | 2023년 6월 14일      | 2023년 6월 8일      | Fantasy            | 🌷May       | ⭐️⭐️⭐️⭐️⭐️ | Finished     |
-| Title by author                              |                                                                                                    | 2023년 6월 24일      | 2023년 6월 18일     | Fantasy            | 🧚‍♀️March  | ⭐️⭐️⭐️⭐️⭐️ | Finished     |
-| Title by author                              |                                                                                                    | 2023년 7월 3일       | 2023년 6월 22일     | Fantasy            | 🪴August    | ⭐️⭐️⭐️⭐️⭐️ | Finished     |
-| Title by author                              |                                                                                                    | 2023년 6월 14일      | 2023년 6월 8일      | Fantasy            | 💛June      | ⭐️⭐️⭐️⭐️⭐️ | Current Read |
-| Title by author                              |                                                                                                    | 2023년 6월 14일      | 2023년 6월 8일      | Fantasy            | 🌞July      | ⭐️⭐️⭐️⭐️⭐️ | Want to Read |
-| Title by author                              |                                                                                                    | 2023년 6월 14일      | 2023년 6월 8일      | Fantasy            | ☕️September | ⭐️⭐️⭐️⭐️⭐️ | Want to Read |
-| Title by author                              |                                                                                                    | 2023년 6월 20일      | 2023년 6월 11일     | Fantasy            | 🎃October   | ⭐️⭐️⭐️⭐️⭐️ | Want to Read |
-| Title by author                              |                                                                                                    | 2023년 6월 30일      | 2023년 6월 24일     | Fantasy            | 🌙November  | ⭐️⭐️⭐️⭐️⭐️ | Want to Read |
-| Title by author                              |                                                                                                    | 2023년 6월 12일      | 2023년 6월 6일      | Fantasy            | ☃️December  | ⭐️⭐️⭐️⭐️⭐️ | Current Read |
-
-
-                                                                                                                                                                                                                                                                                                                
+# 2024.1.1 ~
+- [2024-01-13 The Stranger](./2024/2024.md)                                                                             
