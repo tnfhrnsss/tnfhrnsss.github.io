@@ -16,12 +16,12 @@ Projects that I work on personally.
 
 ### Books
 
-[ Books](Book%20Tracker%208ef72fc405514ed986c9a70f3f000e87/Books%20c555956f51d7427d8a1f82c2017f6ade.csv)
+[ Books](./Book_Tracker/Books/New_Book.mdNew%20Book%20d83a07bb3a1144eeb20ef7f0f8b79ffe.mdBook%20Tracker%208ef72fc405514ed986c9a70f3f000e87/Books%20c555956f51d7427d8a1f82c2017f6ade.csv)
 
 ### Quotes
 
-[ Quotes](Book%20Tracker%208ef72fc405514ed986c9a70f3f000e87/Quotes%206e1b6debfdf247d08d88101cccdc51af.csv)
+[Quotes](./Book_Tracker/Quotes/Collection.csv)
 
 ### Genres
 
-[Collection](Book%20Tracker%208ef72fc405514ed986c9a70f3f000e87/Collection%20e543d2a6badb4a6fb81ba36d5ec4dca1.csv)
+[Collection](./Book_Tracker/Collection/Collection_all.csv)
