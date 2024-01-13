@@ -17,6 +17,6 @@ Projects that I work on personally.
 # —Book Journal—
     
 
-[Favourite Reads](./—Book%20Journal—/Favourite%20Reads%20d4afbea32ea04192a80d732df5dd0356.csv)
+[Favourite Reads](./—BookJournal—/Favourite_Reads.csv)
 
                                                                                                                                                                                                                                                                                                                 
