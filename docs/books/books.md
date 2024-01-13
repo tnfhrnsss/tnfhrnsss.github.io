@@ -14,6 +14,16 @@ nav_exclude: false
 Projects that I work on personally.
 {: .fs-6 .fw-300 }
 
+
+---
+
+## Year in Review
+
+- Top 5 Books I Read This Year 🤎✨☕️
+    
+    
+
+
 # —Book Journal—
     
 
