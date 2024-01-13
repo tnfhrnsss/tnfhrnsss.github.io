@@ -16,11 +16,11 @@ Projects that I work on personally.
 
 ### Books
 
-[ Books](./Book_Tracker/Books/New_Book.mdNew%20Book%20d83a07bb3a1144eeb20ef7f0f8b79ffe.mdBook%20Tracker%208ef72fc405514ed986c9a70f3f000e87/Books%20c555956f51d7427d8a1f82c2017f6ade.csv)
+[ Books](./Book_Tracker/Books/New_Book.md)
 
 ### Quotes
 
-[Quotes](./Book_Tracker/Quotes/Collection.csv)
+[Quotes](./Book_Tracker/Quotes/Spending%20money%20to%20show%20people%20how%20much%20money%20you%20h%20d5220e25a9464b1e9a919ebc74069225.md)
 
 ### Genres
 
