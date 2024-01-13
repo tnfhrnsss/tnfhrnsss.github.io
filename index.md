@@ -23,6 +23,7 @@ permalink: /
 
 {: .fs-3 .black }
 
+[2024-01-14 Create Books Post Page](./docs/books/books.md)  
 [2024-01-07 bad class file class file has wrong version 61.0 should be 52.0](./docs/errors/bad_class_wrong_version61.md)  
 [2023-11-25 Exception logs accumulated in Elasticsearch, send a notification to a Slack channel.](./docs/sub-projects/elasticsearch_log_notification.md)  
 [2023-11-24 Each tag parameter must be in the form 'key:value'..](./docs/errors/tagparameterformaterror.md)  
