@@ -17,7 +17,7 @@ tags: [spring cloud, spring boot]
     - Spring Boot : 2.3.12.RELEASE -> 2.7.3
     - Spring Cloud : Hoxton.SR12 -> 2021.03
 - 주요 작업
-    - Hystrix, Ribbon 이 기존 Spring Clou Netflix 에서 지원되지 않고, 다른 스택으로 대체됨에 따라 기존에 의존하고 있던 코드의 변경 및 설정 변경작업
+    - Hystrix, Ribbon 이 기존 Spring Cloud Netflix 에서 지원되지 않고, 다른 스택으로 대체됨에 따라 기존에 의존하고 있던 코드의 변경 및 설정 변경작업
 
 # 작업 내용
 

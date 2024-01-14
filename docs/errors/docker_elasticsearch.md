@@ -23,7 +23,7 @@ bootstrap check failure [2] of [2]: the default discovery settings are unsuitabl
 
 ## solved
 
-window으ㅣ m.max_map_count는 cmd창 열어서
+window의 m.max_map_count는 cmd창 열어서
 
 ```
 1) wsl -d docker-desktop
