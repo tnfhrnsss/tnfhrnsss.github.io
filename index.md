@@ -23,6 +23,7 @@ permalink: /
 
 {: .fs-3 .black }
 
+[2024-01-21 hazelcast join detection. tcp/ip or eureka?](./docs/msa/cache/hazelcast_join_detection.md)  
 [2024-01-20 github blog 방문자수 카운팅 배너 추가](./docs/etc/blog/github_blog_count.md)  
 [2024-01-19 github support responding](./docs/etc/github_support_responding.md)  
 [2024-01-14 Create Books Post Page](./docs/books/books.md)  
