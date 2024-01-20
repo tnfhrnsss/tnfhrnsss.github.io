@@ -5,8 +5,8 @@ description: add counting banner to github blog
 date: 2024-01-20 14:10:00
 last_modified_at : 2024-01-20 14:10:00
 parent: Blog
+grand_parent: Etc
 has_children: false
-nav_exclude: true
 tags: [github blog]
 ---
 
