@@ -1,12 +1,13 @@
 ---
 layout: post
-title: notion에서 gitblog로 이사
+title: notion에서 github blog로 이사
 date: 2021-09-09 13:07:45
-last_modified_at : 2022-02-02 16:18:45
-parent: Etc
+last_modified_at : 2024-01-20 14:30:00
+parent: Blog
+grand_parent: Etc
 has_children: false
 nav_exclude: true
-tags: [gitblog, jekyll]
+tags: [github blog, jekyll]
 ---
 
 ## :: github에서 블로그를 사용하기 위한 사전 준비
