@@ -9,11 +9,11 @@ has_children: false
 nav_exclude: true
 ---
 
-# Step 1. create workspace
+## Step 1. create workspace
 
 - 테스트하기 위한 workspace를 생성합니다.
 
-# Step 2. create App
+## Step 2. create App
 
 - [https://api.slack.com/apps](https://api.slack.com/apps?new_app=1)에서 [Create New App] 선택
 - **from an app manifest**를 선택하고 앱을 연결할 workspace 선택하고 생성
@@ -21,9 +21,9 @@ nav_exclude: true
 
 ![how_to_get_slack_message.png](./img/how_to_get_slack_message.png)
 
-# **Step 3.** 메시지 수신
+## **Step 3.** 메시지 수신
 
-## 1안) Webhook 메시지 이벤트 수신
+### 1안) Webhook 메시지 이벤트 수신
 
 - 슬랙 채널에 메시지를 받으면 이벤트를 통해 메시지를 수신받을 수 있습니다.
 - 공인IP를 통해 메시지를 받을 수 있는 환경인 경우에만 가능합니다. (공인망에서 라우팅받거나, 로컬pc에 공인ip설정하거나)
@@ -106,7 +106,7 @@ public class SlackMessageController {
     ```
     
 
-## 2안) 주기적 폴링 방식으로 메시지 수신
+### 2안) 주기적 폴링 방식으로 메시지 수신
 
 - 배치를 통해서 주기적으로 슬랙 API를 통해 채널에 입력된 메시지를 읽어옵니다.
 - 순서1. App 권한설정
@@ -155,7 +155,7 @@ curl --location --request GET 'https://slack.com/api/conversations.history?chann
 - missing_scope error
     - 권한을 추가하고도 계속   “missing_scope” 에러로 리턴된다면, reinstall_app을 실행해주는 것이 좋다. (웹콘솔화면에서 실행)
 
-# Reference
+## Reference
 
 - [https://api.slack.com/messaging/retrieving](https://api.slack.com/messaging/retrieving)
 - [https://api.slack.com/apis/connections/events-api](https://api.slack.com/apis/connections/events-api)
