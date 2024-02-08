@@ -15,7 +15,7 @@ nav_exclude: true
 
 ## Step 2. create App
 
-- [https://api.slack.com/apps](https://api.slack.com/apps?new_app=1)에서 [Create New App] 선택
+- [https://api.slack.com/apps](https://api.slack.com/apps?new_app=1){:target="_blank"}에서 [Create New App] 선택
 - **from an app manifest**를 선택하고 앱을 연결할 workspace 선택하고 생성
 - 이름을 지정하지 않았으면 Demo App이란 이름으로 생성됩니다. (이름 변경가능합니다.)
 
@@ -157,5 +157,5 @@ curl --location --request GET 'https://slack.com/api/conversations.history?chann
 
 ## Reference
 
-- [https://api.slack.com/messaging/retrieving](https://api.slack.com/messaging/retrieving)
-- [https://api.slack.com/apis/connections/events-api](https://api.slack.com/apis/connections/events-api)
+- [https://api.slack.com/messaging/retrieving](https://api.slack.com/messaging/retrieving){:target="_blank"}
+- [https://api.slack.com/apis/connections/events-api](https://api.slack.com/apis/connections/events-api){:target="_blank"}
