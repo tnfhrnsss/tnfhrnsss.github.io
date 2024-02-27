@@ -68,7 +68,9 @@ nav_exclude: true
 
 ### 1. `@RunWith(MockitoJUnitRunner.class)` →  `@ExtendWith(MockitoExtension.class)`
 
+
 ### 2. @Test 변경 `import org.junit.Test` → `import org.junit.jupiter.api.Test`
+
 
 ### 3. expected = ~Exception.class → assertThrows
 
@@ -94,6 +96,7 @@ nav_exclude: true
 
 ### 4. `import org.junit.Assert`→`import org.junit.jupiter.api.Assertions`
 
+
 ### 5. @Spy 변경
 
 - as-is
@@ -115,7 +118,10 @@ nav_exclude: true
 
 - @Before → @BeforeEach or @BeforeAll 와 같이 **`@BeforeAll`**, **`@AfterAll`**, **`@BeforeEach`**, **`@AfterEach`** 로 변경
 
+
 ### 7. @Ignore → `@Disabled`
+
+
 
 ### 8. JUnitRestDocumentation와 @Rule
 
@@ -142,7 +148,11 @@ nav_exclude: true
         - **`MockMvcRestDocumentation`** 또는 **`WebTestClientRestDocumentation`**을 사용할 때, 자동으로 생성되는 컨텍스트를 사용하여 문서화를 한다.
     - ManualRestDocumentation는 수동으로 문서화를 제어하고자 할때 사용한다.
 
+
+
 ### 9. `@RunWith(SpringRunner.class)` → `@ExtendWith(SpringExtension.class)`
+
+
 
 ### 10. @RunWith(Suite.class)
 
@@ -183,7 +193,8 @@ nav_exclude: true
 
 ![movejunit4to5_2](../img/movejunit4to5_2.png)
 
-# 검증
+
+# step3. verify
 
 - mvn test를 실행
 - 소나큐브 unit tests 숫자 변동 없는지 확인
