@@ -24,6 +24,7 @@ permalink: /
 
 {: .fs-3 .black }
 
+[2024-03-02 Feign Client PKIX path building failed](./docs/msa/feign/feignClient_PKIX_path_building_failed.md)  
 [2024-02-27 Migration from JUnit 4 to JUnit 5](./docs/quality/testcase/movejunit4to5.md)  
 [2024-02-18 요즘 우아한 개발](./docs/books/2024/2024.md)  
 [2024-02-11 FeignClient with Multi-Product](./docs/msa/feign/feignclient_multi_product.md)  
