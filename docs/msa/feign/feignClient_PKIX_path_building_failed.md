@@ -30,7 +30,7 @@ target executing GET
 
 # Solution
 
-## 1안) **JVM에 인증서 추가**
+## 1안) JVM에 인증서 추가
 
 - jvm의 cacerts파일에 API 서버의 ssl인증서를 추가한다.
 - [https://lifeinprogram.tistory.com/37](https://lifeinprogram.tistory.com/37){:target="_blank"}에서 자세히 설명하고 있음
@@ -41,7 +41,7 @@ keytool -import -trustcacerts -keystore $JAVA_HOME/jre/lib/security/cacerts -sto
 
 - 하지만 이 방법은 java를 여러 서비스에서 사용하는 경우에는 위험할 수 있다.
 
-## 2안) 어플리케이션 내에서 trustcacerts하도록 설정
+## 2안) **어플리케이션 내에서 trustcacerts하도록 설정**
 
 - feign client의 configuration으로 해당 인증서를 신뢰할 수 있도록 한다.
 - [https://stackoverflow.com/a/67964403/14257397](https://stackoverflow.com/a/67964403/14257397){:target="_blank"}에서 자세히 설명하고 있다.
