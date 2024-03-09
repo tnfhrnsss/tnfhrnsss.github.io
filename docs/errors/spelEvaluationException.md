@@ -1,15 +1,16 @@
 ---
 layout: post
 title: SpelEvaluationException EL1008E CacheExpressionRootObject
+description: SpelEvaluationException EL1008E CacheExpressionRootObject
 date: 2022-07-25 21:40:00
 last_modified_at : 2022-07-25 21:40:00
 parent: Errors
 has_children: false
 nav_exclude: true
-tags: [spring, cache]
 ---
 
 ## error log
+org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field
 
 ```prolog
 org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'license_key' 
