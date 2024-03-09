@@ -1,18 +1,23 @@
 ---
 layout: post
 title: The write format 1 is smaller than the supported format 2
+description: The write format 1 is smaller than the supported format 2
 date: 2022-07-09 21:32:00
 last_modified_at : 2022-12-10 18:46:00
 parent: Errors
 has_children: false
 nav_exclude: true
-tags: [hystrix, msa, feign]
+tags: [h2]
 ---
 
 ## error
 
+org.h2.jdbc.JdbcSQLNonTransientException
+The write format 1 is smaller than the supported format 2
+
 ```
-org.h2.jdbc.JdbcSQLNonTransientException: General error: "The write format 1 is smaller than the supported format 2 [2.0.206/5]" [50000-206]
+org.h2.jdbc.JdbcSQLNonTransientException: General error: 
+"The write format 1 is smaller than the supported format 2 [2.0.206/5]" [50000-206]
 at org.h2.message.DbException.getJdbcSQLException(DbException.java:573) ~[h2-2.0.206.jar:2.0.206]
 at org.h2.message.DbException.getJdbcSQLException(DbException.java:496) ~[h2-2.0.206.jar:2.0.206]
 at org.h2.message.DbException.get(DbException.java:216) ~[h2-2.0.206.jar:2.0.206]
@@ -37,8 +42,8 @@ at org.springframework.beans.factory.ObjectProvider.ifAvailable(ObjectProvider.j
 at org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration.h2Console(H2ConsoleAutoConfiguration.java:71) [spring-boot-autoconfigure-2.3.12.RELEASE.jar:2.3.12.RELEASE]
 ```
 
-## solve
+## solved
 
 h2버전 업 전에 생성했던 h2파일이 이전 버전이어서 생긴 문제로 보여서
 
-delete old version h2 files and restart h2.
+Delete the old version of h2 files and restart h2 service.

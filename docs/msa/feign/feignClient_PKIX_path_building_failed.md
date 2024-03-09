@@ -48,19 +48,18 @@ keytool -import -trustcacerts -keystore $JAVA_HOME/jre/lib/security/cacerts -sto
 - 내가 갖고 있던 인증서는 crt파일이였기 때문에 일단 keystore로 변경했다
     
     ```java
-    keytool -import -file _wildcard_spectra_co_kr.crt -keystore _wildcard_spectra_co_kr.jks -alias spectra
+    keytool -import -file aaa.crt -keystore aaa.jks -alias jj
     ```
     
 - yml에 trustStore, trustStorePassword를 설정한다.
     
     ```java
     monitoring:
-      argus:
-        api:
-          url: https://~~~.com
-          ssl:
-            trustStore: "/Users/jhsim/Documents/aaa.jks"
-            trustStorePassword: 
+      api:
+        url: https://~~~.com
+        ssl:
+          trustStore: "/Users/jhsim/Documents/aaa.jks"
+          trustStorePassword: 
     ```
     
 - feign client config java 생성
@@ -71,8 +70,8 @@ keytool -import -trustcacerts -keystore $JAVA_HOME/jre/lib/security/cacerts -sto
     public class FeignTrustCertConfig {
         @Bean
         public Client feignClient(
-            @Value("${monitoring.argus.api.ssl.trustStore}") String trustStoreResource,
-            @Value("${monitoring.argus.api.ssl.trustStorePassword}") String trustStorePassword) 
+            @Value("${monitoring.api.ssl.trustStore}") String trustStoreResource,
+            @Value("${monitoring.api.ssl.trustStorePassword}") String trustStorePassword) 
             throws Exception {
             try {
                 Resource resource = new FileSystemResource(trustStoreResource);
@@ -112,11 +111,11 @@ keytool -import -trustcacerts -keystore $JAVA_HOME/jre/lib/security/cacerts -sto
     
     ```java
     @FeignClient(
-        contextId = "spectra.attic.tools.ccp.monitoring.argus.client.ArgusCoChangesClient",
-        url = "${monitoring.argus.api.url}",
-        name = "argus",
+        contextId = "client.CoChangesClient",
+        url = "${monitoring.api.url}",
+        name = "monitoring",
         configuration = {FeignTrustCertConfig.class, FeignLoggerLevelConfiguration.class},
         primary = false
     )
-    public interface ArgusCoChangesClient {
+    public interface CoChangesClient {
     ```
