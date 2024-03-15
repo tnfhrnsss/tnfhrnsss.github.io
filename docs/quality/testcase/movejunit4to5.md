@@ -194,6 +194,89 @@ nav_exclude: true
 ![movejunit4to5_2](../img/movejunit4to5_2.png)
 
 
+### 12. ArchUnit4 -> ArchUnit5
+
+- archunit-junit버전을 변경한다.
+    - as-is
+        
+        ```xml
+            <dependency>
+                <groupId>com.tngtech.archunit</groupId>
+                <artifactId>archunit-junit4</artifactId>
+                <version>1.0.0</version>
+                <scope>test</scope>
+            </dependency>
+        ```
+        
+    - to-be
+        
+        ```xml
+            <dependency>
+                <groupId>com.tngtech.archunit</groupId>
+                <artifactId>archunit-junit5</artifactId>
+                <version>0.13.1</version>
+                <scope>test</scope>
+            </dependency>
+        ```
+- 
+
+- consideringAllDependencies()메서드는 이제 필요하지 않게 되었다. 제거한다.
+    - as-is
+        
+        ```java
+            @ArchTest
+            public static final ArchRule layerTest = layeredArchitecture().consideringAllDependencies()
+            .layer("test").definedBy("xxx.test..")
+
+            .whereLayer("test").mayOnlyBeAccessedByLayers("test");
+        ```
+        
+    - to-be
+        
+        ```java
+            @ArchTest
+            public static final ArchRule layerTest = layeredArchitecture()
+            .layer("test").definedBy("xxx.test..")
+
+            .whereLayer("test").mayOnlyBeAccessedByLayers("test");
+        ```
+
+### 13. TestName Rule 변경
+
+- 테스트가 돌다가 실패하면 해당 테스트 이름을 출력할 때 사용하는 코드로 Junit5에선 TestInfo 클래스를 통해서 이름을 얻어낸다.
+
+    - as-is
+        
+        ```java
+            @Rule
+            public TestName testName = new TestName();
+            
+            @BeforeEach
+            public void setUp() {
+                teamService.register(Team.sample());
+
+                if (!"register".equals(testName.getMethodName())) {
+                    teamMemberService.register(TeamMember.sample());
+                }
+            }
+        ```
+        
+    - to-be
+        
+        - TestName을 제거한다.
+        ```java
+            @BeforeEach
+            public void setUp(TestInfo testInfo) {
+                teamService.register(Team.sample());
+
+                if (!"register".equals(testInfo.getTestMethod())) {
+                    teamMemberService.register(TeamMember.sample());
+                }
+            }
+        ```
+
+
+
 # step3. verify
 
 - mvn test를 실행
