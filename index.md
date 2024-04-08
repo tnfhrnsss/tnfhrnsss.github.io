@@ -24,6 +24,7 @@ permalink: /
 
 {: .fs-3 .black }
 
+[2024-04-08 redis with spring boot application](./docs/msa/cache/redis_with_spring_boot_application.md)  
 [2024-04-06 Error deserializing co.elastic.clients.elasticsearch...](./docs/msa/elastic-search/elasticsearch_analyzer_error.md)
 [2024-03-02 Feign Client PKIX path building failed](./docs/msa/feign/feignClient_PKIX_path_building_failed.md)  
 [2024-02-27 Migration from JUnit 4 to JUnit 5](./docs/quality/testcase/movejunit4to5.md)  
@@ -35,8 +36,5 @@ permalink: /
 [2024-01-20 github blog 방문자수 카운팅 배너 추가](./docs/etc/blog/github_blog_count.md)  
 [2024-01-19 github support responding](./docs/etc/github_support_responding.md)  
 [2024-01-14 Create Books Post Page](./docs/books/books.md)  
-[2024-01-07 bad class file class file has wrong version 61.0 should be 52.0](./docs/errors/bad_class_wrong_version61.md)  
-[2023-11-25 Exception logs accumulated in Elasticsearch, send a notification to a Slack channel.](./docs/sub-projects/elasticsearch_log_notification.md)  
-[2023-11-24 Each tag parameter must be in the form 'key:value'..](./docs/errors/tagparameterformaterror.md)  
-[2023-11-05 MessageConversionException failed to resolve class name](./docs/msa/kafka/messageConversionException.md)  
-[2023-11-04 Cannot read the array length because "elementData" is null](./docs/errors/elementData_is_null.md)  
+[2024-01-07 bad class file class file has wrong version 61.0 should be 52.0](./docs/errors/bad_class_wrong_version61.md)
+
