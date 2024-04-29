@@ -24,6 +24,7 @@ permalink: /
 
 {: .fs-3 .black }
 
+[2024-04-29 make im(identity management) service using slack api](./docs/sub-projects/make_im_service_using_slack.md)  
 [2024-04-25 Detect CCP(Common Closure Principle) violation](./docs/sub-projects/detect_ccp_violation.md)  
 [2024-04-19 CommunicationsException Communications link failure](./docs/errors/communicationsException_communications_link_failure.md)  
 [2024-04-13 Add SonarQube Custom Rule](./docs/quality/sonarqube/add_sonarqube_custom_rule.md)  
