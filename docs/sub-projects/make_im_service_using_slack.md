@@ -23,7 +23,7 @@ keywords: slack
 
 # Repository
 
-- 깃헙 [repository](https://github.com/tnfhrnsss/slack-im)에서 확인할 수 있다.
+- 깃헙 [repository](https://github.com/tnfhrnsss/slack-im){:target="_blank"}에서 확인할 수 있다.
 
 # 설계
 

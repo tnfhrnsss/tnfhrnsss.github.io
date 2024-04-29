@@ -70,7 +70,7 @@ keywords: clean code
         ATDEF-1234 메시지 전송 오류 수정
         ```
         
-    - redis 적용 방법은 별도 페이지로 포스트했다. ([https://tnfhrnsss.github.io/docs/msa/cache/redis_with_spring_boot_application/](https://tnfhrnsss.github.io/docs/msa/cache/redis_with_spring_boot_application/))
+    - redis 적용 방법은 별도 페이지로 포스트했다. ([https://tnfhrnsss.github.io/docs/msa/cache/redis_with_spring_boot_application/](https://tnfhrnsss.github.io/docs/msa/cache/redis_with_spring_boot_application/)){:target="_blank"}
 - cp 와 ccp 두개의 캐시로 저장 관리한다.
 
 ## 3. 캐시 분석
