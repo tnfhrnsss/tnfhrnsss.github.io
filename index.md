@@ -17,18 +17,14 @@ permalink: /
 [5. SpelEvaluationException EL1008E CacheExpressionRootObject](./docs/errors/spelEvaluationException.md)  
 
 ## 📈 trending up 😲
-{: .fs-9 .text-purple-100 }
+{: .fs-7 .text-purple-100 }
 [1. spring boot admin customizing](./docs/msa/spring/spring_boot_admin_customizing.md)  
 [2. MessageConversionException failed to resolve class name](./docs/msa/kafka/messageConversionException.md)  
 [3. Cannot read the array length because "elementData" is null](./docs/errors/elementData_is_null.md)  
 
 
 ## recently update
-{: .fs-9 .text-purple-100 }
-
-### :: post
-
-{: .fs-3 .black }
+{: .fs-7 .text-purple-100 }
 
 [2024-05-01 Cannot instantiate @InjectMocks field named](./docs/quality/testcase/cannot_instantiate_injectMocks_field_named.md)  
 [2024-04-29 make im(identity management) service using slack api](./docs/sub-projects/make_im_service_using_slack.md)  
