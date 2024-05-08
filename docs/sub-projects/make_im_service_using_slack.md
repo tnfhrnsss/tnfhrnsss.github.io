@@ -129,7 +129,8 @@ pip install requests
 ## add jenkins job using pipeline
 - util-slack-im라는 job을 추가한다고 하면
 - pipeline에 trigger되어서 파이썬 스크립트를 실행할 수 있게 한다.
-  ```shelll
+
+  ```
     pipeline {
     stages {
       stage('INITIALIZE') {
