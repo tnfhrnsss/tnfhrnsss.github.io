@@ -74,7 +74,7 @@ class FileResourceRepositoryTest {
 
 - 에러 메시지만 보면, @InjectMocks로 선언한 fileResourceRepository를 초기화할 때 npe가 발생했다는 것
 - 테스트하려는 클래스에 정의한 생성자 주입과정 없이 초기화를 해서 발생한 것으로
-- [https://4whomtbts.tistory.com/129](https://4whomtbts.tistory.com/129)
+- [https://4whomtbts.tistory.com/129](https://4whomtbts.tistory.com/129){:target="_blank"}
 
 # 해결
 

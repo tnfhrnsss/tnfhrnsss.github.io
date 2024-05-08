@@ -188,7 +188,7 @@ nav_exclude: true
 
 - 테스트 클래스와 메서드에서 public 접근제어자를 제거한다.
 - 아래 블로그에서 junit의 발전과 public 접근제어에 대해 읽어보자
-    - [https://mangkyu.tistory.com/280](https://mangkyu.tistory.com/280)
+    - [https://mangkyu.tistory.com/280](https://mangkyu.tistory.com/280){:target="_blank"}
     - 요점은 리플렉션 API를 사용해서 테스트 코드를 실행시켜야하기 때문에 junit5이전 버전은 jdk제약으로 반드시 public이여야했는데, 그 이후로는 그 제약이 사라져서 junit5부터 선언할 필요가 없게 됨
 
 ![movejunit4to5_2](../img/movejunit4to5_2.png)
@@ -286,4 +286,4 @@ nav_exclude: true
 
 # Reference
 
-- [https://subji.github.io/posts/2021/01/06/springrestdocsexample](https://subji.github.io/posts/2021/01/06/springrestdocsexample)
+- [https://subji.github.io/posts/2021/01/06/springrestdocsexample](https://subji.github.io/posts/2021/01/06/springrestdocsexample){:target="_blank"}

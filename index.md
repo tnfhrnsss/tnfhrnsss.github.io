@@ -26,6 +26,7 @@ permalink: /
 ## recently update
 {: .fs-7 .text-purple-100 }
 
+[2024-05-08 Why bdd?](./docs/quality/testcase/why_bdd.md)  
 [2024-05-03 Code Review's Review](./docs/etc/codereview_review.md)  
 [2024-05-01 Cannot instantiate @InjectMocks field named](./docs/quality/testcase/cannot_instantiate_injectMocks_field_named.md)  
 [2024-04-29 make im(identity management) service using slack api](./docs/sub-projects/make_im_service_using_slack.md)  
