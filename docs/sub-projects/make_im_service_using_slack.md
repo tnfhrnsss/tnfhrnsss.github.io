@@ -3,7 +3,7 @@ layout: post
 title: make im(identity management) service using slack api
 description: make im(identity management) service using slack api
 date: 2024-04-29 23:47:00
-last_modified_at : 2024-04-29 23:47:00
+last_modified_at : 2024-05-08 10:54:00
 parent: Sub Projects
 has_children: false
 nav_exclude: true
@@ -120,15 +120,58 @@ pip install requests
 
 # 실행
 
-- 명령어
+## 명령어
     
     ```java
     python3 sync.py ${API_URL}
     ```
-    
-- 젠킨스 job으로 등록
-    - 다른 job 실행 후 trigger되도록 설정
-    - 또는 pipeline 의 step으로 추가한다.
+ 
+## add jenkins job using pipeline
+- util-slack-im라는 job을 추가한다고 하면
+- pipeline에 trigger되어서 파이썬 스크립트를 실행할 수 있게 한다.
+  ```shelll
+    pipeline {
+    stages {
+      stage('INITIALIZE') {
+        steps {
+          echo "PATH = ${PATH}"
+          echo "MAVEN_HOME = ${MAVEN_HOME}"
+          echo "${params.API_URL}"
+        }
+      }
+      stage('INIT DATA - SLACK IM') {
+        steps {
+          sshPublisher(
+            publishers: [
+              sshPublisherDesc(configName: 'test', verbose: true,
+                transfers: [
+                  sshTransfer(
+                    execCommand:
+                      """
+                        cd /home/tools/util-cstalk-im/script
+                        python3 sync.py ${params.API_URL}
+                      """
+                  )
+                ]
+              )
+            ]
+          )
+        }
+      }
+    }
+    options {
+      timeout(time: 5, unit: 'MINUTES')
+    }
+  }
+  ```
+
+- upstream job에서 API_URL 파라미터를 포함해서 위에 추가한 job을 호출한다. 
+
+  ```
+  steps {
+      build job: "util-slack-im", wait: false, parameters: [[$class: 'StringParameterValue', name: 'API_URL', value: 'http://localhost:8080/api']]
+  }
+  ```
 
 # 남은 작업
 
@@ -138,15 +181,21 @@ pip install requests
 
 # Error
 
-- NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3’
+## 1. NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3’
     - [urllib3-v2-0-only-supports-openssl-1-1-1-에러-해결-c750d17bf3a6](https://medium.com/@tlsrid1119/urllib3-v2-0-only-supports-openssl-1-1-1-%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0-c750d17bf3a6) 보고 urllib3 다운그레이드 함
     
     ```java
     pip uninstall urllib3 
     pip install 'urllib3<2.0'
     ```
-    
+
+## 2. how to pass the parameter from upstream job to downstream job
+- upstream의 parameter를 downstream job으로 전송하는 것이 잘 안되었는데..
+- https://stackoverflow.com/questions/63370946/jenkins-canot-cannot-pass-parameters-to-the-remote-servers-shell-script-with-p 에서 알수 있었다.
+  - '''에서 """로 변경해야 한다. 
+
 
 # Reference
 
 - [https://api.slack.com/methods/users.list](https://api.slack.com/methods/users.list)
+- [baeldung - jenkins-pipeline-trigger-new-job](https://www.baeldung.com/ops/jenkins-pipeline-trigger-new-job)
