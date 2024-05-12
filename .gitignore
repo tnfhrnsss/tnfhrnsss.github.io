@@ -22,3 +22,7 @@ docs/.DS_Store
 docs/language/.DS_Store
 docs/msa/.DS_Store
 .DS_Store
+/.idea/.gitignore
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/vcs.xml
