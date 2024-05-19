@@ -12,6 +12,7 @@ nav_exclude: true
 ## Problem
 
 - spring-web을 6.x로 올리고 maven install 또는 build, compile 중 발생
+- This error occurs when you change spring-web to version 6.x and then run maven install or build or compile.
 
 ## Error
 
@@ -27,7 +28,9 @@ bad class file: /org/springframework/spring-web/6.0.6/spring-web-6.0.6.jar
 ## Cause
 
 - java8로 되어있어서 문제..
+- The cause appears to be caused by setting the java8.
 
 ## Solved
 
-- java를 17 + 로 올린다.
+- java를 17+ 로 올린다.
+- Change the java version to 17 or higher.
