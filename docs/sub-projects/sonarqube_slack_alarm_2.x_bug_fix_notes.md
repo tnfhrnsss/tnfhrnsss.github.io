@@ -9,7 +9,7 @@ nav_exclude: true
 keywords: sonarqube
 ---
 
-# #3. **additionally, matching Slack users with SonarQube using user Id.**
+# #3 additionally, matching Slack users with SonarQube using user Id.
 - issue : [#3](https://github.com/tnfhrnsss/sonarqube_slack_alarm/issues/3){:target="_blank"}
 - 반영일자 : 2024-05-31
 - 내용
