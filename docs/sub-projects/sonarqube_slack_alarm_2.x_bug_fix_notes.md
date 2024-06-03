@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  2.x Snapshot bug fix notes
+title: sonarqube slack alarm - 2.x Snapshot bug fix notes
 date: 2024-06-03 10:59:00
 last_modified_at : 2024-06-03 10:59:00
 parent: Sub Projects
