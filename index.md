@@ -11,7 +11,7 @@ permalink: /
 ## 🌈 monthly top5
 {: .fs-7 .text-purple-100 }
 [1. Feign client Async call](./docs/msa/feign/feignclient_async.md)  
-[2. Error attempting to apply AttributeConverter](./docs/errors/attributeConverter_error.md)
+[2. Error attempting to apply AttributeConverter](./docs/errors/attributeConverter_error.md)  
 [3. Could not locate PropertySource and the fail fast ...](./docs/errors/propertySourceError.md)
 [4. How to use Feign @SpringQueryMap](./docs/msa/feign/springQueryMap.md)
 [5. SpelEvaluationException EL1008E CacheExpressionRootObject](./docs/errors/spelEvaluationException.md)
@@ -27,6 +27,7 @@ permalink: /
 ## recently update
 {: .fs-7 .text-purple-100 }
 
+[2024-06-03 [sonarqube slack alarm] 2.x Snapshot bug fix notes](./docs/sub-projects/sonarqube_slack_alarm_2.x_bug_fix_notes.md)  
 [2024-05-08 Why bdd?](./docs/quality/testcase/why_bdd.md)  
 [2024-05-03 Code Review's Review](./docs/etc/codereview_review.md)  
 [2024-05-01 Cannot instantiate @InjectMocks field named](./docs/quality/testcase/cannot_instantiate_injectMocks_field_named.md)  
