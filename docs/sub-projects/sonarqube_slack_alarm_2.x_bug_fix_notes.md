@@ -10,7 +10,7 @@ keywords: sonarqube
 ---
 
 # #3. **additionally, matching Slack users with SonarQube using user Id.**
-
+- issue : [#3](https://github.com/tnfhrnsss/sonarqube_slack_alarm/issues/3){:target="_blank"}
 - 반영일자 : 2024-05-31
 - 내용
     - 프로젝트가 github에 repo를 두고 있다면, codesmell로 검출된 라인의 author가 “`156968135+{id}@users.noreply.github.com`” 정보로 저장된다.

@@ -162,7 +162,7 @@ keywords: sonarqube
 
 ## 1. Channel User List API
 
-- [https://api.slack.com/methods/conversations.members](https://api.slack.com/methods/conversations.members)
+- [https://api.slack.com/methods/conversations.members](https://api.slack.com/methods/conversations.members){:target="_blank"}
 
 ```bash
 curl --location 'https://slack.com/api/conversations.members?channel=xxxxx' \
@@ -172,7 +172,7 @@ curl --location 'https://slack.com/api/conversations.members?channel=xxxxx' \
 ## 2. User Profile API( -> user.info API로 변경)
 
 - 권한이 user.read, user.profile.read, user.read.email이 있어야한다.
-- [https://api.slack.com/methods/users.profile.get](https://api.slack.com/methods/users.profile.get)
+- [https://api.slack.com/methods/users.profile.get](https://api.slack.com/methods/users.profile.get){:target="_blank"}
 
 ```bash
 curl --location 'https://slack.com/api/users.profile.get?user=xxxxx' \
@@ -182,7 +182,7 @@ curl --location 'https://slack.com/api/users.profile.get?user=xxxxx' \
 ## 2. User Info API
 
 - Slack 관리자 설정에서 이메일 표시 설정을 하지 않으면, users.profile.get은 이메일 값을 반환하지 않기 때문에 user.info api로 변경했다.
-- [https://api.slack.com/methods/users.info](https://api.slack.com/methods/users.info)
+- [https://api.slack.com/methods/users.info](https://api.slack.com/methods/users.info){:target="_blank"}
 
 ```bash
 curl --location 'https://slack.com/api/users.info?user=xxxxxxxx' \
@@ -193,7 +193,7 @@ curl --location 'https://slack.com/api/users.info?user=xxxxxxxx' \
 
 - 권한은 im이 있어야한다.
 - 유저는 @ + id, 또는 2번 통해서 얻어낸 id를 사용
-- [https://api.slack.com/methods/chat.postMessage#dm](https://api.slack.com/methods/chat.postMessage#dm)
+- [https://api.slack.com/methods/chat.postMessage#dm](https://api.slack.com/methods/chat.postMessage#dm){:target="_blank"}
 
 ```bash
 curl --location 'https://slack.com/api/chat.postMessage' \
