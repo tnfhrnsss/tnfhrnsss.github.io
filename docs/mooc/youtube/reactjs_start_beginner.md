@@ -18,8 +18,8 @@ nav_exclude: true
 
 ### 1. 강의 정보
 
-- [강의 URL](https://www.youtube.com/playlist?list=PLZKTXPmaJk8J_fHAzPLH8CJ_HO_M33e7-)
-- [github 샘플](https://github.com/coding-angma/voca)
+- [강의 URL](https://www.youtube.com/playlist?list=PLZKTXPmaJk8J_fHAzPLH8CJ_HO_M33e7-){:target="_blank"}
+- [github 샘플](https://github.com/coding-angma/voca){:target="_blank"}
 
 ### 2. 학습내용
 
