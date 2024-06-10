@@ -27,6 +27,7 @@ permalink: /
 ## recently update
 {: .fs-7 .text-purple-100 }
 
+[2024-06-10 java8+ interface 정리](./docs/language/java/java8_interface_summary.md)  
 [2024-06-07 React js 학습 노트 (비기너)](./docs/mooc/youtube/reactjs_start_beginner.md)  
 [2024-06-03 [sonarqube slack alarm] 2.x Snapshot bug fix notes](./docs/sub-projects/sonarqube_slack_alarm_2.x_bug_fix_notes.md)  
 [2024-05-08 Why bdd?](./docs/quality/testcase/why_bdd.md)  
