@@ -1,6 +1,6 @@
 ---
 layout: post
-title: @DynamicUpdate에 대해서 캔버스톡
+title: `@DynamicUpdate에 대해서 캔버스톡
 date: 2024-06-16 22:07:00
 last_modified_at : 2024-06-16 22:07:00
 parent: Jpa
