@@ -27,6 +27,7 @@ permalink: /
 ## recently update
 {: .fs-7 .text-purple-100 }
 
+[2024-06-23 빅데이터 분석기사 8회 필기 불합격 수기](./docs/etc/challenge/bigdata_test_2024_04_08.md)  
 [2024-06-16 @DynamicUpdate에 대해서 캔버스톡](./docs/msa/jpa/about_dynamicUpdate.md)  
 [2024-06-10 java8+ interface 정리](./docs/language/java/java8_interface_summary.md)  
 [2024-06-07 React js 학습 노트 (비기너)](./docs/mooc/youtube/reactjs_start_beginner.md)  
