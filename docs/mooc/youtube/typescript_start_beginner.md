@@ -496,8 +496,8 @@ type UserKey = keyof User;
 const uk:UserKey = "name"
 ```
 
-- UserKey는 [‘id’ | ‘name’ | ‘age’ | ‘gender’] 와 같다
-- uk에는  [‘id’ | ‘name’ | ‘age’ | ‘gender’] 외에 선언할 수 없다.
+- UserKey는 `‘id’ | ‘name’ | ‘age’ | ‘gender’` 와 같다
+- uk에는  `‘id’ | ‘name’ | ‘age’ | ‘gender’` 외에 선언할 수 없다.
 
 ## 2. Partial<T>
 
