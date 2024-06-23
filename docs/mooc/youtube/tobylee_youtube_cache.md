@@ -10,7 +10,7 @@ nav_exclude: true
 
 # 강의 주소
 
-[https://www.youtube.com/live/zkbvFOwJFgA?feature=share](https://www.youtube.com/live/zkbvFOwJFgA?feature=share)
+[https://www.youtube.com/live/zkbvFOwJFgA?feature=share](https://www.youtube.com/live/zkbvFOwJFgA?feature=share){:target="_blank"}
 
 # Summary
 
