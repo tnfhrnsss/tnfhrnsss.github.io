@@ -11,10 +11,8 @@ nav_exclude: true
 
 # 강의 정보
 
-- 유튜브 : https://youtube.com/playlist?list=PLZKTXPmaJk8KhKQ_BILr1JKCJbR0EGlx0&si=HbOAizVkTMznoQyg
-- 툴 :
-
-[https://www.typescriptlang.org/play](https://www.typescriptlang.org/play){:target="_blank"}
+- 유튜브 : [코딩앙마의 타입스크립트](https://youtube.com/playlist?list=PLZKTXPmaJk8KhKQ_BILr1JKCJbR0EGlx0&si=HbOAizVkTMznoQyg){:target="_blank"}
+- tool : [https://www.typescriptlang.org/play](https://www.typescriptlang.org/play){:target="_blank"}
 
 # 1. 타입스크립트를 사용하는 이유
 
@@ -498,8 +496,8 @@ type UserKey = keyof User;
 const uk:UserKey = "name"
 ```
 
-- UserKey는 ‘id’ | ‘name’ | ‘age’ | ‘gender’ 와 같다
-- uk에는  ‘id’ | ‘name’ | ‘age’ | ‘gender’ 외에 선언할 수 없다.
+- UserKey는 [‘id’ | ‘name’ | ‘age’ | ‘gender’] 와 같다
+- uk에는  [‘id’ | ‘name’ | ‘age’ | ‘gender’] 외에 선언할 수 없다.
 
 ## 2. Partial<T>
 
