@@ -27,6 +27,7 @@ permalink: /
 ## recently update
 {: .fs-7 .text-purple-100 }
 
+[2024-07-08 Intellij AI Pro 한 달 사용권 체험 후기](./docs/clipping/ai/intellij_ai_pro_log.md)  
 [2024-06-27 about HHH000038, HHH000039 warning](./docs/errors/db/hibernate_HHH000038_HHH000039.md)  
 [2024-06-23 타입 스크립트 학습 노트 (비기너) with 코딩앙마](./docs/mooc/youtube/typescript_start_beginner.md)  
 [2024-06-23 빅데이터 분석기사 8회 필기 불합격 수기](./docs/etc/challenge/bigdata_test_2024_04_08.md)  
