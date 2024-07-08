@@ -27,6 +27,7 @@ permalink: /
 ## recently update
 {: .fs-7 .text-purple-100 }
 
+[2024-07-08 2024 3회 QA Conference 웨비나 참석 후기](./docs/mooc/etc/2024_3_qa_korea_conference.md)  
 [2024-07-08 Mac Visual Studio Code 실행 안됨](./docs/errors/visual_studio_code_problem.md)  
 [2024-07-08 Intellij AI Pro 한 달 사용권 체험 후기](./docs/clipping/ai/intellij_ai_pro_log.md)  
 [2024-06-27 about HHH000038, HHH000039 warning](./docs/errors/db/hibernate_HHH000038_HHH000039.md)  
