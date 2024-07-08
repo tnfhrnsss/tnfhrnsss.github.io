@@ -27,6 +27,7 @@ permalink: /
 ## recently update
 {: .fs-7 .text-purple-100 }
 
+[2024-07-08 Mac Visual Studio Code 실행 안됨](./docs/errors/visual_studio_code_problem.md)  
 [2024-07-08 Intellij AI Pro 한 달 사용권 체험 후기](./docs/clipping/ai/intellij_ai_pro_log.md)  
 [2024-06-27 about HHH000038, HHH000039 warning](./docs/errors/db/hibernate_HHH000038_HHH000039.md)  
 [2024-06-23 타입 스크립트 학습 노트 (비기너) with 코딩앙마](./docs/mooc/youtube/typescript_start_beginner.md)  
@@ -38,10 +39,3 @@ permalink: /
 [2024-05-08 Why bdd?](./docs/quality/testcase/why_bdd.md)  
 [2024-05-03 Code Review's Review](./docs/etc/codereview_review.md)  
 [2024-05-01 Cannot instantiate @InjectMocks field named](./docs/quality/testcase/cannot_instantiate_injectMocks_field_named.md)  
-[2024-04-29 make im(identity management) service using slack api](./docs/sub-projects/make_im_service_using_slack.md)  
-[2024-04-25 Detect CCP(Common Closure Principle) violation](./docs/sub-projects/detect_ccp_violation.md)  
-[2024-04-19 CommunicationsException Communications link failure](./docs/errors/communicationsException_communications_link_failure.md)  
-[2024-04-13 Add SonarQube Custom Rule](./docs/quality/sonarqube/add_sonarqube_custom_rule.md)  
-[2024-04-08 redis with spring boot application](./docs/msa/cache/redis_with_spring_boot_application.md)  
-[2024-04-06 Error deserializing co.elastic.clients.elasticsearch...](./docs/msa/elastic-search/elasticsearch_analyzer_error.md)  
-{: .fs-3 .black }
