@@ -84,7 +84,7 @@ tags: [qa]
     - 테스트 자동화를 통해 내부 프로세스 간소화
 - 추천 크롬 익스텐션
     - **Window Resizer, Dimensions, CSS Peeper, WhatFont**
-- mobbin, whatwhatit, product hunt, aiverse.design, [there is an al for that](https://theresanaiforthat.com/)
+- mobbin, whatwhatit, product hunt, aiverse.design, [there is an ai for that](https://theresanaiforthat.com/)
 
 ## Session 6.
 
