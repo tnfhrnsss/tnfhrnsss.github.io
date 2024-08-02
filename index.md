@@ -10,18 +10,11 @@ permalink: /
 
 ## 🌈 monthly top5
 {: .fs-7 .text-purple-100 }
-[1. Error attempting to apply AttributeConverter](./docs/errors/attributeConverter_error.md)  
-[2. Feign client Async call](./docs/msa/feign/feignclient_async.md)  
+[1. Intellij AI Pro 한 달 사용권 체험 후기](./docs/clipping/ai/intellij_ai_pro_log.md)  
+[2. Mac Visual Studio Code 실행 안됨](./docs/errors/visual_studio_code_problem.md)  
 [3. Could not locate PropertySource and the fail fast ...](./docs/errors/propertySourceError.md)  
-[4. SpelEvaluationException EL1008E CacheExpressionRootObject](./docs/errors/spelEvaluationException.md)  
-[5. Change FeignClient to ReactiveFeignClient](./docs/msa/feign/change_feignClient_to_reactiveFeignClient.md)    
-
-
-## 📈 trending up 😲
-{: .fs-7 .text-purple-100 }
-[1. nginx query string encoding problem](./docs/msa/nginx/nginx_encoding_problem.md)  
-[2. Feign Client PKIX path building failed](./docs/msa/feign/feignClient_PKIX_path_building_failed.md)  
-[3. MessageConversionException failed to resolve class name](./docs/msa/kafka/messageConversionException.md)  
+[4. Feign client Async call](./docs/msa/feign/feignclient_async.md)  
+[5. Error attempting to apply AttributeConverter](./docs/errors/attributeConverter_error.md)  
 
 
 ## recently update
