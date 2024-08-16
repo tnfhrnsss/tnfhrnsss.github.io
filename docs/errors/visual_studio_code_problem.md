@@ -88,5 +88,5 @@ tags: [vscode]
 # Solved
 
 - .vscode 폴더 및 기존에 설치했던 vs code를 제거하고
-- [https://code.visualstudio.com/updates/v1_69](https://code.visualstudio.com/updates/v1_69) 에서 2022년 버전으로 다시 받아 설치하니 해결되었습니다. 😭
+- [https://code.visualstudio.com/updates/v1_69](https://code.visualstudio.com/updates/v1_69){:target="_blank"} 에서 2022년 버전으로 다시 받아 설치하니 해결되었습니다. 😭
 - 고맙다 지피티여-

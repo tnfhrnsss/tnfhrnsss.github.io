@@ -8,7 +8,7 @@ grand_parent: Mooc
 nav_exclude: true
 ---
 
-강의자료 : [https://github.com/keesun/inflearn-the-java-test](https://github.com/keesun/inflearn-the-java-test)
+강의자료 : [https://github.com/keesun/inflearn-the-java-test](https://github.com/keesun/inflearn-the-java-test){:target="_blank"}  
 
 # 1. Junit5
 

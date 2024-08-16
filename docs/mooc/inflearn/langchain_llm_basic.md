@@ -11,12 +11,12 @@ nav_exclude: true
 
 # 강의 정보
 
-강의 URL : [https://inf.run/f5aQg](https://inf.run/f5aQg)
-강사: 오승환님
-총 수강시간: 1시간 3분
-실습파일 : https://github.com/tsdata/langchain-study
-실습환경: [코랩](https://colab.google/)
-비용 : 강의는 무료이지만, 테스트가 되려면, gpt에 billing을 추가해야 해당 모델을 사용할 수 있다.
+강의 URL : [https://inf.run/f5aQg](https://inf.run/f5aQg)  
+강사: 오승환님  
+총 수강시간: 1시간 3분  
+실습파일 : https://github.com/tsdata/langchain-study  
+실습환경: [코랩](https://colab.google/){:target="_blank"}   
+비용 : 강의는 무료이지만, 테스트가 되려면, gpt에 billing을 추가해야 해당 모델을 사용할 수 있다.  
 
 # 학습 목표
 
