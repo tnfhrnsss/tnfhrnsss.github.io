@@ -40,8 +40,7 @@ keywords: sonarqube
 # 구현
 
 <aside>
-💡 전체 코드는 [https://github.com/tnfhrnsss/sonarqube_coverage_tracker](https://github.com/tnfhrnsss/sonarqube_coverage_tracker) 에 있습니다.
-
+💡 전체 코드는 https://github.com/tnfhrnsss/sonarqube_coverage_tracker 에 있습니다.
 </aside>
 
 ## 1. 소나큐브 커버리지 조회
