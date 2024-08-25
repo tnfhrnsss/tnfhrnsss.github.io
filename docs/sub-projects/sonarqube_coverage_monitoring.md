@@ -37,6 +37,14 @@ keywords: sonarqube
 - sonarqube 9.9.1
 - slack_sdk
 
+
+- 모듈 설치
+
+```java
+pip install slack_sdk
+pip install requests
+```
+
 # 구현
 
 <aside>
