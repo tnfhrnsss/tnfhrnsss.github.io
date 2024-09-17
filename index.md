@@ -20,6 +20,7 @@ permalink: /
 ## recently update
 {: .fs-7 .text-purple-100 }
 
+[2024-09-18 Python과 Flask로 AI 애플리케이션 개발하기](./docs/mooc/coursera/python_flask_ai_application.md)  
 [2024-08-24 소나큐브 커버리지 모니터링 자동화 작업](./docs/sub-projects/sonarqube_coverage_monitoring.md)  
 [2024-08-16 생성형 AI 입문자를 위한 LangChain 기초](./docs/mooc/inflearn/langchain_llm_basic.md)  
 [2024-07-26 docker-compose mem_limit and java_option](./docs/etc/docker_mem_limit_java_option.md)  
