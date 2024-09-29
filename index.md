@@ -20,6 +20,7 @@ permalink: /
 ## recently update
 {: .fs-7 .text-purple-100 }
 
+[2024-09-29 swagger diff slack notify](./docs/sub-projects/swagger_diff_slack_notify.md)  
 [2024-09-19 spring boot 3 업그레이드 to-do list](./docs/msa/spring/spring_boot3_upgrade.md)  
 [2024-09-18 Python과 Flask로 AI 애플리케이션 개발하기](./docs/mooc/coursera/python_flask_ai_application.md)  
 [2024-08-24 소나큐브 커버리지 모니터링 자동화 작업](./docs/sub-projects/sonarqube_coverage_monitoring.md)  
