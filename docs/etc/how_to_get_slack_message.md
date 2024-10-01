@@ -65,14 +65,15 @@ public class SlackMessageController {
 }
 ```
 
-- 슬랙 App 설정
+- 순서2. 슬랙 App 설정
     - App 설정 화면 -> Features -> Event Subscriptions 메뉴로 이동합니다.
     - Enable Events를 on으로 변경합니다.
     - Request URL에 위에서 작성한 end-point를 넣고 Verified 확인받습니다.
+    - 
 
 ![how_to_get_slack_message_2.png](./img/how_to_get_slack_message_2.png)
 
-- 순서2. 메시지 이벤트 수신 **/slack**  API 작성
+- 순서3. 메시지 이벤트 수신 **/slack**  API 작성
     - 메시지 수신을 위한 endpoint를 “/slack” 으로 해서 추가 작성합니다.
     - 해당 App이 설치된 슬랙 workspace의 채널로 이동해서 메시지를 입력하고 메시지가 들어오는지 확인합니다.
     - 슬랙으로 전송한 메시지가 다시 이벤트로 수신되기 때문에, user정보가 널인지 체크해서 봇 메시지는 제외시켜야 합니다.
@@ -104,6 +105,16 @@ public class SlackMessageController {
        slackSourceMessageFlowService.message(slackMessageSdo);
     }
     ```
+
+- 순서4. Subscribe to bot or user events 설정
+   - 수신받고자 하는 이벤트를 추가합니다.
+   - 만약에 사용자가 입력하는 메시지 이벤트를 수신하려면, message.channels와 app_mention를 추가합니다.
+   ![how_to_get_slack_message_3.png](./img/how_to_get_slack_message_3.png)
+
+
+- 순서5. 앱 reinstall
+   - 앱을 재설치합니다.
+   - 워크스페이스 화면으로 이동해서 앱 설치할때 선택한 채널로 봇을 추가합니다.
     
 
 ### 2안) 주기적 폴링 방식으로 메시지 수신
