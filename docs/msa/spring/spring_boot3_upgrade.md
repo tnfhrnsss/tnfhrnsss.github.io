@@ -15,7 +15,9 @@ nav_exclude: true
 - 허니몬님 강의를 기준으로 대상 범위를 정하고
 - 하나씩👷🏻 고쳐나가보면서 별도 포스트로 모아보겠습니다.
 
-# [https://youtu.be/1WT6oxchM9M](https://youtu.be/1WT6oxchM9M){:target="_blank"}  
+# Reference
+- [https://youtu.be/1WT6oxchM9M](https://youtu.be/1WT6oxchM9M){:target="_blank"}  
+- [GraalVM 도입으로 JVM 백엔드 애플리케이션의 구동 초기 성능 문제 해결하기 / if(kakaoAI)2024](https://youtu.be/9fbq3umnSeA?si=2PNVctDtk9ze7zPq){:target="_blank"}  
 
 # 필수 요건
 
@@ -147,6 +149,35 @@ nav_exclude: true
 - Flux - non-streaming media types 반환
 - Netty5 기반 Reactor Netty 2지원
 - JDK HttpClient를 통합한 WebClient
+
+### 2.5 GraalVM 적용
+
+- 제약사항 조치
+  - java reflection (ex. jackson)
+  - dynamic proxy
+  - dynamic class loading (ex. logback.xml)
+  - runtime annotation processing
+
+- 조치방법
+  - 동적이었던 로직들을 사전 정의된 로직으로 바꾸기
+    1. Reachability Metadata 사용
+        1. 동적 의존성 코드를 모두 정적 코드로 미리 만들어서 붙여주고, 컴파일에 포함되도록 강제한다.
+    2. Tracing Agent 사용해서 테스트해본다.
+        1. 테스트 하면서 Tracing Agent가 적용된 상태로 Hotspot JVM앱을 실행하면 앱이 종료될 때까지 발생한 모든 비명시적 의존성을 추적해서 Reachability Metadata로 만들어준다.
+  - 라이브러리도 GraalVM 지원 라이브러리로 대체
+
+- 테스트 및 검증
+  - 전체적으로 GraalVM을 적용할 수 있도록 테스트 케이스 추가하고 (100% 코드가 모두 테스트되도록 만든다) 
+  - GraalVM용 빌드 파이프라인을 구성한다.
+  - 추적
+    - 기동시간
+    - API 처리량
+    - API 응답시간
+    - 배포시 CPU 지표변화
+
+- 단점
+  - 런타임 단축이 결국 빌드시간이 그만큼 늘어나게 되는 것
+  - 모든 라이브러리가 GraalVM에 동작하는 것은 아님
 
 # 업그레이드 순서
 
