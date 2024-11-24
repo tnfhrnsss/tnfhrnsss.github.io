@@ -20,7 +20,8 @@ permalink: /
 ## recently update
 {: .fs-7 .text-purple-100 }
 
-[2024-11-09 Cannot connect to the Docker daemon at unix](/docs/errors/cannot_connect_to_docker.md)  
+[2024-11-24 2024 Gemini API Developer Competition 참여 후기](./docs/sub-projects/2024_gemini_api_developer_competition.md)  
+[2024-11-09 Cannot connect to the Docker daemon at unix](./docs/errors/cannot_connect_to_docker.md)  
 [2024-11-04 A bean with that name has already been ...](./docs/errors/duplicated_context_id_error.md)  
 [2024-10-09 env node No such file or directory 해결](./docs/errors/env_node_no_such_file_or_directory.md)  
 [2024-09-29 swagger diff slack notify](./docs/sub-projects/swagger_diff_slack_notify.md)  
