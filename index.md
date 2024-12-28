@@ -20,7 +20,7 @@ permalink: /
 ## recently update
 {: .fs-7 .text-purple-100 }
 
-[2024-12-28 데브원영_ 아파치 카프카 for beginners 수강 정리](./docs/mooc/inflearn/basic_apach_kafka_dvwy.md)  
+[2024-12-28 데브원영- 아파치 카프카 for beginners 수강 정리](./docs/mooc/inflearn/basic_apach_kafka_dvwy.md)  
 [2024-11-24 2024 Gemini API Developer Competition 참여 후기](./docs/sub-projects/2024_gemini_api_developer_competition.md)  
 [2024-11-09 Cannot connect to the Docker daemon at unix](./docs/errors/cannot_connect_to_docker.md)  
 [2024-11-04 A bean with that name has already been ...](./docs/errors/duplicated_context_id_error.md)  

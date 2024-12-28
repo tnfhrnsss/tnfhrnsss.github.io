@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [데브원영] 아파치 카프카 for beginners 수강 정리
+title: 데브원영- 아파치 카프카 for beginners 수강 정리
 date: 2024-12-28 14:57:00
 last_modified_at : 2024-12-28 14:57:00
 parent: Inflearn
