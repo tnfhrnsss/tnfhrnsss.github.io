@@ -11,7 +11,7 @@ tags: [querydsl, jpa]
 
 # 강의 주소
 
-[실전! Querydsl](https://inf.run/Zdvf)
+[실전! Querydsl](https://inf.run/Zdvf){:target="_blank"}
 
 # 소개
 

@@ -2,7 +2,7 @@
 layout: default
 title: Home
 date: 2022-01-31 13:07:45
-last_modified_at : 2024-06-03 09:32:00
+last_modified_at : 2024-12-24 15:01:00
 nav_order: 1
 has_children: false
 permalink: /
@@ -20,6 +20,7 @@ permalink: /
 ## recently update
 {: .fs-7 .text-purple-100 }
 
+[2024-12-28 데브원영_ 아파치 카프카 for beginners 수강 정리](./docs/mooc/inflearn/basic_apach_kafka_dvwy.md)  
 [2024-11-24 2024 Gemini API Developer Competition 참여 후기](./docs/sub-projects/2024_gemini_api_developer_competition.md)  
 [2024-11-09 Cannot connect to the Docker daemon at unix](./docs/errors/cannot_connect_to_docker.md)  
 [2024-11-04 A bean with that name has already been ...](./docs/errors/duplicated_context_id_error.md)  
