@@ -242,13 +242,18 @@ nav_exclude: true
     - 필수 아님
     
     ```prolog
-    spring.mvc.view.prefix=/WEB-INF/views/
-    spring.mvc.view.suffix=.html
+    spring:
+      thymeleaf:
+        prefix: classpath:/templates/
+        suffix: .html
+
     ```
     
     - ThymeleafViewResolver는 뷰 이름을 접두사와 접미사로 둘러싸 리소스를 찾는다.
     - 접두어와 접미어의 기본값은 각각 'classpath:/templates/'와 '.html' 이다. 변경이 필요한 경우 application.yml에 위의 설정을 추가
     - ThymeleafViewResolver동일한 이름의 bean을 제공하여 재정의할 수 있다.
+    - classpath:/templates/ 경로에서 .html 확장자의 템플릿 파일을 찾습니다.
+    - Spring Boot에서 기본적으로 활성화된다.
 
 # 결론
 
