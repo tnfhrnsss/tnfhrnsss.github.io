@@ -20,13 +20,8 @@ permalink: /
 ## recently update
 {: .fs-7 .text-purple-100 }
 
+[2025-02-19 nginx logrotate without root](./docs/msa/nginx/nginx_logrotate_without_root.md)  
 [2025-02-02 mac에서 putty로 window 터널링](./docs/etc/mac_putty_tunneling.md)  
 [2025-02-01 'PngImageFile' object has no attribute 'load_seek'](./docs/errors/python/pngImageFile_object_has_no_attribute_load_seek.md)    
-[2024-12-30 How to receive data from a post request in reactjs](./docs/language/reactjs/how_to_receive_post_reactjs.md)  
-[2024-12-28 데브원영- 아파치 카프카 for beginners 수강 정리](./docs/mooc/inflearn/basic_apach_kafka_dvwy.md)  
-[2024-11-24 2024 Gemini API Developer Competition 참여 후기](./docs/sub-projects/2024_gemini_api_developer_competition.md)  
-[2024-11-09 Cannot connect to the Docker daemon at unix](./docs/errors/cannot_connect_to_docker.md)  
-[2024-11-04 A bean with that name has already been ...](./docs/errors/duplicated_context_id_error.md)  
-[2024-10-09 env node No such file or directory 해결](./docs/errors/env_node_no_such_file_or_directory.md)  
 
 
