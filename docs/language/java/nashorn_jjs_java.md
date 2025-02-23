@@ -66,13 +66,14 @@ tags: [jjs, nashorn]
 - 깃헙으로 오면서(15이후), 독립실행형 (Main)클래스가 제거되었다.
     - 그래서 openjdk-nashorn의 ScriptEngineManager을 통해 실행시키는 코드 구현 필요하다.
 - openjdk-nashorn 버전별 자바와의 호환 차이
-    
-    
-    | openjdk.nashorn 버전 | 런타임 최소버전 |
-    | --- | --- |
-    | 15.1, 15.1.1 | java15 |
-    | 15.2~15.6(latest) | java11 |
-    | 15.0 | java8 |
+
+    | **openjdk.nashorn 버전**  | **런타임 최소버전**  |
+    |--------------|--------------|
+    | 15.1, 15.1.1  | java15            |
+    | 15.2~15.6(latest)   | java11            |
+    | 15.0   | java8            |
+
+
     - 자바15이후부턴 security privilege하는 부분이 문제가 있어서 15.0사용 불가
     - 자바15이후 지원을 위해 15.6으로 하면, 사용가능하지만
         - 반대로 자바 낮은 버전에서 사용못함
