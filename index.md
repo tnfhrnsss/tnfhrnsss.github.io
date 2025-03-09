@@ -19,6 +19,7 @@ permalink: /
 ## recently update
 {: .fs-7 .text-purple-100 }
 
+[2025-03-09 객체 지향 프로그래밍 입문 수강 정리](./docs/mooc/inflearn/inflearn_oop_basic.md)  
 [2025-02-23 Executing JavaScript with Nashorn in Java 15+ Replacing jjs](./docs/language/java/nashorn_jjs_java.md)  
 [2025-02-19 nginx logrotate without root](./docs/msa/nginx/nginx_logrotate_without_root.md)  
 [2025-02-02 mac에서 putty로 window 터널링](./docs/etc/mac_putty_tunneling.md)  
