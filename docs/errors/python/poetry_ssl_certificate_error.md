@@ -96,7 +96,7 @@ urllib.error.URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certifica
 - 파이썬 홈디렉토리로 이동햐서 Install Certificates.command 파일 실
 
 ```java
-peter@peter Python 3.13 % ./Install\ Certificates.command 
+Python 3.13 % ./Install\ Certificates.command 
  -- pip install --upgrade certifi
 Collecting certifi
   Downloading certifi-2025.1.31-py3-none-any.whl.metadata (2.5 kB)
