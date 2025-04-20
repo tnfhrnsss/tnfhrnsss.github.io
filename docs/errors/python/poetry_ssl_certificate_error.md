@@ -10,7 +10,7 @@ nav_exclude: true
 ---
 
 # Problem
-- poetry 설치하다가 "ssl.SSLCertVerificationError: certificate verify failed: unable to get local issuer certificate error" 발생한 현현상상
+- poetry 설치하다가 "ssl.SSLCertVerificationError: certificate verify failed: unable to get local issuer certificate error" 발생한 현상
 
 # Error log
 
