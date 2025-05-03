@@ -19,6 +19,7 @@ permalink: /
 ## recently update
 {: .fs-7 .text-purple-100 }
 
+[2025-05-04 AI 에이전트로 구현하는 RAG 시스템(w. LangGraph) 수강 후기](./docs/mooc/inflearn/inflearn_langgraph_rag.md)  
 [2025-04-21 python-poetry SSLCertVerificationError](./docs/errors/python/poetry_ssl_certificate_error.md)  
 [2025-03-09 객체 지향 프로그래밍 입문 수강 정리](./docs/mooc/inflearn/inflearn_oop_basic.md)  
 [2025-02-23 Executing JavaScript with Nashorn in Java 15+ Replacing jjs](./docs/language/java/nashorn_jjs_java.md)  
