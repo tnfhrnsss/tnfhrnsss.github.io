@@ -12,13 +12,14 @@ permalink: /
 {: .fs-7 .text-purple-100 }
 [1. Intellij AI Pro 한 달 사용권 체험 후기](./docs/clipping/ai/intellij_ai_pro_log.md)  
 [2. Mac Visual Studio Code 실행 안됨](./docs/errors/visual_studio_code_problem.md)  
-[3. Feign client Async call](./docs/msa/feign/feignclient_async.md)  
-[4. Error attempting to apply AttributeConverter](./docs/errors/attributeConverter_error.md)  
-[5. SpelEvaluationException EL1008E...](./docs/errors/spelEvaluationException.md)  
+[3. Change FeignClient to ReactiveFeignClient](./docs/msa/feign/change_feignClient_to_reactiveFeignClient.md)  
+[4. Feign client Async call](./docs/msa/feign/feignclient_async.md)  
+[5. Error attempting to apply AttributeConverter](./docs/errors/attributeConverter_error.md)  
 
 ## recently update
 {: .fs-7 .text-purple-100 }
 
+[2025-06-05 2025년 2회 정보보안기사 필기 후기](./docs/etc/challenge/2025_02_secure.md)  
 [2025-05-09 Spring Data Elasticsearch에서 커스텀 컬렉션 타입 매핑 문제](./docs/msa/elastic-search/spring_data_es_save_fail.md)  
 [2025-05-04 AI 에이전트로 구현하는 RAG 시스템(w. LangGraph) 수강 후기](./docs/mooc/inflearn/inflearn_langgraph_rag.md)  
 [2025-04-21 python-poetry SSLCertVerificationError](./docs/errors/python/poetry_ssl_certificate_error.md)  
