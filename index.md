@@ -19,6 +19,7 @@ permalink: /
 ## recently update
 {: .fs-7 .text-purple-100 }
 
+[2025-06-20 2025년 2회 정보보안기사 필기 합격 후기](./docs/etc/challenge/secure_test_2025_02.md)   
 [2025-05-09 Spring Data Elasticsearch에서 커스텀 컬렉션 타입 매핑 문제](./docs/msa/elastic-search/spring_data_es_save_fail.md)  
 [2025-05-04 AI 에이전트로 구현하는 RAG 시스템(w. LangGraph) 수강 후기](./docs/mooc/inflearn/inflearn_langgraph_rag.md)  
 [2025-04-21 python-poetry SSLCertVerificationError](./docs/errors/python/poetry_ssl_certificate_error.md)  
