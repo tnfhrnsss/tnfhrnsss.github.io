@@ -1,6 +1,6 @@
 ---
 layout: post
-title: \[\solved\]\ nginx 65\:\ No route to host
+title: \[solved] nginx 65:\ No route to host
 description: nginx 65 No route to host
 date: 2025-07-07 21:51:00
 last_modified_at : 2025-07-07 21:51:00
@@ -41,7 +41,7 @@ keywords: nginx
 - curl로 호출해도 200이고
 - nc -z로 호출해도 succeeded고
 - ping도 ok
-- netstat -an | grep 8050 으로 포트 리슨인가 체크하고
+- netstat -an | grep 8050으로 포트 리슨인가 체크하고
 - 방화벽도 모두 off인 상태
 - 브라우저에서 호출해도 200
 - nginx 로그를 debug로 올려도, 참고할만한 정보는 없었다.
