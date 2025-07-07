@@ -1,6 +1,6 @@
 ---
 layout: post
-title: \[solved] nginx 65:\ No route to host
+title: [solved] nginx 65: No route to host
 description: nginx 65 No route to host
 date: 2025-07-07 21:51:00
 last_modified_at : 2025-07-07 21:51:00
