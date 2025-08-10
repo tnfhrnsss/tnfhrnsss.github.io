@@ -14,17 +14,17 @@ nav_exclude: true
 - AI 기반의 노코드(no-code) 플랫폼으로
 - 메시지 입력만으로 웹사이트나 웹 애플리케이션을 쉽고 빠르게 만들 수 있게 돕는 도구입니다.
 - 코딩에 대해 모르는 사람도 사용할 수 있으며
-- AI가 프론트엔드와 백엔드를 포함한 풀스택으로 서비스를 자동으로 생성해 주며
+- AI가 프론트엔드와 백엔드를 포함한 풀스택으로 서비스를 자동으로 생성해주며
 - 아직 해보진 않았지만, 이미지만 첨부해도 해당 서비스를 만드는게 가능하다고 합니다.
 - 웹 뿐만 아니라 앱도 가능하다고해서, 다음 프로젝트는 앱으로 도전~
 
 # 사용 방법
 
 1. [https://lovable.dev/](https://lovable.dev/){:target="_blank"} 가입하기
-2. DB가 필요하다면, supabase에 가입하고 연동을 해야한다. 
-    1. 연결방법 ([https://docs.lovable.dev/integrations/supabase](https://docs.lovable.dev/integrations/supabase)){:target="_blank"}
-3. github에 연결하면, 프로젝트 코드를 모두 이관받을 수 있다.
-4. 무료 크레딧은 하루 5개이므로 잘 활용해보자 😁
+2. DB가 필요하다면, supabase에 가입하고 연동을 해야합니다. 
+    1. 연결방법[https://docs.lovable.dev/integrations/supabase](https://docs.lovable.dev/integrations/supabase){:target="_blank"}
+3. github에 연결하면, 프로젝트 코드를 모두 이관받을 수 있습니다.
+4. 무료 크레딧은 하루 5개이므로 잘 활용할 것! 😁
 
 # 특⭐️ 장점
 
