@@ -93,7 +93,7 @@ urllib.error.URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certifica
 
 - 어느 버전 이후부터 certificate가 기본 설치가 안되어있다고 한다..(정확하진 않음)
 - 수동으로 설치 필요하다.
-- 파이썬 홈디렉토리로 이동햐서 Install Certificates.command 파일 실
+- 파이썬 홈디렉토리로 이동해서 Install Certificates.command 파일 실행!
 
 ```java
 Python 3.13 % ./Install\ Certificates.command 
