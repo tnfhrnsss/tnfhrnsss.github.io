@@ -11,10 +11,10 @@ permalink: /
 ## 🌈 monthly top5
 {: .fs-7 .text-purple-100 }
 [1. Intellij AI Pro 한 달 사용권 체험 후기](./docs/clipping/ai/intellij_ai_pro_log.md)  
-[2. Mac Visual Studio Code 실행 안됨](./docs/errors/visual_studio_code_problem.md)  
-[3. 2025년 2회 정보보안기사 필기 합격 후기](./docs/etc/challenge/secure_test_2025_02.md)   
-[4. SpelEvaluationException EL1008E CacheExpressionRootObject](./docs/errors/spelEvaluationException.md)    
-[5. Feign client Async call](./docs/msa/feign/feignclient_async.md)  
+[2. 2025년 2회 정보보안기사 필기 합격 후기](./docs/etc/challenge/secure_test_2025_02.md)   
+[3. Mac Visual Studio Code 실행 안됨](./docs/errors/visual_studio_code_problem.md)  
+[4. python-poetry SSLCertVerificationError](./docs/errors/python/poetry_ssl_certificate_error.md)     
+[5. how to connect elasticsearch in dbeaver](./docs/etc/dbeaver1.md)  
 
 ## recently update
 {: .fs-7 .text-purple-100 }
