@@ -19,7 +19,7 @@ permalink: /
 ## recently update
 {: .fs-7 .text-purple-100 }
 
-[2025-09-07 elasticsearch-head-chrome 기여 개발](./docs/contributions/elasticsearch-head-chrome_250830.md). 
+[2025-09-07 elasticsearch-head-chrome 기여 개발](./docs/contributions/elasticsearch-head-chrome_250830.md)  
 [2025-08-10 no-code로 만든 나홀로나무 길찾기 서비스 – Lovable 활용기](./docs/sub-projects/lonelytreeguide_with_lovable.md)  
 [2025-07-07 [solved] nginx 65 No route to host](./docs/msa/nginx/nginx_65_no_route_to_host.md)  
 [2025-06-20 2025년 2회 정보보안기사 필기 합격 후기](./docs/etc/challenge/secure_test_2025_02.md)   
