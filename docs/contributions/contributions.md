@@ -5,7 +5,7 @@ date: 2025-09-07 20:14:00
 last_modified_at : 2025-09-07 20:14:00
 nav_order: 19
 has_children: true
-permalink: /docs/errors
+permalink: /docs/contributions
 ---
 
 # Note
