@@ -220,6 +220,9 @@ Required to bind 2 arguments, but only bound 1 (JoinPointMatch was NOT bound)
         | **코드 길이** | 길음 | 짧음 |
         | **Java 버전** | Java 8+ | Java 16+ |
         | **성능** | 약간 느림 | 약간 빠름 |
+        | 항목 | Before | After |
+
+
         - 언제 **Collectors.toList()를 사용하나?**
             - 반환된 리스트를 호출자가 수정해야 하는 경우
             - 리스트에 요소를 추가/삭제해야 하는 경우
