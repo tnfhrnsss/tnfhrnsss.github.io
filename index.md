@@ -19,6 +19,7 @@ permalink: /
 ## recently update
 {: .fs-7 .text-purple-100 }
 
+[2025-09-21 Spring Boot 3.5.3 & Java 17 마이그레이션 개발 (ing…)](./docs/msa/spring/spring_boot3_5_3_migration.md)  
 [2025-09-11 2025년 45회 CPPG 합격 후기 - 20일 단기 합격](./docs/etc/challenge/cppg_test_2025_09.md)  
 [2025-09-07 elasticsearch-head-chrome 기여 개발](./docs/contributions/elasticsearch-head-chrome_250830.md)  
 [2025-08-10 no-code로 만든 나홀로나무 길찾기 서비스 – Lovable 활용기](./docs/sub-projects/lonelytreeguide_with_lovable.md)  
