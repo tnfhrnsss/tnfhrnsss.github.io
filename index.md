@@ -2,7 +2,7 @@
 layout: default
 title: Home
 date: 2022-01-31 13:07:45
-last_modified_at : 2024-12-24 15:01:00
+last_modified_at : 2025-10-05 20:46:00
 nav_order: 1
 has_children: false
 permalink: /
@@ -10,11 +10,11 @@ permalink: /
 
 ## 🌈 monthly top5
 {: .fs-7 .text-purple-100 }
-[1. Intellij AI Pro 한 달 사용권 체험 후기](./docs/clipping/ai/intellij_ai_pro_log.md)  
-[2. 2025년 2회 정보보안기사 필기 합격 후기](./docs/etc/challenge/secure_test_2025_02.md)   
+[1. 2025년 2회 정보보안기사 필기 합격 후기](./docs/etc/challenge/secure_test_2025_02.md)   
+[2. Intellij AI Pro 한 달 사용권 체험 후기](./docs/clipping/ai/intellij_ai_pro_log.md)  
 [3. Mac Visual Studio Code 실행 안됨](./docs/errors/visual_studio_code_problem.md)  
-[4. python-poetry SSLCertVerificationError](./docs/errors/python/poetry_ssl_certificate_error.md)     
-[5. how to connect elasticsearch in dbeaver](./docs/etc/dbeaver1.md)  
+[4. 2025년 45회 CPPG 합격 후기 - 20일 단기 합격](./docs/etc/challenge/cppg_test_2025_09.md)  
+[5. AI 에이전트로 구현하는 RAG 시스템(w. LangGraph) 수강 후기](./docs/mooc/inflearn/inflearn_langgraph_rag.md)  
 
 ## recently update
 {: .fs-7 .text-purple-100 }
