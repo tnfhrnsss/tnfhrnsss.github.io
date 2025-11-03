@@ -10,10 +10,10 @@ permalink: /
 
 ## 🌈 monthly top5
 {: .fs-7 .text-purple-100 }
-[1. 2025년 2회 정보보안기사 필기 합격 후기](./docs/etc/challenge/secure_test_2025_02.md)   
-[2. Intellij AI Pro 한 달 사용권 체험 후기](./docs/clipping/ai/intellij_ai_pro_log.md)  
-[3. Mac Visual Studio Code 실행 안됨](./docs/errors/visual_studio_code_problem.md)  
-[4. 2025년 45회 CPPG 합격 후기 - 20일 단기 합격](./docs/etc/challenge/cppg_test_2025_09.md)  
+[1. Intellij AI Pro 한 달 사용권 체험 후기](./docs/clipping/ai/intellij_ai_pro_log.md)  
+[2. 2025년 45회 CPPG 합격 후기 - 20일 단기 합격](./docs/etc/challenge/cppg_test_2025_09.md)  
+[3. 2025년 2회 정보보안기사 필기 합격 후기](./docs/etc/challenge/secure_test_2025_02.md)   
+[4. Mac Visual Studio Code 실행 안됨](./docs/errors/visual_studio_code_problem.md)  
 [5. AI 에이전트로 구현하는 RAG 시스템(w. LangGraph) 수강 후기](./docs/mooc/inflearn/inflearn_langgraph_rag.md)  
 
 ## recently update
