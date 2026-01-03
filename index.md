@@ -2,7 +2,7 @@
 layout: default
 title: Home
 date: 2022-01-31 13:07:45
-last_modified_at : 2025-10-05 20:46:00
+last_modified_at : 2026-01-03 15:39:00
 nav_order: 1
 has_children: false
 permalink: /
@@ -14,12 +14,13 @@ permalink: /
 [2. 2025년 2회 정보보안기사 필기 합격 후기](./docs/etc/challenge/secure_test_2025_02.md)   
 [3. Intellij AI Pro 한 달 사용권 체험 후기](./docs/clipping/ai/intellij_ai_pro_log.md)  
 [4. Mac Visual Studio Code 실행 안됨](./docs/errors/visual_studio_code_problem.md)  
-[5. AI 에이전트로 구현하는 RAG 시스템(w. LangGraph) 수강 후기](./docs/mooc/inflearn/inflearn_langgraph_rag.md)  
+[5. Spring Boot 3.5.3 & Java 17 마이그레이션](./docs/msa/spring/spring_boot3_5_3_migration.md)  
 
 ## recently update
 {: .fs-7 .text-purple-100 }
 
-[2025-09-21 Spring Boot 3.5.3 & Java 17 마이그레이션 개발 (ing…)](./docs/msa/spring/spring_boot3_5_3_migration.md)  
+[2026-01-03 페이징 시 이전 페이지 데이터가 중복 조회되는 이유와 해결 방법](./docs/msa/jpa/jpa_paging_not_jpa_issue.md)  
+[2025-09-21 Spring Boot 3.5.3 & Java 17 마이그레이션 개발](./docs/msa/spring/spring_boot3_5_3_migration.md)  
 [2025-09-11 2025년 45회 CPPG 합격 후기 - 20일 단기 합격](./docs/etc/challenge/cppg_test_2025_09.md)  
 [2025-09-07 elasticsearch-head-chrome 기여 개발](./docs/contributions/elasticsearch-head-chrome_250830.md)  
 [2025-08-10 no-code로 만든 나홀로나무 길찾기 서비스 – Lovable 활용기](./docs/sub-projects/lonelytreeguide_with_lovable.md)  

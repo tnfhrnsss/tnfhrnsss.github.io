@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Spring Boot 3.5.3 & Java 17 마이그레이션 개발 (ing…)
+title: Spring Boot 3.5.3 & Java 17 마이그레이션
 date: 2025-09-21 10:42:00
 last_modified_at : 2025-09-21 10:42:00
 parent: Spring
