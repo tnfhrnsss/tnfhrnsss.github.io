@@ -13,12 +13,13 @@ permalink: /
 [1. 2025년 2회 정보보안기사 필기 합격 후기](./docs/etc/challenge/secure_test_2025_02.md)   
 [2. 2025년 45회 CPPG 합격 후기 - 20일 단기 합격](./docs/etc/challenge/cppg_test_2025_09.md)  
 [3. Intellij AI Pro 한 달 사용권 체험 후기](./docs/clipping/ai/intellij_ai_pro_log.md)  
-[4. Mac Visual Studio Code 실행 안됨](./docs/errors/visual_studio_code_problem.md)  
-[5. Spring Boot 3.5.3 & Java 17 마이그레이션](./docs/msa/spring/spring_boot3_5_3_migration.md)  
+[4. Spring Boot 3.5.3 & Java 17 마이그레이션](./docs/msa/spring/spring_boot3_5_3_migration.md)  
+[5. Mac Visual Studio Code 실행 안됨](./docs/errors/visual_studio_code_problem.md)  
 
 ## recently update
 {: .fs-7 .text-purple-100 }
 
+[2026-03-07 Hibernate6 @Column(length) 설정 시 매 시작마다 ALTER TABLE이 실행되는 버그](./docs/msa/jpa/hibernate_alter_issue.md)  
 [2026-01-03 페이징 시 이전 페이지 데이터가 중복 조회되는 이유와 해결 방법](./docs/msa/jpa/jpa_paging_not_jpa_issue.md)  
 [2025-09-21 Spring Boot 3.5.3 & Java 17 마이그레이션 개발](./docs/msa/spring/spring_boot3_5_3_migration.md)  
 [2025-09-11 2025년 45회 CPPG 합격 후기 - 20일 단기 합격](./docs/etc/challenge/cppg_test_2025_09.md)  
