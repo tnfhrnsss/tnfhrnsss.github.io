@@ -8,6 +8,18 @@ has_children: false
 permalink: /
 ---
 
+## 🧑‍💻 소개
+{: .fs-7 .text-purple-100 }
+
+Java · Spring Boot · MSA 기반 백엔드 개발자입니다.
+실무에서 마주친 이슈와 해결 과정, 아키텍처 설계 경험을 기록합니다.
+
+**주요 기술** &nbsp; `Java 17` `Spring Boot 3.x` `Spring Cloud` `JPA/Hibernate` `Elasticsearch` `Kafka`
+**오픈소스** &nbsp; [elasticsearch-head-chrome](https://github.com/tnfhrnsss/elasticsearch-head-chrome) 기여
+**링크** &nbsp; [GitHub](https://github.com/tnfhrnsss) &nbsp;·&nbsp; [LinkedIn](https://www.linkedin.com/in/jj-8271542a2)
+
+---
+
 ## 🌈 monthly top5
 {: .fs-7 .text-purple-100 }
 [1. 2025년 2회 정보보안기사 필기 합격 후기](./docs/etc/challenge/secure_test_2025_02.md)   

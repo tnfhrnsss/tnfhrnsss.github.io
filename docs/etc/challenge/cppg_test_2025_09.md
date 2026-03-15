@@ -7,6 +7,7 @@ parent: Challenge
 grand_parent: Etc
 has_children: false
 tags: [cppg]
+description: "2025년 45회 CPPG(개인정보관리사) 필기 합격 후기 - 20일 단기 합격 전략, 과목별 학습법, 시험 시간 관리 팁과 유의사항 정리"
 ---
 
 # 전형 후기

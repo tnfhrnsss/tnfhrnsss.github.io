@@ -7,6 +7,7 @@ parent: Elastic Search
 grand_parent: Msa
 nav_exclude: true
 tags: [elasticsearch, backup]
+description: "Elasticsearch 7.x → 8.x 업그레이드 후 elasticsearch-head Structured Query 탭에 필드가 사라지는 원인(hit._type 제거)과 한 줄 수정으로 해결하는 방법"
 ---
 
 

@@ -7,6 +7,7 @@ parent: Jpa
 grand_parent: Msa
 nav_exclude: true
 tags: [jpa, hibernate]
+description: "JPA 페이징에서 이전 페이지 데이터가 중복 조회되는 현상은 JPA 문제가 아닌 ORDER BY 비결정성 문제. 정렬 기준에 고유 컬럼(PK)을 추가하는 해결법 정리"
 ---
 
 

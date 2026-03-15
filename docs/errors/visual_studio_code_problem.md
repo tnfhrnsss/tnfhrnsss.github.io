@@ -7,6 +7,7 @@ parent: Errors
 has_children: false
 nav_exclude: true
 tags: [vscode]
+description: "Mac에서 VS Code가 SIGSEGV 오류로 실행되지 않을 때 - 캐시·설정 파일 완전 삭제 후 이전 안정 버전으로 재설치하여 해결하는 단계별 방법"
 ---
 
 # Problem

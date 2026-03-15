@@ -8,6 +8,7 @@ parent: Ai
 has_children: false
 nav_order: 2
 nav_exclude: true
+description: "IntelliJ AI Assistant Pro 한 달 무료 체험 실사용 후기 - AI 채팅, 코드 리팩토링 제안, 커밋 메시지 자동 생성 등 주요 기능별 실무 평가"
 ---
 
 # background

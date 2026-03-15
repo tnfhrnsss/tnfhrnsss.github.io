@@ -7,6 +7,7 @@ parent: Jpa
 grand_parent: Msa
 nav_exclude: true
 tags: [jpa, hibernate]
+description: "Spring Boot 3.x + Hibernate 6 환경에서 @Enumerated(EnumType.STRING)에 @Column(length) 설정 시 서비스 시작마다 불필요한 ALTER TABLE이 실행되는 버그 원인과 해결법 3가지"
 ---
 
 

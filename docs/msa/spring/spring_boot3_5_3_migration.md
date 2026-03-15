@@ -6,6 +6,7 @@ last_modified_at : 2025-09-21 10:42:00
 parent: Spring
 grand_parent: Msa
 nav_exclude: true
+description: "Java 8 → 17, Spring Boot 2.7 → 3.5 마이그레이션 실전 가이드. Hibernate 6 호환성, javax→jakarta 전환, SonarQube Java 17 룰 적용까지 실무 기준으로 정리"
 ---
 
 

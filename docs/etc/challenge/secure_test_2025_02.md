@@ -7,6 +7,7 @@ parent: Challenge
 grand_parent: Etc
 has_children: false
 tags: [정보보안기사]
+description: "2025년 2회 정보보안기사 필기 합격 후기 - CBT 전형 특징, 기출 중심 준비 전략, 실제 출제 문제 목록, 응시자격 서류 제출 절차까지 상세 정리"
 ---
 
 
