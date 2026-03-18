@@ -22,7 +22,7 @@ Claude Code를 사용하다 보면 갑자기 **"Interrupted · What should Claud
 Explorer 에이전트가 코드베이스를 탐색하면서 **음악 디렉토리나 사진, 문서 디렉토리등 전혀 코드와 관련없는 폴더나 프로그램**에 접근하려고 했고, 
 그때 마다 계속 "허용 안함"을 선택했다.
 
-에이전트 입장에서는 탐색할 경로가 계속 거부되니 더 이상 진행이 불가능해져서 중단된 것이고, 그게 학습되어서 Explorer할떄마다 "What should Claude do instead?"라고 물어본 것이라고 한다.
+에이전트 입장에서는 탐색할 경로가 계속 거부되니 더 이상 진행이 불가능해져서 중단된 것이고, 그게 학습되어서 Explorer할 때마다 "What should Claude do instead?"라고 물어본 것이라고 한다.
 
 ---
 
