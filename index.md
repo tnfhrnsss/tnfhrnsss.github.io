@@ -19,6 +19,7 @@ permalink: /
 ## recently update
 {: .fs-7 .text-purple-100 }
 
+[2026-03-18 Claude Code에서 "Interrupted · What should Claude do instead?" 해결하기](./docs/ai/claude/claude-code-interrupted.md)  
 [2026-03-09 Elasticsearch 8.x 업그레이드 후 elasticsearch-head Structured Query 필드가 안 보이는 문제 해결](./docs/msa/elastic-search/es8-structured-query-fix.md)  
 [2026-03-07 Hibernate6 @Column(length) 설정 시 매 시작마다 ALTER TABLE이 실행되는 버그](./docs/msa/jpa/hibernate_alter_issue.md)  
 [2026-01-03 페이징 시 이전 페이지 데이터가 중복 조회되는 이유와 해결 방법](./docs/msa/jpa/jpa_paging_not_jpa_issue.md)  
