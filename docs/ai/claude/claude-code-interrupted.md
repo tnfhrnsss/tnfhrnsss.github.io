@@ -85,4 +85,4 @@ echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc && source ~/.zshrc
 - 재설치하자
 
 ## Reference
-- interrupted_what_should_claude_do_instead[https://www.reddit.com/r/ClaudeCode/comments/1rwx472/interrupted_what_should_claude_do_instead/]
+- [interrupted_what_should_claude_do_instead](https://www.reddit.com/r/ClaudeCode/comments/1rwx472/interrupted_what_should_claude_do_instead/)
