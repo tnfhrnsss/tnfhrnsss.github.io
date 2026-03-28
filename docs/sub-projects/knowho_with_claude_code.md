@@ -11,10 +11,8 @@ categories: AI
 tags: claude ios swift vibe-coding
 ---
 
-# Claude Code로 iOS 앱 만들기 – Knowho 바이브코딩 후기
-
-저는 Swift가 없던 시절에 회사 앱을 만들어서 출시해본 경험이 1번 있었습니다.
-그 이후에 Swift는 제대로 써본 적 없는 상태에서,
+저는 Swift가 없던 시절에 회사 앱을 만들어서 출시해본 경험이 1번 있었습니다. \
+그 이후에 Swift는 제대로 써본 적 없는 상태에서, \
 이번에 Claude Code와 함께 iOS 앱을 만들어 App Store에 출시하기까지의 경험을 정리했습니다.
 
 **작업 기간:** 2026년 3월 15일 ~ 3월 27일 (약 2주)
