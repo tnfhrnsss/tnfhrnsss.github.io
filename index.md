@@ -19,6 +19,7 @@ permalink: /
 ## recently update
 {: .fs-7 .text-purple-100 }
 
+[2026-03-29 카카오 Kanana 베타 테스터 지원!](./docs/ai/kanana/1-kanana-beta-background.md)  
 [2026-03-28 Claude Code로 iOS 앱 만들기 – Knowho 바이브코딩 후기](./docs/sub-projects/knowho_with_claude_code.md)  
 [2026-03-18 Claude Code에서 "Interrupted · What should Claude do instead?" 해결하기](./docs/ai/claude/claude-code-interrupted.md)  
 [2026-03-09 Elasticsearch 8.x 업그레이드 후 elasticsearch-head Structured Query 필드가 안 보이는 문제 해결](./docs/msa/elastic-search/es8-structured-query-fix.md)  
