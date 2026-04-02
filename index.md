@@ -10,10 +10,10 @@ permalink: /
 
 ## 🌈 monthly top5
 {: .fs-7 .text-purple-100 }
-[1. 2025년 2회 정보보안기사 필기 합격 후기](./docs/etc/challenge/secure_test_2025_02.md)   
-[2. 2025년 45회 CPPG 합격 후기 - 20일 단기 합격](./docs/etc/challenge/cppg_test_2025_09.md)  
-[3. Intellij AI Pro 한 달 사용권 체험 후기](./docs/clipping/ai/intellij_ai_pro_log.md)  
-[4. Spring Boot 3.5.3 & Java 17 마이그레이션](./docs/msa/spring/spring_boot3_5_3_migration.md)  
+[1. 2025년 45회 CPPG 합격 후기 - 20일 단기 합격](./docs/etc/challenge/cppg_test_2025_09.md)  
+[2. Claude Code에서 "Interrupted · What should Claude do instead?" 해결하기](./docs/ai/claude/claude-code-interrupted.md)  
+[3. 2025년 2회 정보보안기사 필기 합격 후기](./docs/etc/challenge/secure_test_2025_02.md)   
+[4. Intellij AI Pro 한 달 사용권 체험 후기](./docs/clipping/ai/intellij_ai_pro_log.md)  
 [5. Mac Visual Studio Code 실행 안됨](./docs/errors/visual_studio_code_problem.md)  
 
 ## recently update
