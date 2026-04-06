@@ -68,10 +68,10 @@ iOS shows the registered name on your lock screen — powered by Apple's CallKit
 ## Screenshots
 
 <div style="display: flex; gap: 16px; flex-wrap: wrap;">
-  <img src="./img/knowho/screen_1.png" alt="Personal whitelist" width="220"/>
-  <img src="./img/knowho/screen_2.png" alt="Easy import" width="220"/>
-  <img src="./img/knowho/screen_3.png" alt="Separate from iOS Contacts" width="220"/>
-  <img src="./img/knowho/screen_4.png" alt="Block voice phishing" width="220"/>
+  <img src="../sub-projects/img/knowho/screen_1.png" alt="Personal whitelist" width="220"/>
+  <img src="../sub-projects/img/knowho/screen_2.png" alt="Easy import" width="220"/>
+  <img src="../sub-projects/img/knowho/screen_3.png" alt="Separate from iOS Contacts" width="220"/>
+  <img src="../sub-projects/img/knowho/screen_4.png" alt="Block voice phishing" width="220"/>
 </div>
 
 ---
