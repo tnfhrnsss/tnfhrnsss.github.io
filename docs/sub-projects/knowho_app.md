@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Knowho – Your Personal Whitelist of Trust for iPhone"
+title: "Knowho – iPhone Caller ID for Your Private Contact List"
 description: A privacy-first iOS caller ID app that shows who's calling — without touching your real contacts.
 date: 2026-04-06 10:00:00
 last_modified_at: 2026-04-06 10:00:00
@@ -8,7 +8,7 @@ parent: Sub Projects
 has_children: false
 nav_exclude: true
 categories: iOS
-tags: ios swift callkit caller-id privacy
+tags: [ios, swift, callkit, caller-id, privacy, spam-call, voice-phishing, caller-identification]
 ---
 
 # Knowho
