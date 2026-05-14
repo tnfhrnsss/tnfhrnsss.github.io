@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Gemini 3 해커톤 참가기 – DocentAI, Netflix AI 도슨트 만들기
+title: DocentAI(도센타이) Gemini 3 해커톤 참여 후기
 description: Gemini 3 해커톤에서 Netflix 자막 맥락 설명 크롬 익스텐션 DocentAI를 만든 과정
 date: 2026-05-11 10:00:00
 last_modified_at : 2026-05-11 10:00:00
