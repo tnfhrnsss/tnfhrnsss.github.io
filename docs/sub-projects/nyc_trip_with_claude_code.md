@@ -29,7 +29,7 @@ tags: claude claude-code vibe-coding pwa javascript travel
 
 **NYC Order Guide** — 뉴욕·퀸즈·워싱턴 D.C.를 여행하는 한국인을 위한 오프라인 우선 웹앱입니다.
 
-라이브 주소: [https://tnfhrnsss.github.io/nyc/us-order-guide/](https://tnfhrnsss.github.io/nyc/us-order-guide/)
+라이브 주소: [https://tnfhrnsss.github.io/nyc/us-order-guide/](https://tnfhrnsss.github.io/nyc/us-order-guide/){:target="_blank"}
 
 핵심 기능은 이렇습니다:
 
@@ -144,8 +144,8 @@ const urlsToCache = [
 
 ## 소스 코드 & 라이브
 
-- **GitHub**: [https://github.com/tnfhrnsss/nyc](https://github.com/tnfhrnsss/nyc)
-- **라이브**: [https://tnfhrnsss.github.io/nyc/us-order-guide/](https://tnfhrnsss.github.io/nyc/us-order-guide/)
+- **GitHub**: [https://github.com/tnfhrnsss/nyc](https://github.com/tnfhrnsss/nyc){:target="_blank"}
+- **라이브**: [https://tnfhrnsss.github.io/nyc/us-order-guide/](https://tnfhrnsss.github.io/nyc/us-order-guide/){:target="_blank"}
 
 빌드 없이 로컬에서 실행하려면:
 
