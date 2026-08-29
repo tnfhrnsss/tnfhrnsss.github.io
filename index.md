@@ -19,6 +19,7 @@ permalink: /
 ## recently update
 {: .fs-7 .text-purple-100 }
 
+[2026-08-29 2026년 2회 정보보안기사 실기 합격 후기(3트)](./docs/etc/challenge/secure_test_2026_02.md)    
 [2026-05-17 뉴욕 여행 웹앱 만들기 – NYC Order Guide(By Claude)](./docs/sub-projects/nyc_trip_with_claude_code.md)  
 [2026-05-15 DocentAI(도센타이) Gemini 3 해커톤 참여 후기](./docs/sub-projects/docentai_gemini3_hackathon.md)  
 [2026-03-29 카카오 Kanana 베타 테스터 지원!](./docs/ai/kanana/1-kanana-beta-background.md)  
