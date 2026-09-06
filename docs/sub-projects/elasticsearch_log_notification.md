@@ -10,6 +10,9 @@ nav_exclude: true
 keywords: elasticsearch
 ---
 
+> 이 글은 2023년 v1 기준입니다. 
+> v2 기록은 [ES Log Notifier v2 – Claude로 다시 만들기](https://tnfhrnsss.github.io/docs/sub-projects/elasticsearch_log_notifier_v2/){:target="_blank"} 를 참고하세요.
+
 # Goals
 
 - 테스트 기간에 발생하는 결함에 대해서 빠르게 대처하기 위해 만들었다.
