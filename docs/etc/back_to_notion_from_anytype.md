@@ -18,9 +18,6 @@ description: "노션에서 Anytype으로 갈아탔다가 3개월 만에 다시 �
 
 나름 사용 후기를 정리해봤습니다. ☺️
 
-참고로 노션은 미국 회사(Notion Labs)이고, Anytype은 스위스 협회(Any Association)가 주체이며 개발팀은 베를린에 있습니다.
-특정 회사의 소유가 아닌 구조라는 점이, 로컬 우선(local-first) 철학과 맞닿아 있는 것 같습니다.
-
 ---
 
 ## 왜 Anytype으로 갔었나
