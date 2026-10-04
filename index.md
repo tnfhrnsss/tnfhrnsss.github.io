@@ -19,6 +19,7 @@ permalink: /
 ## recently update
 {: .fs-7 .text-purple-100 }
 
+[2026-10-04 Knowho 1.0.4 업데이트 and 유튜브 소개 영상](./docs/sub-projects/knowho_v1_0_4_release.md)  
 [2026-09-23 Anytype 3개월 쓰고 다시 Notion으로 돌아온 이유](./docs/etc/back_to_notion_from_anytype.md)  
 [2026-09-06 ES Log Notifier v2 – Claude로 다시 만들기](./docs/sub-projects/elasticsearch_log_notifier_v2.md)  
 [2026-08-29 2026년 2회 정보보안기사 실기 합격 후기(3트)](./docs/etc/challenge/secure_test_2026_02.md)    
