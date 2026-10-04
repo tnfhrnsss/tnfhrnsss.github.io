@@ -73,7 +73,7 @@ Apple의 Vision 프레임워크를 쓰면 서버 없이 기기 안에서 OCR이 
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
   <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-          src="https://youtu.be/dM8Yw8GMOrs?si=Zm2ktWUe0Jog4aUW"
+          src="https://www.youtube.com/embed/dM8Yw8GMOrs"
           title="Knowho 소개 영상" frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen></iframe>
@@ -83,7 +83,7 @@ Apple의 Vision 프레임워크를 쓰면 서버 없이 기기 안에서 OCR이 
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
   <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-          src="https://youtu.be/HJZ_GcBrQ4w?si=PeaVq9cgql33gZIz"
+          src="https://www.youtube.com/embed/HJZ_GcBrQ4w"
           title="Knowho Intro Video" frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen></iframe>
